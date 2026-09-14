@@ -6,6 +6,7 @@ from __future__ import annotations
 import hashlib
 import json
 import re
+import subprocess
 import zipfile
 from datetime import datetime, timezone
 from pathlib import Path
@@ -18,8 +19,14 @@ RECEIPT = ROOT / "major_revision_package_receipt.json"
 
 ROOT_FILES = [
     "README.md",
+    "CHANGELOG.md",
+    "DATA_AVAILABILITY.md",
+    "LICENSE",
     "requirements-publication.txt",
     "major_revision_manifest.json",
+    "config/submission_links.json",
+    "data/upstream_raw_manifest.csv",
+    "data/upstream_raw_manifest.json",
     "paper.html",
     "paper.md",
     "paper.pdf",
@@ -107,6 +114,7 @@ SCRIPT_FILES = [
     "scripts/run_major_revision_rebuild.py",
     "scripts/run_major_revision_rebuild.cmd",
     "scripts/build_major_revision_package.py",
+    "scripts/build_public_data_manifest.py",
     "tests/test_scientific_contracts.py",
 ]
 
@@ -126,6 +134,19 @@ def sha256(path: Path) -> str:
         for chunk in iter(lambda: handle.read(1024 * 1024), b""):
             digest.update(chunk)
     return digest.hexdigest()
+
+
+def current_git_commit() -> str:
+    result = subprocess.run(
+        ["git", "rev-parse", "HEAD"],
+        cwd=ROOT,
+        check=False,
+        capture_output=True,
+        text=True,
+    )
+    if result.returncode == 0 and result.stdout.strip():
+        return result.stdout.strip()
+    return "unavailable: no committed Git baseline"
 
 
 def main() -> None:
@@ -152,7 +173,7 @@ def main() -> None:
     manifest = {
         "schema": "coastal-flood-major-revision-package-content-v1",
         "generated_utc": datetime.now(timezone.utc).isoformat(),
-        "baseline": "local workspace is not a Git repository; baseline is major_revision_manifest.json",
+        "baseline": f"Git commit {current_git_commit()}; computational outputs are additionally pinned by major_revision_manifest.json",
         "security_scan": "PASS: no configured credential pattern detected in allowlisted files",
         "exclusions": [
             ".git and VCS metadata",
@@ -177,7 +198,7 @@ def main() -> None:
         "content_manifest": CONTENT_MANIFEST.name,
         "content_manifest_sha256": sha256(CONTENT_MANIFEST),
         "credential_scan": "PASS",
-        "git_commit": "not applicable: workspace is not a Git repository",
+        "git_commit": current_git_commit(),
     }
     RECEIPT.write_text(json.dumps(receipt, indent=2, ensure_ascii=False), encoding="utf-8")
     print(json.dumps(receipt, indent=2, ensure_ascii=False))

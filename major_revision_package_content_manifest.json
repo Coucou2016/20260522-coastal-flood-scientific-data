@@ -1,7 +1,7 @@
 {
   "schema": "coastal-flood-major-revision-package-content-v1",
-  "generated_utc": "2026-09-14T11:50:32.712982+00:00",
-  "baseline": "local workspace is not a Git repository; baseline is major_revision_manifest.json",
+  "generated_utc": "2026-09-14T11:56:06.859420+00:00",
+  "baseline": "Git commit fe4c493067924ee8b5a2366f7a93e56c68c835cb; computational outputs are additionally pinned by major_revision_manifest.json",
   "security_scan": "PASS: no configured credential pattern detected in allowlisted files",
   "exclusions": [
     ".git and VCS metadata",
@@ -17,6 +17,21 @@
       "sha256": "e322394194e7171fd4f5dde5141fc1c48affeeb5c0c26b76c447047fe06b3da3"
     },
     {
+      "path": "CHANGELOG.md",
+      "bytes": 2194,
+      "sha256": "97daeabdbf7102bd7c03ecc4e3c48880d90d24f229ef65e9c95fe2dfff8beb83"
+    },
+    {
+      "path": "DATA_AVAILABILITY.md",
+      "bytes": 3558,
+      "sha256": "32c98a1a51076015b3a05ccd4aebd6014400e14355d039239c310848a1a22b63"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1466,
+      "sha256": "53bed93024b7796bc94fc9c6eab4a634c694521a3dabbfd270b15ad4170ed8a1"
+    },
+    {
       "path": "requirements-publication.txt",
       "bytes": 272,
       "sha256": "61262f5e7c27508aa5920bbfa3102a51e6c8fa5fcdff6e73cfab394e52cec7a6"
@@ -25,6 +40,21 @@
       "path": "major_revision_manifest.json",
       "bytes": 8228,
       "sha256": "90b17873d38ad9fcafbdea5c4413f71424c8acd110f7fa61b626c7c6e2c8b294"
+    },
+    {
+      "path": "config/submission_links.json",
+      "bytes": 419,
+      "sha256": "2136cbfad718b5fb63f5688bcda28b739fa20dd8c72a43b5c6054d6b8af7f928"
+    },
+    {
+      "path": "data/upstream_raw_manifest.csv",
+      "bytes": 77446,
+      "sha256": "c3567da4627f59e3bb00f40f6957db0770dac691e4c2a01acb8b2ef73f57c620"
+    },
+    {
+      "path": "data/upstream_raw_manifest.json",
+      "bytes": 130314,
+      "sha256": "74191b6640aafa12e4d343bc2c55a4267de81daf1a1d658103960bc1b162addb"
     },
     {
       "path": "paper.html",
@@ -423,8 +453,13 @@
     },
     {
       "path": "scripts/build_major_revision_package.py",
-      "bytes": 7818,
-      "sha256": "38cd14b9611bf1441419792bb46ef78f31f1e6173d68f3a8a3dc192bea8e9bb6"
+      "bytes": 8399,
+      "sha256": "3b45fef0f996319cdd3f842308439560a70f6a515e74534dd200b23e35dff281"
+    },
+    {
+      "path": "scripts/build_public_data_manifest.py",
+      "bytes": 3626,
+      "sha256": "f4a3aae34171b1b29b497b51fb3c79981b6536eea6f48905244143452feb28c2"
     },
     {
       "path": "tests/test_scientific_contracts.py",

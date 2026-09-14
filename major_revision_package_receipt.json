@@ -1,9 +1,9 @@
 {
   "package": "major_revision_reviewer_package.zip",
-  "bytes": 61727500,
-  "sha256": "76945cba50c176b035d38c743d99b855d54b6ca7238b45412ffb9a50f873a30a",
+  "bytes": 61766405,
+  "sha256": "8b3847ddd602ad26a9cfcdf50799ab2fab9d2a9b022fd0205b1cebccd4b0fb4c",
   "content_manifest": "major_revision_package_content_manifest.json",
-  "content_manifest_sha256": "eb4ccd6141fd65eee2e75b161b73db83490e8132fd628e43dc917b95691abf47",
+  "content_manifest_sha256": "9d336c0854b1375504cbc5fabb1f4eb0fbedcd75b9185b93e9d49eb9ef464955",
   "credential_scan": "PASS",
-  "git_commit": "not applicable: workspace is not a Git repository"
+  "git_commit": "fe4c493067924ee8b5a2366f7a93e56c68c835cb"
 }
