@@ -1,7 +1,7 @@
 {
   "schema": "coastal-flood-major-revision-package-content-v1",
-  "generated_utc": "2026-09-14T11:56:06.859420+00:00",
-  "baseline": "Git commit fe4c493067924ee8b5a2366f7a93e56c68c835cb; computational outputs are additionally pinned by major_revision_manifest.json",
+  "generated_utc": "2026-09-14T15:44:46.227434+00:00",
+  "baseline": "Git commit 4383757568153612c6889ee87a56da6d48ff2dbd; computational outputs are additionally pinned by major_revision_manifest.json",
   "security_scan": "PASS: no configured credential pattern detected in allowlisted files",
   "exclusions": [
     ".git and VCS metadata",

@@ -1,9 +1,9 @@
 {
   "package": "major_revision_reviewer_package.zip",
-  "bytes": 61766405,
-  "sha256": "8b3847ddd602ad26a9cfcdf50799ab2fab9d2a9b022fd0205b1cebccd4b0fb4c",
+  "bytes": 61766402,
+  "sha256": "cc386d5affa19c7d1d5906fc3c9320a18b055c7c9a1bafc2b55507c6d6e2dbd1",
   "content_manifest": "major_revision_package_content_manifest.json",
-  "content_manifest_sha256": "9d336c0854b1375504cbc5fabb1f4eb0fbedcd75b9185b93e9d49eb9ef464955",
+  "content_manifest_sha256": "9b113e4ac1d1e8dca3e415601e2754452779eb5ce72424ac2eaaa97af42268b7",
   "credential_scan": "PASS",
-  "git_commit": "fe4c493067924ee8b5a2366f7a93e56c68c835cb"
+  "git_commit": "4383757568153612c6889ee87a56da6d48ff2dbd"
 }
