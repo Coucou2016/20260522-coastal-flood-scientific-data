@@ -1,0 +1,9 @@
+station_id,label,n_days,pressure,wind,precipitation,coherence_role
+newlyn-p001-uk,Newlyn,11323,-0.8311444855154034,0.36415430951178374,0.5304353573854693,pressure-coherent extratropical surge-process diagnostic
+brest-france,Brest,11323,-0.7960281479479313,0.44180630283750655,0.5851041856934758,pressure-coherent extratropical surge-process diagnostic
+aberdeen-p038-uk,Aberdeen,11323,-0.7239702256902232,0.42204956102521823,0.25246800146067444,pressure-coherent extratropical surge-process diagnostic
+hoekvanholla-hvh-nl,Hoek v.H.,11323,-0.5387915683023761,0.6101473454708268,0.48617169982015596,pressure-coherent extratropical surge-process diagnostic
+newyork-the-battery,New York,11323,-0.26136722754246877,0.17541742274840616,0.35495724139349644,weak or regime-dependent daily-local diagnostic
+sheerness-p015-uk,Sheerness,11323,-0.22837870654765507,0.5115587646377782,0.1587619426074351,weak or regime-dependent daily-local diagnostic
+charleston-sc,Charleston,11323,0.04069095835780166,0.0543052401769802,0.0682089021305579,weak or regime-dependent daily-local diagnostic
+hong-kong-b,Hong Kong,11323,0.15917196717456508,0.3312710060412805,-0.07904440560667571,weak or regime-dependent daily-local diagnostic

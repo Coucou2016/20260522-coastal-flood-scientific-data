@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "errors": [],
+  "warnings": [],
+  "checked_sidecars": [
+    "final_archive_manifest.json",
+    "publication_gate_evidence/evidence_manifest.json",
+    "publication_gate_evidence/evidence_manifest.sha256",
+    "publication_gate_evidence/publication_gate.txt",
+    "publication_gate_evidence/publication_gate.json",
+    "publication_gate_evidence/publication_readiness_summary.md",
+    "publication_gate_evidence/publication_readiness_summary.json",
+    "publication_gate_evidence/manuscript_figure_inventory.md",
+    "publication_gate_evidence/figure_deliverables_audit.txt",
+    "publication_gate_evidence/figure_visual_quality_audit.txt",
+    "publication_gate_evidence/figure_data_integrity_audit.txt",
+    "publication_gate_evidence/manuscript_submission_text_audit.txt",
+    "publication_gate_evidence/submission_artifact_consistency_audit.txt",
+    "publication_gate_evidence/final_qc_acceptance_audit.txt",
+    "manuscript/final_qc_acceptance.json",
+    "requirements-publication.txt"
+  ],
+  "zip_entries_checked": 69
+}

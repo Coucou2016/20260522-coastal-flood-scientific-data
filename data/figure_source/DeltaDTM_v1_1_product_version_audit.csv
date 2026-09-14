@@ -1,0 +1,2 @@
+product,release,tile_tag,vertical_reference,release_cap_m,paper_v1_0_cap_m,mask_outside_support_fill,official_255_cells_in_primary_analysis_windows,outside_support_cells_in_primary_analysis_windows,note
+DeltaDTM,v1.1.1,DeltaDTM v1.1.1 / DeltaDTM.jl v1.1.1,EGM2008,30.0,10.0,254,0,3320,The 2024 paper documents v1.0; the downloaded v1.1 README documents the 30 m EGM2008 cap. Outside-support fill is kept distinct from class 255 and excluded from all land denominators.

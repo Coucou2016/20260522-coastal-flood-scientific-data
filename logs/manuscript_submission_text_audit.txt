@@ -1,0 +1,17 @@
+Manuscript submission text audit
+================================
+
+Passed: True
+Strict: False
+Files checked: 10
+Errors: 0
+Warnings: 0
+
+Errors
+------
+
+Warnings
+--------
+
+Notes
+-----

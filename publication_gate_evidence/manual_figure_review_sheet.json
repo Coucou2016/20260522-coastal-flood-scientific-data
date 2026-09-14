@@ -1,0 +1,72 @@
+{
+  "passed": true,
+  "errors": [],
+  "warnings": [],
+  "items": [
+    {
+      "figure": null,
+      "label": "embedded-image-1.png",
+      "path": null,
+      "document": "manuscript/process_terrain_coastal_flood_CEE_manuscript_review.html",
+      "width": 5776,
+      "height": 2980,
+      "bytes": 588527,
+      "sha256": "de076f3a4f377336885fdb1eb1e1e2f97653902a1480d6344f58a8578aba59a7",
+      "visual_problems": [],
+      "visual_notes": [],
+      "inferred_mapping": true
+    },
+    {
+      "figure": null,
+      "label": "embedded-image-2.png",
+      "path": null,
+      "document": "manuscript/process_terrain_coastal_flood_CEE_manuscript_review.html",
+      "width": 5435,
+      "height": 2744,
+      "bytes": 459165,
+      "sha256": "cf16910b3cac364a1ff1bfc41ad8c72476d672e8588c3cd5c7a1d092da5a84e5",
+      "visual_problems": [],
+      "visual_notes": [],
+      "inferred_mapping": true
+    },
+    {
+      "figure": null,
+      "label": "embedded-image-3.png",
+      "path": null,
+      "document": "manuscript/process_terrain_coastal_flood_CEE_manuscript_review.html",
+      "width": 5382,
+      "height": 2831,
+      "bytes": 758408,
+      "sha256": "71264679b39f98d0da304462df679ba9b0d911a47863976f46b8ab2e5c7a2002",
+      "visual_problems": [],
+      "visual_notes": [],
+      "inferred_mapping": true
+    },
+    {
+      "figure": null,
+      "label": "embedded-image-4.png",
+      "path": null,
+      "document": "manuscript/process_terrain_coastal_flood_CEE_manuscript_review.html",
+      "width": 5311,
+      "height": 3706,
+      "bytes": 2957491,
+      "sha256": "c5773b715160d1d942329165e4be91f563320ba1b878536e8a0f6f83beda3a4b",
+      "visual_problems": [],
+      "visual_notes": [],
+      "inferred_mapping": true
+    },
+    {
+      "figure": null,
+      "label": "embedded-image-5.png",
+      "path": null,
+      "document": "manuscript/process_terrain_coastal_flood_CEE_manuscript_review.html",
+      "width": 5320,
+      "height": 3594,
+      "bytes": 699783,
+      "sha256": "97efeda5218381b158bac3fc0a5f4707787b4ca96295a7508e3e3d57d6f6a0ff",
+      "visual_problems": [],
+      "visual_notes": [],
+      "inferred_mapping": true
+    }
+  ]
+}

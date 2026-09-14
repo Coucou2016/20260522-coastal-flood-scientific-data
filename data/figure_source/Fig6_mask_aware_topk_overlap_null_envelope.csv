@@ -1,0 +1,113 @@
+sample,terrain_metric,n_sites,top_fraction,top_n,observed_overlap,observed_mismatch,random_expected_overlap,random_expected_mismatch,null_overlap_p025,null_overlap_p500,null_overlap_p975,overlap_low_tail_p
+primary resolved mask-aware match<=6km,mask_connected_2m_reference_land_pct,68,0.1,7,0,1.0,0.7205882352941176,0.8970588235294118,0.0,1.0,2.0,0.46025397460253975
+primary resolved mask-aware match<=6km,mask_connected_2m_reference_land_pct,68,0.15,11,0,1.0,1.7794117647058822,0.8382352941176471,0.0,2.0,4.0,0.12738726127387262
+primary resolved mask-aware match<=6km,mask_connected_2m_reference_land_pct,68,0.2,14,1,0.9285714285714286,2.8823529411764706,0.7941176470588236,0.0,3.0,6.0,0.15208479152084792
+primary resolved mask-aware match<=6km,mask_connected_2m_reference_land_pct,68,0.25,17,2,0.8823529411764706,4.25,0.75,1.0,4.0,7.0,0.1287871212878712
+primary resolved mask-aware match<=6km,mask_connected_2m_reference_land_pct,68,0.3,21,4,0.8095238095238095,6.485294117647059,0.6911764705882353,3.0,6.0,10.0,0.12788721127887212
+primary resolved mask-aware match<=6km,mask_connected_2m_reference_land_pct,68,0.35,24,6,0.75,8.470588235294118,0.6470588235294117,5.0,8.0,12.0,0.1511848815118488
+primary resolved mask-aware match<=6km,mask_connected_2m_reference_land_pct,68,0.4,28,9,0.6785714285714286,11.529411764705882,0.5882352941176471,8.0,12.0,15.0,0.15608439156084392
+primary resolved mask-aware match<=6km,mask_below_2m_reference_land_pct,68,0.1,7,0,1.0,0.7205882352941176,0.8970588235294118,0.0,1.0,2.0,0.44615538446155384
+primary resolved mask-aware match<=6km,mask_below_2m_reference_land_pct,68,0.15,11,0,1.0,1.7794117647058822,0.8382352941176471,0.0,2.0,4.0,0.11588841115888411
+primary resolved mask-aware match<=6km,mask_below_2m_reference_land_pct,68,0.2,14,1,0.9285714285714286,2.8823529411764706,0.7941176470588236,1.0,3.0,6.0,0.15158484151584842
+primary resolved mask-aware match<=6km,mask_below_2m_reference_land_pct,68,0.25,17,2,0.8823529411764706,4.25,0.75,1.0,4.0,7.0,0.12298770122987701
+primary resolved mask-aware match<=6km,mask_below_2m_reference_land_pct,68,0.3,21,4,0.8095238095238095,6.485294117647059,0.6911764705882353,3.0,6.0,10.0,0.12068793120687932
+primary resolved mask-aware match<=6km,mask_below_2m_reference_land_pct,68,0.35,24,6,0.75,8.470588235294118,0.6470588235294117,5.0,8.0,12.0,0.1424857514248575
+primary resolved mask-aware match<=6km,mask_below_2m_reference_land_pct,68,0.4,28,9,0.6785714285714286,11.529411764705882,0.5882352941176471,8.0,12.0,15.0,0.1503849615038496
+primary resolved mask-aware match<=6km,mask_connected_2m_conditional_pct,68,0.1,7,1,0.8571428571428572,0.7205882352941176,0.8970588235294118,0.0,0.0,2.0,0.93000699930007
+primary resolved mask-aware match<=6km,mask_connected_2m_conditional_pct,68,0.15,11,3,0.7272727272727273,1.7794117647058822,0.8382352941176471,0.0,2.0,4.0,0.934006599340066
+primary resolved mask-aware match<=6km,mask_connected_2m_conditional_pct,68,0.2,14,6,0.5714285714285714,2.8823529411764706,0.7941176470588236,0.0,3.0,6.0,0.9952004799520048
+primary resolved mask-aware match<=6km,mask_connected_2m_conditional_pct,68,0.25,17,6,0.6470588235294117,4.25,0.75,1.0,4.0,7.0,0.9261073892610739
+primary resolved mask-aware match<=6km,mask_connected_2m_conditional_pct,68,0.3,21,7,0.6666666666666667,6.485294117647059,0.6911764705882353,3.0,6.0,10.0,0.7197280271972802
+primary resolved mask-aware match<=6km,mask_connected_2m_conditional_pct,68,0.35,24,7,0.7083333333333333,8.470588235294118,0.6470588235294117,5.0,8.0,12.0,0.31126887311268875
+primary resolved mask-aware match<=6km,mask_connected_2m_conditional_pct,68,0.4,28,10,0.6428571428571428,11.529411764705882,0.5882352941176471,8.0,12.0,15.0,0.30496950304969506
+primary resolved mask-aware match<=6km,mask_connected_2m_area_km2,68,0.1,7,0,1.0,0.7205882352941176,0.8970588235294118,0.0,1.0,2.0,0.43985601439856015
+primary resolved mask-aware match<=6km,mask_connected_2m_area_km2,68,0.15,11,0,1.0,1.7794117647058822,0.8382352941176471,0.0,2.0,4.0,0.11848815118488151
+primary resolved mask-aware match<=6km,mask_connected_2m_area_km2,68,0.2,14,1,0.9285714285714286,2.8823529411764706,0.7941176470588236,0.0,3.0,6.0,0.1531846815318468
+primary resolved mask-aware match<=6km,mask_connected_2m_area_km2,68,0.25,17,2,0.8823529411764706,4.25,0.75,1.0,4.0,7.0,0.12718728127187282
+primary resolved mask-aware match<=6km,mask_connected_2m_area_km2,68,0.3,21,5,0.7619047619047619,6.485294117647059,0.6911764705882353,3.0,6.0,10.0,0.2890710928907109
+primary resolved mask-aware match<=6km,mask_connected_2m_area_km2,68,0.35,24,6,0.75,8.470588235294118,0.6470588235294117,5.0,8.0,12.0,0.1434856514348565
+primary resolved mask-aware match<=6km,mask_connected_2m_area_km2,68,0.4,28,9,0.6785714285714286,11.529411764705882,0.5882352941176471,8.0,12.0,15.0,0.15348465153484653
+all resolved mask-aware distance-unrestricted sensitivity,mask_connected_2m_reference_land_pct,74,0.1,8,0,1.0,0.8648648648648649,0.8918918918918919,0.0,1.0,3.0,0.38316168383161686
+all resolved mask-aware distance-unrestricted sensitivity,mask_connected_2m_reference_land_pct,74,0.15,12,0,1.0,1.945945945945946,0.8378378378378378,0.0,2.0,4.0,0.101989801019898
+all resolved mask-aware distance-unrestricted sensitivity,mask_connected_2m_reference_land_pct,74,0.2,15,1,0.9333333333333333,3.0405405405405403,0.7972972972972973,1.0,3.0,6.0,0.13838616138386162
+all resolved mask-aware distance-unrestricted sensitivity,mask_connected_2m_reference_land_pct,74,0.25,19,3,0.8421052631578947,4.878378378378378,0.7432432432432432,2.0,5.0,8.0,0.21077892210778923
+all resolved mask-aware distance-unrestricted sensitivity,mask_connected_2m_reference_land_pct,74,0.3,23,5,0.782608695652174,7.148648648648648,0.6891891891891893,4.0,7.0,11.0,0.18818118188181182
+all resolved mask-aware distance-unrestricted sensitivity,mask_connected_2m_reference_land_pct,74,0.35,26,8,0.6923076923076923,9.135135135135135,0.6486486486486487,5.0,9.0,13.0,0.37866213378662134
+all resolved mask-aware distance-unrestricted sensitivity,mask_connected_2m_reference_land_pct,74,0.4,30,10,0.6666666666666667,12.162162162162161,0.5945945945945945,8.0,12.0,16.0,0.21377862213778623
+all resolved mask-aware distance-unrestricted sensitivity,mask_below_2m_reference_land_pct,74,0.1,8,0,1.0,0.8648648648648649,0.8918918918918919,0.0,1.0,3.0,0.3825617438256174
+all resolved mask-aware distance-unrestricted sensitivity,mask_below_2m_reference_land_pct,74,0.15,12,0,1.0,1.945945945945946,0.8378378378378378,0.0,2.0,4.0,0.0943905609439056
+all resolved mask-aware distance-unrestricted sensitivity,mask_below_2m_reference_land_pct,74,0.2,15,1,0.9333333333333333,3.0405405405405403,0.7972972972972973,1.0,3.0,6.0,0.13638636136386362
+all resolved mask-aware distance-unrestricted sensitivity,mask_below_2m_reference_land_pct,74,0.25,19,3,0.8421052631578947,4.878378378378378,0.7432432432432432,2.0,5.0,8.0,0.202979702029797
+all resolved mask-aware distance-unrestricted sensitivity,mask_below_2m_reference_land_pct,74,0.3,23,5,0.782608695652174,7.148648648648648,0.6891891891891893,4.0,7.0,11.0,0.1860813918608139
+all resolved mask-aware distance-unrestricted sensitivity,mask_below_2m_reference_land_pct,74,0.35,26,7,0.7307692307692308,9.135135135135135,0.6486486486486487,5.0,9.0,13.0,0.2074792520747925
+all resolved mask-aware distance-unrestricted sensitivity,mask_below_2m_reference_land_pct,74,0.4,30,10,0.6666666666666667,12.162162162162161,0.5945945945945945,8.0,12.0,16.0,0.20477952204779523
+all resolved mask-aware distance-unrestricted sensitivity,mask_connected_2m_conditional_pct,74,0.1,8,2,0.75,0.8648648648648649,0.8918918918918919,0.0,1.0,2.0,0.9765023497650235
+all resolved mask-aware distance-unrestricted sensitivity,mask_connected_2m_conditional_pct,74,0.15,12,3,0.75,1.945945945945946,0.8378378378378378,0.0,2.0,4.0,0.9018098190180982
+all resolved mask-aware distance-unrestricted sensitivity,mask_connected_2m_conditional_pct,74,0.2,15,6,0.6,3.0405405405405403,0.7972972972972973,1.0,3.0,6.0,0.9908009199080092
+all resolved mask-aware distance-unrestricted sensitivity,mask_connected_2m_conditional_pct,74,0.25,19,6,0.6842105263157895,4.878378378378378,0.7432432432432432,2.0,5.0,8.0,0.8413158684131586
+all resolved mask-aware distance-unrestricted sensitivity,mask_connected_2m_conditional_pct,74,0.3,23,7,0.6956521739130435,7.148648648648648,0.6891891891891893,4.0,7.0,11.0,0.587941205879412
+all resolved mask-aware distance-unrestricted sensitivity,mask_connected_2m_conditional_pct,74,0.35,26,10,0.6153846153846154,9.135135135135135,0.6486486486486487,5.0,9.0,13.0,0.7591240875912408
+all resolved mask-aware distance-unrestricted sensitivity,mask_connected_2m_conditional_pct,74,0.4,30,13,0.5666666666666667,12.162162162162161,0.5945945945945945,8.0,12.0,16.0,0.7358264173582642
+all resolved mask-aware distance-unrestricted sensitivity,mask_connected_2m_area_km2,74,0.1,8,0,1.0,0.8648648648648649,0.8918918918918919,0.0,1.0,3.0,0.3832616738326167
+all resolved mask-aware distance-unrestricted sensitivity,mask_connected_2m_area_km2,74,0.15,12,0,1.0,1.945945945945946,0.8378378378378378,0.0,2.0,4.0,0.1004899510048995
+all resolved mask-aware distance-unrestricted sensitivity,mask_connected_2m_area_km2,74,0.2,15,1,0.9333333333333333,3.0405405405405403,0.7972972972972973,0.9750000000000227,3.0,6.0,0.135986401359864
+all resolved mask-aware distance-unrestricted sensitivity,mask_connected_2m_area_km2,74,0.25,19,3,0.8421052631578947,4.878378378378378,0.7432432432432432,2.0,5.0,8.0,0.20437956204379562
+all resolved mask-aware distance-unrestricted sensitivity,mask_connected_2m_area_km2,74,0.3,23,6,0.7391304347826086,7.148648648648648,0.6891891891891893,4.0,7.0,11.0,0.3735626437356264
+all resolved mask-aware distance-unrestricted sensitivity,mask_connected_2m_area_km2,74,0.35,26,8,0.6923076923076923,9.135135135135135,0.6486486486486487,5.0,9.0,13.0,0.38016198380161986
+all resolved mask-aware distance-unrestricted sensitivity,mask_connected_2m_area_km2,74,0.4,30,10,0.6666666666666667,12.162162162162161,0.5945945945945945,8.0,12.0,16.0,0.2106789321067893
+GSSR-qualified primary mask-aware,mask_connected_2m_reference_land_pct,44,0.1,5,0,1.0,0.5681818181818182,0.8863636363636364,0.0,0.0,2.0,0.5237476252374762
+GSSR-qualified primary mask-aware,mask_connected_2m_reference_land_pct,44,0.15,7,1,0.8571428571428572,1.1136363636363635,0.8409090909090909,0.0,1.0,3.0,0.6896310368963103
+GSSR-qualified primary mask-aware,mask_connected_2m_reference_land_pct,44,0.2,9,2,0.7777777777777778,1.8409090909090908,0.7954545454545454,0.0,2.0,4.0,0.7338266173382662
+GSSR-qualified primary mask-aware,mask_connected_2m_reference_land_pct,44,0.25,11,3,0.7272727272727273,2.75,0.75,0.0,3.0,5.0,0.7312268773122688
+GSSR-qualified primary mask-aware,mask_connected_2m_reference_land_pct,44,0.3,14,5,0.6428571428571428,4.454545454545454,0.6818181818181819,2.0,4.0,7.0,0.7657234276572342
+GSSR-qualified primary mask-aware,mask_connected_2m_reference_land_pct,44,0.35,16,6,0.625,5.818181818181818,0.6363636363636364,3.0,6.0,9.0,0.6773322667733227
+GSSR-qualified primary mask-aware,mask_connected_2m_reference_land_pct,44,0.4,18,8,0.5555555555555556,7.363636363636363,0.5909090909090908,4.0,7.0,11.0,0.7657234276572342
+GSSR-qualified primary mask-aware,mask_below_2m_reference_land_pct,44,0.1,5,0,1.0,0.5681818181818182,0.8863636363636364,0.0,0.0,2.0,0.5281471852814719
+GSSR-qualified primary mask-aware,mask_below_2m_reference_land_pct,44,0.15,7,1,0.8571428571428572,1.1136363636363635,0.8409090909090909,0.0,1.0,3.0,0.6871312868713129
+GSSR-qualified primary mask-aware,mask_below_2m_reference_land_pct,44,0.2,9,2,0.7777777777777778,1.8409090909090908,0.7954545454545454,0.0,2.0,4.0,0.7430256974302569
+GSSR-qualified primary mask-aware,mask_below_2m_reference_land_pct,44,0.25,11,3,0.7272727272727273,2.75,0.75,1.0,3.0,5.0,0.7310268973102689
+GSSR-qualified primary mask-aware,mask_below_2m_reference_land_pct,44,0.3,14,5,0.6428571428571428,4.454545454545454,0.6818181818181819,2.0,4.0,7.0,0.7685231476852314
+GSSR-qualified primary mask-aware,mask_below_2m_reference_land_pct,44,0.35,16,5,0.6875,5.818181818181818,0.6363636363636364,3.0,6.0,9.0,0.41205879412058793
+GSSR-qualified primary mask-aware,mask_below_2m_reference_land_pct,44,0.4,18,8,0.5555555555555556,7.363636363636363,0.5909090909090908,4.0,7.0,11.0,0.7597240275972402
+GSSR-qualified primary mask-aware,mask_connected_2m_conditional_pct,44,0.1,5,1,0.8,0.5681818181818182,0.8863636363636364,0.0,0.0,2.0,0.9586041395860414
+GSSR-qualified primary mask-aware,mask_connected_2m_conditional_pct,44,0.15,7,2,0.7142857142857143,1.1136363636363635,0.8409090909090909,0.0,1.0,3.0,0.9333066693330667
+GSSR-qualified primary mask-aware,mask_connected_2m_conditional_pct,44,0.2,9,4,0.5555555555555556,1.8409090909090908,0.7954545454545454,0.0,2.0,4.0,0.9913008699130087
+GSSR-qualified primary mask-aware,mask_connected_2m_conditional_pct,44,0.25,11,4,0.6363636363636364,2.75,0.75,1.0,3.0,5.0,0.917008299170083
+GSSR-qualified primary mask-aware,mask_connected_2m_conditional_pct,44,0.3,14,5,0.6428571428571428,4.454545454545454,0.6818181818181819,2.0,4.0,7.0,0.76992300769923
+GSSR-qualified primary mask-aware,mask_connected_2m_conditional_pct,44,0.35,16,5,0.6875,5.818181818181818,0.6363636363636364,3.0,6.0,9.0,0.4213578642135786
+GSSR-qualified primary mask-aware,mask_connected_2m_conditional_pct,44,0.4,18,7,0.6111111111111112,7.363636363636363,0.5909090909090908,4.0,7.0,10.0,0.534046595340466
+GSSR-qualified primary mask-aware,mask_connected_2m_area_km2,44,0.1,5,0,1.0,0.5681818181818182,0.8863636363636364,0.0,0.0,2.0,0.5349465053494651
+GSSR-qualified primary mask-aware,mask_connected_2m_area_km2,44,0.15,7,1,0.8571428571428572,1.1136363636363635,0.8409090909090909,0.0,1.0,3.0,0.6961303869613039
+GSSR-qualified primary mask-aware,mask_connected_2m_area_km2,44,0.2,9,2,0.7777777777777778,1.8409090909090908,0.7954545454545454,0.0,2.0,4.0,0.7392260773922608
+GSSR-qualified primary mask-aware,mask_connected_2m_area_km2,44,0.25,11,3,0.7272727272727273,2.75,0.75,0.0,3.0,5.0,0.7391260873912608
+GSSR-qualified primary mask-aware,mask_connected_2m_area_km2,44,0.3,14,5,0.6428571428571428,4.454545454545454,0.6818181818181819,2.0,4.0,7.0,0.7677232276772322
+GSSR-qualified primary mask-aware,mask_connected_2m_area_km2,44,0.35,16,6,0.625,5.818181818181818,0.6363636363636364,3.0,6.0,9.0,0.6786321367863214
+GSSR-qualified primary mask-aware,mask_connected_2m_area_km2,44,0.4,18,8,0.5555555555555556,7.363636363636363,0.5909090909090908,4.0,7.0,11.0,0.7657234276572342
+baseline 30-station primary sensitivity,mask_connected_2m_reference_land_pct,30,0.1,3,0,1.0,0.3,0.9,0.0,0.0,1.0,0.7175282471752825
+baseline 30-station primary sensitivity,mask_connected_2m_reference_land_pct,30,0.15,5,2,0.6,0.8333333333333334,0.8333333333333334,0.0,1.0,2.0,0.9792020797920208
+baseline 30-station primary sensitivity,mask_connected_2m_reference_land_pct,30,0.2,6,2,0.6666666666666667,1.2,0.8,0.0,1.0,3.0,0.9243075692430757
+baseline 30-station primary sensitivity,mask_connected_2m_reference_land_pct,30,0.25,8,4,0.5,2.1333333333333333,0.7333333333333334,0.0,2.0,4.0,0.9836016398360165
+baseline 30-station primary sensitivity,mask_connected_2m_reference_land_pct,30,0.3,9,4,0.5555555555555556,2.7,0.7,1.0,3.0,5.0,0.9398060193980602
+baseline 30-station primary sensitivity,mask_connected_2m_reference_land_pct,30,0.35,11,5,0.5454545454545454,4.033333333333333,0.6333333333333333,2.0,4.0,7.0,0.8781121887811218
+baseline 30-station primary sensitivity,mask_connected_2m_reference_land_pct,30,0.4,12,5,0.5833333333333333,4.8,0.6,2.0,5.0,7.0,0.7028297170282972
+baseline 30-station primary sensitivity,mask_below_2m_reference_land_pct,30,0.1,3,0,1.0,0.3,0.9,0.0,0.0,1.0,0.7202279772022798
+baseline 30-station primary sensitivity,mask_below_2m_reference_land_pct,30,0.15,5,2,0.6,0.8333333333333334,0.8333333333333334,0.0,1.0,2.0,0.9782021797820218
+baseline 30-station primary sensitivity,mask_below_2m_reference_land_pct,30,0.2,6,2,0.6666666666666667,1.2,0.8,0.0,1.0,3.0,0.9283071692830717
+baseline 30-station primary sensitivity,mask_below_2m_reference_land_pct,30,0.25,8,4,0.5,2.1333333333333333,0.7333333333333334,0.0,2.0,4.0,0.9835016498350165
+baseline 30-station primary sensitivity,mask_below_2m_reference_land_pct,30,0.3,9,4,0.5555555555555556,2.7,0.7,1.0,3.0,5.0,0.9388061193880612
+baseline 30-station primary sensitivity,mask_below_2m_reference_land_pct,30,0.35,11,5,0.5454545454545454,4.033333333333333,0.6333333333333333,2.0,4.0,6.0,0.8718128187181282
+baseline 30-station primary sensitivity,mask_below_2m_reference_land_pct,30,0.4,12,5,0.5833333333333333,4.8,0.6,2.0,5.0,7.0,0.7021297870212979
+baseline 30-station primary sensitivity,mask_connected_2m_conditional_pct,30,0.1,3,0,1.0,0.3,0.9,0.0,0.0,1.0,0.7250274972502749
+baseline 30-station primary sensitivity,mask_connected_2m_conditional_pct,30,0.15,5,1,0.8,0.8333333333333334,0.8333333333333334,0.0,1.0,2.0,0.8171182881711829
+baseline 30-station primary sensitivity,mask_connected_2m_conditional_pct,30,0.2,6,1,0.8333333333333334,1.2,0.8,0.0,1.0,3.0,0.6514348565143485
+baseline 30-station primary sensitivity,mask_connected_2m_conditional_pct,30,0.25,8,2,0.75,2.1333333333333333,0.7333333333333334,0.0,2.0,4.0,0.6363363663633637
+baseline 30-station primary sensitivity,mask_connected_2m_conditional_pct,30,0.3,9,2,0.7777777777777778,2.7,0.7,1.0,3.0,5.0,0.44015598440155984
+baseline 30-station primary sensitivity,mask_connected_2m_conditional_pct,30,0.35,11,3,0.7272727272727273,4.033333333333333,0.6333333333333333,2.0,4.0,6.0,0.34126587341265874
+baseline 30-station primary sensitivity,mask_connected_2m_conditional_pct,30,0.4,12,4,0.6666666666666667,4.8,0.6,2.0,5.0,7.0,0.41745825417458254
+baseline 30-station primary sensitivity,mask_connected_2m_area_km2,30,0.1,3,0,1.0,0.3,0.9,0.0,0.0,1.0,0.7136286371362863
+baseline 30-station primary sensitivity,mask_connected_2m_area_km2,30,0.15,5,2,0.6,0.8333333333333334,0.8333333333333334,0.0,1.0,2.0,0.9794020597940206
+baseline 30-station primary sensitivity,mask_connected_2m_area_km2,30,0.2,6,2,0.6666666666666667,1.2,0.8,0.0,1.0,3.0,0.9231076892310769
+baseline 30-station primary sensitivity,mask_connected_2m_area_km2,30,0.25,8,4,0.5,2.1333333333333333,0.7333333333333334,0.0,2.0,4.0,0.9826017398260174
+baseline 30-station primary sensitivity,mask_connected_2m_area_km2,30,0.3,9,4,0.5555555555555556,2.7,0.7,1.0,3.0,5.0,0.9404059594040596
+baseline 30-station primary sensitivity,mask_connected_2m_area_km2,30,0.35,11,5,0.5454545454545454,4.033333333333333,0.6333333333333333,2.0,4.0,7.0,0.8703129687031297
+baseline 30-station primary sensitivity,mask_connected_2m_area_km2,30,0.4,12,6,0.5,4.8,0.6,2.0,5.0,7.0,0.8971102889711029

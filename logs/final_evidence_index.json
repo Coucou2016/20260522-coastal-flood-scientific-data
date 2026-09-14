@@ -1,0 +1,331 @@
+{
+  "passed": true,
+  "errors": [],
+  "warnings": [],
+  "self_outputs": [
+    "logs/final_evidence_index.md",
+    "logs/final_evidence_index.json"
+  ],
+  "evidence": [
+    {
+      "role": "Gate report",
+      "path": "logs/publication_gate.txt",
+      "kind": "text",
+      "required": true,
+      "contextual": true,
+      "present": true,
+      "passed": false,
+      "detail": "contains failure wording"
+    },
+    {
+      "role": "Gate report JSON",
+      "path": "logs/publication_gate.json",
+      "kind": "json",
+      "required": true,
+      "contextual": true,
+      "present": true,
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "role": "Completion status",
+      "path": "completion_status.json",
+      "kind": "json",
+      "required": true,
+      "contextual": false,
+      "present": true,
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "role": "Publication runtime requirements",
+      "path": "requirements-publication.txt",
+      "kind": "text",
+      "required": true,
+      "contextual": false,
+      "present": true,
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "role": "Python wrapper entrypoint",
+      "path": "scripts/run_python_checked.cmd",
+      "kind": "text",
+      "required": true,
+      "contextual": false,
+      "present": true,
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "role": "Environment diagnostics helper",
+      "path": "scripts/diagnose_publication_environment.cmd",
+      "kind": "text",
+      "required": true,
+      "contextual": false,
+      "present": true,
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "role": "Requirements install helper",
+      "path": "scripts/install_publication_requirements.cmd",
+      "kind": "text",
+      "required": true,
+      "contextual": false,
+      "present": true,
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "role": "Package manifest",
+      "path": "package_manifest.json",
+      "kind": "json",
+      "required": false,
+      "contextual": false,
+      "present": false,
+      "passed": true,
+      "detail": "missing"
+    },
+    {
+      "role": "Packaged manifest",
+      "path": "publication_package/package_manifest.json",
+      "kind": "json",
+      "required": false,
+      "contextual": false,
+      "present": true,
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "role": "Final archive manifest",
+      "path": "final_archive_manifest.json",
+      "kind": "json",
+      "required": true,
+      "contextual": false,
+      "present": true,
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "role": "Publication ZIP",
+      "path": "publication_package.zip",
+      "kind": "file",
+      "required": true,
+      "contextual": false,
+      "present": true,
+      "passed": true,
+      "detail": "11107249 bytes"
+    },
+    {
+      "role": "Gate scripts audit",
+      "path": "logs/publication_gate_scripts_audit.json",
+      "kind": "json",
+      "required": true,
+      "contextual": false,
+      "present": true,
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "role": "Environment diagnostics log",
+      "path": "logs/publication_environment_diagnostics.txt",
+      "kind": "text",
+      "required": true,
+      "contextual": true,
+      "present": true,
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "role": "Python runtime dependencies audit",
+      "path": "logs/python_runtime_dependencies_audit.json",
+      "kind": "json",
+      "required": true,
+      "contextual": false,
+      "present": true,
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "role": "Figure inventory",
+      "path": "logs/manuscript_figure_inventory.json",
+      "kind": "json",
+      "required": true,
+      "contextual": false,
+      "present": true,
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "role": "Figure deliverables audit",
+      "path": "logs/figure_deliverables_audit.json",
+      "kind": "json",
+      "required": true,
+      "contextual": false,
+      "present": true,
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "role": "Figure visual-quality audit",
+      "path": "logs/figure_visual_quality_audit.json",
+      "kind": "json",
+      "required": true,
+      "contextual": false,
+      "present": true,
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "role": "Manual figure review sheet",
+      "path": "logs/manual_figure_review_sheet.json",
+      "kind": "json",
+      "required": true,
+      "contextual": false,
+      "present": true,
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "role": "Figure/source-data audit",
+      "path": "logs/figure_data_integrity_audit.json",
+      "kind": "json",
+      "required": true,
+      "contextual": false,
+      "present": true,
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "role": "Manuscript text audit",
+      "path": "logs/manuscript_submission_text_audit.json",
+      "kind": "json",
+      "required": true,
+      "contextual": false,
+      "present": true,
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "role": "Reference metadata audit",
+      "path": "logs/reference_metadata_audit.json",
+      "kind": "json",
+      "required": true,
+      "contextual": false,
+      "present": true,
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "role": "Journal submission metadata audit",
+      "path": "logs/journal_submission_metadata_audit.json",
+      "kind": "json",
+      "required": true,
+      "contextual": false,
+      "present": true,
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "role": "Artifact consistency audit",
+      "path": "logs/submission_artifact_consistency_audit.json",
+      "kind": "json",
+      "required": true,
+      "contextual": false,
+      "present": true,
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "role": "Final QC acceptance audit",
+      "path": "logs/final_qc_acceptance_audit.json",
+      "kind": "json",
+      "required": true,
+      "contextual": false,
+      "present": true,
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "role": "Repository deposit readiness audit",
+      "path": "logs/repository_deposit_readiness_audit.json",
+      "kind": "json",
+      "required": true,
+      "contextual": false,
+      "present": true,
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "role": "Package validation log",
+      "path": "logs/publication_package_validation.txt",
+      "kind": "text",
+      "required": true,
+      "contextual": false,
+      "present": true,
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "role": "Final archive validation log",
+      "path": "logs/final_archive_validation.txt",
+      "kind": "text",
+      "required": true,
+      "contextual": false,
+      "present": true,
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "role": "Archive handoff audit",
+      "path": "logs/archive_handoff_audit.json",
+      "kind": "json",
+      "required": true,
+      "contextual": false,
+      "present": true,
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "role": "Publication readiness summary",
+      "path": "logs/publication_readiness_summary.json",
+      "kind": "json",
+      "required": true,
+      "contextual": false,
+      "present": true,
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "role": "Final QC acceptance record",
+      "path": "manuscript/final_qc_acceptance.json",
+      "kind": "json",
+      "required": true,
+      "contextual": false,
+      "present": true,
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "role": "Gate evidence manifest",
+      "path": "publication_gate_evidence/evidence_manifest.json",
+      "kind": "json",
+      "required": true,
+      "contextual": true,
+      "present": true,
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "role": "Gate evidence manifest SHA256 sidecar",
+      "path": "publication_gate_evidence/evidence_manifest.sha256",
+      "kind": "text",
+      "required": true,
+      "contextual": true,
+      "present": true,
+      "passed": true,
+      "detail": "ok"
+    }
+  ]
+}

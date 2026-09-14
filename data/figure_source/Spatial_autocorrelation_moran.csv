@@ -1,0 +1,13 @@
+variable,distance_threshold_km,moran_i,expected_i_under_randomization,permutation_two_sided_p,null_q025,null_q975,weight_definition,n_permutations
+coast_rp_rp10_m,150.0,0.3018518247659577,-0.014925373134328358,0.001,-0.1746844907420179,0.16133953563614867,row-standardized binary great-circle distance; isolated stations linked to nearest neighbour,4999
+below_reference_land_pct,150.0,0.7582929470954262,-0.014925373134328358,0.0002,-0.134037437956884,0.18154156110547132,row-standardized binary great-circle distance; isolated stations linked to nearest neighbour,4999
+conditional_connectivity_pct,150.0,-0.018932874773393633,-0.014925373134328358,0.9586,-0.1497756866735345,0.17845914133092483,row-standardized binary great-circle distance; isolated stations linked to nearest neighbour,4999
+connected_reference_land_pct,150.0,0.5543939407441943,-0.014925373134328358,0.0012,-0.11635900712500344,0.17935335938814892,row-standardized binary great-circle distance; isolated stations linked to nearest neighbour,4999
+connected_area_km2,150.0,0.6259262018062565,-0.014925373134328358,0.0002,-0.10423322979836465,0.15649934073771224,row-standardized binary great-circle distance; isolated stations linked to nearest neighbour,4999
+connected_window_pct,150.0,0.6253289925963598,-0.014925373134328358,0.0002,-0.10183353016869615,0.1611978895285848,row-standardized binary great-circle distance; isolated stations linked to nearest neighbour,4999
+coast_rp_rp10_m,250.0,0.10958565455513808,-0.014925373134328358,0.0304,-0.11225137812435348,0.10606327141741488,row-standardized binary great-circle distance; isolated stations linked to nearest neighbour,4999
+below_reference_land_pct,250.0,0.5429804112915675,-0.014925373134328358,0.0002,-0.09427546256235106,0.10886966717459104,row-standardized binary great-circle distance; isolated stations linked to nearest neighbour,4999
+conditional_connectivity_pct,250.0,0.018867648732500564,-0.014925373134328358,0.4802,-0.10390684220630604,0.1056407958523894,row-standardized binary great-circle distance; isolated stations linked to nearest neighbour,4999
+connected_reference_land_pct,250.0,0.41787585650061587,-0.014925373134328358,0.0006,-0.0850604920462482,0.09983821018647498,row-standardized binary great-circle distance; isolated stations linked to nearest neighbour,4999
+connected_area_km2,250.0,0.392797056443283,-0.014925373134328358,0.0002,-0.07755872545986711,0.08307608780690717,row-standardized binary great-circle distance; isolated stations linked to nearest neighbour,4999
+connected_window_pct,250.0,0.3925427489691864,-0.014925373134328358,0.0002,-0.07807522219639636,0.08160961674827136,row-standardized binary great-circle distance; isolated stations linked to nearest neighbour,4999

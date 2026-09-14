@@ -1,0 +1,39 @@
+Python Runtime Dependencies Audit
+=================================
+
+Passed: True
+External modules checked: 16
+Errors: 0
+Warnings: 0
+Notes: 0
+
+Errors
+------
+
+Warnings
+--------
+
+Notes
+-----
+
+Modules
+-------
+- PIL: scripts/audit_figure_data_integrity.py, scripts/audit_figure_visual_quality.py, scripts/build_academic_report.py, scripts/build_standalone_paper.py, scripts/generate_html_reports.py, scripts/make_cee_main_figures.py
+- bs4: scripts/build_tidal_metadata_sources.py
+- geopandas: scripts/add_advanced_terrain_rank_diagnostics.py, scripts/add_screening_robustness_diagnostics.py, scripts/build_nw_europe_extended_diagnostics.py, scripts/download_deltadtm_tiles.py, scripts/inundation_sensitivity.py
+- matplotlib: scripts/add_local_dtm_validation.py, scripts/build_standalone_paper.py, scripts/generate_combo1_figures.py, scripts/generate_paper_figures.py, scripts/inundation_sensitivity.py, scripts/make_advanced_submission_figures.py, scripts/make_cee_main_figures.py, scripts/make_cee_refined_figures.py
+- numpy: scripts/add_advanced_terrain_rank_diagnostics.py, scripts/add_local_dtm_validation.py, scripts/add_mask_aware_terrain_diagnostics.py, scripts/add_screening_robustness_diagnostics.py, scripts/add_submission_polish_diagnostics.py, scripts/add_uncertainty_diagnostics.py, scripts/build_nw_europe_extended_diagnostics.py, scripts/combo1_quality_audit.py, scripts/fetch_open_meteo_climatology.py, scripts/generate_combo1_figures.py, scripts/inundation_sensitivity.py, scripts/make_advanced_submission_figures.py, scripts/make_cee_main_figures.py, scripts/make_cee_refined_figures.py, scripts/match_stations_to_coastrp.py, scripts/merge_gssr_coastrp.py
+- pandas: scripts/add_advanced_terrain_rank_diagnostics.py, scripts/add_local_dtm_validation.py, scripts/add_mask_aware_terrain_diagnostics.py, scripts/add_screening_robustness_diagnostics.py, scripts/add_submission_polish_diagnostics.py, scripts/add_tidal_coverage_diagnostics.py, scripts/add_uncertainty_diagnostics.py, scripts/audit_current_outputs.py, scripts/audit_goal_acceptance.py, scripts/audit_publication_readiness.py, scripts/build_academic_report.py, scripts/build_nw_europe_extended_diagnostics.py, scripts/build_reproducibility_package.py, scripts/build_research_report.py, scripts/build_standalone_paper.py, scripts/build_tidal_metadata_sources.py, scripts/combo1_quality_audit.py, scripts/combo1_utils.py, scripts/fetch_open_meteo_climatology.py, scripts/generate_combo1_figures.py, scripts/generate_html_reports.py, scripts/generate_paper_figures.py, scripts/make_advanced_submission_figures.py, scripts/make_cee_main_figures.py, scripts/make_cee_refined_figures.py, scripts/match_stations_to_coastrp.py, scripts/merge_gssr_coastrp.py, scripts/run_combo1_pipeline.py, scripts/write_current_acceptance_status.py
+- py7zr: scripts/combo1_utils.py
+- pyproj: scripts/add_local_dtm_validation.py
+- rasterio: scripts/add_advanced_terrain_rank_diagnostics.py, scripts/add_local_dtm_validation.py, scripts/add_mask_aware_terrain_diagnostics.py, scripts/combo1_quality_audit.py, scripts/inundation_sensitivity.py
+- requests: scripts/add_local_dtm_validation.py, scripts/download_open_meteo.py
+- scipy: scripts/add_advanced_terrain_rank_diagnostics.py, scripts/add_local_dtm_validation.py, scripts/add_mask_aware_terrain_diagnostics.py, scripts/add_submission_polish_diagnostics.py, scripts/add_uncertainty_diagnostics.py, scripts/fetch_open_meteo_climatology.py, scripts/make_cee_refined_figures.py, scripts/match_stations_to_coastrp.py, scripts/merge_gssr_coastrp.py
+- shapefile: scripts/make_cee_main_figures.py
+- shapely: scripts/add_advanced_terrain_rank_diagnostics.py, scripts/add_screening_robustness_diagnostics.py, scripts/build_nw_europe_extended_diagnostics.py, scripts/download_deltadtm_tiles.py, scripts/inundation_sensitivity.py
+- urllib3: scripts/download_open_meteo.py
+- xarray: scripts/add_screening_robustness_diagnostics.py, scripts/add_submission_polish_diagnostics.py, scripts/build_nw_europe_extended_diagnostics.py, scripts/combo1_quality_audit.py, scripts/make_cee_refined_figures.py, scripts/match_stations_to_coastrp.py
+- yaml: scripts/combo1_utils.py, scripts/download_combo1.py, scripts/download_open_meteo.py, scripts/generate_html_reports.py, scripts/make_cee_main_figures.py, scripts/make_cee_refined_figures.py, scripts/verify_downloads.py
+
+Optional Modules
+----------------

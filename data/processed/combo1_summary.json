@@ -1,0 +1,97 @@
+{
+  "generated_at": "2026-05-22T14:49:04.251159+00:00",
+  "pipeline": "combo1",
+  "outputs": {
+    "coast_rp_nearest.parquet": 14119,
+    "coast_rp_nearest.json": 6486,
+    "gssr_daily_merged.parquet": 1524963,
+    "rp_comparison.parquet": 9137,
+    "rp_comparison.json": 4212,
+    "rp_correlation_meta.json": 82,
+    "drivers_daily.parquet": 874903,
+    "driver_surge_correlations.parquet": 4206,
+    "inundation_sensitivity.json": 1535
+  },
+  "inundation_dem_source": "DeltaDTM:DeltaDTM_v1_1_N51E000.tif",
+  "rp_comparison": {
+    "n_stations": 8,
+    "mean_rp10_bias_m": -1.9494266943986616,
+    "mean_rp100_bias_m": -2.195484383978027,
+    "pearson_rp10": 0.1086455974930479,
+    "n_long_match": 0
+  },
+  "met_driver_correlations": [
+    {
+      "station_id": "aberdeen-p038-uk",
+      "n_days": 11323,
+      "spearman_surge_vs_pressure": -0.7239702256902232,
+      "spearman_surge_vs_wind": 0.42204956102521823,
+      "spearman_surge_vs_precip": 0.25246800146067444
+    },
+    {
+      "station_id": "brest-france",
+      "n_days": 11323,
+      "spearman_surge_vs_pressure": -0.7960281479479313,
+      "spearman_surge_vs_wind": 0.44180630283750655,
+      "spearman_surge_vs_precip": 0.5851041856934758
+    },
+    {
+      "station_id": "charleston-sc",
+      "n_days": 11323,
+      "spearman_surge_vs_pressure": 0.04069095835780166,
+      "spearman_surge_vs_wind": 0.0543052401769802,
+      "spearman_surge_vs_precip": 0.0682089021305579
+    },
+    {
+      "station_id": "hoekvanholla-hvh-nl",
+      "n_days": 11323,
+      "spearman_surge_vs_pressure": -0.5387915683023761,
+      "spearman_surge_vs_wind": 0.6101473454708268,
+      "spearman_surge_vs_precip": 0.48617169982015596
+    },
+    {
+      "station_id": "hong-kong-b",
+      "n_days": 11323,
+      "spearman_surge_vs_pressure": 0.15917196717456508,
+      "spearman_surge_vs_wind": 0.3312710060412805,
+      "spearman_surge_vs_precip": -0.07904440560667571
+    },
+    {
+      "station_id": "newlyn-p001-uk",
+      "n_days": 11323,
+      "spearman_surge_vs_pressure": -0.8311444855154034,
+      "spearman_surge_vs_wind": 0.36415430951178374,
+      "spearman_surge_vs_precip": 0.5304353573854693
+    },
+    {
+      "station_id": "newyork-the-battery",
+      "n_days": 11323,
+      "spearman_surge_vs_pressure": -0.26136722754246877,
+      "spearman_surge_vs_wind": 0.17541742274840616,
+      "spearman_surge_vs_precip": 0.35495724139349644
+    },
+    {
+      "station_id": "sheerness-p015-uk",
+      "n_days": 11323,
+      "spearman_surge_vs_pressure": -0.22837870654765507,
+      "spearman_surge_vs_wind": 0.5115587646377782,
+      "spearman_surge_vs_precip": 0.1587619426074351
+    }
+  ],
+  "figures": [
+    "figures\\combo1_driver_correlation_heatmap.png",
+    "figures\\combo1_gssr_coastrp_validation.png",
+    "figures\\combo1_hydrograph_sheerness.png",
+    "figures\\combo1_rp10_comparison.png",
+    "figures\\combo1_rp10_dual_region.png",
+    "figures\\combo1_rp_multi_station.png",
+    "figures\\inundation_sensitivity_sheerness-p015-uk.png"
+  ],
+  "html_report_primary": "reports\\combo1_complete_report.html",
+  "html_reports": [
+    "reports\\combo1_analysis_report.html",
+    "reports\\combo1_complete_report.html",
+    "reports\\combo1_data_report.html",
+    "reports\\index.html"
+  ]
+}

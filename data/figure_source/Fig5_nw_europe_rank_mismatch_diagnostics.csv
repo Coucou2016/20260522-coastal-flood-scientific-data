@@ -1,0 +1,2 @@
+n_sites,top_fraction_used,top_n,top_water_sites,top_terrain_sites,top_rank_mismatch_fraction,spearman_coastrp_vs_connected_2m,kendall_coastrp_vs_connected_2m,spearman_D10_vs_connected_2m
+30,0.2,6,boulogne-sur-mer;cuxhaven-germany;dieppe;le-havre;roscoff;sheerness-p015-uk,delfzijl-del-nl;denhelder-hel-nl;dunkerque;portpatrick-p063-uk;sheerness-p015-uk;wick-p035-uk,0.8333333333333334,-0.34371523915461627,-0.25517241379310346,-0.3868743047830923

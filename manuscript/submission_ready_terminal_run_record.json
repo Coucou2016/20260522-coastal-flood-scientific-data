@@ -1,0 +1,21 @@
+{
+  "status": "ready_for_submission",
+  "runner": "Administrator",
+  "run_date": "2026-06-16",
+  "command": "scripts\\run_submission_ready_gate.cmd",
+  "working_directory": "E:\\Projects\\20260522-coastal-flood-scientific-data",
+  "exit_code": 0,
+  "submission_ready_report_passed": true,
+  "checked_outputs": {
+    "logs\\submission_ready_gate_latest.log": true,
+    "logs\\submission_ready_gate_report.md": true,
+    "logs\\submission_ready_gate_report.json": true,
+    "logs\\submission_ready_failure_summary.md": true,
+    "submission_ready_gate_evidence\\evidence_manifest.json": true,
+    "submission_ready_gate_evidence\\evidence_manifest.sha256": true,
+    "publication_package.zip": true,
+    "final_archive_manifest.json": true
+  },
+  "notes": "Recorded automatically after successful submission-ready gate outputs were present.",
+  "blocking_follow_up": []
+}

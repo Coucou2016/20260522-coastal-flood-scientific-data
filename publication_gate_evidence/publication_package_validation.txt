@@ -1,0 +1,11 @@
+Command: python scripts/validate_publication_package.py
+
+Exit code: 0
+
+STDOUT:
+PUBLICATION PACKAGE VALIDATION: PASS
+Validated 68 package files and archive E:\Projects\20260522-coastal-flood-scientific-data\publication_package.zip.
+
+
+STDERR:
+

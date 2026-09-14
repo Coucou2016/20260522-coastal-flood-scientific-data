@@ -1,0 +1,13 @@
+{
+  "generated_utc": "2026-06-15T16:42:23+00:00",
+  "archive": "publication_package.zip",
+  "bytes": 11107249,
+  "sha256": "ab2e02ed4c6f8863ac450a5f7e048474453beba8c73c8cb7c192d4ead5937182",
+  "publication_package_zip": {
+    "path": "publication_package.zip",
+    "bytes": 11107249,
+    "sha256": "ab2e02ed4c6f8863ac450a5f7e048474453beba8c73c8cb7c192d4ead5937182"
+  },
+  "package_dir": "publication_package",
+  "validation_log": "logs/final_archive_validation.txt"
+}

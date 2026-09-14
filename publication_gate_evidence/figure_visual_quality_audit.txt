@@ -1,0 +1,17 @@
+Figure Visual Quality Audit
+===========================
+
+Passed: True
+Images analyzed: 5
+Errors: 0
+Warnings: 0
+Notes: 0
+
+Errors
+------
+
+Warnings
+--------
+
+Notes
+-----

@@ -1,0 +1,219 @@
+{
+  "summary": {
+    "generated_at": "2026-08-23T14:48:21",
+    "checks_total": 12,
+    "checks_failed": 0,
+    "primary_n": 68,
+    "resolved_n": 74,
+    "gssr_qualified_n": 44,
+    "rho_fraction": -0.36313318318891474,
+    "rho_area": -0.32942703362980497,
+    "top_n": 14,
+    "top_overlap": 1,
+    "local_retained": 3,
+    "local_changed": 4
+  },
+  "checks": [
+    {
+      "check": "D10 arithmetic",
+      "status": "PASS",
+      "evidence": "8 focal rows; maximum error=4.441e-16 m"
+    },
+    {
+      "check": "Primary sample",
+      "status": "PASS",
+      "evidence": "resolved seed and match <=6 km: n=68"
+    },
+    {
+      "check": "Resolved sample",
+      "status": "PASS",
+      "evidence": "all resolved official-mask seeds: n=74"
+    },
+    {
+      "check": "Terrain area identity",
+      "status": "PASS",
+      "evidence": "max absolute area error=7.105e-15 km2"
+    },
+    {
+      "check": "Spearman recomputation",
+      "status": "PASS",
+      "evidence": "fraction=-0.363133; area=-0.329427"
+    },
+    {
+      "check": "Top-20% overlap",
+      "status": "PASS",
+      "evidence": "k=14; independently recomputed overlap=1/14"
+    },
+    {
+      "check": "Tidal metadata boundary",
+      "status": "PASS",
+      "evidence": "source-verified stations=13"
+    },
+    {
+      "check": "Local terrain comparison",
+      "status": "PASS",
+      "evidence": "n=7; retained=3; changed=4"
+    },
+    {
+      "check": "Vertical-datum disclosure",
+      "status": "PASS",
+      "evidence": "DeltaDTM, Environment Agency and AHN native references are named; no harmonization or validation is claimed"
+    },
+    {
+      "check": "Reference-use boundary",
+      "status": "PASS",
+      "evidence": "Reference manuscripts are hashed and used only for article form, background and method-boundary citations"
+    },
+    {
+      "check": "Official DeltaDTM mask",
+      "status": "PASS",
+      "evidence": "official archive and classes 0/1/2/3/255 used"
+    },
+    {
+      "check": "Canonical figure provenance",
+      "status": "PASS",
+      "evidence": "manifest figures=7; Times-family PDF fonts=True"
+    }
+  ],
+  "figures": [
+    [
+      "Figure 1",
+      "6328 x 3608",
+      "yes",
+      "0e66ea5003d17afd",
+      "scripts/make_cee_refined_figures.py::make_fig1",
+      "data/figure_source/Fig6_mask_aware_terrain_area_metrics.csv"
+    ],
+    [
+      "Figure 2",
+      "5502 x 3627",
+      "yes",
+      "d83916af7ac9ffcd",
+      "scripts/make_advanced_submission_figures.py::make_figure4",
+      "data/figure_source/Fig6_mask_aware_rank_metrics_fraction_area_samples.csv"
+    ],
+    [
+      "Figure 3",
+      "5478 x 4055",
+      "yes",
+      "ab68d9ed070a084b",
+      "scripts/make_advanced_submission_figures.py::make_figure3",
+      "data/figure_source/Fig6_archetype_map_selection.csv"
+    ],
+    [
+      "Figure 4",
+      "4792 x 2136",
+      "yes",
+      "08ea118da89b7fe9",
+      "scripts/add_local_dtm_validation.py::write_validation_figure",
+      "data/figure_source/TableS_local_dtm_validation.csv"
+    ],
+    [
+      "Supplementary Figure S1",
+      "6408 x 2607",
+      "yes",
+      "67a7555aa63b2aa2",
+      "scripts/make_cee_refined_figures.py::make_fig2",
+      "data/figure_source/Fig2_water_level_divergence_with_uncertainty.csv"
+    ],
+    [
+      "Supplementary Figure S2",
+      "5122 x 2354",
+      "yes",
+      "429853a153bb2e15",
+      "scripts/make_cee_refined_figures.py::make_fig3",
+      "data/figure_source/Fig3_driver_correlations.csv"
+    ],
+    [
+      "Supplementary Figure S3",
+      "5403 x 4471",
+      "yes",
+      "52af7ebc30c84507",
+      "scripts/make_advanced_submission_figures.py::make_supplementary_gallery",
+      "data/figure_source/Fig6_mask_aware_terrain_area_metrics.csv"
+    ]
+  ],
+  "core_inputs": [
+    [
+      "data/raw/coast_rp/extracted/COAST-RP.nc",
+      "2,817,029",
+      "a8a4c4c8f4d613d8f87ab9c29b778766ac80198898a74eee33af146e0c239066"
+    ],
+    [
+      "data/raw/coast_rp/extracted/COAST-RP_ETC.nc",
+      "2,816,970",
+      "16693340f07d45cfede80dbe84706c50cb1dda5f19d355e30d78a5691b97d620"
+    ],
+    [
+      "data/raw/coast_rp/extracted/COAST-RP_TC.nc",
+      "1,159,019",
+      "f2ce9401c00f715115df24e02772f5bd3daa796402e751d84a3e43e1f3eb7fcf"
+    ],
+    [
+      "data/raw/deltadtm/zips/mask_tiles.zip",
+      "428,178,062",
+      "3f8c6999f90346359e60cc6c757786d43fd1cb65e4ab13125faaa80606487775"
+    ],
+    [
+      "data/raw/local_dtm/delfzijl-del-nl_local_dtm_10m.tif",
+      "2,204,083",
+      "a8b3589a24ca9dbcb00d18e24c916e193d37a9b73034c185bf29fcf80a9cbb35"
+    ],
+    [
+      "data/raw/local_dtm/denhelder-hel-nl_local_dtm_10m.tif",
+      "1,310,648",
+      "b950e177da667509c85bb8a4dc77c4dcbac5b56d85507ea706e968568af15e79"
+    ],
+    [
+      "data/raw/local_dtm/hoekvanholla-hvh-nl_local_dtm_10m.tif",
+      "1,848,802",
+      "e960ac322ae8e703055a75739d6dee6a65c2ee367e9dc0dd8af1c7f6ff600563"
+    ],
+    [
+      "data/raw/local_dtm/immingham-p026-uk_local_dtm_10m.tif",
+      "9,437,675",
+      "8567cb377b27480b51f3dbee6ff5501784f3eed237e0ec7e8058ff09789ed6e7"
+    ],
+    [
+      "data/raw/local_dtm/lowestoft-p024-uk_local_dtm_10m.tif",
+      "6,291,923",
+      "d95f97c91d4df295e6113b98fccbdab4d3bedac1a35c3751464e0b8e61ab2819"
+    ],
+    [
+      "data/raw/local_dtm/newlyn-p001-uk_local_dtm_10m.tif",
+      "9,437,675",
+      "fef345c91868dd64e5a2e11180ad066b7a1f8ce92305cf26990d70fd0c9e51c2"
+    ],
+    [
+      "data/raw/local_dtm/sheerness-p015-uk_local_dtm_10m.tif",
+      "9,437,675",
+      "40c81f2a969e0044184d5fb40ebc11728dca5376d2707386e29c90def027cadd"
+    ]
+  ],
+  "reference_boundaries": [
+    [
+      "仿照撰写的CEE论文/s43247-025-02326-w.md",
+      "ee2ca20c370519f44d48a2c74ce4ffe12cede4e725c8b1c065dea3a6a3601d65",
+      "CEE article structure, pacing and cautious reporting",
+      "No station values, calculated results or wording copied into project results"
+    ],
+    [
+      "仿照撰写的CEE论文/s43247-025-02326-w.pdf",
+      "50f9f142de0381e887b25a6c13e1d5684fd994470d0e35b18c4b8b8a63377e9d",
+      "Rendered CEE layout and figure-caption benchmark",
+      "No source-paper data used as project observations"
+    ],
+    [
+      "仿照撰写的CEE论文/0823-额外参考/s41586-026-10196-1.md",
+      "ccafbf7712524ed1ed6bda415b5afac02d404ceea31f866bbddf73240dc89a8a",
+      "Common-vertical-reference problem and DeltaDTM context",
+      "Cited as external evidence; no exposure estimates transferred"
+    ],
+    [
+      "仿照撰写的CEE论文/0823-额外参考/nhess-26-1859-2026.md",
+      "af65cc58b7f198d226994d4f03e921f6469f313483dfefafc0537d6901fbb183",
+      "Dynamic Pan-European hazard-modelling context",
+      "Cited to delimit static screening; no hazard maps or values transferred"
+    ]
+  ]
+}

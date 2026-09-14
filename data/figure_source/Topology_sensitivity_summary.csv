@@ -1,0 +1,4 @@
+terrain_metric,n_sites,rank_spearman_4n_vs_8n,top20_n,top20_overlap,membership_changes,maximum_eight_minus_four,median_eight_minus_four
+connected_reference_land_pct,68,0.9611024163072106,14,11,6,44.056924509287,0.007321710497983358
+connected_area_km2,68,0.9668282627781806,14,11,6,23.549765793746204,0.0038732028256877604
+conditional_connectivity_pct,68,0.9005714150917177,14,13,2,91.52691862860064,0.5813322795299101

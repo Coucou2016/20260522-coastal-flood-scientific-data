@@ -1,0 +1,60 @@
+{
+  "station_id": "sheerness-p015-uk",
+  "station_name": "Sheerness",
+  "country": "UK",
+  "lat": 51.442,
+  "lon": 0.74306,
+  "bbox": [
+    0.70306,
+    51.402,
+    0.7830600000000001,
+    51.482
+  ],
+  "dem_source": "DeltaDTM:DeltaDTM_v1_1_N51E000.tif",
+  "tile_files": [
+    "DeltaDTM_v1_1_N51E000.tif"
+  ],
+  "raster_meta": {
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.00041666666666666664,
+      0.0002777777777777778
+    ],
+    "nodata": -9999.0,
+    "tile_file": "DeltaDTM_v1_1_N51E000.tif"
+  },
+  "deltadtm_tiles_in_bbox": 1,
+  "slr_levels_m": [
+    0.5,
+    1.0,
+    2.0
+  ],
+  "dem_stats": {
+    "n_valid_cells": 24432,
+    "n_total_cells": 55296,
+    "valid_fraction": 0.4418402777777778,
+    "elev_min_m": -6.6823906898498535,
+    "elev_max_m": 30.0,
+    "elev_mean_m": 4.455923747832634,
+    "elev_median_m": 2.4701616764068604,
+    "elev_below_0m_fraction": 0.006262278978388998,
+    "elev_below_2m_fraction": 0.410322527832351
+  },
+  "flooded_fraction_all_valid": {
+    "0.5": 0.020464963981663392,
+    "1.0": 0.09765880812049771,
+    "2.0": 0.410322527832351
+  },
+  "flooded_fraction_coastal_lowland": {
+    "0.5": 0.02133651958692498,
+    "1.0": 0.10181787146880601,
+    "2.0": 0.42779721771784585
+  },
+  "flooded_fraction": {
+    "0.5": 0.02133651958692498,
+    "1.0": 0.10181787146880601,
+    "2.0": 0.42779721771784585
+  },
+  "figure": "E:\\Projects\\20260522-coastal-flood-scientific-data\\figures\\inundation_sensitivity_sheerness-p015-uk.png",
+  "geojson": "E:\\Projects\\20260522-coastal-flood-scientific-data\\data\\processed\\inundation_sheerness-p015-uk.geojson"
+}

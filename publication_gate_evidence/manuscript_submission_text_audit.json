@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "strict": false,
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "checked_files": [
+    "manuscript/process_terrain_coastal_flood_CEE_manuscript.md",
+    "manuscript/process_terrain_coastal_flood_CEE_manuscript_review.html",
+    "manuscript/title_page_and_declarations_draft.md",
+    "manuscript/data_code_availability_final_draft.md",
+    "manuscript/ai_use_statement_draft.md",
+    "manuscript/supplementary_information_draft.md",
+    "manuscript/target_journal_cee_checklist.md",
+    "manuscript/publication_readiness_audit.md",
+    "manuscript/reference_verification.md",
+    "manuscript/figure_source_data_dictionary.md"
+  ]
+}

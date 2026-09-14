@@ -1,0 +1,13 @@
+Journal Submission Metadata Audit
+=================================
+
+Passed: True
+Files checked: 9
+Errors: 0
+Warnings: 0
+
+Errors
+------
+
+Warnings
+--------

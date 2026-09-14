@@ -1,0 +1,178 @@
+## frozen 68-station analysis
+Command: E:\Miniconda3\python.exe scripts/rebuild_frozen_primary_analysis.py
+Exit: 0
+
+[1/74] frozen terrain grid esbjerg-130121-denmark
+[2/74] frozen terrain grid denhelder-hel-nl
+[3/74] frozen terrain grid lerwick-p041-uk
+[4/74] frozen terrain grid cuxhaven-germany
+[5/74] frozen terrain grid delfzijl-del-nl
+[6/74] frozen terrain grid portpatrick-p063-uk
+[7/74] frozen terrain grid newlyn-p001-uk
+[8/74] frozen terrain grid fishguard-p055-uk
+[9/74] frozen terrain grid hoekvanholla-hvh-nl
+[10/74] frozen terrain grid milfordhaven-p056-uk
+[11/74] frozen terrain grid tregde-006-norway
+[12/74] frozen terrain grid lowestoft-p024-uk
+[13/74] frozen terrain grid wick-p035-uk
+[14/74] frozen terrain grid stornoway-p042-uk
+[15/74] frozen terrain grid le-conquet
+[16/74] frozen terrain grid brest
+[17/74] frozen terrain grid port-tudy
+[18/74] frozen terrain grid cherbourg
+[19/74] frozen terrain grid saint-nazaire
+[20/74] frozen terrain grid saint-gildas
+[21/74] frozen terrain grid le-havre
+[22/74] frozen terrain grid dunkerque
+[23/74] frozen terrain grid roscoff
+[24/74] frozen terrain grid boulogne-sur-mer
+[25/74] frozen terrain grid dieppe
+[26/74] frozen terrain grid immingham-p026-uk
+[27/74] frozen terrain grid aberdeen-p038-uk
+[28/74] frozen terrain grid millport-p049-uk
+[29/74] frozen terrain grid holyhead-p054-uk
+[30/74] frozen terrain grid sheerness-p015-uk
+[31/74] frozen terrain grid heysham-p050-uk
+[32/74] frozen terrain grid northshields-p032-uk
+[33/74] frozen terrain grid whitby-p174-uk
+[34/74] frozen terrain grid dover-p012-uk
+[35/74] frozen terrain grid ullapool-p043-uk
+[36/74] frozen terrain grid newhaven-p011-uk
+[37/74] frozen terrain grid calais
+[38/74] frozen terrain grid ilfracombe-p061-uk
+[39/74] frozen terrain grid felixstowe-p204-uk
+[40/74] frozen terrain grid cordemais
+[41/74] frozen terrain grid le-pellerin
+[42/74] frozen terrain grid nantes-usine-brulee
+[43/74] frozen terrain grid leith-p034-uk
+[44/74] frozen terrain grid tobermory-p223-uk
+[45/74] frozen terrain grid donges
+[46/74] frozen terrain grid cromer-p183-uk
+[47/74] frozen terrain grid avonmouth-p060-uk
+[48/74] frozen terrain grid hinkleypoint-p003-uk
+[49/74] frozen terrain grid mumbles-p932-uk
+[50/74] frozen terrain grid devonport-p002-uk
+[51/74] frozen terrain grid weymouth-p991-uk
+[52/74] frozen terrain grid barmouth-p923-uk
+[53/74] frozen terrain grid portsmouth-p008-uk
+[54/74] frozen terrain grid malin-head-834a-ireland
+[55/74] frozen terrain grid kinlochbervi-p918-uk
+[56/74] frozen terrain grid porterin-p919-uk
+[57/74] frozen terrain grid workington-p217-uk
+[58/74] frozen terrain grid sthelier-p074-uk
+[59/74] frozen terrain grid gladstone-p234-uk
+[60/74] frozen terrain grid llandudno-p007-uk
+[61/74] frozen terrain grid portellen-p202-uk
+[62/74] frozen terrain grid saint-malo
+[63/74] frozen terrain grid newport-p057-uk
+[64/74] frozen terrain grid portrush-p935-uk
+[65/74] frozen terrain grid bangor-p662-uk
+[66/74] frozen terrain grid stmarys-p231-uk
+[67/74] frozen terrain grid bournemouth-p988-uk
+[68/74] frozen terrain grid concarneau
+[69/74] frozen terrain grid le-crouesty
+[70/74] frozen terrain grid morayfirth-p207-uk
+[71/74] frozen terrain grid harwich-p022-uk
+[72/74] frozen terrain grid portbury-p341-uk
+[73/74] frozen terrain grid montoir-de-bretagne
+[74/74] frozen terrain grid paimboeuf
+
+Primary decomposed associations
+              terrain_metric  n_sites  spearman   kendall  permutation_two_sided_p  top_overlap  top_n
+connected_reference_land_pct       68 -0.333168 -0.210711                 0.006399            1     14
+    below_reference_land_pct       68 -0.309272 -0.187884                 0.008599            1     14
+conditional_connectivity_pct       68  0.108145  0.071727                 0.378762            5     14
+          connected_area_km2       68 -0.340955 -0.208077                 0.004800            1     14
+
+
+## external-review spatial and topology diagnostics
+Command: E:\Miniconda3\python.exe scripts/add_external_review_diagnostics.py
+Exit: 0
+
+External-review diagnostics written.
+    terrain_metric_label  spearman  sector_adjusted_rank_association  sector_stratified_permutation_two_sided_p
+      lowland_prevalence -0.309272                         -0.453640                                   0.000900
+conditional_connectivity  0.104533                          0.198325                                   0.420458
+ connected_lowland_share -0.333168                         -0.491883                                   0.000400
+          connected_area -0.340955                         -0.488862                                   0.000200
+  connected_window_share -0.340955                         -0.488862                                   0.000200
+
+
+## local-DTM product/datum cross-check
+Command: E:\Miniconda3\python.exe scripts/add_local_dtm_validation.py
+Exit: 0
+
+Local DTM product/datum cross-check: sheerness-p015-uk
+Local DTM product/datum cross-check: newlyn-p001-uk
+Local DTM product/datum cross-check: lowestoft-p024-uk
+Local DTM product/datum cross-check: immingham-p026-uk
+Local DTM product/datum cross-check: denhelder-hel-nl
+Local DTM product/datum cross-check: delfzijl-del-nl
+Local DTM product/datum cross-check: hoekvanholla-hvh-nl
+         station_id  delta_connected_2m_reference_land_pct  local_connected_2m_reference_land_pct  fraction_difference_local_minus_delta_pct_points  delta_connected_2m_area_km2  local_connected_2m_area_km2  connected_pixel_iou_after_reprojection
+  sheerness-p015-uk                              42.700177                               9.629593                                        -33.070584                    20.364332                     4.612073                                0.214623
+     newlyn-p001-uk                               0.446110                               0.416648                                         -0.029462                     0.276293                     0.259144                                0.527548
+  lowestoft-p024-uk                               1.416157                               6.165254                                          4.749097                     0.669507                     2.928482                                0.110977
+  immingham-p026-uk                               0.405551                               0.078999                                         -0.326552                     0.249460                     0.048794                                0.041725
+   denhelder-hel-nl                              71.729567                               4.364927                                        -67.364640                    20.854506                     1.274334                                0.055451
+    delfzijl-del-nl                              96.704148                              89.784264                                         -6.919884                    61.303112                    57.186949                                0.925796
+hoekvanholla-hvh-nl                               2.639661                               1.438606                                         -1.201055                     1.410979                     0.771845                                0.217064
+
+
+## SciencePlots figures
+Command: E:\Miniconda3\python.exe scripts/make_major_revision_figures.py
+Exit: 0
+
+Wrote Figures 1-4 and supplementary diagnostic figures from frozen major-revision sources
+
+
+## standalone manuscript
+Command: E:\Miniconda3\python.exe scripts/build_standalone_paper.py
+Exit: 0
+
+Wrote E:\Projects\20260522-coastal-flood-scientific-data\paper.html
+Wrote E:\Projects\20260522-coastal-flood-scientific-data\paper.md
+Wrote E:\Projects\20260522-coastal-flood-scientific-data\paper.pdf
+Wrote E:\Projects\20260522-coastal-flood-scientific-data\manuscript\process_terrain_coastal_flood_CEE_final_paper.html
+Wrote E:\Projects\20260522-coastal-flood-scientific-data\manuscript\process_terrain_coastal_flood_CEE_final_paper.md
+Wrote E:\Projects\20260522-coastal-flood-scientific-data\manuscript\process_terrain_coastal_flood_CEE_final_paper.pdf
+
+
+## supplementary information
+Command: E:\Miniconda3\python.exe scripts/build_supplementary_information.py
+Exit: 0
+
+Wrote E:\Projects\20260522-coastal-flood-scientific-data\supplementary_information.md, E:\Projects\20260522-coastal-flood-scientific-data\supplementary_information.html, and E:\Projects\20260522-coastal-flood-scientific-data\supplementary_information.pdf
+
+
+## research report
+Command: E:\Miniconda3\python.exe scripts/build_research_report_v2.py
+Exit: 0
+
+Wrote E:\Projects\20260522-coastal-flood-scientific-data\report.md, E:\Projects\20260522-coastal-flood-scientific-data\report.html, and E:\Projects\20260522-coastal-flood-scientific-data\report.pdf
+
+
+## scientific-integrity review
+Command: E:\Miniconda3\python.exe scripts/build_scientific_integrity_review_v2.py
+Exit: 0
+
+Wrote E:\Projects\20260522-coastal-flood-scientific-data\manuscript\scientific_integrity_review.md, E:\Projects\20260522-coastal-flood-scientific-data\manuscript\scientific_integrity_review.html, and E:\Projects\20260522-coastal-flood-scientific-data\manuscript\scientific_integrity_review.pdf
+
+
+## standalone HTML validation
+Command: E:\Miniconda3\python.exe scripts/validate_standalone_html.py paper.html supplementary_information.html report.html manuscript/scientific_integrity_review.html
+Exit: 0
+
+OK   paper.html
+OK   supplementary_information.html
+OK   report.html
+OK   manuscript\scientific_integrity_review.html
+
+
+## scientific contracts
+Command: E:\Miniconda3\python.exe -m pytest tests -q --import-mode=importlib
+Exit: 0
+
+.................                                                        [100%]
+17 passed in 6.12s
+

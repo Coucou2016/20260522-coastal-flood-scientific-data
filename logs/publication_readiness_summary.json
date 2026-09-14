@@ -1,0 +1,115 @@
+{
+  "created_utc": "2026-06-15T16:42:43+00:00",
+  "passed": true,
+  "blockers": [],
+  "checks": [
+    {
+      "name": "Completion status",
+      "passed": true,
+      "evidence": "completion_status.json",
+      "detail": "status=finalized"
+    },
+    {
+      "name": "Manuscript figure inventory",
+      "passed": true,
+      "evidence": "logs\\manuscript_figure_inventory.json",
+      "detail": "5 manuscript image record(s), no inventory errors"
+    },
+    {
+      "name": "Publication gate scripts audit",
+      "passed": true,
+      "evidence": "logs\\publication_gate_scripts_audit.json",
+      "detail": "passed with no errors or warnings"
+    },
+    {
+      "name": "Python runtime dependencies audit",
+      "passed": true,
+      "evidence": "logs\\python_runtime_dependencies_audit.json",
+      "detail": "passed with no errors or warnings"
+    },
+    {
+      "name": "Figure deliverables audit",
+      "passed": true,
+      "evidence": "logs\\figure_deliverables_audit.json",
+      "detail": "passed with no errors or warnings"
+    },
+    {
+      "name": "Figure visual-quality audit",
+      "passed": true,
+      "evidence": "logs\\figure_visual_quality_audit.json",
+      "detail": "passed with no errors or warnings"
+    },
+    {
+      "name": "Manual figure review sheet",
+      "passed": true,
+      "evidence": "logs\\manual_figure_review_sheet.json",
+      "detail": "passed with no errors or warnings"
+    },
+    {
+      "name": "Figure/source-data audit",
+      "passed": true,
+      "evidence": "logs\\figure_data_integrity_audit.json",
+      "detail": "passed with no errors or warnings"
+    },
+    {
+      "name": "Manuscript submission text audit",
+      "passed": true,
+      "evidence": "logs\\manuscript_submission_text_audit.json",
+      "detail": "passed with no errors or warnings"
+    },
+    {
+      "name": "Reference metadata audit",
+      "passed": true,
+      "evidence": "logs\\reference_metadata_audit.json",
+      "detail": "passed with no errors or warnings"
+    },
+    {
+      "name": "Journal submission metadata audit",
+      "passed": true,
+      "evidence": "logs\\journal_submission_metadata_audit.json",
+      "detail": "passed with no errors or warnings"
+    },
+    {
+      "name": "Submission artifact consistency audit",
+      "passed": true,
+      "evidence": "logs\\submission_artifact_consistency_audit.json",
+      "detail": "passed with no errors or warnings"
+    },
+    {
+      "name": "Final QC acceptance audit",
+      "passed": true,
+      "evidence": "logs\\final_qc_acceptance_audit.json",
+      "detail": "passed with no errors or warnings"
+    },
+    {
+      "name": "Repository deposit readiness audit",
+      "passed": true,
+      "evidence": "logs\\repository_deposit_readiness_audit.json",
+      "detail": "passed with no errors or warnings"
+    },
+    {
+      "name": "Publication package validation",
+      "passed": true,
+      "evidence": "logs\\publication_package_validation.txt",
+      "detail": "no failure wording detected"
+    },
+    {
+      "name": "Final archive validation",
+      "passed": true,
+      "evidence": "logs\\final_archive_validation.txt",
+      "detail": "no failure wording detected"
+    },
+    {
+      "name": "Archive handoff audit",
+      "passed": true,
+      "evidence": "logs\\archive_handoff_audit.json",
+      "detail": "passed with no errors or warnings"
+    },
+    {
+      "name": "Final archive manifest",
+      "passed": true,
+      "evidence": "final_archive_manifest.json",
+      "detail": "ZIP size and SHA256 match final_archive_manifest.json"
+    }
+  ]
+}

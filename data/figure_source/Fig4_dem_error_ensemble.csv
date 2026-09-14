@@ -1,0 +1,26 @@
+station_id,label,eta_m,dem_vertical_shift_m,connected8_lowland_pct
+sheerness-p015-uk,Sheerness,2.0,-1.0,59.46914739267731
+sheerness-p015-uk,Sheerness,2.0,-0.5,49.987198088247844
+sheerness-p015-uk,Sheerness,2.0,0.0,39.25492873602458
+sheerness-p015-uk,Sheerness,2.0,0.5,21.29384654775113
+sheerness-p015-uk,Sheerness,2.0,1.0,5.23598190663139
+hoekvanholla-hvh-nl,Hoek v.H.,2.0,-1.0,4.875728676309178
+hoekvanholla-hvh-nl,Hoek v.H.,2.0,-0.5,3.878143369350472
+hoekvanholla-hvh-nl,Hoek v.H.,2.0,0.0,3.0976365277201885
+hoekvanholla-hvh-nl,Hoek v.H.,2.0,0.5,2.4195712090538795
+hoekvanholla-hvh-nl,Hoek v.H.,2.0,1.0,1.5854045220615136
+newlyn-p001-uk,Newlyn,2.0,-1.0,11.703020134228188
+newlyn-p001-uk,Newlyn,2.0,-0.5,10.318791946308725
+newlyn-p001-uk,Newlyn,2.0,0.0,8.221476510067115
+newlyn-p001-uk,Newlyn,2.0,0.5,6.291946308724833
+newlyn-p001-uk,Newlyn,2.0,1.0,4.194630872483222
+brest-france,Brest,2.0,-1.0,9.29835785881851
+brest-france,Brest,2.0,-0.5,7.251013009170399
+brest-france,Brest,2.0,0.0,5.3316272126252935
+brest-france,Brest,2.0,0.5,4.00938366389422
+brest-france,Brest,2.0,1.0,3.1349968010236724
+aberdeen-p038-uk,Aberdeen,2.0,-1.0,9.026151444184231
+aberdeen-p038-uk,Aberdeen,2.0,-0.5,7.572209211553474
+aberdeen-p038-uk,Aberdeen,2.0,0.0,6.0889929742388755
+aberdeen-p038-uk,Aberdeen,2.0,0.5,4.908274785323965
+aberdeen-p038-uk,Aberdeen,2.0,1.0,3.669008587041374

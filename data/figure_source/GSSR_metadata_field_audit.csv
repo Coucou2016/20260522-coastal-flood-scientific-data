@@ -1,0 +1,11 @@
+audit_item,value,interpretation
+available_metadata_fields,FIELD1;corrn;num_95pcs;num_year;path;rmse;tg,corrn is retained as the source metadata reconstruction correlation; no separate extreme-event skill field is present in the local metadata.
+eligible_corr_ge0.45_years_ge20,62,Supporting GSSR-quality subset count only; this filter does not define the primary COAST-RP-terrain sample.
+eligible_corr_ge0.45_years_ge25,47,Supporting GSSR-quality subset count only; this filter does not define the primary COAST-RP-terrain sample.
+eligible_corr_ge0.45_years_ge30,38,Supporting GSSR-quality subset count only; this filter does not define the primary COAST-RP-terrain sample.
+eligible_corr_ge0.55_years_ge20,61,Supporting GSSR-quality subset count only; this filter does not define the primary COAST-RP-terrain sample.
+eligible_corr_ge0.55_years_ge25,46,Supporting GSSR-quality subset count only; this filter does not define the primary COAST-RP-terrain sample.
+eligible_corr_ge0.55_years_ge30,38,Supporting GSSR-quality subset count only; this filter does not define the primary COAST-RP-terrain sample.
+eligible_corr_ge0.65_years_ge20,59,Supporting GSSR-quality subset count only; this filter does not define the primary COAST-RP-terrain sample.
+eligible_corr_ge0.65_years_ge25,45,Supporting GSSR-quality subset count only; this filter does not define the primary COAST-RP-terrain sample.
+eligible_corr_ge0.65_years_ge30,38,Supporting GSSR-quality subset count only; this filter does not define the primary COAST-RP-terrain sample.

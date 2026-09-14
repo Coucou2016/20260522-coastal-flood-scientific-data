@@ -1,0 +1,69 @@
+station_id,station,lat,lon,coastal_sector
+esbjerg-130121-denmark,Esbjerg 130121 Denmark,55.467,8.4333,Denmark-Norway
+denhelder-hel-nl,Denhelder Hel Nl,52.965,4.7464,Dutch-German-Bight
+lerwick-p041-uk,Lerwick P041 Uk,60.15,-1.1333,British-North-Sea
+cuxhaven-germany,Cuxhaven Germany,53.867,8.7167,Denmark-Norway
+delfzijl-del-nl,Delfzijl Del Nl,53.326,6.9331,Dutch-German-Bight
+portpatrick-p063-uk,Portpatrick P063 Uk,54.843,-5.12,Atlantic-Celtic
+newlyn-p001-uk,Newlyn,50.102,-5.5417,Atlantic-Celtic
+fishguard-p055-uk,Fishguard P055 Uk,52.014,-4.9833,British-North-Sea
+hoekvanholla-hvh-nl,Hoek van Holland,51.977,4.12,Dutch-German-Bight
+milfordhaven-p056-uk,Milfordhaven P056 Uk,51.702,-5.0143,Atlantic-Celtic
+tregde-006-norway,Tregde 006 Norway,58.0,7.5666,Dutch-German-Bight
+lowestoft-p024-uk,Lowestoft P024 Uk,52.473,1.7508,British-North-Sea
+wick-p035-uk,Wick P035 Uk,58.441,-3.0863,British-North-Sea
+stornoway-p042-uk,Stornoway P042 Uk,58.208,-6.3882,Atlantic-Celtic
+le-conquet,Le Conquet France,48.359,-4.7807,western-English-Channel
+brest,Brest,48.383,-4.5,western-English-Channel
+port-tudy,Port Tudy France,47.644,-3.4459,western-English-Channel
+cherbourg,Cherbourg France,49.651,-1.6355,western-English-Channel
+saint-nazaire,Saint Nazaire France,47.267,-2.2016,western-English-Channel
+saint-gildas,Saint Gildas France,47.14,-2.2464,western-English-Channel
+le-havre,Le Havre France,49.482,0.106,eastern-Channel-southern-North-Sea
+dunkerque,Dunkerque France,51.048,2.3667,eastern-Channel-southern-North-Sea
+roscoff,Roscoff France,48.718,-3.9657,western-English-Channel
+boulogne-sur-mer,Boulogne Sur Mer,50.727,1.5777,eastern-Channel-southern-North-Sea
+dieppe,Dieppe France,49.929,1.0845,eastern-Channel-southern-North-Sea
+immingham-p026-uk,Immingham P026 Uk,53.631,-0.18603,British-North-Sea
+aberdeen-p038-uk,Aberdeen,57.143,-2.0745,British-North-Sea
+millport-p049-uk,Millport P049 Uk,55.75,-4.9058,British-North-Sea
+holyhead-p054-uk,Holyhead P054 Uk,53.308,-4.6312,British-North-Sea
+sheerness-p015-uk,Sheerness,51.442,0.74306,eastern-Channel-southern-North-Sea
+heysham-p050-uk,Heysham P050 Uk,54.032,-2.9204,British-North-Sea
+northshields-p032-uk,Northshields P032 Uk,55.007,-1.4398,British-North-Sea
+whitby-p174-uk,Whitby P174 Uk,54.49,-0.61417,British-North-Sea
+dover-p012-uk,Dover P012 Uk,51.117,1.3181,eastern-Channel-southern-North-Sea
+ullapool-p043-uk,Ullapool P043 Uk,57.895,-5.1579,Atlantic-Celtic
+newhaven-p011-uk,Newhaven P011 Uk,50.782,0.05703,eastern-Channel-southern-North-Sea
+calais,Calais France,50.969,1.8677,eastern-Channel-southern-North-Sea
+ilfracombe-p061-uk,Ilfracombe P061 Uk,51.21100000000001,-4.1109,western-English-Channel
+felixstowe-p204-uk,Felixstowe P204 Uk,51.957,1.3484,eastern-Channel-southern-North-Sea
+leith-p034-uk,Leith P034 Uk,55.99,-3.1817,British-North-Sea
+tobermory-p223-uk,Tobermory P223 Uk,56.62300000000001,-6.0642,Atlantic-Celtic
+cromer-p183-uk,Cromer P183 Uk,52.934,1.3016,British-North-Sea
+avonmouth-p060-uk,Avonmouth P060 Uk,51.511,-2.715,western-English-Channel
+hinkleypoint-p003-uk,Hinkleypoint P003 Uk,51.215,-3.1343,western-English-Channel
+mumbles-p932-uk,Mumbles P932 Uk,51.57,-3.9754,western-English-Channel
+devonport-p002-uk,Devonport P002 Uk,50.368,-4.1852,western-English-Channel
+weymouth-p991-uk,Weymouth P991 Uk,50.608,-2.4479,western-English-Channel
+barmouth-p923-uk,Barmouth P923 Uk,52.719,-4.0452,British-North-Sea
+portsmouth-p008-uk,Portsmouth P008 Uk,50.803,-1.1118,western-English-Channel
+malin-head-834a-ireland,Malin Head 834a,55.367,-7.3333,Atlantic-Celtic
+kinlochbervi-p918-uk,Kinlochbervi P918 Uk,58.457,-5.0504,Atlantic-Celtic
+porterin-p919-uk,Porterin P919 Uk,54.085,-4.7681,British-North-Sea
+workington-p217-uk,Workington P217 Uk,54.651,-3.5676,British-North-Sea
+sthelier-p074-uk,Sthelier P074 Uk,49.183,-2.1167,western-English-Channel
+gladstone-p234-uk,Gladstone P234 Uk,53.45,-3.018,British-North-Sea
+llandudno-p007-uk,Llandudno P007 Uk,53.332,-3.8252,British-North-Sea
+portellen-p202-uk,Portellen P202 Uk,55.627,-6.1901,Atlantic-Celtic
+saint-malo,Saint Malo France,48.64100000000001,-2.0281,western-English-Channel
+newport-p057-uk,Newport P057 Uk,51.55,-2.9874,western-English-Channel
+portrush-p935-uk,Portrush P935 Uk,55.207,-6.6568,Atlantic-Celtic
+bangor-p662-uk,Bangor P662 Uk,54.665,-5.6695,Atlantic-Celtic
+stmarys-p231-uk,Stmarys P231 Uk,49.918,-6.3164,Atlantic-Celtic
+bournemouth-p988-uk,Bournemouth P988 Uk,50.714,-1.8749,western-English-Channel
+concarneau,Concarneau France,47.874,-3.9072,western-English-Channel
+le-crouesty,Le Crouesty France,47.543,-2.8952,western-English-Channel
+morayfirth-p207-uk,Morayfirth P207 Uk,57.599,-4.0022,British-North-Sea
+harwich-p022-uk,Harwich P022 Uk,51.947,1.2845,eastern-Channel-southern-North-Sea
+portbury-p341-uk,Portbury P341 Uk,51.5,-2.7285,western-English-Channel

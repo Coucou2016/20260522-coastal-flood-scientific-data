@@ -1,0 +1,41 @@
+station_id,buffer_deg,lowland_max_m,seed_mode,terrain_source,terrain_tiles,coastal_lowland_cells,connected_2m_lowland_pct,bathtub_2m_lowland_pct,sensitivity_type,setting
+newlyn-p001-uk,0.03,15.0,boundary_water_nodata,DeltaDTM:DeltaDTM_v1_1_N50W006.tif,DeltaDTM_v1_1_N50W006.tif,1797,8.848080133555927,8.903728436282693,window_size,buffer=0.03 deg
+newlyn-p001-uk,0.04,15.0,boundary_water_nodata,DeltaDTM:DeltaDTM_v1_1_N50W006.tif,DeltaDTM_v1_1_N50W006.tif,2384,8.221476510067115,8.263422818791947,window_size,buffer=0.04 deg
+newlyn-p001-uk,0.06,15.0,boundary_water_nodata,DeltaDTM:DeltaDTM_v1_1_N50W006.tif,DeltaDTM_v1_1_N50W006.tif,3977,6.864470706562736,6.990193613276339,window_size,buffer=0.06 deg
+newlyn-p001-uk,0.04,10.0,boundary_water_nodata,DeltaDTM:DeltaDTM_v1_1_N50W006.tif,DeltaDTM_v1_1_N50W006.tif,1727,11.34916039374638,11.407064273306311,lowland_denominator,lowland<=10 m
+newlyn-p001-uk,0.04,15.0,boundary_water_nodata,DeltaDTM:DeltaDTM_v1_1_N50W006.tif,DeltaDTM_v1_1_N50W006.tif,2384,8.221476510067115,8.263422818791947,lowland_denominator,lowland<=15 m
+newlyn-p001-uk,0.04,20.0,boundary_water_nodata,DeltaDTM:DeltaDTM_v1_1_N50W006.tif,DeltaDTM_v1_1_N50W006.tif,2961,6.619385342789598,6.653157716987504,lowland_denominator,lowland<=20 m
+newlyn-p001-uk,0.04,15.0,boundary_water_nodata,DeltaDTM:DeltaDTM_v1_1_N50W006.tif,DeltaDTM_v1_1_N50W006.tif,2384,8.221476510067115,8.263422818791947,boundary_seed,boundary_water_nodata
+newlyn-p001-uk,0.04,15.0,boundary_water_plus_edge_lowland,DeltaDTM:DeltaDTM_v1_1_N50W006.tif,DeltaDTM_v1_1_N50W006.tif,2384,8.221476510067115,8.263422818791947,boundary_seed,boundary_water_plus_edge_lowland
+hoekvanholla-hvh-nl,0.03,15.0,boundary_water_nodata,DeltaDTM:mosaic(2),DeltaDTM_v1_1_N52E004.tif;DeltaDTM_v1_1_N51E004.tif,23985,31.09443402126329,31.94496560350219,window_size,buffer=0.03 deg
+hoekvanholla-hvh-nl,0.04,15.0,boundary_water_nodata,DeltaDTM:mosaic(2),DeltaDTM_v1_1_N52E004.tif;DeltaDTM_v1_1_N51E004.tif,40999,3.0976365277201885,34.71548086538696,window_size,buffer=0.04 deg
+hoekvanholla-hvh-nl,0.06,15.0,boundary_water_nodata,DeltaDTM:mosaic(2),DeltaDTM_v1_1_N52E004.tif;DeltaDTM_v1_1_N51E004.tif,89238,47.19626168224299,47.98852506779623,window_size,buffer=0.06 deg
+hoekvanholla-hvh-nl,0.04,10.0,boundary_water_nodata,DeltaDTM:mosaic(2),DeltaDTM_v1_1_N52E004.tif;DeltaDTM_v1_1_N51E004.tif,40860,3.108174253548703,34.833578071463535,lowland_denominator,lowland<=10 m
+hoekvanholla-hvh-nl,0.04,15.0,boundary_water_nodata,DeltaDTM:mosaic(2),DeltaDTM_v1_1_N52E004.tif;DeltaDTM_v1_1_N51E004.tif,40999,3.0976365277201885,34.71548086538696,lowland_denominator,lowland<=15 m
+hoekvanholla-hvh-nl,0.04,20.0,boundary_water_nodata,DeltaDTM:mosaic(2),DeltaDTM_v1_1_N52E004.tif;DeltaDTM_v1_1_N51E004.tif,41004,3.0972588040191202,34.71124768315286,lowland_denominator,lowland<=20 m
+hoekvanholla-hvh-nl,0.04,15.0,boundary_water_nodata,DeltaDTM:mosaic(2),DeltaDTM_v1_1_N52E004.tif;DeltaDTM_v1_1_N51E004.tif,40999,3.0976365277201885,34.71548086538696,boundary_seed,boundary_water_nodata
+hoekvanholla-hvh-nl,0.04,15.0,boundary_water_plus_edge_lowland,DeltaDTM:mosaic(2),DeltaDTM_v1_1_N52E004.tif;DeltaDTM_v1_1_N51E004.tif,40999,33.91546135271592,34.71548086538696,boundary_seed,boundary_water_plus_edge_lowland
+brest,0.03,15.0,boundary_water_nodata,DeltaDTM:DeltaDTM_v1_1_N48W005.tif,DeltaDTM_v1_1_N48W005.tif,3826,6.2990067956089915,7.1353894406691065,window_size,buffer=0.03 deg
+brest,0.04,15.0,boundary_water_nodata,DeltaDTM:DeltaDTM_v1_1_N48W005.tif,DeltaDTM_v1_1_N48W005.tif,4689,5.3316272126252935,7.63489016847942,window_size,buffer=0.04 deg
+brest,0.06,15.0,boundary_water_nodata,DeltaDTM:DeltaDTM_v1_1_N48W005.tif,DeltaDTM_v1_1_N48W005.tif,7525,3.9867109634551494,5.940199335548173,window_size,buffer=0.06 deg
+brest,0.04,10.0,boundary_water_nodata,DeltaDTM:DeltaDTM_v1_1_N48W005.tif,DeltaDTM_v1_1_N48W005.tif,3707,6.743997841920691,9.65740490963043,lowland_denominator,lowland<=10 m
+brest,0.04,15.0,boundary_water_nodata,DeltaDTM:DeltaDTM_v1_1_N48W005.tif,DeltaDTM_v1_1_N48W005.tif,4689,5.3316272126252935,7.63489016847942,lowland_denominator,lowland<=15 m
+brest,0.04,20.0,boundary_water_nodata,DeltaDTM:DeltaDTM_v1_1_N48W005.tif,DeltaDTM_v1_1_N48W005.tif,5806,4.305890458146744,6.166035136066139,lowland_denominator,lowland<=20 m
+brest,0.04,15.0,boundary_water_nodata,DeltaDTM:DeltaDTM_v1_1_N48W005.tif,DeltaDTM_v1_1_N48W005.tif,4689,5.3316272126252935,7.63489016847942,boundary_seed,boundary_water_nodata
+brest,0.04,15.0,boundary_water_plus_edge_lowland,DeltaDTM:DeltaDTM_v1_1_N48W005.tif,DeltaDTM_v1_1_N48W005.tif,4689,5.3316272126252935,7.63489016847942,boundary_seed,boundary_water_plus_edge_lowland
+aberdeen-p038-uk,0.03,15.0,boundary_water_nodata,DeltaDTM:DeltaDTM_v1_1_N57W003.tif,DeltaDTM_v1_1_N57W003.tif,8362,6.266443434585027,7.6536713704855295,window_size,buffer=0.03 deg
+aberdeen-p038-uk,0.04,15.0,boundary_water_nodata,DeltaDTM:DeltaDTM_v1_1_N57W003.tif,DeltaDTM_v1_1_N57W003.tif,10248,6.0889929742388755,7.240437158469946,window_size,buffer=0.04 deg
+aberdeen-p038-uk,0.06,15.0,boundary_water_nodata,DeltaDTM:DeltaDTM_v1_1_N57W003.tif,DeltaDTM_v1_1_N57W003.tif,12982,5.70020027730704,6.616854105684794,window_size,buffer=0.06 deg
+aberdeen-p038-uk,0.04,10.0,boundary_water_nodata,DeltaDTM:DeltaDTM_v1_1_N57W003.tif,DeltaDTM_v1_1_N57W003.tif,6794,9.184574624668825,10.921401236385046,lowland_denominator,lowland<=10 m
+aberdeen-p038-uk,0.04,15.0,boundary_water_nodata,DeltaDTM:DeltaDTM_v1_1_N57W003.tif,DeltaDTM_v1_1_N57W003.tif,10248,6.0889929742388755,7.240437158469946,lowland_denominator,lowland<=15 m
+aberdeen-p038-uk,0.04,20.0,boundary_water_nodata,DeltaDTM:DeltaDTM_v1_1_N57W003.tif,DeltaDTM_v1_1_N57W003.tif,14223,4.387260071714828,5.216902200660901,lowland_denominator,lowland<=20 m
+aberdeen-p038-uk,0.04,15.0,boundary_water_nodata,DeltaDTM:DeltaDTM_v1_1_N57W003.tif,DeltaDTM_v1_1_N57W003.tif,10248,6.0889929742388755,7.240437158469946,boundary_seed,boundary_water_nodata
+aberdeen-p038-uk,0.04,15.0,boundary_water_plus_edge_lowland,DeltaDTM:DeltaDTM_v1_1_N57W003.tif,DeltaDTM_v1_1_N57W003.tif,10248,6.0889929742388755,7.240437158469946,boundary_seed,boundary_water_plus_edge_lowland
+sheerness-p015-uk,0.03,15.0,boundary_water_nodata,DeltaDTM:DeltaDTM_v1_1_N51E000.tif,DeltaDTM_v1_1_N51E000.tif,11974,44.42959746116586,46.11658593619509,window_size,buffer=0.03 deg
+sheerness-p015-uk,0.04,15.0,boundary_water_nodata,DeltaDTM:DeltaDTM_v1_1_N51E000.tif,DeltaDTM_v1_1_N51E000.tif,23434,39.25492873602458,42.77972177178459,window_size,buffer=0.04 deg
+sheerness-p015-uk,0.06,15.0,boundary_water_nodata,DeltaDTM:DeltaDTM_v1_1_N51E000.tif,DeltaDTM_v1_1_N51E000.tif,54266,52.1431467217042,53.90483912578779,window_size,buffer=0.06 deg
+sheerness-p015-uk,0.04,10.0,boundary_water_nodata,DeltaDTM:DeltaDTM_v1_1_N51E000.tif,DeltaDTM_v1_1_N51E000.tif,21385,43.016132803366844,46.87865326163198,lowland_denominator,lowland<=10 m
+sheerness-p015-uk,0.04,15.0,boundary_water_nodata,DeltaDTM:DeltaDTM_v1_1_N51E000.tif,DeltaDTM_v1_1_N51E000.tif,23434,39.25492873602458,42.77972177178459,lowland_denominator,lowland<=15 m
+sheerness-p015-uk,0.04,20.0,boundary_water_nodata,DeltaDTM:DeltaDTM_v1_1_N51E000.tif,DeltaDTM_v1_1_N51E000.tif,23826,38.60908251489969,42.07588348862587,lowland_denominator,lowland<=20 m
+sheerness-p015-uk,0.04,15.0,boundary_water_nodata,DeltaDTM:DeltaDTM_v1_1_N51E000.tif,DeltaDTM_v1_1_N51E000.tif,23434,39.25492873602458,42.77972177178459,boundary_seed,boundary_water_nodata
+sheerness-p015-uk,0.04,15.0,boundary_water_plus_edge_lowland,DeltaDTM:DeltaDTM_v1_1_N51E000.tif,DeltaDTM_v1_1_N51E000.tif,23434,41.15814628317829,42.77972177178459,boundary_seed,boundary_water_plus_edge_lowland

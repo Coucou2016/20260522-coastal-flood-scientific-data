@@ -1,0 +1,34 @@
+Publication Environment Diagnostics
+===================================
+
+Diagnostic-only log. This file does not prove publication readiness.
+Publication readiness still requires scripts\run_publication_gate.cmd to finish with Passed: True.
+
+Date: 周六 2026/08/15
+Time: 23:43:04.18
+Working directory: E:\Projects\20260522-coastal-flood-scientific-data
+
+Python on PATH:
+E:\Miniconda3\python.exe
+Exit code: 0
+
+Python version:
+Python 3.13.12
+Exit code: 0
+
+pip version:
+pip 26.0.1 from E:\Miniconda3\Lib\site-packages\pip (python 3.13)
+Exit code: 0
+
+Required files:
+OK requirements-publication.txt
+OK scripts\run_python_checked.cmd
+OK scripts\install_publication_requirements.cmd
+OK scripts\run_publication_gate.cmd
+OK scripts\publication_gate.py
+OK manuscript\process_terrain_coastal_flood_CEE_manuscript.md
+OK manuscript\process_terrain_coastal_flood_CEE_manuscript_review.html
+
+Suggested next commands:
+scripts\install_publication_requirements.cmd
+scripts\run_publication_gate.cmd

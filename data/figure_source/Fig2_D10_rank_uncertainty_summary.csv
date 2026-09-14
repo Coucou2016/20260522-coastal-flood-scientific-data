@@ -1,0 +1,2 @@
+n_sites,n_iter,top_n,D10_rank_uncertainty_method
+8,5000,2,triangular Monte Carlo from GSSR bootstrap and COAST-RP local spatial ranges

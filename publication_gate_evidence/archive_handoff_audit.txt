@@ -1,0 +1,14 @@
+Archive Handoff Audit
+=====================
+
+Passed: True
+Sidecars checked: 16
+ZIP entries checked: 69
+Errors: 0
+Warnings: 0
+
+Errors
+------
+
+Warnings
+--------

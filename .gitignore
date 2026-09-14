@@ -1,0 +1,39 @@
+# Third-party upstream data are represented by data/upstream_raw_manifest.*.
+data/raw/
+
+# Rebuilt intermediates and local runtime state.
+tmp/
+.pytest_cache/
+**/__pycache__/
+*.py[cod]
+.venv/
+venv/
+.codex/
+
+# Credentials and machine-local configuration.
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*.json
+*token*.json
+*cookie*.json
+
+# Archive bundles are published as GitHub Release assets, not Git blobs.
+*.zip
+reproducibility_package/
+publication_package/
+external_review/**/chatgpt_review_package_v*/
+
+# Third-party reference articles are cited by DOI, not redistributed.
+/仿照撰写的CEE论文/
+
+# Common OS/editor debris.
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+*.bak
+

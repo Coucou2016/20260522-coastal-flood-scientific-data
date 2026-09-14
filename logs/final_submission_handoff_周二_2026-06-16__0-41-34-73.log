@@ -1,0 +1,111 @@
+Final submission handoff started at 周二 2026/06/16  0:41:34.74 
+Working directory: E:\Projects\20260522-coastal-flood-scientific-data 
+Command: scripts\run_final_submission_handoff.cmd  
+ 
+Running submission-ready gate 
+Writing submission-ready gate log to logs\submission_ready_gate_周二_2026-06-16__0-41-34-77.log
+Submission-ready gate started at 周二 2026/06/16  0:41:34.77 
+Working directory: E:\Projects\20260522-coastal-flood-scientific-data 
+Command: scripts\run_submission_ready_gate.cmd  
+ 
+Auditing submission-ready gate scripts 
+Passed: True
+ 
+Running core publication gate 
+Publication Environment Diagnostics
+===================================
+
+Diagnostic-only log. This file does not prove publication readiness.
+Publication readiness still requires scripts\run_publication_gate.cmd to finish with Passed: True.
+
+Date: 周二 2026/06/16
+Time:  0:41:35.51
+Working directory: E:\Projects\20260522-coastal-flood-scientific-data
+
+Python on PATH:
+E:\Miniconda3\python.exe
+Exit code: 0
+
+Python version:
+Python 3.13.12
+Exit code: 0
+
+pip version:
+pip 26.0.1 from E:\Miniconda3\Lib\site-packages\pip (python 3.13)
+Exit code: 0
+
+Required files:
+OK requirements-publication.txt
+OK scripts\run_python_checked.cmd
+OK scripts\install_publication_requirements.cmd
+OK scripts\run_publication_gate.cmd
+OK scripts\publication_gate.py
+OK manuscript\process_terrain_coastal_flood_CEE_manuscript.md
+OK manuscript\process_terrain_coastal_flood_CEE_manuscript_review.html
+
+Suggested next commands:
+scripts\install_publication_requirements.cmd
+scripts\run_publication_gate.cmd
+logs\publication_gate.txt
+ 
+Building final figure/data review matrix template 
+Passed: True
+Artifact count: 26
+ 
+Running final figure/data review matrix audit 
+Passed: True
+ 
+Running final figure/data issue register audit 
+Passed: True
+ 
+Running final figure/data sign-off audit 
+Passed: True
+ 
+Building submission-ready evidence bundle 
+Passed: True
+ 
+Auditing submission-ready evidence bundle 
+Passed: True
+ 
+Building combined submission-ready report 
+Passed: True
+ 
+Building submission-ready failure summary 
+Passed: True
+Blockers: 0
+ 
+Submission-ready gate finished at 周二 2026/06/16  0:42:49.84 with exit code 0 
+Submission-ready gate scripts audit exit code: 0 
+Core publication gate exit code: 0 
+Figure/data review matrix template exit code: 0 
+Figure/data review matrix exit code: 0 
+Figure/data issue register exit code: 0 
+Figure/data sign-off exit code: 0 
+Combined report exit code: 0 
+Submission-ready evidence bundle exit code: 0 
+Submission-ready evidence bundle audit exit code: 0 
+Submission-ready failure summary exit code: 0 
+ 
+Recording successful terminal run 
+Wrote manuscript\submission_ready_terminal_run_record.json
+Passed: True
+ 
+Auditing terminal-run record 
+Passed: True
+ 
+Building final submission handoff evidence bundle 
+Passed: True
+ 
+Auditing final submission handoff evidence bundle 
+Passed: True
+ 
+Building final submission handoff report 
+Passed: True
+ 
+Final submission handoff finished at 周二 2026/06/16  0:42:52.87 with exit code 0 
+Submission-ready gate exit code: 0 
+Terminal-run record exit code: 0 
+Terminal-run record audit exit code: 0 
+Final submission handoff evidence bundle exit code: 0 
+Final submission handoff evidence bundle audit exit code: 0 
+Final submission handoff report exit code: 0 

@@ -1,0 +1,2 @@
+n_sites,median_etc_to_total_ratio,min_etc_to_total_ratio,median_tc_to_total_ratio,max_tc_to_total_ratio,stations_with_tc_exceeding_etc,median_etc_match_dist_km,median_tc_match_dist_km
+30,1.0,0.9999999999999998,0.3000495056361574,1.0090090122341069,1,0.6235751381871251,2044.287990930719

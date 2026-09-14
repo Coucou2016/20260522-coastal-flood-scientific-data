@@ -1,0 +1,4 @@
+scenario,top6_D10_sites,top3_D10_sites,contains_sheerness,contains_brest,contains_newlyn
+nominal GSSR RP10,Dieppe France;Boulogne Sur Mer;Roscoff France;Sheerness;Brest;Le Havre France,Dieppe France;Boulogne Sur Mer;Roscoff France,True,True,False
+GSSR lower prediction-bound RP10,Roscoff France;Dieppe France;Boulogne Sur Mer;Sheerness;Le Havre France;Immingham P026 Uk,Roscoff France;Dieppe France;Boulogne Sur Mer,True,False,False
+GSSR upper prediction-bound RP10,Dieppe France;Boulogne Sur Mer;Sheerness;Brest;Le Havre France;Le Conquet France,Dieppe France;Boulogne Sur Mer;Sheerness,True,True,False

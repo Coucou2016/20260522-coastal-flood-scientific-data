@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "signoff_file": "manuscript\\final_figure_data_signoff.json",
+  "errors": [],
+  "warnings": [],
+  "notes": [
+    "Accepted limitations listed: 1"
+  ],
+  "required_scope": [
+    "manuscript_markdown_reviewed",
+    "review_html_reviewed",
+    "all_manuscript_figures_reviewed",
+    "all_embedded_images_reviewed",
+    "all_source_data_tables_reviewed",
+    "all_generated_rasters_reviewed",
+    "publication_package_reviewed"
+  ],
+  "required_checks": [
+    "figure_presence_and_order",
+    "visual_rendering_quality",
+    "source_data_traceability",
+    "numeric_sanity",
+    "terrain_connectivity_interpretation",
+    "lowland_elevation_summary",
+    "review_matrix_completed",
+    "issue_register_closed",
+    "residual_artifacts_disclosed"
+  ],
+  "evidence_files": [
+    "logs\\manuscript_figure_inventory.json",
+    "logs\\figure_deliverables_audit.json",
+    "logs\\figure_visual_quality_audit.json",
+    "logs\\figure_data_integrity_audit.json",
+    "logs\\manual_figure_review_sheet.md",
+    "logs\\publication_gate_report.json"
+  ]
+}

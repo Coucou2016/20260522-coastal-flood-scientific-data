@@ -1,0 +1,6 @@
+Station,D10 storm-tide minus surge (m),Surge-pressure rho,+2 m lowland sensitivity (%),Typology class
+Aberdeen,1.9857181645012492,-0.7239702256902232,7.240437158469945,water-level-dominated but terrain-buffered
+Brest,3.633351478985567,-0.7960281479479313,7.63489016847942,water-level-dominated but terrain-buffered
+Hoek v.H.,1.8707332101666512,-0.5387915683023761,34.71548086538696,water-level-terrain aligned hotspot
+Newlyn,2.736828597199069,-0.8311444855154034,8.263422818791947,water-level-dominated but terrain-buffered
+Sheerness,3.925376976329036,-0.228378706547655,42.77972177178459,water-level-terrain aligned hotspot

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Combo 1 — Data Report</title>
+<style>
+:root { font-family: system-ui, Segoe UI, sans-serif; line-height: 1.5; color: #1a1a1a; }
+body { max-width: 960px; margin: 0 auto; padding: 1rem 1.5rem 3rem; background: #fafafa; }
+.report-header { border-bottom: 2px solid #0d47a1; margin-bottom: 1.5rem; }
+.report-header h1 { margin: 0 0 0.25rem; color: #0d47a1; }
+.subtitle { color: #555; margin: 0; }
+main h2 { margin-top: 2rem; font-size: 1.15rem; color: #333; border-bottom: 1px solid #ddd; padding-bottom: 0.25rem; }
+main h3 { margin-top: 1.25rem; font-size: 1rem; color: #444; }
+.data-table { width: 100%; border-collapse: collapse; background: #fff; font-size: 0.9rem; }
+.data-table th, .data-table td { border: 1px solid #ddd; padding: 0.4rem 0.6rem; text-align: left; }
+.data-table th { background: #e3f2fd; }
+.data-table tr:nth-child(even) { background: #f5f5f5; }
+.ok { color: #2e7d32; font-weight: 600; }
+.fail, .warn { color: #c62828; font-weight: 600; }
+figure { margin: 1rem 0; text-align: center; }
+figure img { max-width: 100%; height: auto; border: 1px solid #ccc; }
+figcaption { font-size: 0.85rem; color: #666; margin-top: 0.25rem; }
+pre { background: #fff; border: 1px solid #ddd; padding: 0.75rem; overflow-x: auto; font-size: 0.8rem; }
+.report-footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #ccc; font-size: 0.85rem; color: #666; }
+.meta { background: #e8f5e9; padding: 0.5rem 0.75rem; border-radius: 4px; }
+.toc { background: #fff; border: 1px solid #ddd; padding: 0.75rem 1rem; margin-bottom: 1.5rem; }
+.toc ul { margin: 0.25rem 0 0; padding-left: 1.25rem; }
+.methods dt { font-weight: 600; margin-top: 0.75rem; }
+.methods dd { margin: 0.25rem 0 0 1rem; }
+</style>
+</head>
+<body>
+<header class="report-header">
+<h1>Combo 1 — Data Report</h1>
+<p class="subtitle">Coastal flood scientific data — Combo 1 MVP</p>
+</header>
+<main>
+
+<h2 id="data-inventory">Data inventory &amp; download status</h2>
+<table class="data-table">
+<thead><tr><th>Asset</th><th>Path</th><th>Size</th><th>Status</th></tr></thead>
+<tbody><tr><td>COAST-RP.zip</td><td><code>data\raw\coast_rp\COAST-RP.zip</code></td><td>6,798,999 B</td><td class="ok">OK</td></tr>
+<tr><td>COAST-RP.nc</td><td><code>data\raw\coast_rp\extracted\COAST-RP.nc</code></td><td>2,817,029 B</td><td class="ok">OK</td></tr>
+<tr><td>GSSR sheerness-p015-uk</td><td><code>data\raw\gssr\era5\sheerness_p015_uk.7z</code></td><td>409,263 B</td><td class="ok">OK</td></tr>
+<tr><td>GSSR newlyn-p001-uk</td><td><code>data\raw\gssr\era5\newlyn_p001_uk.7z</code></td><td>416,688 B</td><td class="ok">OK</td></tr>
+<tr><td>GSSR aberdeen-p038-uk</td><td><code>data\raw\gssr\era5\aberdeen_p038_uk.7z</code></td><td>418,279 B</td><td class="ok">OK</td></tr>
+<tr><td>GSSR hoekvanholla-hvh-nl</td><td><code>data\raw\gssr\era5\hoekvanholla_hvh_nl.7z</code></td><td>413,709 B</td><td class="ok">OK</td></tr>
+<tr><td>GSSR brest-france</td><td><code>data\raw\gssr\era5\brest_.7z</code></td><td>415,898 B</td><td class="ok">OK</td></tr>
+<tr><td>GSSR newyork-the-battery</td><td><code>data\raw\gssr\era5\newyork_thebattery__usa.7z</code></td><td>417,561 B</td><td class="ok">OK</td></tr>
+<tr><td>GSSR hong-kong-b</td><td><code>data\raw\gssr\era5\hong_kong_b_329b_china.7z</code></td><td>415,437 B</td><td class="ok">OK</td></tr>
+<tr><td>GSSR charleston-sc</td><td><code>data\raw\gssr\era5\charleston,sc_261a_usa.7z</code></td><td>416,143 B</td><td class="ok">OK</td></tr>
+<tr><td>DeltaDTM index</td><td><code>data\raw\deltadtm\index\deltadtm_tiles.gpkg</code></td><td>2,891,776 B</td><td class="ok">OK</td></tr>
+</tbody>
+</table>
+<h3>DeltaDTM terrain</h3>
+<table class="data-table">
+<tr><td>Europe.zip</td><td>2,386,070,935 / 2,386,070,935 B</td><td>100.0%</td><td>complete</td></tr>
+<tr><td>COG tiles in tiles/</td><td colspan="2">6</td><td>DeltaDTM_v1_1_N48W005.tif, DeltaDTM_v1_1_N50W006.tif, DeltaDTM_v1_1_N51E000.tif, DeltaDTM_v1_1_N51E004.tif, DeltaDTM_v1_1_N52E004.tif, DeltaDTM_v1_1_N57W003.tif</td></tr>
+</table>
+<h3>Open-Meteo</h3>
+<p>9 JSON file(s) under <code>data/raw/open_meteo/hourly/</code></p>
+<p>Re-verify after downloads: <code>python scripts\verify_downloads.py --strict</code></p>
+<h2 id="station-matching">Station matching (GSSR ↔ COAST-RP)</h2>
+<table class="dataframe data-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>station_id</th>
+      <th>station_name</th>
+      <th>station_lat</th>
+      <th>station_lon</th>
+      <th>coast_rp_idx</th>
+      <th>coast_rp_lon</th>
+      <th>coast_rp_lat</th>
+      <th>coast_rp_station_id</th>
+      <th>match_dist_km</th>
+      <th>match_flag</th>
+      <th>coast_rp_rp1_m</th>
+      <th>coast_rp_rp2_m</th>
+      <th>coast_rp_rp5_m</th>
+      <th>coast_rp_rp10_m</th>
+      <th>coast_rp_rp25_m</th>
+      <th>coast_rp_rp50_m</th>
+      <th>coast_rp_rp100_m</th>
+      <th>coast_rp_rp250_m</th>
+      <th>coast_rp_rp500_m</th>
+      <th>coast_rp_rp1000_m</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>sheerness-p015-uk</td>
+      <td>Sheerness</td>
+      <td>51.442</td>
+      <td>0.74306</td>
+      <td>19997</td>
+      <td>0.740000</td>
+      <td>51.438000</td>
+      <td>id_obs_sheerness_p015_uk_bodc</td>
+      <td>0.492787</td>
+      <td>ok</td>
+      <td>4.605</td>
+      <td>4.803</td>
+      <td>5.061</td>
+      <td>5.256</td>
+      <td>5.517</td>
+      <td>5.691</td>
+      <td>5.895</td>
+      <td>6.203</td>
+      <td>6.380</td>
+      <td>6.512</td>
+    </tr>
+    <tr>
+      <td>newlyn-p001-uk</td>
+      <td>Newlyn</td>
+      <td>50.102</td>
+      <td>-5.54170</td>
+      <td>18950</td>
+      <td>-5.530000</td>
+      <td>50.105000</td>
+      <td>id_obs_newlyn</td>
+      <td>0.898627</td>
+      <td>ok</td>
+      <td>3.126</td>
+      <td>3.198</td>
+      <td>3.286</td>
+      <td>3.346</td>
+      <td>3.425</td>
+      <td>3.479</td>
+      <td>3.531</td>
+      <td>3.601</td>
+      <td>3.644</td>
+      <td>3.696</td>
+    </tr>
+    <tr>
+      <td>aberdeen-p038-uk</td>
+      <td>Aberdeen</td>
+      <td>57.143</td>
+      <td>-2.07450</td>
+      <td>19650</td>
+      <td>-2.058000</td>
+      <td>57.136002</td>
+      <td>id_obs_aberdeen_p038_uk_bodc</td>
+      <td>1.263568</td>
+      <td>ok</td>
+      <td>2.553</td>
+      <td>2.641</td>
+      <td>2.746</td>
+      <td>2.822</td>
+      <td>2.916</td>
+      <td>2.990</td>
+      <td>3.056</td>
+      <td>3.161</td>
+      <td>3.242</td>
+      <td>3.303</td>
+    </tr>
+    <tr>
+      <td>hoekvanholla-hvh-nl</td>
+      <td>Hoek van Holland</td>
+      <td>51.977</td>
+      <td>4.12000</td>
+      <td>19616</td>
+      <td>4.124000</td>
+      <td>51.980000</td>
+      <td>NWS_NO_TS_MO_HoekVanHolland</td>
+      <td>0.431630</td>
+      <td>ok</td>
+      <td>2.890</td>
+      <td>3.052</td>
+      <td>3.244</td>
+      <td>3.373</td>
+      <td>3.534</td>
+      <td>3.629</td>
+      <td>3.707</td>
+      <td>3.789</td>
+      <td>3.847</td>
+      <td>3.889</td>
+    </tr>
+    <tr>
+      <td>brest-france</td>
+      <td>Brest</td>
+      <td>48.383</td>
+      <td>-4.50000</td>
+      <td>19691</td>
+      <td>-4.504000</td>
+      <td>48.375999</td>
+      <td>id_obs_brest_822a_france_uhslc</td>
+      <td>0.832603</td>
+      <td>ok</td>
+      <td>4.067</td>
+      <td>4.149</td>
+      <td>4.246</td>
+      <td>4.313</td>
+      <td>4.397</td>
+      <td>4.460</td>
+      <td>4.527</td>
+      <td>4.630</td>
+      <td>4.742</td>
+      <td>4.919</td>
+    </tr>
+    <tr>
+      <td>newyork-the-battery</td>
+      <td>New York (The Battery)</td>
+      <td>40.701</td>
+      <td>-74.01400</td>
+      <td>18455</td>
+      <td>-74.018997</td>
+      <td>40.708000</td>
+      <td>id_coast_glob_18533</td>
+      <td>0.885056</td>
+      <td>ok</td>
+      <td>0.975</td>
+      <td>1.064</td>
+      <td>1.201</td>
+      <td>1.311</td>
+      <td>1.457</td>
+      <td>1.597</td>
+      <td>1.944</td>
+      <td>2.421</td>
+      <td>2.755</td>
+      <td>3.085</td>
+    </tr>
+    <tr>
+      <td>hong-kong-b</td>
+      <td>Hong Kong (Quarry Bay B)</td>
+      <td>22.300</td>
+      <td>114.20000</td>
+      <td>19794</td>
+      <td>114.154999</td>
+      <td>22.309999</td>
+      <td>id_obs_hong_kong_a_329a_china_uhslc</td>
+      <td>4.761150</td>
+      <td>ok</td>
+      <td>1.633</td>
+      <td>1.685</td>
+      <td>1.754</td>
+      <td>1.823</td>
+      <td>2.001</td>
+      <td>2.199</td>
+      <td>2.394</td>
+      <td>2.653</td>
+      <td>2.830</td>
+      <td>2.991</td>
+    </tr>
+    <tr>
+      <td>charleston-sc</td>
+      <td>Charleston, SC</td>
+      <td>32.782</td>
+      <td>-79.92500</td>
+      <td>18765</td>
+      <td>-79.936996</td>
+      <td>32.769001</td>
+      <td>id_obs_charleston_02</td>
+      <td>1.829531</td>
+      <td>ok</td>
+      <td>1.058</td>
+      <td>1.122</td>
+      <td>1.231</td>
+      <td>1.346</td>
+      <td>1.680</td>
+      <td>2.467</td>
+      <td>3.312</td>
+      <td>3.917</td>
+      <td>4.295</td>
+      <td>4.687</td>
+    </tr>
+  </tbody>
+</table><p>Stations with match distance &gt;25 km (<code>long</code>): <strong>0</strong></p>
+</main>
+<footer class="report-footer">
+<p>Generated at <code>2026-05-24T08:45:40Z</code> (UTC)</p>
+<p>Pipeline version: <code>combo1@2026-05-22T14:49:04</code></p>
+<p>Standalone report — all tables and figures embedded; safe to open via <code>file://</code> offline.</p>
+</footer>
+</body>
+</html>

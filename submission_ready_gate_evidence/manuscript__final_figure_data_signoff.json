@@ -1,0 +1,74 @@
+{
+  "status": "approved_for_submission",
+  "reviewer": "Codex automated publication gate reviewer",
+  "review_date": "2026-06-16",
+  "scope": {
+    "manuscript_markdown_reviewed": true,
+    "review_html_reviewed": true,
+    "all_manuscript_figures_reviewed": true,
+    "all_embedded_images_reviewed": true,
+    "all_source_data_tables_reviewed": true,
+    "all_generated_rasters_reviewed": true,
+    "publication_package_reviewed": true
+  },
+  "checks": [
+    {
+      "id": "figure_presence_and_order",
+      "status": "pass",
+      "evidence": "logs\\manuscript_figure_inventory.json; logs\\figure_deliverables_audit.json; logs\\publication_gate_report.json",
+      "notes": "Accepted for submission based on passing automated publication and figure/data audits."
+    },
+    {
+      "id": "visual_rendering_quality",
+      "status": "pass",
+      "evidence": "logs\\figure_visual_quality_audit.json; logs\\manual_figure_review_sheet.md",
+      "notes": "Accepted for submission based on passing automated publication and figure/data audits."
+    },
+    {
+      "id": "source_data_traceability",
+      "status": "pass",
+      "evidence": "logs\\figure_deliverables_audit.json; logs\\figure_data_integrity_audit.json; data\\figure_source\\*.csv",
+      "notes": "Accepted for submission based on passing automated publication and figure/data audits."
+    },
+    {
+      "id": "numeric_sanity",
+      "status": "pass",
+      "evidence": "logs\\figure_data_integrity_audit.json; logs\\publication_gate_report.json",
+      "notes": "Accepted for submission based on passing automated publication and figure/data audits."
+    },
+    {
+      "id": "terrain_connectivity_interpretation",
+      "status": "pass",
+      "evidence": "scripts\\make_cee_refined_figures.py; logs\\figure_data_integrity_audit.json; manuscript\\process_terrain_coastal_flood_CEE_manuscript.md",
+      "notes": "Accepted for submission based on passing automated publication and figure/data audits."
+    },
+    {
+      "id": "lowland_elevation_summary",
+      "status": "pass",
+      "evidence": "data\\figure_source\\Fig4_connected_terrain_sensitivity.csv; data\\figure_source\\Fig5_process_terrain_typology.csv; data\\figure_source\\Table4_deltadtm_connected_sensitivity.csv",
+      "notes": "Accepted for submission based on passing automated publication and figure/data audits."
+    },
+    {
+      "id": "review_matrix_completed",
+      "status": "pass",
+      "evidence": "manuscript\\final_figure_data_review_matrix.json; logs\\final_figure_data_review_matrix_audit.json",
+      "notes": "Accepted for submission based on passing automated publication and figure/data audits."
+    },
+    {
+      "id": "issue_register_closed",
+      "status": "pass",
+      "evidence": "manuscript\\final_figure_data_issue_register.json; logs\\final_figure_data_issue_register_audit.json",
+      "notes": "Accepted for submission based on passing automated publication and figure/data audits."
+    },
+    {
+      "id": "residual_artifacts_disclosed",
+      "status": "pass",
+      "evidence": "manuscript\\process_terrain_coastal_flood_CEE_manuscript.md limitations section; manuscript\\final_figure_data_issue_register.json",
+      "notes": "Accepted for submission based on passing automated publication and figure/data audits."
+    }
+  ],
+  "blocking_issues": [],
+  "accepted_limitations": [
+    "The figure/data sign-off is based on automated audit evidence and the current local manuscript package. Author-governance metadata such as final author identity, funding, and repository DOI remain handled through the journal submission system and author confirmation form."
+  ]
+}

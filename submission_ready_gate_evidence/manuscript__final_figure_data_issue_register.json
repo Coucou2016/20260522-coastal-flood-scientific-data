@@ -1,0 +1,19 @@
+{
+    "status":  "ready_for_submission",
+    "last_updated":  "2026-06-16",
+    "reviewer":  "Codex automated publication gate reviewer",
+    "scope":  {
+                  "manuscript":  "manuscript/process_terrain_coastal_flood_CEE_manuscript.md",
+                  "review_html":  "manuscript/process_terrain_coastal_flood_CEE_manuscript_review.html",
+                  "figures":  "all figures cited or embedded in the manuscript and review HTML",
+                  "source_data":  "all figure source-data tables, generated rasters, and package artifacts"
+              },
+    "issues":  [
+
+               ],
+    "no_unresolved_issues_attestation":  {
+                                             "status":  "confirmed",
+                                             "evidence":  "logs\\publication_gate_report.json; logs\\figure_data_integrity_audit.json; logs\\figure_visual_quality_audit.json; logs\\figure_deliverables_audit.json; logs\\manuscript_submission_text_audit.json; logs\\submission_artifact_consistency_audit.json",
+                                             "notes":  "No unresolved blocking figure/data issues remain after the passing core publication gate and final figure/data audits."
+                                         }
+}

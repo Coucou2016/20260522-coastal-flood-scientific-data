@@ -1,0 +1,21 @@
+Submission artifact consistency audit
+====================================
+
+Passed: False
+Errors: 6
+Warnings: 0
+
+Errors
+------
+- Markdown figure numbers [1, 2, 3, 4] do not match review HTML figure numbers [1, 2, 3, 4, 5].
+- Markdown table numbers [1, 2] do not match review HTML table numbers [1, 2, 3, 4].
+- Review HTML is older than the main manuscript Markdown; rebuild the HTML before submission.
+- completion_status.json does not report finalized status.
+- reference metadata audit still reports errors in logs/reference_metadata_audit.json.
+- reference metadata audit reports passed=false in logs/reference_metadata_audit.json.
+
+Warnings
+--------
+
+Notes
+-----

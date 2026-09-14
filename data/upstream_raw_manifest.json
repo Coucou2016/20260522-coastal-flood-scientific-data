@@ -1,0 +1,2542 @@
+{
+  "schema": "upstream-raw-input-manifest-v1",
+  "generated_utc": "2026-09-14T11:38:02.925324+00:00",
+  "file_count": 278,
+  "total_bytes": 3590112457,
+  "hash_algorithm": "SHA-256",
+  "policy": "Raw upstream files are not committed; reacquire from authoritative sources.",
+  "datasets": {
+    "coast_rp": {
+      "source": "https://doi.org/10.4121/13392314.v2",
+      "note": "Upstream COAST-RP product; reacquire from the authoritative repository."
+    },
+    "gssr": {
+      "source": "https://doi.org/10.6084/m9.figshare.c.5124878",
+      "note": "Upstream GSSR product; reacquire from the authoritative repository."
+    },
+    "deltadtm": {
+      "source": "https://doi.org/10.4121/21997565.v4",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    "open_meteo": {
+      "source": "https://open-meteo.com/en/docs/historical-weather-api",
+      "note": "Cached API response; reacquire under the provider's current terms."
+    },
+    "local_dtm": {
+      "source": "https://environment.data.gov.uk/ ; https://www.ahn.nl/",
+      "note": "National/local elevation products; provider terms and native datums apply."
+    },
+    "naturalearth": {
+      "source": "https://www.naturalearthdata.com/",
+      "note": "Natural Earth map context; public-domain upstream source."
+    },
+    "map_tiles": {
+      "source": "https://carto.com/attributions",
+      "note": "Historical CARTO tile cache; not redistributed."
+    }
+  },
+  "files": [
+    {
+      "relative_path": "data/raw/coast_rp/COAST-RP.zip",
+      "dataset": "coast_rp",
+      "bytes": 6798999,
+      "sha256": "13242fe8b682230420357dbac202b10590f41dc0c9e378b9c2c69f91962704c9",
+      "authoritative_source": "https://doi.org/10.4121/13392314.v2",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream COAST-RP product; reacquire from the authoritative repository."
+    },
+    {
+      "relative_path": "data/raw/coast_rp/extracted/COAST-RP.nc",
+      "dataset": "coast_rp",
+      "bytes": 2817029,
+      "sha256": "a8a4c4c8f4d613d8f87ab9c29b778766ac80198898a74eee33af146e0c239066",
+      "authoritative_source": "https://doi.org/10.4121/13392314.v2",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream COAST-RP product; reacquire from the authoritative repository."
+    },
+    {
+      "relative_path": "data/raw/coast_rp/extracted/COAST-RP_ETC.nc",
+      "dataset": "coast_rp",
+      "bytes": 2816970,
+      "sha256": "16693340f07d45cfede80dbe84706c50cb1dda5f19d355e30d78a5691b97d620",
+      "authoritative_source": "https://doi.org/10.4121/13392314.v2",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream COAST-RP product; reacquire from the authoritative repository."
+    },
+    {
+      "relative_path": "data/raw/coast_rp/extracted/COAST-RP_TC.nc",
+      "dataset": "coast_rp",
+      "bytes": 1159019,
+      "sha256": "f2ce9401c00f715115df24e02772f5bd3daa796402e751d84a3e43e1f3eb7fcf",
+      "authoritative_source": "https://doi.org/10.4121/13392314.v2",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream COAST-RP product; reacquire from the authoritative repository."
+    },
+    {
+      "relative_path": "data/raw/coast_rp/extracted/README.txt",
+      "dataset": "coast_rp",
+      "bytes": 5491,
+      "sha256": "8b0cd935b3b5b2c8b39bc9597eac9b717aba34a11bc533bd2b88e33e3dc8263f",
+      "authoritative_source": "https://doi.org/10.4121/13392314.v2",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream COAST-RP product; reacquire from the authoritative repository."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/index/deltadtm_tiles.gpkg",
+      "dataset": "deltadtm",
+      "bytes": 2891776,
+      "sha256": "d60ee29751f87e17989e648b6e89055d3af811f3a8dd2aa9c6d2c93b66ed08b5",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/index/README.md",
+      "dataset": "deltadtm",
+      "bytes": 2326,
+      "sha256": "9da10b0576ff4368a756bd5646b091fab6b7c7c7d217a6f758fbe0803f826e00",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N46W001.tif",
+      "dataset": "deltadtm",
+      "bytes": 66838,
+      "sha256": "e9cc9cab85494bb9fea9c5e6eff6b2621641cdd2cdf5da748b0f9eee2b4da138",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N46W002.tif",
+      "dataset": "deltadtm",
+      "bytes": 133411,
+      "sha256": "fdeb65711dba06fcd6be5e574840c4f26f3f1138ee83fb6650eabec33d36a621",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N46W003.tif",
+      "dataset": "deltadtm",
+      "bytes": 21072,
+      "sha256": "096d446b6be7e42c5187dc372d03ba4fcc9fbc40d6cee15773ff6f3528cb48b1",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N47W001.tif",
+      "dataset": "deltadtm",
+      "bytes": 110123,
+      "sha256": "3352e0901166d1312915699715d78ee568396eb601e5dbed90af36fa35360319",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N47W002.tif",
+      "dataset": "deltadtm",
+      "bytes": 111298,
+      "sha256": "1da778e159924923c22949a8cd591c193aad64ca4fb715dbdd85886097f85817",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N47W003.tif",
+      "dataset": "deltadtm",
+      "bytes": 120295,
+      "sha256": "3a99b0e4941b61fd3e1fa5d0512e909b991ac7e9a23cbbee332e84404ec013a7",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N47W004.tif",
+      "dataset": "deltadtm",
+      "bytes": 65618,
+      "sha256": "ba58eacd562a8febeecc6d77775a4abf2dcbb4b80905c82ce304e3c977f89d90",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N47W005.tif",
+      "dataset": "deltadtm",
+      "bytes": 24170,
+      "sha256": "2ea9fc64656e206514e3cc2dcd4757c08029703aa95a6a320fa6a4a74362fe3c",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N48W002.tif",
+      "dataset": "deltadtm",
+      "bytes": 82476,
+      "sha256": "3f30fb59a7d85a8dfa9a29f761e2d4813787439df439e3e2c8af5b132d6606ed",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N48W003.tif",
+      "dataset": "deltadtm",
+      "bytes": 58108,
+      "sha256": "d9cfa1eb3bd2c84558cc9494b2a171e16a7f65c289bc150936626439b5f56ec1",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N48W004.tif",
+      "dataset": "deltadtm",
+      "bytes": 69137,
+      "sha256": "08d66f8d4b513a66d71966bd23faf7e94557b7b0268d14655b6ea5b13f3c3660",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N48W005.tif",
+      "dataset": "deltadtm",
+      "bytes": 81526,
+      "sha256": "de455c95036889a67c1e15bc0243f2b01a624d158e5b77867711962bcea5ad9b",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N49E000.tif",
+      "dataset": "deltadtm",
+      "bytes": 59180,
+      "sha256": "e99c3a9f1e8932e847340fd171ee7ad9a6f2571bfe4b7f90468bd8a8b7623484",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N49E001.tif",
+      "dataset": "deltadtm",
+      "bytes": 60509,
+      "sha256": "df4a5033cfd958081d71672900abff437f667da5b1e12abe6d58b60838aff9cd",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N49W001.tif",
+      "dataset": "deltadtm",
+      "bytes": 21908,
+      "sha256": "16efbc23bf1f2b9dd7e0f7dcde9c86adb6adff4b38628846019a7bfed2dddf3e",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N49W002.tif",
+      "dataset": "deltadtm",
+      "bytes": 56841,
+      "sha256": "8330df20a08f9dcc4f6deb10180f18072c410167513ecae35ce4b351e6c084c0",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N49W003.tif",
+      "dataset": "deltadtm",
+      "bytes": 27535,
+      "sha256": "81f8e014515ec0c82b74176a120b4c79193b44c82bf4046ed3ca7b26c2ebde00",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N49W007.tif",
+      "dataset": "deltadtm",
+      "bytes": 14970,
+      "sha256": "117ac90bb0487f50a780d0977fc5a9db82bef2cae35084b29bd769e8334e38df",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N50E000.tif",
+      "dataset": "deltadtm",
+      "bytes": 20296,
+      "sha256": "0c18918c01c13a045bbeb2118a0e4d120b5814a1bb6e564cda027d8d06ddb35c",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N50E001.tif",
+      "dataset": "deltadtm",
+      "bytes": 54126,
+      "sha256": "1c53b05bb60861c1fb6be3b733f8741b9b5312f6b5f3b2e6e034470d08f1dc50",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N50E002.tif",
+      "dataset": "deltadtm",
+      "bytes": 39977,
+      "sha256": "917c285b98aa99d51debf78ae5919db66c06afb1a747ee6d958b02e7a333d9a3",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N50W001.tif",
+      "dataset": "deltadtm",
+      "bytes": 23281,
+      "sha256": "6764a26e5d342ec46c8e3dc37132097cf11e171cfef3abadf1b6892cd57d9dc0",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N50W002.tif",
+      "dataset": "deltadtm",
+      "bytes": 43990,
+      "sha256": "5cbe11c4819b8688eb66038270b40cdfa463fd3a0433791169c4c4c8b6a269be",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N50W003.tif",
+      "dataset": "deltadtm",
+      "bytes": 21757,
+      "sha256": "3606c346578745f5b6d7d49c9d6884fc0ed59f003693a0e6d7fa6a5b04ab0abc",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N50W005.tif",
+      "dataset": "deltadtm",
+      "bytes": 49493,
+      "sha256": "3624b00131bda4272f15734c56949429c043496b8136dcc401d614c9d2220aa2",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N50W006.tif",
+      "dataset": "deltadtm",
+      "bytes": 32574,
+      "sha256": "d2186c2f6b72135d0c3e6daca57bab6f1f47bf315b7eb2d73fdd94954f005777",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N51E000.tif",
+      "dataset": "deltadtm",
+      "bytes": 83515,
+      "sha256": "57ab45da5404ffb1a7bc6e1487150e4e65db490e2a41cea22eb29994b4e8f8e6",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N51E001.tif",
+      "dataset": "deltadtm",
+      "bytes": 30579,
+      "sha256": "24a9cd6c075baf060ff729c8e1cb5c979b5a42bdfa40467cecc6db8f70637eef",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N51E002.tif",
+      "dataset": "deltadtm",
+      "bytes": 24601,
+      "sha256": "350939dfca17ca37326683a0582074c0b5d5813ebe20b56091ab8795ce139f8a",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N51E003.tif",
+      "dataset": "deltadtm",
+      "bytes": 102089,
+      "sha256": "dbb916d1cfd55cfffaef7408172282d78c40a5d61f03df275430b6344248b123",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N51E004.tif",
+      "dataset": "deltadtm",
+      "bytes": 225392,
+      "sha256": "6a084ed6e6a9366d60edd6b76d0722d1dfaa2f03ee5d63aa99afeab6564a1300",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N51W003.tif",
+      "dataset": "deltadtm",
+      "bytes": 60892,
+      "sha256": "c6e1b73719b68971d3dd9d7f5c8749fb0ad182631ca069206117b06cd9931aa2",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N51W004.tif",
+      "dataset": "deltadtm",
+      "bytes": 45400,
+      "sha256": "36ff63ac8925b5fd8e3aa4ae8bca673d9acfbc0ab017d6b7b92d3bea59ede4cc",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N51W005.tif",
+      "dataset": "deltadtm",
+      "bytes": 46392,
+      "sha256": "e667e4581164e0c421cd8ecac8c90c8b4c2a5f5f5300015ff6160d8cf9c6f77d",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N51W006.tif",
+      "dataset": "deltadtm",
+      "bytes": 20480,
+      "sha256": "4286ec7233eafb8da5795cd0a25076e9cdbfaca3104a1e2465cb0027950e51e6",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N52E001.tif",
+      "dataset": "deltadtm",
+      "bytes": 56046,
+      "sha256": "8b045c6dc5c041b89941e68c4b1f6cb58eaf484c088b6caed2a4fad667f4397c",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N52E004.tif",
+      "dataset": "deltadtm",
+      "bytes": 140735,
+      "sha256": "e4ece175989f39d23cc233f8dc6e4d408ac863a34d6841afca45af2fe04c7327",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N52W004.tif",
+      "dataset": "deltadtm",
+      "bytes": 43693,
+      "sha256": "3c3f107098bec9dcbe7a816e51a38e7104fee2156f48a4c0a5f012ab78803ec0",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N52W005.tif",
+      "dataset": "deltadtm",
+      "bytes": 37462,
+      "sha256": "a90ada0d7ced23fee4cabfc7482359744b25c5942502bedfd66c8ecacd797a2e",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N52W006.tif",
+      "dataset": "deltadtm",
+      "bytes": 5559,
+      "sha256": "357a4b48f84a852978b88aaa64f9e0a296e223b2c0c5523d464a0c2808dc9dd1",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N53E000.tif",
+      "dataset": "deltadtm",
+      "bytes": 16442,
+      "sha256": "ed2942c366012d5a11d62a26a1c2627f6beaa76148e16982b0b89b13568b1055",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N53E004.tif",
+      "dataset": "deltadtm",
+      "bytes": 13992,
+      "sha256": "3dcafcfa18961c49b94bbf6b1cb336e46fa914802e80732f4f486567c284819f",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N53E006.tif",
+      "dataset": "deltadtm",
+      "bytes": 84179,
+      "sha256": "634e9922e10852598f4f59ea8d5cecddd1794fdc8545cf41e213db0152e1b0c9",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N53E007.tif",
+      "dataset": "deltadtm",
+      "bytes": 110216,
+      "sha256": "88655850276cf4f788eac60b17f908dfb12e6aeb3a4b7904c957d132a91adc75",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N53E008.tif",
+      "dataset": "deltadtm",
+      "bytes": 95939,
+      "sha256": "0f109775853d8284fe2e046481a0d64518a880a9ee37916419bd752a76d32883",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N53W001.tif",
+      "dataset": "deltadtm",
+      "bytes": 74102,
+      "sha256": "19cc32e3f7b565bd3f05fea8c8b9e562f51e5cdcf5e7507d37568c00679bacd1",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N53W003.tif",
+      "dataset": "deltadtm",
+      "bytes": 83313,
+      "sha256": "4669fc44d4eb0e61adb93dfb67bcd9ca265d26fc567a6040f2841ab3e4f1b721",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N53W004.tif",
+      "dataset": "deltadtm",
+      "bytes": 41304,
+      "sha256": "ed108f38f311bcda0cdadbb8aaf5b54d3dd0541d797dee8ab035c88d8056dda2",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N53W005.tif",
+      "dataset": "deltadtm",
+      "bytes": 35336,
+      "sha256": "389d1430aca2c101fb9648e7db1adabf18158dc5017367ae9ca8e57a5824d01c",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N54W001.tif",
+      "dataset": "deltadtm",
+      "bytes": 14895,
+      "sha256": "bb542542236ac4f807dd0a3194a85f984f4697b9c8781f3e14c784ab5f9f6482",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N54W002.tif",
+      "dataset": "deltadtm",
+      "bytes": 56814,
+      "sha256": "a978813d003af0b55ce2566546cbb31408fcb69d264a7c49c0e47f5a565ac98c",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N54W003.tif",
+      "dataset": "deltadtm",
+      "bytes": 51645,
+      "sha256": "5dfe5b937a7924f33eef472449d8b61dd79eb570b32b195a062fa19ed11aa465",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N54W004.tif",
+      "dataset": "deltadtm",
+      "bytes": 67256,
+      "sha256": "a563a227b4eec1536c5b645e81d42c17642ec70861d96c3402dda9e81013c6a4",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N54W005.tif",
+      "dataset": "deltadtm",
+      "bytes": 48055,
+      "sha256": "432bb4088d2fa317ef71cbdd76ad02b998ade9a2b3f725a7b0defeb94f88cfdc",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N54W006.tif",
+      "dataset": "deltadtm",
+      "bytes": 60904,
+      "sha256": "864e50c9ba70967530612dc657090416abfaa65804b4be70bbe556aa0b914fb7",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N55E008.tif",
+      "dataset": "deltadtm",
+      "bytes": 62307,
+      "sha256": "9a58fff096e3d694d33fb26fa08b520872a88c19293dcd2caed5098f0ee02893",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N55W002.tif",
+      "dataset": "deltadtm",
+      "bytes": 23634,
+      "sha256": "e7e422282068d696ae6edeebd333faeeb42c1cd96b8df43e0b2435932f319975",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N55W004.tif",
+      "dataset": "deltadtm",
+      "bytes": 49804,
+      "sha256": "3ae5036a84cfc8cdd0f8c06a7720d7a820d1f97ade60693927d5b5bd5d7fa83c",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N55W005.tif",
+      "dataset": "deltadtm",
+      "bytes": 80557,
+      "sha256": "0419bd17910fa6ec029bfa174d9f0bd751ef26fba51b85811b7cef1fd9fb211c",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N55W006.tif",
+      "dataset": "deltadtm",
+      "bytes": 76003,
+      "sha256": "f04621324993aba7844f6d8c08111467f15c9b9344df8876a959cdc7aebabf02",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N55W007.tif",
+      "dataset": "deltadtm",
+      "bytes": 51326,
+      "sha256": "48fd5aa28a99ec4443ad638c57d4f21b9ee124a625e50a760b22e2238ca4b8b1",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N55W008.tif",
+      "dataset": "deltadtm",
+      "bytes": 52404,
+      "sha256": "9ed2c5125604ad62e7ebf927ea382ff1fa8294065ca62bec5a34ed7079f547f5",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N56W004.tif",
+      "dataset": "deltadtm",
+      "bytes": 74211,
+      "sha256": "93f81ce09a9c95f5b80edcf4bf59311cadb923bef79c35251b49b95c2df01af5",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N56W006.tif",
+      "dataset": "deltadtm",
+      "bytes": 168150,
+      "sha256": "0ceab8fea930761ad9af7a1abdda6deb4c7c77703291734836e852dce669386a",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N56W007.tif",
+      "dataset": "deltadtm",
+      "bytes": 71491,
+      "sha256": "5f62c5919f630bf92348a46364ea3b3ef2460239e649e21cf5d6c77a61b0d788",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N57E007.tif",
+      "dataset": "deltadtm",
+      "bytes": 12435,
+      "sha256": "5376afdaef605413c7883f496341afc9023fb85af357bed0aa1a80233c07e01a",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N57W002.tif",
+      "dataset": "deltadtm",
+      "bytes": 12797,
+      "sha256": "a1274518f4f245d35f58f732f85b41b24805e5cc6ff7da491485a19abaa1139e",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N57W003.tif",
+      "dataset": "deltadtm",
+      "bytes": 39506,
+      "sha256": "6a937bbe4982ae96a818a9e6bf9e2355f2d826523581a09f7d79022e72cdb3aa",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N57W004.tif",
+      "dataset": "deltadtm",
+      "bytes": 51403,
+      "sha256": "cd5f8f35654cc899517a8ee88647b692c76a50fdae4b274d5a101804343b63e0",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N57W005.tif",
+      "dataset": "deltadtm",
+      "bytes": 106501,
+      "sha256": "6b36388686277417568fd3cc880e88f5ea9643de7bbb6e038a55b828b824f962",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N57W006.tif",
+      "dataset": "deltadtm",
+      "bytes": 158900,
+      "sha256": "82e2b8f7de3c1bb0d59c8870bef82ae9828055843d3a601c430774172728a2b7",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N58E007.tif",
+      "dataset": "deltadtm",
+      "bytes": 121308,
+      "sha256": "3ec0540379b3257b0643e390ff3cb44e26e1b2bee615332c6b616846d86b0e79",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N58W003.tif",
+      "dataset": "deltadtm",
+      "bytes": 19983,
+      "sha256": "da9bddba8e443a500c8227ab450e6955637c3adff61a1ecc2a26f6774dc89e27",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N58W004.tif",
+      "dataset": "deltadtm",
+      "bytes": 68609,
+      "sha256": "8dbc0768baffda9eac56df1b9bce0a4f8027efbbf988353e10382d875ae0f93b",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N58W005.tif",
+      "dataset": "deltadtm",
+      "bytes": 102883,
+      "sha256": "ba3511c55accf5becef8ccf9011222538f77f346afa7fb7b94920373ad87aff7",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N58W006.tif",
+      "dataset": "deltadtm",
+      "bytes": 82833,
+      "sha256": "e4dac49dbb041cd2d7f2b89f8318d308a58d9e3dc272cd2dd1d6c1f0c6f106a1",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N58W007.tif",
+      "dataset": "deltadtm",
+      "bytes": 119921,
+      "sha256": "9eccc0325ca474d48d6353d8888ca749e52a14e656b2e570fa14922d4088a39e",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N60W001.tif",
+      "dataset": "deltadtm",
+      "bytes": 24248,
+      "sha256": "0b155f546f767181bf822c2d90e5c4f4f2d50a8d62c8c3ad3b8bfb5594c99511",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/mask_tiles/DeltaDTM_v1_1_N60W002.tif",
+      "dataset": "deltadtm",
+      "bytes": 104621,
+      "sha256": "d4185ddfb4e40d6d8f2721c5fd6aaa56a0ac17acc71d004595c4fa541e654729",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/masks_test/DeltaDTM_v1_1_N51E000.tif",
+      "dataset": "deltadtm",
+      "bytes": 83515,
+      "sha256": "57ab45da5404ffb1a7bc6e1487150e4e65db490e2a41cea22eb29994b4e8f8e6",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/tiles/DeltaDTM_v1_1_N47W002.tif",
+      "dataset": "deltadtm",
+      "bytes": 14988061,
+      "sha256": "3c42df0173ecde04cbe6ef747c5095900e5d22c4aaef61f3f81208974099de72",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/tiles/DeltaDTM_v1_1_N47W003.tif",
+      "dataset": "deltadtm",
+      "bytes": 12764488,
+      "sha256": "4c8b89b7fd7f409cae86e8c9e696dc3707d9ac08c3df18737caa381bb81eb56e",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/tiles/DeltaDTM_v1_1_N47W004.tif",
+      "dataset": "deltadtm",
+      "bytes": 4368466,
+      "sha256": "09b2adff7fba5b0f5e178dddb8abc5b389faf95aaa4d7f34d1e6cba3fb78adbc",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/tiles/DeltaDTM_v1_1_N47W005.tif",
+      "dataset": "deltadtm",
+      "bytes": 1801000,
+      "sha256": "7bcc6bc835ef987b8a849a72584c4e42cc5353f99841254018f4276b443a6881",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/tiles/DeltaDTM_v1_1_N48W002.tif",
+      "dataset": "deltadtm",
+      "bytes": 5774198,
+      "sha256": "ed15a228bb907ff62b2f79dbe4df9027951ae3a529f444fb0cd7e8be66c49750",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/tiles/DeltaDTM_v1_1_N48W003.tif",
+      "dataset": "deltadtm",
+      "bytes": 1325863,
+      "sha256": "b8f3c8366ae30fc7c2f53eb7c2f9084ad40efac9ba43d62801cb8b803b8b09e6",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/tiles/DeltaDTM_v1_1_N48W004.tif",
+      "dataset": "deltadtm",
+      "bytes": 1537518,
+      "sha256": "750c971415d72151f1da55a28b5cf013294b1fac32d8917745f27c1fbe8780ca",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/tiles/DeltaDTM_v1_1_N48W005.tif",
+      "dataset": "deltadtm",
+      "bytes": 3462587,
+      "sha256": "04a89bc5fa4af7d8def6ea98bff5b50352d83d506787cb48cf617a4f3733caef",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/tiles/DeltaDTM_v1_1_N49E000.tif",
+      "dataset": "deltadtm",
+      "bytes": 4370243,
+      "sha256": "613220bec52c388a0bf9bf2555e12a7b5161017bf5f258c1f4da0f6a8e854d52",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/tiles/DeltaDTM_v1_1_N49E001.tif",
+      "dataset": "deltadtm",
+      "bytes": 2825761,
+      "sha256": "de922bafa21f8f0327253264a8a8d2fdaf9ec0a5a474961f648e7edd7ed1d89a",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/tiles/DeltaDTM_v1_1_N49W001.tif",
+      "dataset": "deltadtm",
+      "bytes": 4342353,
+      "sha256": "54a6d5757dd0e98c957f4f3c7cd03ad7f43402fc748960c2be2fc2b8376ee061",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/tiles/DeltaDTM_v1_1_N49W002.tif",
+      "dataset": "deltadtm",
+      "bytes": 10096395,
+      "sha256": "07402cc4108cb1987cdbd61ae5619c2b631f1044e641c643358074cb5cbde27c",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/tiles/DeltaDTM_v1_1_N49W003.tif",
+      "dataset": "deltadtm",
+      "bytes": 555635,
+      "sha256": "38a3edf0b66e3632c3c7e5ad7e2e568f78fadf390c2c93f6c8fd42dc58ad1766",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/tiles/DeltaDTM_v1_1_N49W007.tif",
+      "dataset": "deltadtm",
+      "bytes": 176219,
+      "sha256": "fdaad8b9fb65bff060b9bcd3933981c4371961e7efbeb7dca30793fc338ae0da",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/tiles/DeltaDTM_v1_1_N50E000.tif",
+      "dataset": "deltadtm",
+      "bytes": 3013558,
+      "sha256": "4771725adcde67dfae6663b28dd8182143870de09973557504c19d5caf47964a",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/tiles/DeltaDTM_v1_1_N50E001.tif",
+      "dataset": "deltadtm",
+      "bytes": 5030867,
+      "sha256": "6352cd02d7426f19675a4971c5fd9f5df0986bfcb483255127d70831f3fe36b4",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/tiles/DeltaDTM_v1_1_N50E002.tif",
+      "dataset": "deltadtm",
+      "bytes": 11274894,
+      "sha256": "3901e00cce84417fa0811603dcb922fdde1e3a26d0c37681f0a2f5d6716157a4",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/tiles/DeltaDTM_v1_1_N50W001.tif",
+      "dataset": "deltadtm",
+      "bytes": 3245414,
+      "sha256": "a76d0f1e702f04610a98953d47d666679398b205c7d247a52f0c80cbee9ccab1",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/tiles/DeltaDTM_v1_1_N50W002.tif",
+      "dataset": "deltadtm",
+      "bytes": 4666128,
+      "sha256": "4c231ec11cfeee56e396808b33aaa27a5e905b95e30d111c8709cec96356d845",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/tiles/DeltaDTM_v1_1_N50W003.tif",
+      "dataset": "deltadtm",
+      "bytes": 1854094,
+      "sha256": "82fd4ef46ff828bee54f93d19004e14532b2af28accbc49618b3a2f5e5aafd03",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/tiles/DeltaDTM_v1_1_N50W005.tif",
+      "dataset": "deltadtm",
+      "bytes": 1451354,
+      "sha256": "4cf0fc7c66cfe79cf39cbdbe3a537753814db8a6518502f0667c8d387b1f7ac8",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/tiles/DeltaDTM_v1_1_N50W006.tif",
+      "dataset": "deltadtm",
+      "bytes": 856518,
+      "sha256": "a85a767fe4295ec4bea027003ee6c54147ba80d24976311d3f9b36d7ab494b8c",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/tiles/DeltaDTM_v1_1_N51E000.tif",
+      "dataset": "deltadtm",
+      "bytes": 10258832,
+      "sha256": "ada73fe1119d13cf40590b18f26dfbd18dc9bd839cf23ddf7cadb8e73f88016a",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/tiles/DeltaDTM_v1_1_N51E001.tif",
+      "dataset": "deltadtm",
+      "bytes": 3353142,
+      "sha256": "a37e345f32fe3fe4d55ecbcd0353040d13896d927593407a5b03aa0ef07c6001",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/tiles/DeltaDTM_v1_1_N51E002.tif",
+      "dataset": "deltadtm",
+      "bytes": 3748964,
+      "sha256": "0ed6dea445c3af3e6ab3b25dae1817b630c049c3bfb4508f3ecb56a8041fc233",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/tiles/DeltaDTM_v1_1_N51E003.tif",
+      "dataset": "deltadtm",
+      "bytes": 16391450,
+      "sha256": "007eb1a4077435eb17f6142c647cef3821970c94d6a9284219a83b4e09dde0fc",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/tiles/DeltaDTM_v1_1_N51E004.tif",
+      "dataset": "deltadtm",
+      "bytes": 32373179,
+      "sha256": "5812857c5eb34f3b683cfc97de7daa85b614b77c33ec67c912bca75d03482734",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/tiles/DeltaDTM_v1_1_N51W003.tif",
+      "dataset": "deltadtm",
+      "bytes": 8114572,
+      "sha256": "a026d8458b7e5a4a107a63abe1a4dc394b7cbe9843cf6724261269dcb0f750c1",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/tiles/DeltaDTM_v1_1_N51W004.tif",
+      "dataset": "deltadtm",
+      "bytes": 2396956,
+      "sha256": "285cc0b47b489670d78754a5f69c4c8ac4cece0940b5a04064469776abdabf7f",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/tiles/DeltaDTM_v1_1_N51W005.tif",
+      "dataset": "deltadtm",
+      "bytes": 2527100,
+      "sha256": "0dae3bfeaded1dace386d4484a2c3d222230e5b4d77301e16075c1da31a3bd81",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/tiles/DeltaDTM_v1_1_N51W006.tif",
+      "dataset": "deltadtm",
+      "bytes": 388123,
+      "sha256": "4a9225f22d803d9f622959c15f2cf77c105cc29144e3b52e5ef4f89556c5e53a",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/tiles/DeltaDTM_v1_1_N52E001.tif",
+      "dataset": "deltadtm",
+      "bytes": 10663944,
+      "sha256": "3c692ec5af23b8bf45b379f6bdd843c33c5a9930090828cb9b9f728e2fe5c7b8",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/tiles/DeltaDTM_v1_1_N52E004.tif",
+      "dataset": "deltadtm",
+      "bytes": 15990786,
+      "sha256": "b3958225d24bd68d34ed2bce73a4f2921f7c141771b489678cae706c80c5d274",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/tiles/DeltaDTM_v1_1_N52W004.tif",
+      "dataset": "deltadtm",
+      "bytes": 423512,
+      "sha256": "432ce57cc0dab848c2dbac20434f828d9e73cd45f7351c99265786efa52fa8c1",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/tiles/DeltaDTM_v1_1_N52W005.tif",
+      "dataset": "deltadtm",
+      "bytes": 1678649,
+      "sha256": "540c390d0063705d5f768084a2327c783291c264c86e1669b60b3097ad0c7369",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/tiles/DeltaDTM_v1_1_N52W006.tif",
+      "dataset": "deltadtm",
+      "bytes": 22228,
+      "sha256": "5642a5910bcecd1c8c5ccf504ab9519059d9cf642595bf7e1b2cd22e2e254e19",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/tiles/DeltaDTM_v1_1_N53E004.tif",
+      "dataset": "deltadtm",
+      "bytes": 908124,
+      "sha256": "82d96a63f85870d368e2ac33873557d284d2b90edd2e750592c22ca41b3ed8c3",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/tiles/DeltaDTM_v1_1_N53E006.tif",
+      "dataset": "deltadtm",
+      "bytes": 15846231,
+      "sha256": "35aa394a637893ed3362f5a3ae3dc5891e2e957f0d6c7dbfa951e8c2932a8854",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/tiles/DeltaDTM_v1_1_N53E007.tif",
+      "dataset": "deltadtm",
+      "bytes": 23666991,
+      "sha256": "57af0602049aa906f0e30520a5c49ce9576c94a5a6246103dde331ab70b7134b",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/tiles/DeltaDTM_v1_1_N53E008.tif",
+      "dataset": "deltadtm",
+      "bytes": 24503023,
+      "sha256": "012390e99c5da63873c0cfea82c1ff5f31867c00184cb77b737209ae370fd204",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/tiles/DeltaDTM_v1_1_N53W001.tif",
+      "dataset": "deltadtm",
+      "bytes": 23813815,
+      "sha256": "890238a499449f9fc679f884dcc1aa544e5e1485989ee87e32f3efeada2c38b5",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/tiles/DeltaDTM_v1_1_N53W003.tif",
+      "dataset": "deltadtm",
+      "bytes": 8549819,
+      "sha256": "612d1d074b0880ef86ce2ab828b157d567bc7d8be1c5f41290510d22e86c3715",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/tiles/DeltaDTM_v1_1_N53W004.tif",
+      "dataset": "deltadtm",
+      "bytes": 2424720,
+      "sha256": "e7418d6178d0370c3acbcf533a5e81a2c3363b63b80d54fc4951a3053b73d054",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/tiles/DeltaDTM_v1_1_N53W005.tif",
+      "dataset": "deltadtm",
+      "bytes": 1727669,
+      "sha256": "470e84b041a0497871dbc682c59d108a2ef7684ac14171319a8505480b74fb5d",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/tiles/DeltaDTM_v1_1_N54W001.tif",
+      "dataset": "deltadtm",
+      "bytes": 2302842,
+      "sha256": "3994776cdd89d751d20e32c12e5a9ab87c405d83d3f227730e8e95b41b37c434",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/tiles/DeltaDTM_v1_1_N54W002.tif",
+      "dataset": "deltadtm",
+      "bytes": 4549652,
+      "sha256": "3d4c42177533abe353722aae058fbb06c1c0f8f6178c36a2d5e050c18a63a0e8",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/tiles/DeltaDTM_v1_1_N54W003.tif",
+      "dataset": "deltadtm",
+      "bytes": 1852470,
+      "sha256": "293fed1bfd13bd56ca395a182cc995de75d04967f84aa84d8be41a44c118787b",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/tiles/DeltaDTM_v1_1_N54W004.tif",
+      "dataset": "deltadtm",
+      "bytes": 4031323,
+      "sha256": "d2e089dfd51e5252374b476c7b65da04cfb2b5fab2eea5db82ccb7ff362c5631",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/tiles/DeltaDTM_v1_1_N54W005.tif",
+      "dataset": "deltadtm",
+      "bytes": 2447748,
+      "sha256": "d7b6000fede19109b3d4ee4956a40f26e5efeccfdd0d1bdcef906107e81fe9d9",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/tiles/DeltaDTM_v1_1_N54W006.tif",
+      "dataset": "deltadtm",
+      "bytes": 3868584,
+      "sha256": "fbd1f423d2ad9ee8b117376ab5bdd2fcb05ae40a94f1a329e0489f6ddee53ca0",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/tiles/DeltaDTM_v1_1_N55E008.tif",
+      "dataset": "deltadtm",
+      "bytes": 15882356,
+      "sha256": "2b769e2a05602348c20950670ba8de33f23cb19672b117a1d2b50c6df2307a59",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/tiles/DeltaDTM_v1_1_N55W002.tif",
+      "dataset": "deltadtm",
+      "bytes": 1566480,
+      "sha256": "0e3418723b00ed5245521bef75e00c445706d7afb4ac99ee49f7f73a22eedee6",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/tiles/DeltaDTM_v1_1_N55W004.tif",
+      "dataset": "deltadtm",
+      "bytes": 1273743,
+      "sha256": "5951170f028592b1a081552b33092e11bd57048b71bebd74c7355eecf7d35158",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/tiles/DeltaDTM_v1_1_N55W005.tif",
+      "dataset": "deltadtm",
+      "bytes": 2743889,
+      "sha256": "9c2673f9e2215d4f2200683cbc63b05d81521b7930c1b848a07efe5d4c52115e",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/tiles/DeltaDTM_v1_1_N55W006.tif",
+      "dataset": "deltadtm",
+      "bytes": 2104293,
+      "sha256": "1fb0dbfc4bd7cec6ff52f6ed5999fe01a447b02f29887d4d49546b215b342949",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/tiles/DeltaDTM_v1_1_N55W007.tif",
+      "dataset": "deltadtm",
+      "bytes": 2246716,
+      "sha256": "6b1438a6fdb5fb3037b42b1b47c458f5eb7edbf7b6bc10f0df469bb935d6748b",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/tiles/DeltaDTM_v1_1_N55W008.tif",
+      "dataset": "deltadtm",
+      "bytes": 2208100,
+      "sha256": "7920343fcdf95ee02b7e526610b0845eacdd3092f96da329f2473ecd6c6930f1",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/tiles/DeltaDTM_v1_1_N56W004.tif",
+      "dataset": "deltadtm",
+      "bytes": 2491069,
+      "sha256": "c2ae39ede4759dbeec63056731d409ef2ecb079b8b05d52a16acab3473db67b5",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/tiles/DeltaDTM_v1_1_N56W006.tif",
+      "dataset": "deltadtm",
+      "bytes": 3947265,
+      "sha256": "200277ad010198bf18e7e116cf0953b1175d16fbeca3b119d8cf5f870f989cfe",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/tiles/DeltaDTM_v1_1_N56W007.tif",
+      "dataset": "deltadtm",
+      "bytes": 1889806,
+      "sha256": "25233285eba600714eb0f88b155c3e7ffe9ab1215ce5280fabf3ca6db80206b3",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/tiles/DeltaDTM_v1_1_N57E007.tif",
+      "dataset": "deltadtm",
+      "bytes": 142756,
+      "sha256": "74d91b9ba78cee85723e706d2727dc99084b14e22df213191ada64e74a372836",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/tiles/DeltaDTM_v1_1_N57W002.tif",
+      "dataset": "deltadtm",
+      "bytes": 751123,
+      "sha256": "7c266510a8a3427caa9ae8eb40484b2b9e15c24d6c4643ae04a92dfcaefedc62",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/tiles/DeltaDTM_v1_1_N57W003.tif",
+      "dataset": "deltadtm",
+      "bytes": 988413,
+      "sha256": "5140c5326c13ad7db694b8769fd00eec92166c8f691ff78e3d4b09a61ea2eb0d",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/tiles/DeltaDTM_v1_1_N57W004.tif",
+      "dataset": "deltadtm",
+      "bytes": 2398152,
+      "sha256": "3e63c56fa36d714f5666e97d4e040fd735f376b94527dbb927f4ee8337760ecc",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/tiles/DeltaDTM_v1_1_N57W005.tif",
+      "dataset": "deltadtm",
+      "bytes": 2223157,
+      "sha256": "eff65714ac40785b4aeb1fce734103b29d09e746b1b72946f1f74f6454a0269e",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/tiles/DeltaDTM_v1_1_N57W006.tif",
+      "dataset": "deltadtm",
+      "bytes": 2328240,
+      "sha256": "7578dd8737f84320030c075d2d7af1f80e3f418f9911e7050ede868dfaef9aa2",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/tiles/DeltaDTM_v1_1_N58E007.tif",
+      "dataset": "deltadtm",
+      "bytes": 1737148,
+      "sha256": "87cfe232a981efe37a75d0882f42a9bd594660e854ac3ab0a90c99c79b04a663",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/tiles/DeltaDTM_v1_1_N58W003.tif",
+      "dataset": "deltadtm",
+      "bytes": 656341,
+      "sha256": "4fc6a4ed6c4cf65fa3cfc0577ec7fb286a839334cfca82cbb67b4735ade9f5d6",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/tiles/DeltaDTM_v1_1_N58W004.tif",
+      "dataset": "deltadtm",
+      "bytes": 2259922,
+      "sha256": "c1491605198acd35969f901f8de4b3316e34af19ab68a46c15ab1dcc16b07784",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/tiles/DeltaDTM_v1_1_N58W005.tif",
+      "dataset": "deltadtm",
+      "bytes": 906695,
+      "sha256": "b1fba05ab39b5be814d380591e1afeb519867322495c90daa558e90fa50593d7",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/tiles/DeltaDTM_v1_1_N58W006.tif",
+      "dataset": "deltadtm",
+      "bytes": 839188,
+      "sha256": "452076dacf54598a1941b0778d7ff1f1d7580cb36b634fe28bd7df752814d70b",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/tiles/DeltaDTM_v1_1_N58W007.tif",
+      "dataset": "deltadtm",
+      "bytes": 1977209,
+      "sha256": "cd92a0884d9ca18fafb8a2615142c2dc9708db1f921809536dc467e57edfb612",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/tiles/DeltaDTM_v1_1_N60W001.tif",
+      "dataset": "deltadtm",
+      "bytes": 487134,
+      "sha256": "277031a37a1676ec640ab365676072db482745f7fa23de08a252f4b1f35dbcb5",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/tiles/DeltaDTM_v1_1_N60W002.tif",
+      "dataset": "deltadtm",
+      "bytes": 2350968,
+      "sha256": "9d5a25b2cf7dba0f410354b80ee6fc3ac236a4114602d29cfd8662ab1b53816b",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/zips/Europe.zip",
+      "dataset": "deltadtm",
+      "bytes": 2386070935,
+      "sha256": "ea01cedd93c716a9c15d3551d8651931db80a0f11284d6d1141d77cd8eaeabcb",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/deltadtm/zips/mask_tiles.zip",
+      "dataset": "deltadtm",
+      "bytes": 428178062,
+      "sha256": "3f8c6999f90346359e60cc6c757786d43fd1cb65e4ab13125faaa80606487775",
+      "authoritative_source": "https://doi.org/10.4121/21997565.v4",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream DeltaDTM product; local v1.1 files are not copied into Git."
+    },
+    {
+      "relative_path": "data/raw/gssr/era5/aberdeen_p038_uk.7z",
+      "dataset": "gssr",
+      "bytes": 418279,
+      "sha256": "82a7471ba415a67dbdb2a7ccb781e58bd4e2aa5d44af0f51ca8a0b7f2dc7c9a4",
+      "authoritative_source": "https://doi.org/10.6084/m9.figshare.c.5124878",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream GSSR product; reacquire from the authoritative repository."
+    },
+    {
+      "relative_path": "data/raw/gssr/era5/boulogne_sur_mer_.7z",
+      "dataset": "gssr",
+      "bytes": 410763,
+      "sha256": "c416ecd43c4218bfde8c0bcff3b459b75f26111a84e4b5cbd45b250e926ec39b",
+      "authoritative_source": "https://doi.org/10.6084/m9.figshare.c.5124878",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream GSSR product; reacquire from the authoritative repository."
+    },
+    {
+      "relative_path": "data/raw/gssr/era5/brest_.7z",
+      "dataset": "gssr",
+      "bytes": 415898,
+      "sha256": "2c040c2ec77e9406df08f798b1d9ad026a958dd10055688dfe036f08af814e12",
+      "authoritative_source": "https://doi.org/10.6084/m9.figshare.c.5124878",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream GSSR product; reacquire from the authoritative repository."
+    },
+    {
+      "relative_path": "data/raw/gssr/era5/charleston,sc_261a_usa.7z",
+      "dataset": "gssr",
+      "bytes": 416143,
+      "sha256": "f949bfdad49dbf316ba7c09dc849aa644703580a3803a3d643a2af067e7fe50d",
+      "authoritative_source": "https://doi.org/10.6084/m9.figshare.c.5124878",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream GSSR product; reacquire from the authoritative repository."
+    },
+    {
+      "relative_path": "data/raw/gssr/era5/cherbourg_.7z",
+      "dataset": "gssr",
+      "bytes": 413251,
+      "sha256": "d2fb7811652c6adc68625395c4ef1b7ffead8585c5e8a60f64824ca55d42e602",
+      "authoritative_source": "https://doi.org/10.6084/m9.figshare.c.5124878",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream GSSR product; reacquire from the authoritative repository."
+    },
+    {
+      "relative_path": "data/raw/gssr/era5/cuxhaven_germany.7z",
+      "dataset": "gssr",
+      "bytes": 416456,
+      "sha256": "9e8eae8c0bb169bd19d66f5ac1952ecb55904a0bd3f01b51aa129864161c6a5b",
+      "authoritative_source": "https://doi.org/10.6084/m9.figshare.c.5124878",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream GSSR product; reacquire from the authoritative repository."
+    },
+    {
+      "relative_path": "data/raw/gssr/era5/delfzijl_del_nl.7z",
+      "dataset": "gssr",
+      "bytes": 420813,
+      "sha256": "22f1cbf7593bb82e336670b89a651d0f5ee0dfab8e7e28ee596d2a8294116e9d",
+      "authoritative_source": "https://doi.org/10.6084/m9.figshare.c.5124878",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream GSSR product; reacquire from the authoritative repository."
+    },
+    {
+      "relative_path": "data/raw/gssr/era5/denhelder_hel_nl.7z",
+      "dataset": "gssr",
+      "bytes": 415630,
+      "sha256": "a1434d9c0eb4b013a069680ae7ed686e991c09d531177559628eefff94bb7eac",
+      "authoritative_source": "https://doi.org/10.6084/m9.figshare.c.5124878",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream GSSR product; reacquire from the authoritative repository."
+    },
+    {
+      "relative_path": "data/raw/gssr/era5/dieppe_.7z",
+      "dataset": "gssr",
+      "bytes": 410426,
+      "sha256": "8ec95d5a1d4113a89f4fe47fa10c5247a0b1b2b29c4f7e323c5c7d20aca26726",
+      "authoritative_source": "https://doi.org/10.6084/m9.figshare.c.5124878",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream GSSR product; reacquire from the authoritative repository."
+    },
+    {
+      "relative_path": "data/raw/gssr/era5/dunkerque_.7z",
+      "dataset": "gssr",
+      "bytes": 411385,
+      "sha256": "60af734b30ca7ecbbaffce12e779ed335044c591ed1f4e91d301fd07b2379a57",
+      "authoritative_source": "https://doi.org/10.6084/m9.figshare.c.5124878",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream GSSR product; reacquire from the authoritative repository."
+    },
+    {
+      "relative_path": "data/raw/gssr/era5/esbjerg_130121_denmark.7z",
+      "dataset": "gssr",
+      "bytes": 424177,
+      "sha256": "20449546f1127add89a1cc3f894ced201f6a6b2fb8f6fa1ef19b994d4646a0f0",
+      "authoritative_source": "https://doi.org/10.6084/m9.figshare.c.5124878",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream GSSR product; reacquire from the authoritative repository."
+    },
+    {
+      "relative_path": "data/raw/gssr/era5/extracted/aberdeen_p038_uk/aberdeen_p038_uk.csv",
+      "dataset": "gssr",
+      "bytes": 1522157,
+      "sha256": "64fdad109ffb5f1d685d69354a54f995e26038502d5d45f8881998e55b655689",
+      "authoritative_source": "https://doi.org/10.6084/m9.figshare.c.5124878",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream GSSR product; reacquire from the authoritative repository."
+    },
+    {
+      "relative_path": "data/raw/gssr/era5/extracted/boulogne_sur_mer_/boulogne_sur_mer_.csv",
+      "dataset": "gssr",
+      "bytes": 1491768,
+      "sha256": "073c566ca913598fa377762d9deacd76356b8657f20fed9713f481817163ee83",
+      "authoritative_source": "https://doi.org/10.6084/m9.figshare.c.5124878",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream GSSR product; reacquire from the authoritative repository."
+    },
+    {
+      "relative_path": "data/raw/gssr/era5/extracted/brest_/brest_.csv",
+      "dataset": "gssr",
+      "bytes": 1478637,
+      "sha256": "c8b7596e7c25ed95095994da1937a11c1a7b271cc4626c2f44df6412226fe2f6",
+      "authoritative_source": "https://doi.org/10.6084/m9.figshare.c.5124878",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream GSSR product; reacquire from the authoritative repository."
+    },
+    {
+      "relative_path": "data/raw/gssr/era5/extracted/charleston,sc_261a_usa/charleston,sc_261a_usa.csv",
+      "dataset": "gssr",
+      "bytes": 1522560,
+      "sha256": "0c7c448f7b4995acf040f5d0fab965fcbb4191e68106a27339bf07df9c3bef21",
+      "authoritative_source": "https://doi.org/10.6084/m9.figshare.c.5124878",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream GSSR product; reacquire from the authoritative repository."
+    },
+    {
+      "relative_path": "data/raw/gssr/era5/extracted/cherbourg_/cherbourg_.csv",
+      "dataset": "gssr",
+      "bytes": 1519821,
+      "sha256": "7660da7b2f4bccf8583989e909bd4ad3730e0daf750aba6a3e44cca2d7ab6342",
+      "authoritative_source": "https://doi.org/10.6084/m9.figshare.c.5124878",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream GSSR product; reacquire from the authoritative repository."
+    },
+    {
+      "relative_path": "data/raw/gssr/era5/extracted/cuxhaven_germany/cuxhaven_germany.csv",
+      "dataset": "gssr",
+      "bytes": 1486044,
+      "sha256": "ae460a9ba428368dbd3b067a1ca36c28702a2d370605d4e5a0f51bdfe5e437b1",
+      "authoritative_source": "https://doi.org/10.6084/m9.figshare.c.5124878",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream GSSR product; reacquire from the authoritative repository."
+    },
+    {
+      "relative_path": "data/raw/gssr/era5/extracted/delfzijl_del_nl/delfzijl_del_nl.csv",
+      "dataset": "gssr",
+      "bytes": 1486019,
+      "sha256": "a6987998d622e4d790adf12e5e41bf8f308fc9a082a370424129ddc435209cfa",
+      "authoritative_source": "https://doi.org/10.6084/m9.figshare.c.5124878",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream GSSR product; reacquire from the authoritative repository."
+    },
+    {
+      "relative_path": "data/raw/gssr/era5/extracted/denhelder_hel_nl/denhelder_hel_nl.csv",
+      "dataset": "gssr",
+      "bytes": 1493241,
+      "sha256": "016529a4407aa775f7d7d8ecafdfcaa5e38e42ceef4ec62d25a8900de78e879d",
+      "authoritative_source": "https://doi.org/10.6084/m9.figshare.c.5124878",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream GSSR product; reacquire from the authoritative repository."
+    },
+    {
+      "relative_path": "data/raw/gssr/era5/extracted/dieppe_/dieppe_.csv",
+      "dataset": "gssr",
+      "bytes": 1493220,
+      "sha256": "6c6bac02d54250c21eb76ba4e2f4dd9d70e213859c8425f9cb28823fa126745f",
+      "authoritative_source": "https://doi.org/10.6084/m9.figshare.c.5124878",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream GSSR product; reacquire from the authoritative repository."
+    },
+    {
+      "relative_path": "data/raw/gssr/era5/extracted/dunkerque_/dunkerque_.csv",
+      "dataset": "gssr",
+      "bytes": 1491275,
+      "sha256": "7c13f5e0a679494bf2acf1f164eaec3149996e6ae041bbe7fba929b132fba1f0",
+      "authoritative_source": "https://doi.org/10.6084/m9.figshare.c.5124878",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream GSSR product; reacquire from the authoritative repository."
+    },
+    {
+      "relative_path": "data/raw/gssr/era5/extracted/esbjerg_130121_denmark/esbjerg_130121_denmark.csv",
+      "dataset": "gssr",
+      "bytes": 1490955,
+      "sha256": "b42a9d7166d6a785ea1c4ac6b31ead0e860876cbe51b34853d348778a6d6c208",
+      "authoritative_source": "https://doi.org/10.6084/m9.figshare.c.5124878",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream GSSR product; reacquire from the authoritative repository."
+    },
+    {
+      "relative_path": "data/raw/gssr/era5/extracted/fishguard_p055_uk/fishguard_p055_uk.csv",
+      "dataset": "gssr",
+      "bytes": 1522481,
+      "sha256": "52de0f4f32d032e5d43bd431c453aa31f5d235b923b7c6f2f5f15a71c7f14257",
+      "authoritative_source": "https://doi.org/10.6084/m9.figshare.c.5124878",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream GSSR product; reacquire from the authoritative repository."
+    },
+    {
+      "relative_path": "data/raw/gssr/era5/extracted/hoekvanholla_hvh_nl/hoekvanholla_hvh_nl.csv",
+      "dataset": "gssr",
+      "bytes": 1461305,
+      "sha256": "8b279789521cb3f328fbe465331f3e28845c3d59a0562277cb7100465f0ac79f",
+      "authoritative_source": "https://doi.org/10.6084/m9.figshare.c.5124878",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream GSSR product; reacquire from the authoritative repository."
+    },
+    {
+      "relative_path": "data/raw/gssr/era5/extracted/holyhead_p054_uk/holyhead_p054_uk.csv",
+      "dataset": "gssr",
+      "bytes": 1520867,
+      "sha256": "21a5d1fa65a4e3ca1d28324a1a6c1eb1835c202e1c0e6b902ad3511789834cea",
+      "authoritative_source": "https://doi.org/10.6084/m9.figshare.c.5124878",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream GSSR product; reacquire from the authoritative repository."
+    },
+    {
+      "relative_path": "data/raw/gssr/era5/extracted/hong_kong_b_329b_china/hong_kong_b_329b_china.csv",
+      "dataset": "gssr",
+      "bytes": 1465670,
+      "sha256": "04b2e60eeb985c34cdff5bc156bd69c461ec795ed7a51e5a34a8f966c79bd807",
+      "authoritative_source": "https://doi.org/10.6084/m9.figshare.c.5124878",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream GSSR product; reacquire from the authoritative repository."
+    },
+    {
+      "relative_path": "data/raw/gssr/era5/extracted/immingham_p026_uk/immingham_p026_uk.csv",
+      "dataset": "gssr",
+      "bytes": 1524355,
+      "sha256": "eeb28ed84e7e08b4549f2362b5a2b3034034cd439501930da73c2627a2eaafb6",
+      "authoritative_source": "https://doi.org/10.6084/m9.figshare.c.5124878",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream GSSR product; reacquire from the authoritative repository."
+    },
+    {
+      "relative_path": "data/raw/gssr/era5/extracted/le_conquet_/le_conquet_.csv",
+      "dataset": "gssr",
+      "bytes": 1525977,
+      "sha256": "fd9adc07300134f8927fec3af50b708a1b43816cdd539a7ae990b29cb558dd3b",
+      "authoritative_source": "https://doi.org/10.6084/m9.figshare.c.5124878",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream GSSR product; reacquire from the authoritative repository."
+    },
+    {
+      "relative_path": "data/raw/gssr/era5/extracted/le_havre_/le_havre_.csv",
+      "dataset": "gssr",
+      "bytes": 1479181,
+      "sha256": "c71dc1e790dcce440c39de5335ba5b68757567b490347b4d1ae3d5a3725c8555",
+      "authoritative_source": "https://doi.org/10.6084/m9.figshare.c.5124878",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream GSSR product; reacquire from the authoritative repository."
+    },
+    {
+      "relative_path": "data/raw/gssr/era5/extracted/lerwick_p041_uk/lerwick_p041_uk.csv",
+      "dataset": "gssr",
+      "bytes": 1512751,
+      "sha256": "c9f5d4d0e91f6a5f8fb22d6cdfb3ce95377f9954d78daf12c88aa93cf1233a63",
+      "authoritative_source": "https://doi.org/10.6084/m9.figshare.c.5124878",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream GSSR product; reacquire from the authoritative repository."
+    },
+    {
+      "relative_path": "data/raw/gssr/era5/extracted/lowestoft_p024_uk/lowestoft_p024_uk.csv",
+      "dataset": "gssr",
+      "bytes": 1497101,
+      "sha256": "92e550656aca358e6367d88d7d8678da65c38ba8e734022e4fb863d8a0bcef68",
+      "authoritative_source": "https://doi.org/10.6084/m9.figshare.c.5124878",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream GSSR product; reacquire from the authoritative repository."
+    },
+    {
+      "relative_path": "data/raw/gssr/era5/extracted/milfordhaven_p056_uk/milfordhaven_p056_uk.csv",
+      "dataset": "gssr",
+      "bytes": 1520277,
+      "sha256": "5c045e2b422d1e4000d61fb1c03816a6f627d36b3b3a9bffc1382e95ced51314",
+      "authoritative_source": "https://doi.org/10.6084/m9.figshare.c.5124878",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream GSSR product; reacquire from the authoritative repository."
+    },
+    {
+      "relative_path": "data/raw/gssr/era5/extracted/millport_p049_uk/millport_p049_uk.csv",
+      "dataset": "gssr",
+      "bytes": 1499878,
+      "sha256": "c7c0f3612548ebd6c77e92f768c571c63b5f232a2e74e0f4947121c7a6d061b1",
+      "authoritative_source": "https://doi.org/10.6084/m9.figshare.c.5124878",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream GSSR product; reacquire from the authoritative repository."
+    },
+    {
+      "relative_path": "data/raw/gssr/era5/extracted/newlyn_p001_uk/newlyn_p001_uk.csv",
+      "dataset": "gssr",
+      "bytes": 1525708,
+      "sha256": "037e8814c7d87fefb010bac9dd55c586332d86d684a8029b0825cbebe9aea70e",
+      "authoritative_source": "https://doi.org/10.6084/m9.figshare.c.5124878",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream GSSR product; reacquire from the authoritative repository."
+    },
+    {
+      "relative_path": "data/raw/gssr/era5/extracted/newyork_thebattery__usa/newyork_thebattery__usa.csv",
+      "dataset": "gssr",
+      "bytes": 1518716,
+      "sha256": "10e58ccba5dc82af4d5efa1148b1dbbe0b33a0a9e87a76a05ae78e6b11aabd15",
+      "authoritative_source": "https://doi.org/10.6084/m9.figshare.c.5124878",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream GSSR product; reacquire from the authoritative repository."
+    },
+    {
+      "relative_path": "data/raw/gssr/era5/extracted/port_tudy_/port_tudy_.csv",
+      "dataset": "gssr",
+      "bytes": 1524559,
+      "sha256": "3a96336267b5586bd8c90237d085f5cb454e4f751280b05540c61f5c395f73b4",
+      "authoritative_source": "https://doi.org/10.6084/m9.figshare.c.5124878",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream GSSR product; reacquire from the authoritative repository."
+    },
+    {
+      "relative_path": "data/raw/gssr/era5/extracted/portpatrick_p063_uk/portpatrick_p063_uk.csv",
+      "dataset": "gssr",
+      "bytes": 1488954,
+      "sha256": "a4ab04fe38705e0360d4254b83b1b17dd34a8a7dd68567adc9a5e9c37786f030",
+      "authoritative_source": "https://doi.org/10.6084/m9.figshare.c.5124878",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream GSSR product; reacquire from the authoritative repository."
+    },
+    {
+      "relative_path": "data/raw/gssr/era5/extracted/roscoff_/roscoff_.csv",
+      "dataset": "gssr",
+      "bytes": 1492851,
+      "sha256": "d43ef06e99b099bd7cc1573a7b35be6a4e8755c56321e11c1f72f42d88a879c8",
+      "authoritative_source": "https://doi.org/10.6084/m9.figshare.c.5124878",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream GSSR product; reacquire from the authoritative repository."
+    },
+    {
+      "relative_path": "data/raw/gssr/era5/extracted/saint_gildas_/saint_gildas_.csv",
+      "dataset": "gssr",
+      "bytes": 1505083,
+      "sha256": "2cf90f03b4be24b01df10d6d896d85737b889a99c9223ab83097675501a0e2b8",
+      "authoritative_source": "https://doi.org/10.6084/m9.figshare.c.5124878",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream GSSR product; reacquire from the authoritative repository."
+    },
+    {
+      "relative_path": "data/raw/gssr/era5/extracted/saint_nazaire_/saint_nazaire_.csv",
+      "dataset": "gssr",
+      "bytes": 1517763,
+      "sha256": "b80da0c7ac625d3b3462e9a60fb1809c4a65bb3b09fdd606503a68b866491dce",
+      "authoritative_source": "https://doi.org/10.6084/m9.figshare.c.5124878",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream GSSR product; reacquire from the authoritative repository."
+    },
+    {
+      "relative_path": "data/raw/gssr/era5/extracted/sheerness_p015_uk/sheerness_p015_uk.csv",
+      "dataset": "gssr",
+      "bytes": 1504127,
+      "sha256": "3d7aec1880600c8c6d9dccee857d6dc6bcb0a3256839fa1005693a3ca1da6b0b",
+      "authoritative_source": "https://doi.org/10.6084/m9.figshare.c.5124878",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream GSSR product; reacquire from the authoritative repository."
+    },
+    {
+      "relative_path": "data/raw/gssr/era5/extracted/stornoway_p042_uk/stornoway_p042_uk.csv",
+      "dataset": "gssr",
+      "bytes": 1523263,
+      "sha256": "b71403e547465e64870e6df856afa5695d991f1552c51efa63814c7f6efe5dee",
+      "authoritative_source": "https://doi.org/10.6084/m9.figshare.c.5124878",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream GSSR product; reacquire from the authoritative repository."
+    },
+    {
+      "relative_path": "data/raw/gssr/era5/extracted/tregde_006_norway/tregde_006_norway.csv",
+      "dataset": "gssr",
+      "bytes": 1450897,
+      "sha256": "6416f4a1e50731e46ba7dac943af9e9c6d8b15ea939e24ac2e9d3555bcfd2735",
+      "authoritative_source": "https://doi.org/10.6084/m9.figshare.c.5124878",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream GSSR product; reacquire from the authoritative repository."
+    },
+    {
+      "relative_path": "data/raw/gssr/era5/extracted/wick_p035_uk/wick_p035_uk.csv",
+      "dataset": "gssr",
+      "bytes": 1523550,
+      "sha256": "4ff9dd3cda5585c46f2f819240c1aba23750c5dfbc02a613eeb1f3651e273509",
+      "authoritative_source": "https://doi.org/10.6084/m9.figshare.c.5124878",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream GSSR product; reacquire from the authoritative repository."
+    },
+    {
+      "relative_path": "data/raw/gssr/era5/fishguard_p055_uk.7z",
+      "dataset": "gssr",
+      "bytes": 417720,
+      "sha256": "0aaec5223155e054277371ef4162919cc4a27d8180cbdab3ea151a25272d054f",
+      "authoritative_source": "https://doi.org/10.6084/m9.figshare.c.5124878",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream GSSR product; reacquire from the authoritative repository."
+    },
+    {
+      "relative_path": "data/raw/gssr/era5/hoekvanholla_hvh_nl.7z",
+      "dataset": "gssr",
+      "bytes": 413709,
+      "sha256": "b0e04bbe9d414a811f43bd5cef4c2a519ecc5a9e9b3e87329b946e98137aef8e",
+      "authoritative_source": "https://doi.org/10.6084/m9.figshare.c.5124878",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream GSSR product; reacquire from the authoritative repository."
+    },
+    {
+      "relative_path": "data/raw/gssr/era5/holyhead_p054_uk.7z",
+      "dataset": "gssr",
+      "bytes": 417943,
+      "sha256": "37ff6c590e8df2909de36bbcd9d05f13770eaa07c11c51d7914bb38d312753aa",
+      "authoritative_source": "https://doi.org/10.6084/m9.figshare.c.5124878",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream GSSR product; reacquire from the authoritative repository."
+    },
+    {
+      "relative_path": "data/raw/gssr/era5/hong_kong_b_329b_china.7z",
+      "dataset": "gssr",
+      "bytes": 415437,
+      "sha256": "cf46d0768fe3f153805e30bea0bc114f6b966669f8c9d43f9ac369875d9cb23c",
+      "authoritative_source": "https://doi.org/10.6084/m9.figshare.c.5124878",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream GSSR product; reacquire from the authoritative repository."
+    },
+    {
+      "relative_path": "data/raw/gssr/era5/immingham_p026_uk.7z",
+      "dataset": "gssr",
+      "bytes": 411994,
+      "sha256": "e86ee9a7aa9f72b5f8016a604afca92e191f5e1cbecb5b5c19766e043a9f26e3",
+      "authoritative_source": "https://doi.org/10.6084/m9.figshare.c.5124878",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream GSSR product; reacquire from the authoritative repository."
+    },
+    {
+      "relative_path": "data/raw/gssr/era5/le_conquet_.7z",
+      "dataset": "gssr",
+      "bytes": 415940,
+      "sha256": "a10ac8a5e038e16381a9f31e91db1ea196d4fd36153b49a55786349e91c7e2d0",
+      "authoritative_source": "https://doi.org/10.6084/m9.figshare.c.5124878",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream GSSR product; reacquire from the authoritative repository."
+    },
+    {
+      "relative_path": "data/raw/gssr/era5/le_havre_.7z",
+      "dataset": "gssr",
+      "bytes": 416217,
+      "sha256": "7e440c0191417f89af67c147742ef72a8523985602a994171342433a01a63cfa",
+      "authoritative_source": "https://doi.org/10.6084/m9.figshare.c.5124878",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream GSSR product; reacquire from the authoritative repository."
+    },
+    {
+      "relative_path": "data/raw/gssr/era5/lerwick_p041_uk.7z",
+      "dataset": "gssr",
+      "bytes": 417189,
+      "sha256": "3a1f0f00c877955ec5b1a291452263264ad2fa8dd7ce0fd555fb76886394f8fe",
+      "authoritative_source": "https://doi.org/10.6084/m9.figshare.c.5124878",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream GSSR product; reacquire from the authoritative repository."
+    },
+    {
+      "relative_path": "data/raw/gssr/era5/lowestoft_p024_uk.7z",
+      "dataset": "gssr",
+      "bytes": 415031,
+      "sha256": "e179a0b8650721f0794b1dd5112541fbf239f16e8dedc3e318e3d7ec81d2106c",
+      "authoritative_source": "https://doi.org/10.6084/m9.figshare.c.5124878",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream GSSR product; reacquire from the authoritative repository."
+    },
+    {
+      "relative_path": "data/raw/gssr/era5/milfordhaven_p056_uk.7z",
+      "dataset": "gssr",
+      "bytes": 416111,
+      "sha256": "7da9e607384f9258bda5eafcaa65050c31792f4374c77084bf70ef4d48273f90",
+      "authoritative_source": "https://doi.org/10.6084/m9.figshare.c.5124878",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream GSSR product; reacquire from the authoritative repository."
+    },
+    {
+      "relative_path": "data/raw/gssr/era5/millport_p049_uk.7z",
+      "dataset": "gssr",
+      "bytes": 418177,
+      "sha256": "06b72ea5f134139d346fe4b92f05e65d2eb64b77db8d119daa8db645f9be50c0",
+      "authoritative_source": "https://doi.org/10.6084/m9.figshare.c.5124878",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream GSSR product; reacquire from the authoritative repository."
+    },
+    {
+      "relative_path": "data/raw/gssr/era5/newlyn_p001_uk.7z",
+      "dataset": "gssr",
+      "bytes": 416688,
+      "sha256": "2f70061420e750c1e8c68bcb98455f2c8e35503246c22dfe12c491d414f6533e",
+      "authoritative_source": "https://doi.org/10.6084/m9.figshare.c.5124878",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream GSSR product; reacquire from the authoritative repository."
+    },
+    {
+      "relative_path": "data/raw/gssr/era5/newyork_thebattery__usa.7z",
+      "dataset": "gssr",
+      "bytes": 417561,
+      "sha256": "f7bc330e2f084d5b34519193b0926dcebfb9dfe5840d815cb5b2eeb8e372af54",
+      "authoritative_source": "https://doi.org/10.6084/m9.figshare.c.5124878",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream GSSR product; reacquire from the authoritative repository."
+    },
+    {
+      "relative_path": "data/raw/gssr/era5/port_tudy_.7z",
+      "dataset": "gssr",
+      "bytes": 415318,
+      "sha256": "f69eac8ac837c178ab540aa1f9fecd086b35b6e307a1b8df0fa76b160f2903d8",
+      "authoritative_source": "https://doi.org/10.6084/m9.figshare.c.5124878",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream GSSR product; reacquire from the authoritative repository."
+    },
+    {
+      "relative_path": "data/raw/gssr/era5/portpatrick_p063_uk.7z",
+      "dataset": "gssr",
+      "bytes": 422901,
+      "sha256": "e658fbf140b75ef6784a24ed8d4dbeb79e3d2c9b634e26996dc81dea3f44f0ba",
+      "authoritative_source": "https://doi.org/10.6084/m9.figshare.c.5124878",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream GSSR product; reacquire from the authoritative repository."
+    },
+    {
+      "relative_path": "data/raw/gssr/era5/roscoff_.7z",
+      "dataset": "gssr",
+      "bytes": 399884,
+      "sha256": "d5f719907c6f5313a18c5c1d7fa8ef142c0ce7abeb64f5a86f54208583931e2d",
+      "authoritative_source": "https://doi.org/10.6084/m9.figshare.c.5124878",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream GSSR product; reacquire from the authoritative repository."
+    },
+    {
+      "relative_path": "data/raw/gssr/era5/saint_gildas_.7z",
+      "dataset": "gssr",
+      "bytes": 412737,
+      "sha256": "25bc79284f7e74ceab8f22d638fa7872c89ab673ae416f7e27d3db359ee3b087",
+      "authoritative_source": "https://doi.org/10.6084/m9.figshare.c.5124878",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream GSSR product; reacquire from the authoritative repository."
+    },
+    {
+      "relative_path": "data/raw/gssr/era5/saint_nazaire_.7z",
+      "dataset": "gssr",
+      "bytes": 413957,
+      "sha256": "dcfda20bb47141ee0249f55316ab0f1a2fc92f72f096a51984771b4e7c608d36",
+      "authoritative_source": "https://doi.org/10.6084/m9.figshare.c.5124878",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream GSSR product; reacquire from the authoritative repository."
+    },
+    {
+      "relative_path": "data/raw/gssr/era5/sheerness_p015_uk.7z",
+      "dataset": "gssr",
+      "bytes": 409263,
+      "sha256": "2a03157c7e6550b3bb66104ea4ca9cc739b471387cd5326312e28d14018e72fd",
+      "authoritative_source": "https://doi.org/10.6084/m9.figshare.c.5124878",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream GSSR product; reacquire from the authoritative repository."
+    },
+    {
+      "relative_path": "data/raw/gssr/era5/stornoway_p042_uk.7z",
+      "dataset": "gssr",
+      "bytes": 419140,
+      "sha256": "e053fbb6f623d2197cc68eb4fb7197c19834175dc1ce08afa7ee607613bf99a8",
+      "authoritative_source": "https://doi.org/10.6084/m9.figshare.c.5124878",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream GSSR product; reacquire from the authoritative repository."
+    },
+    {
+      "relative_path": "data/raw/gssr/era5/tregde_006_norway.7z",
+      "dataset": "gssr",
+      "bytes": 416754,
+      "sha256": "6cdb50f3f77b625e431019db8df27d7762383590f4f9a0b6751c382f006c69b5",
+      "authoritative_source": "https://doi.org/10.6084/m9.figshare.c.5124878",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream GSSR product; reacquire from the authoritative repository."
+    },
+    {
+      "relative_path": "data/raw/gssr/era5/wick_p035_uk.7z",
+      "dataset": "gssr",
+      "bytes": 419003,
+      "sha256": "d716c8b8757817ff2d4bbd6b4921d2a70573de6576f35fb777fb5b4a781eff6a",
+      "authoritative_source": "https://doi.org/10.6084/m9.figshare.c.5124878",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream GSSR product; reacquire from the authoritative repository."
+    },
+    {
+      "relative_path": "data/raw/gssr/metadata/eraint.geojson",
+      "dataset": "gssr",
+      "bytes": 307194,
+      "sha256": "aab77394a0bf87b3ae611131e26b489a7abe9dd67add071aeee0da4b3bab46e6",
+      "authoritative_source": "https://doi.org/10.6084/m9.figshare.c.5124878",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Upstream GSSR product; reacquire from the authoritative repository."
+    },
+    {
+      "relative_path": "data/raw/local_dtm/delfzijl-del-nl_local_dtm_10m.tif",
+      "dataset": "local_dtm",
+      "bytes": 2204083,
+      "sha256": "a8b3589a24ca9dbcb00d18e24c916e193d37a9b73034c185bf29fcf80a9cbb35",
+      "authoritative_source": "https://environment.data.gov.uk/ ; https://www.ahn.nl/",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "National/local elevation products; provider terms and native datums apply."
+    },
+    {
+      "relative_path": "data/raw/local_dtm/denhelder-hel-nl_local_dtm_10m.tif",
+      "dataset": "local_dtm",
+      "bytes": 1310648,
+      "sha256": "b950e177da667509c85bb8a4dc77c4dcbac5b56d85507ea706e968568af15e79",
+      "authoritative_source": "https://environment.data.gov.uk/ ; https://www.ahn.nl/",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "National/local elevation products; provider terms and native datums apply."
+    },
+    {
+      "relative_path": "data/raw/local_dtm/hoekvanholla-hvh-nl_local_dtm_10m.tif",
+      "dataset": "local_dtm",
+      "bytes": 1848802,
+      "sha256": "e960ac322ae8e703055a75739d6dee6a65c2ee367e9dc0dd8af1c7f6ff600563",
+      "authoritative_source": "https://environment.data.gov.uk/ ; https://www.ahn.nl/",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "National/local elevation products; provider terms and native datums apply."
+    },
+    {
+      "relative_path": "data/raw/local_dtm/immingham-p026-uk_local_dtm_10m.tif",
+      "dataset": "local_dtm",
+      "bytes": 9437675,
+      "sha256": "8567cb377b27480b51f3dbee6ff5501784f3eed237e0ec7e8058ff09789ed6e7",
+      "authoritative_source": "https://environment.data.gov.uk/ ; https://www.ahn.nl/",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "National/local elevation products; provider terms and native datums apply."
+    },
+    {
+      "relative_path": "data/raw/local_dtm/lowestoft-p024-uk_local_dtm_10m.tif",
+      "dataset": "local_dtm",
+      "bytes": 6291923,
+      "sha256": "d95f97c91d4df295e6113b98fccbdab4d3bedac1a35c3751464e0b8e61ab2819",
+      "authoritative_source": "https://environment.data.gov.uk/ ; https://www.ahn.nl/",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "National/local elevation products; provider terms and native datums apply."
+    },
+    {
+      "relative_path": "data/raw/local_dtm/newlyn-p001-uk_local_dtm_10m.tif",
+      "dataset": "local_dtm",
+      "bytes": 9437675,
+      "sha256": "fef345c91868dd64e5a2e11180ad066b7a1f8ce92305cf26990d70fd0c9e51c2",
+      "authoritative_source": "https://environment.data.gov.uk/ ; https://www.ahn.nl/",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "National/local elevation products; provider terms and native datums apply."
+    },
+    {
+      "relative_path": "data/raw/local_dtm/sheerness-p015-uk_local_dtm_10m.tif",
+      "dataset": "local_dtm",
+      "bytes": 9437675,
+      "sha256": "40c81f2a969e0044184d5fb40ebc11728dca5376d2707386e29c90def027cadd",
+      "authoritative_source": "https://environment.data.gov.uk/ ; https://www.ahn.nl/",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "National/local elevation products; provider terms and native datums apply."
+    },
+    {
+      "relative_path": "data/raw/local_dtm/test_ahn_native.tif",
+      "dataset": "local_dtm",
+      "bytes": 4369716,
+      "sha256": "09096e548fe757912f72215479820615b7e08ec62ea3cabe2240e0332788f501",
+      "authoritative_source": "https://environment.data.gov.uk/ ; https://www.ahn.nl/",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "National/local elevation products; provider terms and native datums apply."
+    },
+    {
+      "relative_path": "data/raw/local_dtm/test_ahn_SCALEFACTOR.tif",
+      "dataset": "local_dtm",
+      "bytes": 15514,
+      "sha256": "2ec46c1e5a237063d728028c360aca490205708fbc6c4dc9f08d0bf568a20665",
+      "authoritative_source": "https://environment.data.gov.uk/ ; https://www.ahn.nl/",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "National/local elevation products; provider terms and native datums apply."
+    },
+    {
+      "relative_path": "data/raw/local_dtm/test_ahn_SCALESIZE.tif",
+      "dataset": "local_dtm",
+      "bytes": 55176,
+      "sha256": "d455b44d10de5d48b6003e5fb5cc5465b09c7437eb57ad6fc9b417fc1549df9e",
+      "authoritative_source": "https://environment.data.gov.uk/ ; https://www.ahn.nl/",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "National/local elevation products; provider terms and native datums apply."
+    },
+    {
+      "relative_path": "data/raw/local_dtm/test_ea2m_native.tif",
+      "dataset": "local_dtm",
+      "bytes": 3936707,
+      "sha256": "d664feb6653c10b692b2c46bba5dcd2d56dfa6cb19acc045a381e7659a0a69c9",
+      "authoritative_source": "https://environment.data.gov.uk/ ; https://www.ahn.nl/",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "National/local elevation products; provider terms and native datums apply."
+    },
+    {
+      "relative_path": "data/raw/local_dtm/test_ea2m_SCALEFACTOR.tif",
+      "dataset": "local_dtm",
+      "bytes": 147907,
+      "sha256": "014681853fd2524d41c3c10bfd791438fea35dc260fe46105c7cdf4cfd0101c1",
+      "authoritative_source": "https://environment.data.gov.uk/ ; https://www.ahn.nl/",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "National/local elevation products; provider terms and native datums apply."
+    },
+    {
+      "relative_path": "data/raw/local_dtm/test_sheerness_2m.tif",
+      "dataset": "local_dtm",
+      "bytes": 147907,
+      "sha256": "a70915912252ca50f1518077dc6179b06be11ab9d7f8952eb4d57257cd856912",
+      "authoritative_source": "https://environment.data.gov.uk/ ; https://www.ahn.nl/",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "National/local elevation products; provider terms and native datums apply."
+    },
+    {
+      "relative_path": "data/raw/map_tiles/carto_light_all/3/1/2.png",
+      "dataset": "map_tiles",
+      "bytes": 6095,
+      "sha256": "5b09fcb163b5e17bcc19748230f56fab64ba981fcaffd1913814bb789a4f6903",
+      "authoritative_source": "https://carto.com/attributions",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Historical CARTO tile cache; not redistributed."
+    },
+    {
+      "relative_path": "data/raw/map_tiles/carto_light_all/3/1/3.png",
+      "dataset": "map_tiles",
+      "bytes": 3713,
+      "sha256": "ed268a78cad995276ee2da73be1cb39c61afb8c14f57dea8f0929f11ae4208e0",
+      "authoritative_source": "https://carto.com/attributions",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Historical CARTO tile cache; not redistributed."
+    },
+    {
+      "relative_path": "data/raw/map_tiles/carto_light_all/3/2/2.png",
+      "dataset": "map_tiles",
+      "bytes": 6866,
+      "sha256": "3f3d7f9de9b04bcd2bce8bc79d49f8d0bf7ee8ad7cb6b66f3f937624a0dbf99b",
+      "authoritative_source": "https://carto.com/attributions",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Historical CARTO tile cache; not redistributed."
+    },
+    {
+      "relative_path": "data/raw/map_tiles/carto_light_all/3/2/3.png",
+      "dataset": "map_tiles",
+      "bytes": 5937,
+      "sha256": "e6a3d1e641d52dc944300292ae03e114de303a24b32cd190f7e497e64c963dcd",
+      "authoritative_source": "https://carto.com/attributions",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Historical CARTO tile cache; not redistributed."
+    },
+    {
+      "relative_path": "data/raw/map_tiles/carto_light_all/3/3/2.png",
+      "dataset": "map_tiles",
+      "bytes": 3959,
+      "sha256": "689c1e1d1bf0f7ad53b2d086bcfc4918ce9aecddc6b715793a1eaa5838a46a66",
+      "authoritative_source": "https://carto.com/attributions",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Historical CARTO tile cache; not redistributed."
+    },
+    {
+      "relative_path": "data/raw/map_tiles/carto_light_all/3/3/3.png",
+      "dataset": "map_tiles",
+      "bytes": 5670,
+      "sha256": "37cfdfb0c69e55c2ffa9c644f6c72583f51ed26b65accb0ac38f484485c0643a",
+      "authoritative_source": "https://carto.com/attributions",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Historical CARTO tile cache; not redistributed."
+    },
+    {
+      "relative_path": "data/raw/map_tiles/carto_light_all/3/4/2.png",
+      "dataset": "map_tiles",
+      "bytes": 13153,
+      "sha256": "3af323fbca353cde97efbce28763328eb26ba9536892611cdbcaac0c04237e96",
+      "authoritative_source": "https://carto.com/attributions",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Historical CARTO tile cache; not redistributed."
+    },
+    {
+      "relative_path": "data/raw/map_tiles/carto_light_all/3/4/3.png",
+      "dataset": "map_tiles",
+      "bytes": 12674,
+      "sha256": "5c87b191d548019d565a1b9c72fda81fce829e10e3a736d20c37390f611e69b8",
+      "authoritative_source": "https://carto.com/attributions",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Historical CARTO tile cache; not redistributed."
+    },
+    {
+      "relative_path": "data/raw/map_tiles/carto_light_all/3/5/2.png",
+      "dataset": "map_tiles",
+      "bytes": 5272,
+      "sha256": "d6fdb3b4564bf61549320340a8e4c125579b7cb526a268954c754f9e245330c9",
+      "authoritative_source": "https://carto.com/attributions",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Historical CARTO tile cache; not redistributed."
+    },
+    {
+      "relative_path": "data/raw/map_tiles/carto_light_all/3/5/3.png",
+      "dataset": "map_tiles",
+      "bytes": 9104,
+      "sha256": "64821f50696de5d5bc818bf5d142fdb22002c62398977a584a896c81f622f2f0",
+      "authoritative_source": "https://carto.com/attributions",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Historical CARTO tile cache; not redistributed."
+    },
+    {
+      "relative_path": "data/raw/map_tiles/carto_light_all/3/6/2.png",
+      "dataset": "map_tiles",
+      "bytes": 4116,
+      "sha256": "30dce65589f73546b54b12b83ac0a9fa784c68273fa7791b6f692a056a3b0b14",
+      "authoritative_source": "https://carto.com/attributions",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Historical CARTO tile cache; not redistributed."
+    },
+    {
+      "relative_path": "data/raw/map_tiles/carto_light_all/3/6/3.png",
+      "dataset": "map_tiles",
+      "bytes": 10766,
+      "sha256": "8fa4ef3f1477d15a6bb633392ea4d7c72595d93d5c9fe7b7342bb47767184dad",
+      "authoritative_source": "https://carto.com/attributions",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Historical CARTO tile cache; not redistributed."
+    },
+    {
+      "relative_path": "data/raw/map_tiles/carto_light_all/5/15/10.png",
+      "dataset": "map_tiles",
+      "bytes": 7480,
+      "sha256": "3cd9b91ba0dc60c7dfbe88be54dce9234c45411432d057f4648e9fa45919a3d0",
+      "authoritative_source": "https://carto.com/attributions",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Historical CARTO tile cache; not redistributed."
+    },
+    {
+      "relative_path": "data/raw/map_tiles/carto_light_all/5/15/11.png",
+      "dataset": "map_tiles",
+      "bytes": 5727,
+      "sha256": "4591c6ef16b45f4c5db45993bb234ed8788d5c8be80575ba0849f149a3b00b7d",
+      "authoritative_source": "https://carto.com/attributions",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Historical CARTO tile cache; not redistributed."
+    },
+    {
+      "relative_path": "data/raw/map_tiles/carto_light_all/5/15/9.png",
+      "dataset": "map_tiles",
+      "bytes": 4133,
+      "sha256": "6c0c7126d00d6f8019af4b7c527bec90e11ca08f72d38623f61dd60db2eeed7c",
+      "authoritative_source": "https://carto.com/attributions",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Historical CARTO tile cache; not redistributed."
+    },
+    {
+      "relative_path": "data/raw/map_tiles/carto_light_all/5/16/10.png",
+      "dataset": "map_tiles",
+      "bytes": 12083,
+      "sha256": "f395bf366ccf6097eb74c51e5c22b802657c071547c22eed03fc66373150fd0e",
+      "authoritative_source": "https://carto.com/attributions",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Historical CARTO tile cache; not redistributed."
+    },
+    {
+      "relative_path": "data/raw/map_tiles/carto_light_all/5/16/11.png",
+      "dataset": "map_tiles",
+      "bytes": 12894,
+      "sha256": "5162b76ea7ead07f658104f70d6023726a82cef39a86836b90e2bed78a5a968c",
+      "authoritative_source": "https://carto.com/attributions",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Historical CARTO tile cache; not redistributed."
+    },
+    {
+      "relative_path": "data/raw/map_tiles/carto_light_all/5/16/9.png",
+      "dataset": "map_tiles",
+      "bytes": 8981,
+      "sha256": "a776bcef3d2e66751774cd261a886c698d0b7856d9b278cac23a4a318b2e3772",
+      "authoritative_source": "https://carto.com/attributions",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Historical CARTO tile cache; not redistributed."
+    },
+    {
+      "relative_path": "data/raw/naturalearth/ne_110m_land/ne_110m_land.cpg",
+      "dataset": "naturalearth",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824",
+      "authoritative_source": "https://www.naturalearthdata.com/",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Natural Earth map context; public-domain upstream source."
+    },
+    {
+      "relative_path": "data/raw/naturalearth/ne_110m_land/ne_110m_land.dbf",
+      "dataset": "naturalearth",
+      "bytes": 3431,
+      "sha256": "db7cf6d2de2811df09bd7fcc6f243ab78a715b83571a0cb7b36b4e2af3297caa",
+      "authoritative_source": "https://www.naturalearthdata.com/",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Natural Earth map context; public-domain upstream source."
+    },
+    {
+      "relative_path": "data/raw/naturalearth/ne_110m_land/ne_110m_land.prj",
+      "dataset": "naturalearth",
+      "bytes": 147,
+      "sha256": "3259f0e55290a82b1350646f604e8a7ee1e2136c0320a40fad838ab40819fff8",
+      "authoritative_source": "https://www.naturalearthdata.com/",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Natural Earth map context; public-domain upstream source."
+    },
+    {
+      "relative_path": "data/raw/naturalearth/ne_110m_land/ne_110m_land.README.html",
+      "dataset": "naturalearth",
+      "bytes": 21649,
+      "sha256": "631fd1579d3da3e480c1082695508784ae295bf53b8e1248455b22bb6b6d24d2",
+      "authoritative_source": "https://www.naturalearthdata.com/",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Natural Earth map context; public-domain upstream source."
+    },
+    {
+      "relative_path": "data/raw/naturalearth/ne_110m_land/ne_110m_land.shp",
+      "dataset": "naturalearth",
+      "bytes": 89504,
+      "sha256": "8689e6932b8e370e2ca4587cf3ba21e460b1235db37b6ed3c172c35b4a6088de",
+      "authoritative_source": "https://www.naturalearthdata.com/",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Natural Earth map context; public-domain upstream source."
+    },
+    {
+      "relative_path": "data/raw/naturalearth/ne_110m_land/ne_110m_land.shx",
+      "dataset": "naturalearth",
+      "bytes": 1116,
+      "sha256": "2719254764a70262a34333581d582d503b8af5d6626e6da4eb2b5f86e7316faa",
+      "authoritative_source": "https://www.naturalearthdata.com/",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Natural Earth map context; public-domain upstream source."
+    },
+    {
+      "relative_path": "data/raw/naturalearth/ne_110m_land/ne_110m_land.VERSION.txt",
+      "dataset": "naturalearth",
+      "bytes": 7,
+      "sha256": "0874a8fe36effb87780f431845b5a7d85be657f2bd998ce8eeace717860d3b78",
+      "authoritative_source": "https://www.naturalearthdata.com/",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Natural Earth map context; public-domain upstream source."
+    },
+    {
+      "relative_path": "data/raw/naturalearth/ne_110m_land/ne_110m_land.zip",
+      "dataset": "naturalearth",
+      "bytes": 69700,
+      "sha256": "1926c621afd6ac67c3f36639bb1236134a48d82226dc675d3e3df53d02d2a3de",
+      "authoritative_source": "https://www.naturalearthdata.com/",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Natural Earth map context; public-domain upstream source."
+    },
+    {
+      "relative_path": "data/raw/open_meteo/hourly/aberdeen-p038-uk_1980-01-01_2010-12-31_era5.json",
+      "dataset": "open_meteo",
+      "bytes": 32044042,
+      "sha256": "f5c933610e6a266f868a057f3f3326de94ce0d0e6556bd00489dc9ef56ff2fc8",
+      "authoritative_source": "https://open-meteo.com/en/docs/historical-weather-api",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Cached API response; reacquire under the provider's current terms."
+    },
+    {
+      "relative_path": "data/raw/open_meteo/hourly/brest-france_1980-01-01_2010-12-31_era5.json",
+      "dataset": "open_meteo",
+      "bytes": 32113338,
+      "sha256": "f240c469745b229d89beb14f2da4279982587a67f6bd7f1e261fe2c73b1c0d83",
+      "authoritative_source": "https://open-meteo.com/en/docs/historical-weather-api",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Cached API response; reacquire under the provider's current terms."
+    },
+    {
+      "relative_path": "data/raw/open_meteo/hourly/charleston-sc_1980-01-01_2010-12-31_era5.json",
+      "dataset": "open_meteo",
+      "bytes": 32111777,
+      "sha256": "cbaaa19c0521f9722e0fefcf4a1a21c2bcda60d9d3cb8227a6c3b13dc534804e",
+      "authoritative_source": "https://open-meteo.com/en/docs/historical-weather-api",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Cached API response; reacquire under the provider's current terms."
+    },
+    {
+      "relative_path": "data/raw/open_meteo/hourly/hoekvanholla-hvh-nl_1980-01-01_2010-12-31_era5.json",
+      "dataset": "open_meteo",
+      "bytes": 32071111,
+      "sha256": "e15bce5416756c4d431ae15149aa8da52a3143e51e9d14450bf40e3af93ec00a",
+      "authoritative_source": "https://open-meteo.com/en/docs/historical-weather-api",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Cached API response; reacquire under the provider's current terms."
+    },
+    {
+      "relative_path": "data/raw/open_meteo/hourly/hong-kong-b_1980-01-01_2010-12-31_era5.json",
+      "dataset": "open_meteo",
+      "bytes": 32083303,
+      "sha256": "7c7de8cf26c7c85ee233d701903d9714fd731cc52c7a11f54c1e67a966daf9b7",
+      "authoritative_source": "https://open-meteo.com/en/docs/historical-weather-api",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Cached API response; reacquire under the provider's current terms."
+    },
+    {
+      "relative_path": "data/raw/open_meteo/hourly/newlyn-p001-uk_1980-01-01_2010-12-31_era5.json",
+      "dataset": "open_meteo",
+      "bytes": 32140035,
+      "sha256": "6f6ed88dab3058ccf46dab875527d36f49d190c20b95abcf09ba2dc7395f7e2e",
+      "authoritative_source": "https://open-meteo.com/en/docs/historical-weather-api",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Cached API response; reacquire under the provider's current terms."
+    },
+    {
+      "relative_path": "data/raw/open_meteo/hourly/newyork-the-battery_1980-01-01_2010-12-31_era5.json",
+      "dataset": "open_meteo",
+      "bytes": 32064919,
+      "sha256": "a2aa41364885e46a8f8a8acf82a5d3d62ec2328125cf5fb9639a682f464911c8",
+      "authoritative_source": "https://open-meteo.com/en/docs/historical-weather-api",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Cached API response; reacquire under the provider's current terms."
+    },
+    {
+      "relative_path": "data/raw/open_meteo/hourly/sheerness-p015-uk_1980-01-01_2010-12-31_era5.json",
+      "dataset": "open_meteo",
+      "bytes": 32083540,
+      "sha256": "c84017cd9042cb95ef1faa7c021c28f46de7ec96ff50845c30de8a0971f2f5d6",
+      "authoritative_source": "https://open-meteo.com/en/docs/historical-weather-api",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Cached API response; reacquire under the provider's current terms."
+    },
+    {
+      "relative_path": "data/raw/open_meteo/hourly/sheerness-p015-uk_2014-01-01_2014-01-07_era5.json",
+      "dataset": "open_meteo",
+      "bytes": 20784,
+      "sha256": "f0600a980ca91a003142ece4230add971ba8f5dad9a57237a33466217ceb3edb",
+      "authoritative_source": "https://open-meteo.com/en/docs/historical-weather-api",
+      "redistribution_status": "not_committed_reacquire_from_upstream",
+      "note": "Cached API response; reacquire under the provider's current terms."
+    }
+  ]
+}

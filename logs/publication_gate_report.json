@@ -1,0 +1,47 @@
+{
+  "started_utc": "2026-08-15T15:43:05+00:00",
+  "finished_utc": "2026-08-15T15:48:53+00:00",
+  "passed": false,
+  "errors": [
+    "finalization failed with exit code 1."
+  ],
+  "warnings": [],
+  "steps": [
+    {
+      "name": "publication gate scripts audit",
+      "command": [
+        "cmd",
+        "/c",
+        "scripts\\run_publication_gate_scripts_audit.cmd"
+      ],
+      "returncode": 0,
+      "passed": true,
+      "stdout_tail": "logs\\publication_gate_scripts_audit.txt\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "Python runtime dependencies audit",
+      "command": [
+        "cmd",
+        "/c",
+        "scripts\\run_python_runtime_dependencies_audit.cmd"
+      ],
+      "returncode": 0,
+      "passed": true,
+      "stdout_tail": "logs\\python_runtime_dependencies_audit.txt\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "finalization",
+      "command": [
+        "cmd",
+        "/c",
+        "scripts\\run_finalization.cmd"
+      ],
+      "returncode": 1,
+      "passed": false,
+      "stdout_tail": "FINALIZATION FAILED: publication readiness audit failed with exit code 1\nFailure log: E:\\Projects\\20260522-coastal-flood-scientific-data\\logs\\cee_publication_finalize_failed.md\n",
+      "stderr_tail": ""
+    }
+  ]
+}

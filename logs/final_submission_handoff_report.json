@@ -1,0 +1,27 @@
+{
+  "passed": false,
+  "submission_ready_gate_exit_code": 1,
+  "terminal_run_record_exit_code": 1,
+  "terminal_run_record_audit_exit_code": 1,
+  "final_handoff_evidence_exit_code": 1,
+  "final_handoff_evidence_audit_exit_code": 1,
+  "submission_ready_report_passed": false,
+  "terminal_run_record_audit_passed": true,
+  "final_handoff_evidence_audit_passed": true,
+  "final_handoff_evidence_manifest": "final_submission_handoff_evidence\\evidence_manifest.json",
+  "final_handoff_evidence_manifest_sha256": "final_submission_handoff_evidence\\evidence_manifest.sha256",
+  "final_handoff_log": "logs\\final_submission_handoff_周六_2026-08-15_23-43-03-36.log",
+  "final_handoff_latest_log": "logs\\final_submission_handoff_latest.log",
+  "errors": [
+    "Submission-ready gate exit code is 1.",
+    "Terminal-run record exit code is 1.",
+    "Terminal-run record audit exit code is 1.",
+    "Final handoff evidence bundle exit code is 1.",
+    "Final handoff evidence bundle audit exit code is 1.",
+    "Submission-ready gate report does not prove success: passed=False."
+  ],
+  "warnings": [],
+  "notes": [
+    "Final handoff log: logs\\final_submission_handoff_周六_2026-08-15_23-43-03-36.log"
+  ]
+}

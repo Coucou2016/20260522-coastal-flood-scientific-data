@@ -1,0 +1,2 @@
+n_terrain_sites,top_fraction_used,top_n,top_water_sites,top_terrain_sites,top_rank_mismatch_fraction,spearman_coastrp_vs_connected_2m,kendall_coastrp_vs_connected_2m,spearman_D10_vs_connected_2m
+5,0.4,2,brest-france;sheerness-p015-uk,newlyn-p001-uk;sheerness-p015-uk,0.5,0.19999999999999998,0.19999999999999998,0.7

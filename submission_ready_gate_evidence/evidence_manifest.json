@@ -1,0 +1,194 @@
+{
+  "created_utc": "2026-08-15T15:49:39.187105+00:00",
+  "passed": false,
+  "bundle": "submission_ready_gate_evidence",
+  "missing": [
+    "publication_package.zip"
+  ],
+  "entries": [
+    {
+      "source": "PUBLICATION_GATE_TERMINAL_RUN.md",
+      "source_bytes": 5857,
+      "source_sha256": "678e355e38930274f6886d18ac82b6fce2207afcd68665cb52632775e0ae50c2",
+      "bundle_file": "PUBLICATION_GATE_TERMINAL_RUN.md",
+      "bytes": 5857,
+      "sha256": "678e355e38930274f6886d18ac82b6fce2207afcd68665cb52632775e0ae50c2"
+    },
+    {
+      "source": "publication_gate_evidence\\evidence_manifest.json",
+      "source_bytes": 11685,
+      "source_sha256": "68d7d8d3a4f140e27505f7c84c763ad0b1fc015c6a891ada75880e7be75e036c",
+      "bundle_file": "publication_gate_evidence__evidence_manifest.json",
+      "bytes": 11685,
+      "sha256": "68d7d8d3a4f140e27505f7c84c763ad0b1fc015c6a891ada75880e7be75e036c"
+    },
+    {
+      "source": "publication_gate_evidence\\evidence_manifest.sha256",
+      "source_bytes": 90,
+      "source_sha256": "1b7c47aacfc3e6a7a30b688356b4d593b573b5f02657e137aed00005eb1d1b04",
+      "bundle_file": "publication_gate_evidence__evidence_manifest.sha256",
+      "bytes": 90,
+      "sha256": "1b7c47aacfc3e6a7a30b688356b4d593b573b5f02657e137aed00005eb1d1b04"
+    },
+    {
+      "source": "manuscript\\final_figure_data_signoff.json",
+      "source_bytes": 3637,
+      "source_sha256": "3b19f6e63c44682e1502e857899b69695f1e9366d30ed4896194be5a122b65cd",
+      "bundle_file": "manuscript__final_figure_data_signoff.json",
+      "bytes": 3637,
+      "sha256": "3b19f6e63c44682e1502e857899b69695f1e9366d30ed4896194be5a122b65cd"
+    },
+    {
+      "source": "manuscript\\final_figure_data_signoff.md",
+      "source_bytes": 1566,
+      "source_sha256": "00b2d30361959a12883bb8322159ee77d626cb978be14f55453ee7e3e382e956",
+      "bundle_file": "manuscript__final_figure_data_signoff.md",
+      "bytes": 1566,
+      "sha256": "00b2d30361959a12883bb8322159ee77d626cb978be14f55453ee7e3e382e956"
+    },
+    {
+      "source": "manuscript\\final_figure_data_issue_register.json",
+      "source_bytes": 1273,
+      "source_sha256": "d0cb01b94b89d4b4f23e5cabbe2a40bdf0d8890806cf3f451d653a02b167b27f",
+      "bundle_file": "manuscript__final_figure_data_issue_register.json",
+      "bytes": 1273,
+      "sha256": "d0cb01b94b89d4b4f23e5cabbe2a40bdf0d8890806cf3f451d653a02b167b27f"
+    },
+    {
+      "source": "manuscript\\final_figure_data_issue_register.md",
+      "source_bytes": 1558,
+      "source_sha256": "8b0a2b8f3ff797f7bdb7d87fbd568ab018411615f51249b170671405e071234c",
+      "bundle_file": "manuscript__final_figure_data_issue_register.md",
+      "bytes": 1558,
+      "sha256": "8b0a2b8f3ff797f7bdb7d87fbd568ab018411615f51249b170671405e071234c"
+    },
+    {
+      "source": "manuscript\\final_figure_data_review_matrix.json",
+      "source_bytes": 43684,
+      "source_sha256": "c263f0daea2bf600138d587919c8f188b1d12c19cb36ff91a2821ba9ba6cf689",
+      "bundle_file": "manuscript__final_figure_data_review_matrix.json",
+      "bytes": 43684,
+      "sha256": "c263f0daea2bf600138d587919c8f188b1d12c19cb36ff91a2821ba9ba6cf689"
+    },
+    {
+      "source": "manuscript\\final_figure_data_review_matrix.md",
+      "source_bytes": 2195,
+      "source_sha256": "956e99ba21247e08f9e8d36b6148fa744eda9d019377ebe005cc3fc11293fa5a",
+      "bundle_file": "manuscript__final_figure_data_review_matrix.md",
+      "bytes": 2195,
+      "sha256": "956e99ba21247e08f9e8d36b6148fa744eda9d019377ebe005cc3fc11293fa5a"
+    },
+    {
+      "source": "manuscript\\final_figure_data_review_matrix_template.json",
+      "source_bytes": 83200,
+      "source_sha256": "4561446240e5eeff9cbfce7cfdc184bddeb6e7be50a8b7a3f3a9b103ce88a4e9",
+      "bundle_file": "manuscript__final_figure_data_review_matrix_template.json",
+      "bytes": 83200,
+      "sha256": "4561446240e5eeff9cbfce7cfdc184bddeb6e7be50a8b7a3f3a9b103ce88a4e9"
+    },
+    {
+      "source": "logs\\submission_ready_gate_scripts_audit.md",
+      "source_bytes": 1913,
+      "source_sha256": "e56763723afe4b6f19f6b705161aca4293f1e989d4ed9674c60aabed3459b71e",
+      "bundle_file": "logs__submission_ready_gate_scripts_audit.md",
+      "bytes": 1913,
+      "sha256": "e56763723afe4b6f19f6b705161aca4293f1e989d4ed9674c60aabed3459b71e"
+    },
+    {
+      "source": "logs\\submission_ready_gate_scripts_audit.json",
+      "source_bytes": 1986,
+      "source_sha256": "9532e637d2990185265a15a62a5c6c8c3fe9d2e93e1b3ea5d782e8be4fb7f9cb",
+      "bundle_file": "logs__submission_ready_gate_scripts_audit.json",
+      "bytes": 1986,
+      "sha256": "9532e637d2990185265a15a62a5c6c8c3fe9d2e93e1b3ea5d782e8be4fb7f9cb"
+    },
+    {
+      "source": "logs\\publication_gate_report.md",
+      "source_bytes": 342,
+      "source_sha256": "fc71f8c93444fd11f0427b8046c876bb67525a2eb3cd49e6e798d5fbd63efcc2",
+      "bundle_file": "logs__publication_gate_report.md",
+      "bytes": 342,
+      "sha256": "fc71f8c93444fd11f0427b8046c876bb67525a2eb3cd49e6e798d5fbd63efcc2"
+    },
+    {
+      "source": "logs\\publication_gate_report.json",
+      "source_bytes": 1311,
+      "source_sha256": "06fc08da7544f20ff8d65ede4bddc6790667dbf36622d6c2b0f2947ea5c401a9",
+      "bundle_file": "logs__publication_gate_report.json",
+      "bytes": 1311,
+      "sha256": "06fc08da7544f20ff8d65ede4bddc6790667dbf36622d6c2b0f2947ea5c401a9"
+    },
+    {
+      "source": "logs\\final_figure_data_review_matrix_template.md",
+      "source_bytes": 359,
+      "source_sha256": "6fa799b5ea1d43c6bd4a360c26aea0b3c31ee0a7f32750621fccfb4ce0387402",
+      "bundle_file": "logs__final_figure_data_review_matrix_template.md",
+      "bytes": 359,
+      "sha256": "6fa799b5ea1d43c6bd4a360c26aea0b3c31ee0a7f32750621fccfb4ce0387402"
+    },
+    {
+      "source": "logs\\final_figure_data_review_matrix_template.json",
+      "source_bytes": 350,
+      "source_sha256": "8c4e5cee7f066072fe2648bf7973a58c63d297a656931cb591d8acd75756ba26",
+      "bundle_file": "logs__final_figure_data_review_matrix_template.json",
+      "bytes": 350,
+      "sha256": "8c4e5cee7f066072fe2648bf7973a58c63d297a656931cb591d8acd75756ba26"
+    },
+    {
+      "source": "logs\\final_figure_data_review_matrix_audit.md",
+      "source_bytes": 8890,
+      "source_sha256": "b25400920e828adf3eb396a98081df3e80667eb2a8b5a0df1608ed11dd5a5d20",
+      "bundle_file": "logs__final_figure_data_review_matrix_audit.md",
+      "bytes": 8890,
+      "sha256": "b25400920e828adf3eb396a98081df3e80667eb2a8b5a0df1608ed11dd5a5d20"
+    },
+    {
+      "source": "logs\\final_figure_data_review_matrix_audit.json",
+      "source_bytes": 9273,
+      "source_sha256": "194e66a5a7fd619fcc2842ac73c3eee8df7dda40bff839a9c41440d270146c13",
+      "bundle_file": "logs__final_figure_data_review_matrix_audit.json",
+      "bytes": 9273,
+      "sha256": "194e66a5a7fd619fcc2842ac73c3eee8df7dda40bff839a9c41440d270146c13"
+    },
+    {
+      "source": "logs\\final_figure_data_issue_register_audit.md",
+      "source_bytes": 253,
+      "source_sha256": "ae4329cb457cf44b9d075824254116f1f1a93c720231c8bdfb079766a8b24ab2",
+      "bundle_file": "logs__final_figure_data_issue_register_audit.md",
+      "bytes": 253,
+      "sha256": "ae4329cb457cf44b9d075824254116f1f1a93c720231c8bdfb079766a8b24ab2"
+    },
+    {
+      "source": "logs\\final_figure_data_issue_register_audit.json",
+      "source_bytes": 229,
+      "source_sha256": "e679d4e72691f5c126cf28e7baae3f88873c81ba7d313e173e3a2463fc81d365",
+      "bundle_file": "logs__final_figure_data_issue_register_audit.json",
+      "bytes": 229,
+      "sha256": "e679d4e72691f5c126cf28e7baae3f88873c81ba7d313e173e3a2463fc81d365"
+    },
+    {
+      "source": "logs\\final_figure_data_signoff_audit.md",
+      "source_bytes": 479,
+      "source_sha256": "1e9a2083a17e95a35df8fa1dc10863face2e8c5af8a0f2b648cf9d29ab9f74e8",
+      "bundle_file": "logs__final_figure_data_signoff_audit.md",
+      "bytes": 479,
+      "sha256": "1e9a2083a17e95a35df8fa1dc10863face2e8c5af8a0f2b648cf9d29ab9f74e8"
+    },
+    {
+      "source": "logs\\final_figure_data_signoff_audit.json",
+      "source_bytes": 1100,
+      "source_sha256": "ec2f422cfeeff7bc13e49c30fd7bb670deb90709f77277d71ef72499e7c69d4f",
+      "bundle_file": "logs__final_figure_data_signoff_audit.json",
+      "bytes": 1100,
+      "sha256": "ec2f422cfeeff7bc13e49c30fd7bb670deb90709f77277d71ef72499e7c69d4f"
+    },
+    {
+      "source": "final_archive_manifest.json",
+      "source_bytes": 479,
+      "source_sha256": "d435de0ac229f12347691d61efac6ba8de9021255bcfb93caec2a221c863e1fd",
+      "bundle_file": "final_archive_manifest.json",
+      "bytes": 479,
+      "sha256": "d435de0ac229f12347691d61efac6ba8de9021255bcfb93caec2a221c863e1fd"
+    }
+  ]
+}

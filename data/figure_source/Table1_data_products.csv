@@ -1,0 +1,5 @@
+Product,Main variable used,Spatial support,Temporal or RP support,Role in this study,Main limitation
+GSSR ERA5,Daily reconstructed surge,Tide-gauge station,1979-2019 daily,Station-scale surge variability and empirical return levels,"Residual/skew-surge-like metric, not total water level"
+COAST-RP,Storm-tide return level,Global coastal point,1-1000-year return periods,Coastal storm-tide benchmark,Includes tide; not directly equivalent to GSSR surge
+Open-Meteo ERA5,"Pressure, wind, precipitation",Station-centred extraction,1980-2010 daily summaries,Atmospheric coherence screening,Does not provide water levels
+DeltaDTM,Terrain elevation,~30 m coastal raster,Static terrain,Relative sea-level terrain sensitivity,"No hydrodynamics, connectivity, or defences"

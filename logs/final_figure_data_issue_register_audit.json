@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "register": "manuscript\\final_figure_data_issue_register.json",
+  "errors": [],
+  "warnings": [],
+  "notes": [
+    "No figure/data issues are listed; attestation evidence must support this."
+  ]
+}

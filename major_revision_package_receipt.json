@@ -1,0 +1,9 @@
+{
+  "package": "major_revision_reviewer_package.zip",
+  "bytes": 61727500,
+  "sha256": "76945cba50c176b035d38c743d99b855d54b6ca7238b45412ffb9a50f873a30a",
+  "content_manifest": "major_revision_package_content_manifest.json",
+  "content_manifest_sha256": "eb4ccd6141fd65eee2e75b161b73db83490e8132fd628e43dc917b95691abf47",
+  "credential_scan": "PASS",
+  "git_commit": "not applicable: workspace is not a Git repository"
+}

@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "errors": [],
+  "warnings": [],
+  "files_checked": [
+    "manuscript/ai_use_statement_draft.md",
+    "manuscript/author_final_confirmation_form.md",
+    "manuscript/cover_letter_draft.md",
+    "manuscript/data_code_availability_final_draft.md",
+    "manuscript/editorial_significance_statement.md",
+    "manuscript/nature_reporting_summary_preparation.md",
+    "manuscript/submission_metadata_required.md",
+    "manuscript/target_journal_cee_checklist.md",
+    "manuscript/title_page_and_declarations_draft.md"
+  ]
+}

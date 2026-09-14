@@ -1,0 +1,98 @@
+{
+  "generated_utc": "2026-08-23T06:50:20.179440+00:00",
+  "local_technical_review_ready": true,
+  "final_submission_ready": false,
+  "repository_link_status": {
+    "complete": false,
+    "data_repository_url_or_doi": "",
+    "code_repository_url_or_doi": "",
+    "private_reviewer_link": "",
+    "status": "pending"
+  },
+  "checks": [
+    {
+      "item": 1,
+      "label": "Data truth and source-table traceability",
+      "passed": true,
+      "severity": "required",
+      "evidence": "Required source tables exist in data/figure_source and are consumed by current build/audit scripts."
+    },
+    {
+      "item": 2,
+      "label": "DeltaDTM official mask-aware connectivity",
+      "passed": true,
+      "severity": "required",
+      "evidence": "Fig6_mask_aware_terrain_area_metrics.csv rows=74; required mask columns present=True."
+    },
+    {
+      "item": 3,
+      "label": "Connected lowland metric completeness",
+      "passed": true,
+      "severity": "required",
+      "evidence": "Required fraction/area columns present=True."
+    },
+    {
+      "item": 4,
+      "label": "Figure 3 archetype and threshold-response evidence",
+      "passed": true,
+      "severity": "required",
+      "evidence": "Fig6_archetype_map_selection.csv archetypes=['aligned high storm-tide / high connected-terrain', 'high storm-tide / lower connected-terrain', 'lower storm-tide / high connected-terrain']."
+    },
+    {
+      "item": 5,
+      "label": "Conservative statistical interpretation",
+      "passed": true,
+      "severity": "required",
+      "evidence": "Paper frames top-set overlap descriptively and uses raw COAST-RP versus connected terrain statistics."
+    },
+    {
+      "item": 6,
+      "label": "Sample-boundary clarity",
+      "passed": true,
+      "severity": "required",
+      "evidence": "Paper distinguishes primary, distance-unrestricted, GSSR-qualified, retained and source-verified tidal subsets."
+    },
+    {
+      "item": 7,
+      "label": "Uncertainty and perturbation ranges",
+      "passed": true,
+      "severity": "required",
+      "evidence": "Paper names GSSR, COAST-RP, DEM perturbation and window/seed sensitivity as screening ranges."
+    },
+    {
+      "item": 8,
+      "label": "Reproducibility package",
+      "passed": true,
+      "severity": "required",
+      "evidence": "repository_link_status=pending; package zip exists=True."
+    },
+    {
+      "item": 9,
+      "label": "Paper/report synchronized standalone outputs",
+      "passed": true,
+      "severity": "required",
+      "evidence": "All six standalone paper/report outputs exist; standalone validation is covered by validate_standalone_html.py."
+    },
+    {
+      "item": 10,
+      "label": "Non-overclaiming wording",
+      "passed": true,
+      "severity": "required",
+      "evidence": "Forbidden terms in paper/report=[]."
+    },
+    {
+      "item": "local_dtm",
+      "label": "Local-DTM cross-check hard gate",
+      "passed": true,
+      "severity": "required",
+      "evidence": "local DTM stations=['sheerness-p015-uk', 'newlyn-p001-uk', 'lowestoft-p024-uk', 'immingham-p026-uk', 'denhelder-hel-nl', 'delfzijl-del-nl', 'hoekvanholla-hvh-nl']."
+    },
+    {
+      "item": "submission_link",
+      "label": "External DOI/private reviewer link hard gate",
+      "passed": false,
+      "severity": "submission",
+      "evidence": "Repository link is pending."
+    }
+  ]
+}

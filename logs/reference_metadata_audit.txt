@@ -1,0 +1,23 @@
+Reference Metadata Audit
+========================
+
+Passed: False
+References detected: 22
+Unique DOI count: 15
+Errors: 6
+Warnings: 0
+
+Errors
+------
+- Reference entry 16 has no detected publication year: 16. National Ocean Service, NOAA. What is storm surge? https://oceanservice.noaa.gov/facts/stormsurge-stormtide.html
+- Reference entry 17 has no detected publication year: 17. OpenStreetMap contributors & CARTO. CARTO basemaps using OpenStreetMap data. https://carto.com/basemaps/
+- Reference entry 18 has no detected publication year: 18. National Tidal and Sea Level Facility. Highest & lowest predicted tides. https://ntslf.org/tides/uk-network/predicti
+- Reference entry 19 has no detected publication year: 19. NOAA Center for Operational Oceanographic Products and Services. Tidal datums API. https://api.tidesandcurrents.noaa
+- Reference entry 20 has no detected publication year: 20. Hong Kong Observatory. Notes on tide prediction. https://www.hko.gov.hk/en/tide/enotes.htm
+- Reference entry 22 has no detected publication year: 22. Port of Rotterdam. Weather, tide and water depth information. https://www.portofrotterdam.com/nl/actuele-informatie/
+
+Warnings
+--------
+
+Notes
+-----

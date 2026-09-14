@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "scope": "Canonical figures embedded in the current paper and research report exports",
+  "legacy_note": "Other files under figures/main and figures/supplementary are historical diagnostics and are not submission figures unless listed here.",
+  "figures": [
+    {
+      "number": "Figure 1",
+      "png": "figures/main/Fig1_process_terrain_design.png",
+      "pdf": "figures/main/Fig1_process_terrain_design.pdf",
+      "generator": "scripts/make_cee_refined_figures.py::make_fig1",
+      "primary_source": "data/figure_source/Fig6_mask_aware_terrain_area_metrics.csv"
+    },
+    {
+      "number": "Figure 2",
+      "png": "figures/main/Fig2_regional_screening_agreement.png",
+      "pdf": "figures/main/Fig2_regional_screening_agreement.pdf",
+      "generator": "scripts/make_advanced_submission_figures.py::make_figure4",
+      "primary_source": "data/figure_source/Fig6_mask_aware_rank_metrics_fraction_area_samples.csv"
+    },
+    {
+      "number": "Figure 3",
+      "png": "figures/main/Fig3_connected_terrain_contrasts.png",
+      "pdf": "figures/main/Fig3_connected_terrain_contrasts.pdf",
+      "generator": "scripts/make_advanced_submission_figures.py::make_figure3",
+      "primary_source": "data/figure_source/Fig6_archetype_map_selection.csv"
+    },
+    {
+      "number": "Figure 4",
+      "png": "figures/main/Fig4_elevation_product_datum_sensitivity.png",
+      "pdf": "figures/main/Fig4_elevation_product_datum_sensitivity.pdf",
+      "generator": "scripts/add_local_dtm_validation.py::write_validation_figure",
+      "primary_source": "data/figure_source/TableS_local_dtm_validation.csv"
+    },
+    {
+      "number": "Supplementary Figure S1",
+      "png": "figures/main/FigS1_water_level_definition.png",
+      "pdf": "figures/main/FigS1_water_level_definition.pdf",
+      "generator": "scripts/make_cee_refined_figures.py::make_fig2",
+      "primary_source": "data/figure_source/Fig2_water_level_divergence_with_uncertainty.csv"
+    },
+    {
+      "number": "Supplementary Figure S2",
+      "png": "figures/main/FigS2_process_coherence.png",
+      "pdf": "figures/main/FigS2_process_coherence.pdf",
+      "generator": "scripts/make_cee_refined_figures.py::make_fig3",
+      "primary_source": "data/figure_source/Fig3_driver_correlations.csv"
+    },
+    {
+      "number": "Supplementary Figure S3",
+      "png": "figures/main/FigS3_connectivity_gallery.png",
+      "pdf": "figures/main/FigS3_connectivity_gallery.pdf",
+      "generator": "scripts/make_advanced_submission_figures.py::make_supplementary_gallery",
+      "primary_source": "data/figure_source/Fig6_mask_aware_terrain_area_metrics.csv"
+    }
+  ]
+}

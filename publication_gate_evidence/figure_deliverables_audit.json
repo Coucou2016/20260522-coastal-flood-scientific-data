@@ -1,0 +1,71 @@
+{
+  "passed": true,
+  "errors": [],
+  "warnings": [],
+  "figures": [
+    {
+      "figure": 1,
+      "caption_present": true,
+      "image_records": [
+        "embedded-image-1.png"
+      ],
+      "source_tables": [
+        "data/figure_source/Fig1_station_metadata.csv"
+      ],
+      "inferred_image_records": [
+        "embedded-image-1.png"
+      ],
+      "inferred_source_tables": [
+        "data/figure_source/Fig1_station_metadata.csv"
+      ]
+    },
+    {
+      "figure": 2,
+      "caption_present": true,
+      "image_records": [
+        "embedded-image-2.png"
+      ],
+      "source_tables": [
+        "data/figure_source/Fig2_coastrp_spatial_sensitivity.csv"
+      ],
+      "inferred_image_records": [
+        "embedded-image-2.png"
+      ],
+      "inferred_source_tables": [
+        "data/figure_source/Fig2_coastrp_spatial_sensitivity.csv"
+      ]
+    },
+    {
+      "figure": 3,
+      "caption_present": true,
+      "image_records": [
+        "embedded-image-3.png"
+      ],
+      "source_tables": [
+        "data/figure_source/Fig2_D10_rank_uncertainty.csv"
+      ],
+      "inferred_image_records": [
+        "embedded-image-3.png"
+      ],
+      "inferred_source_tables": [
+        "data/figure_source/Fig2_D10_rank_uncertainty.csv"
+      ]
+    },
+    {
+      "figure": 4,
+      "caption_present": true,
+      "image_records": [
+        "embedded-image-4.png"
+      ],
+      "source_tables": [
+        "data/figure_source/Fig2_D10_rank_uncertainty_summary.csv"
+      ],
+      "inferred_image_records": [
+        "embedded-image-4.png"
+      ],
+      "inferred_source_tables": [
+        "data/figure_source/Fig2_D10_rank_uncertainty_summary.csv"
+      ]
+    }
+  ]
+}

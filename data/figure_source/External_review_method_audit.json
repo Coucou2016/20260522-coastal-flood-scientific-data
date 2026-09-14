@@ -1,0 +1,25 @@
+{
+  "primary_station_count": 68,
+  "primary_neighbour_rule": 4,
+  "primary_window_width_km": 10,
+  "primary_terrain_threshold_m_egm2008": 2,
+  "primary_vertical_interpretation": "standardized EGM2008 terrain-elevation threshold; not an event-specific storm-tide water surface",
+  "coast_return_periods_years": [
+    2,
+    5,
+    10,
+    25,
+    50,
+    100
+  ],
+  "spatial_null": "10000 within-coastal-sector permutations",
+  "moran_distance_thresholds_km": [
+    150,
+    250
+  ],
+  "included_match_distance_max_km": 2.8109575972725023,
+  "excluded_match_count_gt6km": 6,
+  "metric_identity": "connected_reference_land_pct = below_reference_land_pct * conditional_connectivity_pct / 100",
+  "deltadtm_version_note": "v1.1.1 mask class 255 denotes clipping at 30 m EGM2008; the 2024 v1.0 paper describes a 10 m plus MSL support. Version-specific support is audited rather than conflated.",
+  "rp10_primary_rows": 5
+}

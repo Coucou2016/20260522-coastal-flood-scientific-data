@@ -1,0 +1,13 @@
+Repository Deposit Readiness Audit
+==================================
+
+Passed: True
+Files checked: 12
+Errors: 0
+Warnings: 0
+
+Errors
+------
+
+Warnings
+--------

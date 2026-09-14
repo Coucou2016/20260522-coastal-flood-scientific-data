@@ -1,0 +1,72 @@
+{
+  "passed": true,
+  "image_count": 5,
+  "error_count": 0,
+  "records": [
+    {
+      "id": "figimg-001",
+      "document": "manuscript/process_terrain_coastal_flood_CEE_manuscript_review.html",
+      "reference": "embedded-image-1.png",
+      "kind": "embedded",
+      "path": null,
+      "exists": true,
+      "bytes": 588527,
+      "sha256": "de076f3a4f377336885fdb1eb1e1e2f97653902a1480d6344f58a8578aba59a7",
+      "width": 5776,
+      "height": 2980,
+      "error": null
+    },
+    {
+      "id": "figimg-002",
+      "document": "manuscript/process_terrain_coastal_flood_CEE_manuscript_review.html",
+      "reference": "embedded-image-2.png",
+      "kind": "embedded",
+      "path": null,
+      "exists": true,
+      "bytes": 459165,
+      "sha256": "cf16910b3cac364a1ff1bfc41ad8c72476d672e8588c3cd5c7a1d092da5a84e5",
+      "width": 5435,
+      "height": 2744,
+      "error": null
+    },
+    {
+      "id": "figimg-003",
+      "document": "manuscript/process_terrain_coastal_flood_CEE_manuscript_review.html",
+      "reference": "embedded-image-3.png",
+      "kind": "embedded",
+      "path": null,
+      "exists": true,
+      "bytes": 758408,
+      "sha256": "71264679b39f98d0da304462df679ba9b0d911a47863976f46b8ab2e5c7a2002",
+      "width": 5382,
+      "height": 2831,
+      "error": null
+    },
+    {
+      "id": "figimg-004",
+      "document": "manuscript/process_terrain_coastal_flood_CEE_manuscript_review.html",
+      "reference": "embedded-image-4.png",
+      "kind": "embedded",
+      "path": null,
+      "exists": true,
+      "bytes": 2957491,
+      "sha256": "c5773b715160d1d942329165e4be91f563320ba1b878536e8a0f6f83beda3a4b",
+      "width": 5311,
+      "height": 3706,
+      "error": null
+    },
+    {
+      "id": "figimg-005",
+      "document": "manuscript/process_terrain_coastal_flood_CEE_manuscript_review.html",
+      "reference": "embedded-image-5.png",
+      "kind": "embedded",
+      "path": null,
+      "exists": true,
+      "bytes": 699783,
+      "sha256": "97efeda5218381b158bac3fc0a5f4707787b4ca96295a7508e3e3d57d6f6a0ff",
+      "width": 5320,
+      "height": 3594,
+      "error": null
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+station_id,station,tg,lat,lon,num_year,corrn,rmse,gssr_archive,subset
+newlyn-p001-uk,Newlyn,newlyn-p001-uk-bodc.csv,50.102,-5.5417,37,0.8048393708363191,0.07582619564688134,newlyn_p001_uk.7z,NW Europe 30-station screening subset
+hoekvanholla-hvh-nl,Hoek van Holland,hoekvanholla-hvh-nl-rws.csv,51.977,4.12,37,0.7955755620275695,0.15391272298086894,hoekvanholla_hvh_nl.7z,NW Europe 30-station screening subset
+brest,Brest,brest-france-refmar.csv,48.383,-4.5,36,0.7945705928488479,0.08446717560380519,brest_.7z,NW Europe 30-station screening subset
+aberdeen-p038-uk,Aberdeen,aberdeen-p038-uk-bodc.csv,57.143,-2.0745,35,0.8234086565710446,0.08825856399969674,aberdeen_p038_uk.7z,NW Europe 30-station screening subset
+sheerness-p015-uk,Sheerness,sheerness-p015-uk-bodc.csv,51.442,0.74306,27,0.6684479366660454,0.17471625646671107,sheerness_p015_uk.7z,NW Europe 30-station screening subset
+esbjerg-130121-denmark,Esbjerg 130121 Denmark,esbjerg-130121-denmark-dmi.csv,55.467,8.4333,37,0.8293650913766994,0.21889025027716494,esbjerg_130121_denmark.7z,NW Europe 30-station screening subset
+denhelder-hel-nl,Denhelder Hel Nl,denhelder-hel-nl-rws.csv,52.965,4.7464,37,0.8248201333244836,0.15716983850266425,denhelder_hel_nl.7z,NW Europe 30-station screening subset
+lerwick-p041-uk,Lerwick P041 Uk,lerwick-p041-uk-bodc.csv,60.15,-1.1333,37,0.8243864918895287,0.07511292773126894,lerwick_p041_uk.7z,NW Europe 30-station screening subset
+cuxhaven-germany,Cuxhaven Germany,cuxhaven-germany-bsh.csv,53.867,8.7167,37,0.8212878428465595,0.2341981421529836,cuxhaven_germany.7z,NW Europe 30-station screening subset
+delfzijl-del-nl,Delfzijl Del Nl,delfzijl-del-nl-rws.csv,53.326,6.9331,37,0.8130688162971842,0.21373192479675265,delfzijl_del_nl.7z,NW Europe 30-station screening subset
+portpatrick-p063-uk,Portpatrick P063 Uk,portpatrick-p063-uk-bodc.csv,54.843,-5.12,37,0.806112528372705,0.11752896944921015,portpatrick_p063_uk.7z,NW Europe 30-station screening subset
+fishguard-p055-uk,Fishguard P055 Uk,fishguard-p055-uk-bodc.csv,52.013999999999996,-4.9833,37,0.7981757180354606,0.09108346520157933,fishguard_p055_uk.7z,NW Europe 30-station screening subset
+milfordhaven-p056-uk,Milfordhaven P056 Uk,milfordhaven-p056-uk-bodc.csv,51.702,-5.0143,37,0.7890485580401847,0.09910968753770724,milfordhaven_p056_uk.7z,NW Europe 30-station screening subset
+tregde-006-norway,Tregde 006 Norway,tregde-006-norway-statkart.csv,58.0,7.5666,37,0.7698606638312042,0.08780591834607865,tregde_006_norway.7z,NW Europe 30-station screening subset
+lowestoft-p024-uk,Lowestoft P024 Uk,lowestoft-p024-uk-bodc.csv,52.473,1.7508,37,0.7316476153949388,0.1494916068942721,lowestoft_p024_uk.7z,NW Europe 30-station screening subset
+wick-p035-uk,Wick P035 Uk,wick-p035-uk-bodc.csv,58.441,-3.0863,36,0.8354551299984059,0.08943706014308038,wick_p035_uk.7z,NW Europe 30-station screening subset
+stornoway-p042-uk,Stornoway P042 Uk,stornoway-p042-uk-bodc.csv,58.208,-6.3882,36,0.8306759707875331,0.0925229406902,stornoway_p042_uk.7z,NW Europe 30-station screening subset
+le-conquet,Le Conquet France,le_conquet-france-refmar.csv,48.358999999999995,-4.7807,36,0.8081322021549198,0.07567747708256074,le_conquet_.7z,NW Europe 30-station screening subset
+port-tudy,Port Tudy France,port-tudy-france-refmar.csv,47.644,-3.4459,36,0.7897587784996325,0.07814236563983194,port_tudy_.7z,NW Europe 30-station screening subset
+cherbourg,Cherbourg France,cherbourg-france-refmar.csv,49.651,-1.6355,36,0.7851281122153891,0.08874293048823577,cherbourg_.7z,NW Europe 30-station screening subset
+saint-nazaire,Saint Nazaire France,saint-nazaire-france-refmar.csv,47.266999999999996,-2.2016,36,0.7764365796164387,0.1059791935061963,saint_nazaire_.7z,NW Europe 30-station screening subset
+saint-gildas,Saint Gildas France,saint-gildas-france-refmar.csv,47.14,-2.2464,36,0.772756505103827,0.0949980745104724,saint_gildas_.7z,NW Europe 30-station screening subset
+le-havre,Le Havre France,le_havre-france-refmar.csv,49.482,0.106,36,0.7548941401492459,0.11290100318851055,le_havre_.7z,NW Europe 30-station screening subset
+dunkerque,Dunkerque France,dunkerque-france-refmar.csv,51.048,2.3667,36,0.7337241350119956,0.15256782437671262,dunkerque_.7z,NW Europe 30-station screening subset
+roscoff,Roscoff France,roscoff-france-refmar.csv,48.718,-3.9657,36,0.7302442849046487,0.09085189963968204,roscoff_.7z,NW Europe 30-station screening subset
+boulogne-sur-mer,Boulogne Sur Mer,boulogne-sur-mer-france-refmar.csv,50.727,1.5777,36,0.7243652719585156,0.1483994452950236,boulogne_sur_mer_.7z,NW Europe 30-station screening subset
+dieppe,Dieppe France,dieppe-france-refmar.csv,49.928999999999995,1.0845,36,0.7054409589991582,0.12776273177158054,dieppe_.7z,NW Europe 30-station screening subset
+immingham-p026-uk,Immingham P026 Uk,immingham-p026-uk-bodc.csv,53.631,-0.18603,36,0.6971313377451682,0.14069180027918246,immingham_p026_uk.7z,NW Europe 30-station screening subset
+millport-p049-uk,Millport P049 Uk,millport-p049-uk-bodc.csv,55.75,-4.9058,35,0.8077434436729396,0.1306161268445088,millport_p049_uk.7z,NW Europe 30-station screening subset
+holyhead-p054-uk,Holyhead P054 Uk,holyhead-p054-uk-bodc.csv,53.308,-4.6312,35,0.8055445593855491,0.10497092170850904,holyhead_p054_uk.7z,NW Europe 30-station screening subset

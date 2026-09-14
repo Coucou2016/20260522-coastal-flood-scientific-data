@@ -1,0 +1,6 @@
+terrain_metric,terrain_metric_label,n_sites,raw_spearman_water_vs_metric,partial_spearman_controlling_represented_land_fraction,spearman_metric_vs_represented_land_fraction,spearman_water_vs_represented_land_fraction
+below_reference_land_pct,lowland_prevalence,68,-0.30927205405199065,-0.31044776354927084,-0.097644768484941,0.0031683017139367098
+conditional_connectivity_pct,conditional_connectivity,68,0.10453349086266013,0.10580642350987,-0.12779286095230574,0.0031683017139367098
+connected_reference_land_pct,connected_lowland_share,68,-0.33316791999083856,-0.33591110941284347,-0.1371912814444402,0.0031683017139367098
+connected_area_km2,connected_area,68,-0.34095507119135776,-0.34156597643891673,0.051150895140664954,0.0031683017139367098
+connected_window_pct,connected_window_share,68,-0.34095507119135776,-0.34156597643891673,0.051150895140664954,0.0031683017139367098

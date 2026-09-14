@@ -1,0 +1,19 @@
+{
+  "data\\raw\\coast_rp\\COAST-RP.zip": 6798999,
+  "data\\raw\\coast_rp\\extracted\\COAST-RP.nc": 2817029,
+  "data\\raw\\coast_rp\\extracted\\COAST-RP_ETC.nc": 2816970,
+  "data\\raw\\coast_rp\\extracted\\COAST-RP_TC.nc": 1159019,
+  "data\\raw\\coast_rp\\extracted\\README.txt": 5491,
+  "data\\raw\\deltadtm\\index\\deltadtm_tiles.gpkg": 2891776,
+  "data\\raw\\deltadtm\\index\\README.md": 2326,
+  "data\\raw\\gssr\\era5\\aberdeen_p038_uk.7z": 418279,
+  "data\\raw\\gssr\\era5\\brest_.7z": 415898,
+  "data\\raw\\gssr\\era5\\charleston,sc_261a_usa.7z": 416143,
+  "data\\raw\\gssr\\era5\\hoekvanholla_hvh_nl.7z": 413709,
+  "data\\raw\\gssr\\era5\\hong_kong_b_329b_china.7z": 415437,
+  "data\\raw\\gssr\\era5\\newlyn_p001_uk.7z": 416688,
+  "data\\raw\\gssr\\era5\\newyork_thebattery__usa.7z": 417561,
+  "data\\raw\\gssr\\era5\\sheerness_p015_uk.7z": 409263,
+  "data\\raw\\gssr\\metadata\\eraint.geojson": 307194,
+  "data\\raw\\open_meteo\\hourly\\sheerness-p015-uk_2014-01-01_2014-01-07_era5.json": 20784
+}

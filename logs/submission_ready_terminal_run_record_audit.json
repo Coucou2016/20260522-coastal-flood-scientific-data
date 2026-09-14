@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "record": "manuscript\\submission_ready_terminal_run_record.json",
+  "errors": [],
+  "warnings": [],
+  "notes": [
+    "Recorded automatically after successful submission-ready gate outputs were present."
+  ]
+}

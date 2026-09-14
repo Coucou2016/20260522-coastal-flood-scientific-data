@@ -1,0 +1,93 @@
+{
+  "status": "technical_review_ready_local_package",
+  "generated_utc": "2026-07-27T17:05:13.740806+00:00",
+  "repository_link_status": {
+    "complete": false,
+    "private_reviewer_link": "",
+    "data_repository_url_or_doi": "",
+    "code_repository_url_or_doi": "",
+    "status": "pending"
+  },
+  "source_manifest_repository_status": {
+    "complete": false,
+    "data_repository_url_or_doi": "",
+    "code_repository_url_or_doi": "",
+    "private_reviewer_link": "",
+    "status": "pending"
+  },
+  "acceptance_items": [
+    {
+      "id": 1,
+      "label": "data truth and source-table traceability",
+      "status": "complete",
+      "evidence": "Core figures and tables are generated from data/figure_source tables and audited by scripts/audit_current_outputs.py."
+    },
+    {
+      "id": 2,
+      "label": "DeltaDTM official mask-aware connectivity",
+      "status": "complete",
+      "evidence": "data\\figure_source\\Fig6_mask_aware_terrain_area_metrics.csv rows=74; mask class table present=True."
+    },
+    {
+      "id": 3,
+      "label": "connected fraction and area metrics",
+      "status": "complete",
+      "evidence": "Mask-aware source table includes connected/all-below/unconnected areas and denominator metrics."
+    },
+    {
+      "id": 4,
+      "label": "Figure 3 archetype evidence grid",
+      "status": "complete",
+      "evidence": "data\\figure_source\\Fig6_archetype_map_selection.csv contains 3 archetype rows."
+    },
+    {
+      "id": 5,
+      "label": "conservative statistical interpretation",
+      "status": "complete",
+      "evidence": "Top-set overlap is treated as decision-oriented description; formal statistics use raw COAST-RP versus connected fraction/area."
+    },
+    {
+      "id": 6,
+      "label": "sample-boundary clarity",
+      "status": "complete",
+      "evidence": "Paper/report distinguish 74 all-spatial, 46 GSSR-qualified, 30 retained and 13 source-verified tidal subsets."
+    },
+    {
+      "id": 7,
+      "label": "uncertainty and perturbation ranges",
+      "status": "complete",
+      "evidence": "GSSR bootstrap/prediction-bound, COAST-RP spatial matching, DeltaDTM DEM perturbation and window/seed sensitivity are reported as screening ranges."
+    },
+    {
+      "id": 8,
+      "label": "reproducibility package",
+      "status": "complete_local_pending_external_link",
+      "evidence": "reproducibility_package.zip exists; repository DOI/private reviewer link status=pending."
+    },
+    {
+      "id": 9,
+      "label": "paper/report synchronized standalone outputs",
+      "status": "complete",
+      "evidence": "paper.html/md/pdf and report.html/md/pdf exist and standalone HTML validation passes."
+    },
+    {
+      "id": 10,
+      "label": "non-overclaiming wording",
+      "status": "complete",
+      "evidence": "Final paper/report avoid distortion, mis-rank and true hotspot in core wording."
+    },
+    {
+      "id": "local_dtm",
+      "label": "local DTM validation",
+      "status": "complete",
+      "evidence": "data\\figure_source\\TableS_local_dtm_validation.csv stations=sheerness-p015-uk; newlyn-p001-uk; lowestoft-p024-uk; immingham-p026-uk; denhelder-hel-nl; delfzijl-del-nl; hoekvanholla-hvh-nl."
+    },
+    {
+      "id": "submission_readiness",
+      "label": "external submission repository link",
+      "status": "pending",
+      "evidence": "Set config/submission_links.json and rerun scripts/audit_submission_readiness.py."
+    }
+  ],
+  "final_submission_gate": "pending_repository_link"
+}

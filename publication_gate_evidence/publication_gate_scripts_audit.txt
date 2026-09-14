@@ -1,0 +1,13 @@
+Publication Gate Scripts Audit
+==============================
+
+Passed: True
+Checked: 42
+Errors: 0
+Warnings: 0
+
+Errors
+------
+
+Warnings
+--------

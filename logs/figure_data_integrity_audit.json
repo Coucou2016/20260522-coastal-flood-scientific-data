@@ -1,0 +1,1342 @@
+{
+  "errors": [
+    "data/figure_source/Fig4_connected_terrain_sensitivity.csv row 2: connected_2m_dem_shift_m1_pct (59.46914739267731) exceeds bathtub_2m_lowland_pct (42.77972177178459).",
+    "data/figure_source/Fig4_connected_terrain_sensitivity.csv row 2: connected_2m_dem_shift_m05_pct (49.987198088247844) exceeds bathtub_2m_lowland_pct (42.77972177178459).",
+    "data/figure_source/Fig4_connected_terrain_sensitivity.csv row 2: connected_2m_dem_pm05_max_pct (49.987198088247844) exceeds bathtub_2m_lowland_pct (42.77972177178459).",
+    "data/figure_source/Fig4_connected_terrain_sensitivity.csv row 2: connected_2m_dem_pm1_max_pct (59.46914739267731) exceeds bathtub_2m_lowland_pct (42.77972177178459).",
+    "data/figure_source/Fig4_connected_terrain_sensitivity.csv row 4: connected_2m_dem_shift_m1_pct (11.703020134228188) exceeds bathtub_2m_lowland_pct (8.263422818791947).",
+    "data/figure_source/Fig4_connected_terrain_sensitivity.csv row 4: connected_2m_dem_shift_m05_pct (10.318791946308725) exceeds bathtub_2m_lowland_pct (8.263422818791947).",
+    "data/figure_source/Fig4_connected_terrain_sensitivity.csv row 4: connected_2m_dem_pm05_max_pct (10.318791946308725) exceeds bathtub_2m_lowland_pct (8.263422818791947).",
+    "data/figure_source/Fig4_connected_terrain_sensitivity.csv row 4: connected_2m_dem_pm1_max_pct (11.703020134228188) exceeds bathtub_2m_lowland_pct (8.263422818791947).",
+    "data/figure_source/Fig4_connected_terrain_sensitivity.csv row 5: connected_2m_dem_shift_m1_pct (9.29835785881851) exceeds bathtub_2m_lowland_pct (7.63489016847942).",
+    "data/figure_source/Fig4_connected_terrain_sensitivity.csv row 5: connected_2m_dem_pm1_max_pct (9.29835785881851) exceeds bathtub_2m_lowland_pct (7.63489016847942).",
+    "data/figure_source/Fig4_connected_terrain_sensitivity.csv row 6: connected_2m_dem_shift_m1_pct (9.026151444184231) exceeds bathtub_2m_lowland_pct (7.240437158469946).",
+    "data/figure_source/Fig4_connected_terrain_sensitivity.csv row 6: connected_2m_dem_shift_m05_pct (7.572209211553474) exceeds bathtub_2m_lowland_pct (7.240437158469946).",
+    "data/figure_source/Fig4_connected_terrain_sensitivity.csv row 6: connected_2m_dem_pm05_max_pct (7.572209211553474) exceeds bathtub_2m_lowland_pct (7.240437158469946).",
+    "data/figure_source/Fig4_connected_terrain_sensitivity.csv row 6: connected_2m_dem_pm1_max_pct (9.026151444184231) exceeds bathtub_2m_lowland_pct (7.240437158469946).",
+    "data/figure_source/Fig4_terrain_screen_sensitivity_summary.csv row 3: connected_2m_max_pct (9.184574624668825) exceeds bathtub_2m_min_pct (5.216902200660901).",
+    "data/figure_source/Fig4_terrain_screen_sensitivity_summary.csv row 6: connected_2m_max_pct (6.743997841920691) exceeds bathtub_2m_min_pct (6.166035136066139).",
+    "data/figure_source/Fig4_terrain_screen_sensitivity_summary.csv row 7: connected_2m_max_pct (6.2990067956089915) exceeds bathtub_2m_min_pct (5.940199335548173).",
+    "data/figure_source/Fig4_terrain_screen_sensitivity_summary.csv row 10: connected_2m_max_pct (47.19626168224299) exceeds bathtub_2m_min_pct (31.94496560350219).",
+    "data/figure_source/Fig4_terrain_screen_sensitivity_summary.csv row 12: connected_2m_max_pct (11.34916039374638) exceeds bathtub_2m_min_pct (6.653157716987504).",
+    "data/figure_source/Fig4_terrain_screen_sensitivity_summary.csv row 13: connected_2m_max_pct (8.848080133555927) exceeds bathtub_2m_min_pct (6.990193613276339).",
+    "data/figure_source/Fig4_terrain_screen_sensitivity_summary.csv row 15: connected_2m_max_pct (43.016132803366844) exceeds bathtub_2m_min_pct (42.07588348862587).",
+    "data/figure_source/Fig4_terrain_screen_sensitivity_summary.csv row 16: connected_2m_max_pct (52.1431467217042) exceeds bathtub_2m_min_pct (42.77972177178459).",
+    "data/figure_source/Fig5_coastrp_component_context.csv row 2 column etc_to_total_ratio has value 1.0000000000000002, outside [0.0, 1.0].",
+    "data/figure_source/Fig5_coastrp_component_context.csv row 15 column etc_to_total_ratio has value 1.0000000000000002, outside [0.0, 1.0].",
+    "data/figure_source/Fig5_coastrp_component_context.csv row 15 column tc_to_total_ratio has value 1.0090090122341069, outside [0.0, 1.0].",
+    "data/figure_source/Fig5_coastrp_component_context.csv row 21 column etc_to_total_ratio has value 1.0000000000000002, outside [0.0, 1.0].",
+    "data/figure_source/Fig5_coastrp_component_context_summary.csv row 2 column max_tc_to_total_ratio has value 1.0090090122341069, outside [0.0, 1.0].",
+    "data/figure_source/Fig5_nw_europe_extended_screening.csv row 2: connected_2m_dem_pm05_max_pct (10.318791946308725) exceeds bathtub_2m_lowland_pct (8.263422818791947).",
+    "data/figure_source/Fig5_nw_europe_extended_screening.csv row 2: connected_2m_dem_pm1_max_pct (11.703020134228188) exceeds bathtub_2m_lowland_pct (8.263422818791947).",
+    "data/figure_source/Fig5_nw_europe_extended_screening.csv row 4: connected_2m_dem_pm1_max_pct (9.29835785881851) exceeds bathtub_2m_lowland_pct (7.63489016847942).",
+    "data/figure_source/Fig5_nw_europe_extended_screening.csv row 5: connected_2m_dem_pm05_max_pct (7.572209211553474) exceeds bathtub_2m_lowland_pct (7.240437158469946).",
+    "data/figure_source/Fig5_nw_europe_extended_screening.csv row 5: connected_2m_dem_pm1_max_pct (9.026151444184231) exceeds bathtub_2m_lowland_pct (7.240437158469946).",
+    "data/figure_source/Fig5_nw_europe_extended_screening.csv row 6: connected_2m_dem_pm05_max_pct (49.987198088247844) exceeds bathtub_2m_lowland_pct (42.77972177178459).",
+    "data/figure_source/Fig5_nw_europe_extended_screening.csv row 6: connected_2m_dem_pm1_max_pct (59.46914739267731) exceeds bathtub_2m_lowland_pct (42.77972177178459).",
+    "data/figure_source/Fig5_nw_europe_extended_screening.csv row 7: connected_2m_dem_pm05_max_pct (15.951742627345844) exceeds bathtub_2m_lowland_pct (13.473764841057067).",
+    "data/figure_source/Fig5_nw_europe_extended_screening.csv row 7: connected_2m_dem_pm1_max_pct (20.39448487169667) exceeds bathtub_2m_lowland_pct (13.473764841057067).",
+    "data/figure_source/Fig5_nw_europe_extended_screening.csv row 8: connected_2m_dem_pm05_max_pct (81.12497190379861) exceeds bathtub_2m_lowland_pct (78.41368846931894).",
+    "data/figure_source/Fig5_nw_europe_extended_screening.csv row 8: connected_2m_dem_pm1_max_pct (83.29399865138234) exceeds bathtub_2m_lowland_pct (78.41368846931894).",
+    "data/figure_source/Fig5_nw_europe_extended_screening.csv row 9: connected_2m_dem_pm05_max_pct (16.786034019695613) exceeds bathtub_2m_lowland_pct (13.011041480155178).",
+    "data/figure_source/Fig5_nw_europe_extended_screening.csv row 9: connected_2m_dem_pm1_max_pct (21.038495971351836) exceeds bathtub_2m_lowland_pct (13.011041480155178).",
+    "data/figure_source/Fig5_nw_europe_extended_screening.csv row 10: connected_2m_dem_pm05_max_pct (79.90533077876705) exceeds bathtub_2m_lowland_pct (65.55467898869229).",
+    "data/figure_source/Fig5_nw_europe_extended_screening.csv row 10: connected_2m_dem_pm1_max_pct (85.31124384837898) exceeds bathtub_2m_lowland_pct (65.55467898869229).",
+    "data/figure_source/Fig5_nw_europe_extended_screening.csv row 11: connected_2m_dem_pm05_max_pct (98.91565888565982) exceeds bathtub_2m_lowland_pct (97.41258085684822).",
+    "data/figure_source/Fig5_nw_europe_extended_screening.csv row 11: connected_2m_dem_pm1_max_pct (99.56563857379457) exceeds bathtub_2m_lowland_pct (97.41258085684822).",
+    "data/figure_source/Fig5_nw_europe_extended_screening.csv row 12: connected_2m_dem_pm05_max_pct (31.21998078770413) exceeds bathtub_2m_lowland_pct (26.320845341018252).",
+    "data/figure_source/Fig5_nw_europe_extended_screening.csv row 12: connected_2m_dem_pm1_max_pct (35.6388088376561) exceeds bathtub_2m_lowland_pct (26.320845341018252).",
+    "data/figure_source/Fig5_nw_europe_extended_screening.csv row 13: connected_2m_dem_pm05_max_pct (13.003761418592156) exceeds bathtub_2m_lowland_pct (6.501880709296078).",
+    "data/figure_source/Fig5_nw_europe_extended_screening.csv row 13: connected_2m_dem_pm1_max_pct (19.666845781837722) exceeds bathtub_2m_lowland_pct (6.501880709296078).",
+    "data/figure_source/Fig5_nw_europe_extended_screening.csv row 15: connected_2m_dem_pm05_max_pct (16.205148205928236) exceeds bathtub_2m_lowland_pct (13.813052522100884).",
+    "data/figure_source/Fig5_nw_europe_extended_screening.csv row 15: connected_2m_dem_pm1_max_pct (19.429277171086845) exceeds bathtub_2m_lowland_pct (13.813052522100884).",
+    "data/figure_source/Fig5_nw_europe_extended_screening.csv row 16: connected_2m_dem_pm05_max_pct (7.2913140613364025) exceeds bathtub_2m_lowland_pct (5.761289012253741).",
+    "data/figure_source/Fig5_nw_europe_extended_screening.csv row 16: connected_2m_dem_pm1_max_pct (10.24981382438562) exceeds bathtub_2m_lowland_pct (5.761289012253741).",
+    "data/figure_source/Fig5_nw_europe_extended_screening.csv row 17: connected_2m_dem_pm05_max_pct (18.127765486725664) exceeds bathtub_2m_lowland_pct (15.804756637168142).",
+    "data/figure_source/Fig5_nw_europe_extended_screening.csv row 17: connected_2m_dem_pm1_max_pct (19.952986725663717) exceeds bathtub_2m_lowland_pct (15.804756637168142).",
+    "data/figure_source/Fig5_nw_europe_extended_screening.csv row 18: connected_2m_dem_pm05_max_pct (15.91138891442228) exceeds bathtub_2m_lowland_pct (12.464380917363728).",
+    "data/figure_source/Fig5_nw_europe_extended_screening.csv row 18: connected_2m_dem_pm1_max_pct (19.533045316665135) exceeds bathtub_2m_lowland_pct (12.464380917363728).",
+    "data/figure_source/Fig5_nw_europe_extended_screening.csv row 19: connected_2m_dem_pm05_max_pct (9.572301425661914) exceeds bathtub_2m_lowland_pct (6.272912423625255).",
+    "data/figure_source/Fig5_nw_europe_extended_screening.csv row 19: connected_2m_dem_pm1_max_pct (13.441955193482688) exceeds bathtub_2m_lowland_pct (6.272912423625255).",
+    "data/figure_source/Fig5_nw_europe_extended_screening.csv row 20: connected_2m_dem_pm05_max_pct (15.679772619611558) exceeds bathtub_2m_lowland_pct (12.979630506868782).",
+    "data/figure_source/Fig5_nw_europe_extended_screening.csv row 20: connected_2m_dem_pm1_max_pct (18.285172903837044) exceeds bathtub_2m_lowland_pct (12.979630506868782).",
+    "data/figure_source/Fig5_nw_europe_extended_screening.csv row 21: connected_2m_dem_pm05_max_pct (6.916932907348243) exceeds bathtub_2m_lowland_pct (6.006389776357827).",
+    "data/figure_source/Fig5_nw_europe_extended_screening.csv row 21: connected_2m_dem_pm1_max_pct (9.456869009584665) exceeds bathtub_2m_lowland_pct (6.006389776357827).",
+    "data/figure_source/Fig5_nw_europe_extended_screening.csv row 23: connected_2m_dem_pm05_max_pct (15.483555845001629) exceeds bathtub_2m_lowland_pct (14.799739498534679).",
+    "data/figure_source/Fig5_nw_europe_extended_screening.csv row 23: connected_2m_dem_pm1_max_pct (16.33018560729404) exceeds bathtub_2m_lowland_pct (14.799739498534679).",
+    "data/figure_source/Fig5_nw_europe_extended_screening.csv row 24: connected_2m_dem_pm05_max_pct (11.754365404898628) exceeds bathtub_2m_lowland_pct (10.992616899097621).",
+    "data/figure_source/Fig5_nw_europe_extended_screening.csv row 24: connected_2m_dem_pm1_max_pct (13.283722020391421) exceeds bathtub_2m_lowland_pct (10.992616899097621).",
+    "data/figure_source/Fig5_nw_europe_extended_screening.csv row 25: connected_2m_dem_pm05_max_pct (42.79631968248241) exceeds bathtub_2m_lowland_pct (26.227674544470503).",
+    "data/figure_source/Fig5_nw_europe_extended_screening.csv row 25: connected_2m_dem_pm1_max_pct (53.64964820494317) exceeds bathtub_2m_lowland_pct (26.227674544470503).",
+    "data/figure_source/Fig5_nw_europe_extended_screening.csv row 26: connected_2m_dem_pm05_max_pct (5.788362978595116) exceeds bathtub_2m_lowland_pct (3.044920108531806).",
+    "data/figure_source/Fig5_nw_europe_extended_screening.csv row 26: connected_2m_dem_pm1_max_pct (7.94392523364486) exceeds bathtub_2m_lowland_pct (3.044920108531806).",
+    "data/figure_source/Fig5_nw_europe_extended_screening.csv row 27: connected_2m_dem_pm05_max_pct (6.7736670293797605) exceeds bathtub_2m_lowland_pct (6.147986942328618).",
+    "data/figure_source/Fig5_nw_europe_extended_screening.csv row 27: connected_2m_dem_pm1_max_pct (7.6305767138193685) exceeds bathtub_2m_lowland_pct (6.147986942328618).",
+    "data/figure_source/Fig5_nw_europe_extended_screening.csv row 28: connected_2m_dem_pm1_max_pct (1.7713765416770135) exceeds bathtub_2m_lowland_pct (1.4568330436222168).",
+    "data/figure_source/Fig5_nw_europe_extended_screening.csv row 29: connected_2m_dem_pm05_max_pct (41.76519974812845) exceeds bathtub_2m_lowland_pct (29.189113552088436).",
+    "data/figure_source/Fig5_nw_europe_extended_screening.csv row 29: connected_2m_dem_pm1_max_pct (54.428741341915625) exceeds bathtub_2m_lowland_pct (29.189113552088436).",
+    "data/figure_source/Fig5_nw_europe_extended_screening.csv row 30: connected_2m_dem_pm05_max_pct (10.986547085201794) exceeds bathtub_2m_lowland_pct (8.118952088742034).",
+    "data/figure_source/Fig5_nw_europe_extended_screening.csv row 30: connected_2m_dem_pm1_max_pct (14.019353316025489) exceeds bathtub_2m_lowland_pct (8.118952088742034).",
+    "data/figure_source/Fig5_nw_europe_extended_screening.csv row 31: connected_2m_dem_pm05_max_pct (9.24938647710925) exceeds bathtub_2m_lowland_pct (7.53998476770754).",
+    "data/figure_source/Fig5_nw_europe_extended_screening.csv row 31: connected_2m_dem_pm1_max_pct (11.627316577811627) exceeds bathtub_2m_lowland_pct (7.53998476770754).",
+    "data/figure_source/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 2: connected_2m_dem_pm05_max_pct (10.318791946308725) exceeds bathtub_2m_lowland_pct (8.263422818791947).",
+    "data/figure_source/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 2: connected_2m_dem_pm1_max_pct (11.703020134228188) exceeds bathtub_2m_lowland_pct (8.263422818791947).",
+    "data/figure_source/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 4: connected_2m_dem_pm1_max_pct (9.29835785881851) exceeds bathtub_2m_lowland_pct (7.63489016847942).",
+    "data/figure_source/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 5: connected_2m_dem_pm05_max_pct (7.572209211553474) exceeds bathtub_2m_lowland_pct (7.240437158469946).",
+    "data/figure_source/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 5: connected_2m_dem_pm1_max_pct (9.026151444184231) exceeds bathtub_2m_lowland_pct (7.240437158469946).",
+    "data/figure_source/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 6: connected_2m_dem_pm05_max_pct (49.98719808824784) exceeds bathtub_2m_lowland_pct (42.77972177178459).",
+    "data/figure_source/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 6: connected_2m_dem_pm1_max_pct (59.46914739267731) exceeds bathtub_2m_lowland_pct (42.77972177178459).",
+    "data/figure_source/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 7: connected_2m_dem_pm05_max_pct (15.951742627345844) exceeds bathtub_2m_lowland_pct (13.473764841057069).",
+    "data/figure_source/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 7: connected_2m_dem_pm1_max_pct (20.39448487169667) exceeds bathtub_2m_lowland_pct (13.473764841057069).",
+    "data/figure_source/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 8: connected_2m_dem_pm05_max_pct (81.12497190379861) exceeds bathtub_2m_lowland_pct (78.41368846931894).",
+    "data/figure_source/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 8: connected_2m_dem_pm1_max_pct (83.29399865138234) exceeds bathtub_2m_lowland_pct (78.41368846931894).",
+    "data/figure_source/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 9: connected_2m_dem_pm05_max_pct (16.786034019695613) exceeds bathtub_2m_lowland_pct (13.011041480155178).",
+    "data/figure_source/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 9: connected_2m_dem_pm1_max_pct (21.03849597135184) exceeds bathtub_2m_lowland_pct (13.011041480155178).",
+    "data/figure_source/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 10: connected_2m_dem_pm05_max_pct (79.90533077876705) exceeds bathtub_2m_lowland_pct (65.55467898869229).",
+    "data/figure_source/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 10: connected_2m_dem_pm1_max_pct (85.31124384837898) exceeds bathtub_2m_lowland_pct (65.55467898869229).",
+    "data/figure_source/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 11: connected_2m_dem_pm05_max_pct (98.91565888565982) exceeds bathtub_2m_lowland_pct (97.41258085684822).",
+    "data/figure_source/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 11: connected_2m_dem_pm1_max_pct (99.56563857379456) exceeds bathtub_2m_lowland_pct (97.41258085684822).",
+    "data/figure_source/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 12: connected_2m_dem_pm05_max_pct (31.21998078770413) exceeds bathtub_2m_lowland_pct (26.32084534101825).",
+    "data/figure_source/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 12: connected_2m_dem_pm1_max_pct (35.6388088376561) exceeds bathtub_2m_lowland_pct (26.32084534101825).",
+    "data/figure_source/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 13: connected_2m_dem_pm05_max_pct (13.003761418592156) exceeds bathtub_2m_lowland_pct (6.501880709296078).",
+    "data/figure_source/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 13: connected_2m_dem_pm1_max_pct (19.66684578183772) exceeds bathtub_2m_lowland_pct (6.501880709296078).",
+    "data/figure_source/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 15: connected_2m_dem_pm05_max_pct (16.205148205928236) exceeds bathtub_2m_lowland_pct (13.813052522100884).",
+    "data/figure_source/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 15: connected_2m_dem_pm1_max_pct (19.429277171086845) exceeds bathtub_2m_lowland_pct (13.813052522100884).",
+    "data/figure_source/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 16: connected_2m_dem_pm05_max_pct (7.291314061336402) exceeds bathtub_2m_lowland_pct (5.761289012253741).",
+    "data/figure_source/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 16: connected_2m_dem_pm1_max_pct (10.24981382438562) exceeds bathtub_2m_lowland_pct (5.761289012253741).",
+    "data/figure_source/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 17: connected_2m_dem_pm05_max_pct (18.127765486725664) exceeds bathtub_2m_lowland_pct (15.804756637168142).",
+    "data/figure_source/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 17: connected_2m_dem_pm1_max_pct (19.95298672566372) exceeds bathtub_2m_lowland_pct (15.804756637168142).",
+    "data/figure_source/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 18: connected_2m_dem_pm05_max_pct (15.91138891442228) exceeds bathtub_2m_lowland_pct (12.464380917363728).",
+    "data/figure_source/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 18: connected_2m_dem_pm1_max_pct (19.53304531666513) exceeds bathtub_2m_lowland_pct (12.464380917363728).",
+    "data/figure_source/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 19: connected_2m_dem_pm05_max_pct (9.572301425661914) exceeds bathtub_2m_lowland_pct (6.272912423625255).",
+    "data/figure_source/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 19: connected_2m_dem_pm1_max_pct (13.441955193482688) exceeds bathtub_2m_lowland_pct (6.272912423625255).",
+    "data/figure_source/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 20: connected_2m_dem_pm05_max_pct (15.679772619611558) exceeds bathtub_2m_lowland_pct (12.979630506868782).",
+    "data/figure_source/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 20: connected_2m_dem_pm1_max_pct (18.285172903837044) exceeds bathtub_2m_lowland_pct (12.979630506868782).",
+    "data/figure_source/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 21: connected_2m_dem_pm05_max_pct (6.916932907348243) exceeds bathtub_2m_lowland_pct (6.006389776357827).",
+    "data/figure_source/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 21: connected_2m_dem_pm1_max_pct (9.456869009584665) exceeds bathtub_2m_lowland_pct (6.006389776357827).",
+    "data/figure_source/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 23: connected_2m_dem_pm05_max_pct (15.483555845001629) exceeds bathtub_2m_lowland_pct (14.79973949853468).",
+    "data/figure_source/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 23: connected_2m_dem_pm1_max_pct (16.33018560729404) exceeds bathtub_2m_lowland_pct (14.79973949853468).",
+    "data/figure_source/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 24: connected_2m_dem_pm05_max_pct (11.754365404898628) exceeds bathtub_2m_lowland_pct (10.99261689909762).",
+    "data/figure_source/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 24: connected_2m_dem_pm1_max_pct (13.28372202039142) exceeds bathtub_2m_lowland_pct (10.99261689909762).",
+    "data/figure_source/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 25: connected_2m_dem_pm05_max_pct (42.79631968248241) exceeds bathtub_2m_lowland_pct (26.227674544470503).",
+    "data/figure_source/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 25: connected_2m_dem_pm1_max_pct (53.64964820494317) exceeds bathtub_2m_lowland_pct (26.227674544470503).",
+    "data/figure_source/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 26: connected_2m_dem_pm05_max_pct (5.788362978595116) exceeds bathtub_2m_lowland_pct (3.044920108531806).",
+    "data/figure_source/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 26: connected_2m_dem_pm1_max_pct (7.94392523364486) exceeds bathtub_2m_lowland_pct (3.044920108531806).",
+    "data/figure_source/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 27: connected_2m_dem_pm05_max_pct (6.7736670293797605) exceeds bathtub_2m_lowland_pct (6.147986942328618).",
+    "data/figure_source/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 27: connected_2m_dem_pm1_max_pct (7.630576713819368) exceeds bathtub_2m_lowland_pct (6.147986942328618).",
+    "data/figure_source/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 28: connected_2m_dem_pm1_max_pct (1.7713765416770135) exceeds bathtub_2m_lowland_pct (1.4568330436222168).",
+    "data/figure_source/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 29: connected_2m_dem_pm05_max_pct (41.76519974812845) exceeds bathtub_2m_lowland_pct (29.18911355208844).",
+    "data/figure_source/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 29: connected_2m_dem_pm1_max_pct (54.428741341915625) exceeds bathtub_2m_lowland_pct (29.18911355208844).",
+    "data/figure_source/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 30: connected_2m_dem_pm05_max_pct (10.986547085201794) exceeds bathtub_2m_lowland_pct (8.118952088742034).",
+    "data/figure_source/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 30: connected_2m_dem_pm1_max_pct (14.019353316025487) exceeds bathtub_2m_lowland_pct (8.118952088742034).",
+    "data/figure_source/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 31: connected_2m_dem_pm05_max_pct (9.24938647710925) exceeds bathtub_2m_lowland_pct (7.53998476770754).",
+    "data/figure_source/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 31: connected_2m_dem_pm1_max_pct (11.627316577811628) exceeds bathtub_2m_lowland_pct (7.53998476770754).",
+    "data/figure_source/Fig5_process_terrain_typology.csv row 2: connected_2m_dem_pm05_max_pct (10.318791946308725) exceeds bathtub_2m_lowland_pct (8.263422818791947).",
+    "data/figure_source/Fig5_process_terrain_typology.csv row 2: connected_2m_dem_pm1_max_pct (11.703020134228188) exceeds bathtub_2m_lowland_pct (8.263422818791947).",
+    "data/figure_source/Fig5_process_terrain_typology.csv row 4: connected_2m_dem_pm1_max_pct (9.29835785881851) exceeds bathtub_2m_lowland_pct (7.63489016847942).",
+    "data/figure_source/Fig5_process_terrain_typology.csv row 5: connected_2m_dem_pm05_max_pct (7.572209211553474) exceeds bathtub_2m_lowland_pct (7.240437158469946).",
+    "data/figure_source/Fig5_process_terrain_typology.csv row 5: connected_2m_dem_pm1_max_pct (9.026151444184231) exceeds bathtub_2m_lowland_pct (7.240437158469946).",
+    "data/figure_source/Fig5_process_terrain_typology.csv row 6: connected_2m_dem_pm05_max_pct (49.98719808824784) exceeds bathtub_2m_lowland_pct (42.77972177178459).",
+    "data/figure_source/Fig5_process_terrain_typology.csv row 6: connected_2m_dem_pm1_max_pct (59.46914739267731) exceeds bathtub_2m_lowland_pct (42.77972177178459).",
+    "data/figure_source/Fig5_process_terrain_typology.csv row 7: connected_2m_dem_pm05_max_pct (15.951742627345844) exceeds bathtub_2m_lowland_pct (13.473764841057069).",
+    "data/figure_source/Fig5_process_terrain_typology.csv row 7: connected_2m_dem_pm1_max_pct (20.39448487169667) exceeds bathtub_2m_lowland_pct (13.473764841057069).",
+    "data/figure_source/Fig5_process_terrain_typology.csv row 8: connected_2m_dem_pm05_max_pct (81.12497190379861) exceeds bathtub_2m_lowland_pct (78.41368846931894).",
+    "data/figure_source/Fig5_process_terrain_typology.csv row 8: connected_2m_dem_pm1_max_pct (83.29399865138234) exceeds bathtub_2m_lowland_pct (78.41368846931894).",
+    "data/figure_source/Fig5_process_terrain_typology.csv row 9: connected_2m_dem_pm05_max_pct (16.786034019695613) exceeds bathtub_2m_lowland_pct (13.011041480155178).",
+    "data/figure_source/Fig5_process_terrain_typology.csv row 9: connected_2m_dem_pm1_max_pct (21.03849597135184) exceeds bathtub_2m_lowland_pct (13.011041480155178).",
+    "data/figure_source/Fig5_process_terrain_typology.csv row 10: connected_2m_dem_pm05_max_pct (79.90533077876705) exceeds bathtub_2m_lowland_pct (65.55467898869229).",
+    "data/figure_source/Fig5_process_terrain_typology.csv row 10: connected_2m_dem_pm1_max_pct (85.31124384837898) exceeds bathtub_2m_lowland_pct (65.55467898869229).",
+    "data/figure_source/Fig5_process_terrain_typology.csv row 11: connected_2m_dem_pm05_max_pct (98.91565888565982) exceeds bathtub_2m_lowland_pct (97.41258085684822).",
+    "data/figure_source/Fig5_process_terrain_typology.csv row 11: connected_2m_dem_pm1_max_pct (99.56563857379456) exceeds bathtub_2m_lowland_pct (97.41258085684822).",
+    "data/figure_source/Fig5_process_terrain_typology.csv row 12: connected_2m_dem_pm05_max_pct (31.21998078770413) exceeds bathtub_2m_lowland_pct (26.32084534101825).",
+    "data/figure_source/Fig5_process_terrain_typology.csv row 12: connected_2m_dem_pm1_max_pct (35.6388088376561) exceeds bathtub_2m_lowland_pct (26.32084534101825).",
+    "data/figure_source/Fig5_process_terrain_typology.csv row 13: connected_2m_dem_pm05_max_pct (13.003761418592156) exceeds bathtub_2m_lowland_pct (6.501880709296078).",
+    "data/figure_source/Fig5_process_terrain_typology.csv row 13: connected_2m_dem_pm1_max_pct (19.66684578183772) exceeds bathtub_2m_lowland_pct (6.501880709296078).",
+    "data/figure_source/Fig5_process_terrain_typology.csv row 15: connected_2m_dem_pm05_max_pct (16.205148205928236) exceeds bathtub_2m_lowland_pct (13.813052522100884).",
+    "data/figure_source/Fig5_process_terrain_typology.csv row 15: connected_2m_dem_pm1_max_pct (19.429277171086845) exceeds bathtub_2m_lowland_pct (13.813052522100884).",
+    "data/figure_source/Fig5_process_terrain_typology.csv row 16: connected_2m_dem_pm05_max_pct (7.291314061336402) exceeds bathtub_2m_lowland_pct (5.761289012253741).",
+    "data/figure_source/Fig5_process_terrain_typology.csv row 16: connected_2m_dem_pm1_max_pct (10.24981382438562) exceeds bathtub_2m_lowland_pct (5.761289012253741).",
+    "data/figure_source/Fig5_process_terrain_typology.csv row 17: connected_2m_dem_pm05_max_pct (18.127765486725664) exceeds bathtub_2m_lowland_pct (15.804756637168142).",
+    "data/figure_source/Fig5_process_terrain_typology.csv row 17: connected_2m_dem_pm1_max_pct (19.95298672566372) exceeds bathtub_2m_lowland_pct (15.804756637168142).",
+    "data/figure_source/Fig5_process_terrain_typology.csv row 18: connected_2m_dem_pm05_max_pct (15.91138891442228) exceeds bathtub_2m_lowland_pct (12.464380917363728).",
+    "data/figure_source/Fig5_process_terrain_typology.csv row 18: connected_2m_dem_pm1_max_pct (19.53304531666513) exceeds bathtub_2m_lowland_pct (12.464380917363728).",
+    "data/figure_source/Fig5_process_terrain_typology.csv row 19: connected_2m_dem_pm05_max_pct (9.572301425661914) exceeds bathtub_2m_lowland_pct (6.272912423625255).",
+    "data/figure_source/Fig5_process_terrain_typology.csv row 19: connected_2m_dem_pm1_max_pct (13.441955193482688) exceeds bathtub_2m_lowland_pct (6.272912423625255).",
+    "data/figure_source/Fig5_process_terrain_typology.csv row 20: connected_2m_dem_pm05_max_pct (15.679772619611558) exceeds bathtub_2m_lowland_pct (12.979630506868782).",
+    "data/figure_source/Fig5_process_terrain_typology.csv row 20: connected_2m_dem_pm1_max_pct (18.285172903837044) exceeds bathtub_2m_lowland_pct (12.979630506868782).",
+    "data/figure_source/Fig5_process_terrain_typology.csv row 21: connected_2m_dem_pm05_max_pct (6.916932907348243) exceeds bathtub_2m_lowland_pct (6.006389776357827).",
+    "data/figure_source/Fig5_process_terrain_typology.csv row 21: connected_2m_dem_pm1_max_pct (9.456869009584665) exceeds bathtub_2m_lowland_pct (6.006389776357827).",
+    "data/figure_source/Fig5_process_terrain_typology.csv row 23: connected_2m_dem_pm05_max_pct (15.483555845001629) exceeds bathtub_2m_lowland_pct (14.79973949853468).",
+    "data/figure_source/Fig5_process_terrain_typology.csv row 23: connected_2m_dem_pm1_max_pct (16.33018560729404) exceeds bathtub_2m_lowland_pct (14.79973949853468).",
+    "data/figure_source/Fig5_process_terrain_typology.csv row 24: connected_2m_dem_pm05_max_pct (11.754365404898628) exceeds bathtub_2m_lowland_pct (10.99261689909762).",
+    "data/figure_source/Fig5_process_terrain_typology.csv row 24: connected_2m_dem_pm1_max_pct (13.28372202039142) exceeds bathtub_2m_lowland_pct (10.99261689909762).",
+    "data/figure_source/Fig5_process_terrain_typology.csv row 25: connected_2m_dem_pm05_max_pct (42.79631968248241) exceeds bathtub_2m_lowland_pct (26.227674544470503).",
+    "data/figure_source/Fig5_process_terrain_typology.csv row 25: connected_2m_dem_pm1_max_pct (53.64964820494317) exceeds bathtub_2m_lowland_pct (26.227674544470503).",
+    "data/figure_source/Fig5_process_terrain_typology.csv row 26: connected_2m_dem_pm05_max_pct (5.788362978595116) exceeds bathtub_2m_lowland_pct (3.044920108531806).",
+    "data/figure_source/Fig5_process_terrain_typology.csv row 26: connected_2m_dem_pm1_max_pct (7.94392523364486) exceeds bathtub_2m_lowland_pct (3.044920108531806).",
+    "data/figure_source/Fig5_process_terrain_typology.csv row 27: connected_2m_dem_pm05_max_pct (6.7736670293797605) exceeds bathtub_2m_lowland_pct (6.147986942328618).",
+    "data/figure_source/Fig5_process_terrain_typology.csv row 27: connected_2m_dem_pm1_max_pct (7.630576713819368) exceeds bathtub_2m_lowland_pct (6.147986942328618).",
+    "data/figure_source/Fig5_process_terrain_typology.csv row 28: connected_2m_dem_pm1_max_pct (1.7713765416770135) exceeds bathtub_2m_lowland_pct (1.4568330436222168).",
+    "data/figure_source/Fig5_process_terrain_typology.csv row 29: connected_2m_dem_pm05_max_pct (41.76519974812845) exceeds bathtub_2m_lowland_pct (29.18911355208844).",
+    "data/figure_source/Fig5_process_terrain_typology.csv row 29: connected_2m_dem_pm1_max_pct (54.428741341915625) exceeds bathtub_2m_lowland_pct (29.18911355208844).",
+    "data/figure_source/Fig5_process_terrain_typology.csv row 30: connected_2m_dem_pm05_max_pct (10.986547085201794) exceeds bathtub_2m_lowland_pct (8.118952088742034).",
+    "data/figure_source/Fig5_process_terrain_typology.csv row 30: connected_2m_dem_pm1_max_pct (14.019353316025487) exceeds bathtub_2m_lowland_pct (8.118952088742034).",
+    "data/figure_source/Fig5_process_terrain_typology.csv row 31: connected_2m_dem_pm05_max_pct (9.24938647710925) exceeds bathtub_2m_lowland_pct (7.53998476770754).",
+    "data/figure_source/Fig5_process_terrain_typology.csv row 31: connected_2m_dem_pm1_max_pct (11.627316577811628) exceeds bathtub_2m_lowland_pct (7.53998476770754).",
+    "data/figure_source/Fig5_tidal_metadata_joined_diagnostics.csv row 2: connected_2m_dem_pm05_max_pct (10.318791946308725) exceeds bathtub_2m_lowland_pct (8.263422818791947).",
+    "data/figure_source/Fig5_tidal_metadata_joined_diagnostics.csv row 2: connected_2m_dem_pm1_max_pct (11.703020134228188) exceeds bathtub_2m_lowland_pct (8.263422818791947).",
+    "data/figure_source/Fig5_tidal_metadata_joined_diagnostics.csv row 4: connected_2m_dem_pm1_max_pct (9.29835785881851) exceeds bathtub_2m_lowland_pct (7.63489016847942).",
+    "data/figure_source/Fig5_tidal_metadata_joined_diagnostics.csv row 5: connected_2m_dem_pm05_max_pct (7.572209211553474) exceeds bathtub_2m_lowland_pct (7.240437158469946).",
+    "data/figure_source/Fig5_tidal_metadata_joined_diagnostics.csv row 5: connected_2m_dem_pm1_max_pct (9.026151444184231) exceeds bathtub_2m_lowland_pct (7.240437158469946).",
+    "data/figure_source/Fig5_tidal_metadata_joined_diagnostics.csv row 6: connected_2m_dem_pm05_max_pct (49.98719808824784) exceeds bathtub_2m_lowland_pct (42.77972177178459).",
+    "data/figure_source/Fig5_tidal_metadata_joined_diagnostics.csv row 6: connected_2m_dem_pm1_max_pct (59.46914739267731) exceeds bathtub_2m_lowland_pct (42.77972177178459).",
+    "data/figure_source/Fig5_tidal_metadata_joined_diagnostics.csv row 7: connected_2m_dem_pm05_max_pct (15.951742627345844) exceeds bathtub_2m_lowland_pct (13.473764841057069).",
+    "data/figure_source/Fig5_tidal_metadata_joined_diagnostics.csv row 7: connected_2m_dem_pm1_max_pct (20.39448487169667) exceeds bathtub_2m_lowland_pct (13.473764841057069).",
+    "data/figure_source/Fig5_tidal_metadata_joined_diagnostics.csv row 8: connected_2m_dem_pm05_max_pct (81.12497190379861) exceeds bathtub_2m_lowland_pct (78.41368846931894).",
+    "data/figure_source/Fig5_tidal_metadata_joined_diagnostics.csv row 8: connected_2m_dem_pm1_max_pct (83.29399865138234) exceeds bathtub_2m_lowland_pct (78.41368846931894).",
+    "data/figure_source/Fig5_tidal_metadata_joined_diagnostics.csv row 9: connected_2m_dem_pm05_max_pct (16.786034019695613) exceeds bathtub_2m_lowland_pct (13.011041480155178).",
+    "data/figure_source/Fig5_tidal_metadata_joined_diagnostics.csv row 9: connected_2m_dem_pm1_max_pct (21.03849597135184) exceeds bathtub_2m_lowland_pct (13.011041480155178).",
+    "data/figure_source/Fig5_tidal_metadata_joined_diagnostics.csv row 10: connected_2m_dem_pm05_max_pct (79.90533077876705) exceeds bathtub_2m_lowland_pct (65.55467898869229).",
+    "data/figure_source/Fig5_tidal_metadata_joined_diagnostics.csv row 10: connected_2m_dem_pm1_max_pct (85.31124384837898) exceeds bathtub_2m_lowland_pct (65.55467898869229).",
+    "data/figure_source/Fig5_tidal_metadata_joined_diagnostics.csv row 11: connected_2m_dem_pm05_max_pct (98.91565888565982) exceeds bathtub_2m_lowland_pct (97.41258085684822).",
+    "data/figure_source/Fig5_tidal_metadata_joined_diagnostics.csv row 11: connected_2m_dem_pm1_max_pct (99.56563857379456) exceeds bathtub_2m_lowland_pct (97.41258085684822).",
+    "data/figure_source/Fig5_tidal_metadata_joined_diagnostics.csv row 12: connected_2m_dem_pm05_max_pct (31.21998078770413) exceeds bathtub_2m_lowland_pct (26.32084534101825).",
+    "data/figure_source/Fig5_tidal_metadata_joined_diagnostics.csv row 12: connected_2m_dem_pm1_max_pct (35.6388088376561) exceeds bathtub_2m_lowland_pct (26.32084534101825).",
+    "data/figure_source/Fig5_tidal_metadata_joined_diagnostics.csv row 13: connected_2m_dem_pm05_max_pct (13.003761418592156) exceeds bathtub_2m_lowland_pct (6.501880709296078).",
+    "data/figure_source/Fig5_tidal_metadata_joined_diagnostics.csv row 13: connected_2m_dem_pm1_max_pct (19.66684578183772) exceeds bathtub_2m_lowland_pct (6.501880709296078).",
+    "data/figure_source/Fig5_tidal_metadata_joined_diagnostics.csv row 15: connected_2m_dem_pm05_max_pct (16.205148205928236) exceeds bathtub_2m_lowland_pct (13.813052522100884).",
+    "data/figure_source/Fig5_tidal_metadata_joined_diagnostics.csv row 15: connected_2m_dem_pm1_max_pct (19.429277171086845) exceeds bathtub_2m_lowland_pct (13.813052522100884).",
+    "data/figure_source/Fig5_tidal_metadata_joined_diagnostics.csv row 16: connected_2m_dem_pm05_max_pct (7.291314061336402) exceeds bathtub_2m_lowland_pct (5.761289012253741).",
+    "data/figure_source/Fig5_tidal_metadata_joined_diagnostics.csv row 16: connected_2m_dem_pm1_max_pct (10.24981382438562) exceeds bathtub_2m_lowland_pct (5.761289012253741).",
+    "data/figure_source/Fig5_tidal_metadata_joined_diagnostics.csv row 17: connected_2m_dem_pm05_max_pct (18.127765486725664) exceeds bathtub_2m_lowland_pct (15.804756637168142).",
+    "data/figure_source/Fig5_tidal_metadata_joined_diagnostics.csv row 17: connected_2m_dem_pm1_max_pct (19.95298672566372) exceeds bathtub_2m_lowland_pct (15.804756637168142).",
+    "data/figure_source/Fig5_tidal_metadata_joined_diagnostics.csv row 18: connected_2m_dem_pm05_max_pct (15.91138891442228) exceeds bathtub_2m_lowland_pct (12.464380917363728).",
+    "data/figure_source/Fig5_tidal_metadata_joined_diagnostics.csv row 18: connected_2m_dem_pm1_max_pct (19.53304531666513) exceeds bathtub_2m_lowland_pct (12.464380917363728).",
+    "data/figure_source/Fig5_tidal_metadata_joined_diagnostics.csv row 19: connected_2m_dem_pm05_max_pct (9.572301425661914) exceeds bathtub_2m_lowland_pct (6.272912423625255).",
+    "data/figure_source/Fig5_tidal_metadata_joined_diagnostics.csv row 19: connected_2m_dem_pm1_max_pct (13.441955193482688) exceeds bathtub_2m_lowland_pct (6.272912423625255).",
+    "data/figure_source/Fig5_tidal_metadata_joined_diagnostics.csv row 20: connected_2m_dem_pm05_max_pct (15.679772619611558) exceeds bathtub_2m_lowland_pct (12.979630506868782).",
+    "data/figure_source/Fig5_tidal_metadata_joined_diagnostics.csv row 20: connected_2m_dem_pm1_max_pct (18.285172903837044) exceeds bathtub_2m_lowland_pct (12.979630506868782).",
+    "data/figure_source/Fig5_tidal_metadata_joined_diagnostics.csv row 21: connected_2m_dem_pm05_max_pct (6.916932907348243) exceeds bathtub_2m_lowland_pct (6.006389776357827).",
+    "data/figure_source/Fig5_tidal_metadata_joined_diagnostics.csv row 21: connected_2m_dem_pm1_max_pct (9.456869009584665) exceeds bathtub_2m_lowland_pct (6.006389776357827).",
+    "data/figure_source/Fig5_tidal_metadata_joined_diagnostics.csv row 23: connected_2m_dem_pm05_max_pct (15.483555845001629) exceeds bathtub_2m_lowland_pct (14.79973949853468).",
+    "data/figure_source/Fig5_tidal_metadata_joined_diagnostics.csv row 23: connected_2m_dem_pm1_max_pct (16.33018560729404) exceeds bathtub_2m_lowland_pct (14.79973949853468).",
+    "data/figure_source/Fig5_tidal_metadata_joined_diagnostics.csv row 24: connected_2m_dem_pm05_max_pct (11.754365404898628) exceeds bathtub_2m_lowland_pct (10.99261689909762).",
+    "data/figure_source/Fig5_tidal_metadata_joined_diagnostics.csv row 24: connected_2m_dem_pm1_max_pct (13.28372202039142) exceeds bathtub_2m_lowland_pct (10.99261689909762).",
+    "data/figure_source/Fig5_tidal_metadata_joined_diagnostics.csv row 25: connected_2m_dem_pm05_max_pct (42.79631968248241) exceeds bathtub_2m_lowland_pct (26.227674544470503).",
+    "data/figure_source/Fig5_tidal_metadata_joined_diagnostics.csv row 25: connected_2m_dem_pm1_max_pct (53.64964820494317) exceeds bathtub_2m_lowland_pct (26.227674544470503).",
+    "data/figure_source/Fig5_tidal_metadata_joined_diagnostics.csv row 26: connected_2m_dem_pm05_max_pct (5.788362978595116) exceeds bathtub_2m_lowland_pct (3.044920108531806).",
+    "data/figure_source/Fig5_tidal_metadata_joined_diagnostics.csv row 26: connected_2m_dem_pm1_max_pct (7.94392523364486) exceeds bathtub_2m_lowland_pct (3.044920108531806).",
+    "data/figure_source/Fig5_tidal_metadata_joined_diagnostics.csv row 27: connected_2m_dem_pm05_max_pct (6.7736670293797605) exceeds bathtub_2m_lowland_pct (6.147986942328618).",
+    "data/figure_source/Fig5_tidal_metadata_joined_diagnostics.csv row 27: connected_2m_dem_pm1_max_pct (7.630576713819368) exceeds bathtub_2m_lowland_pct (6.147986942328618).",
+    "data/figure_source/Fig5_tidal_metadata_joined_diagnostics.csv row 28: connected_2m_dem_pm1_max_pct (1.7713765416770135) exceeds bathtub_2m_lowland_pct (1.4568330436222168).",
+    "data/figure_source/Fig5_tidal_metadata_joined_diagnostics.csv row 29: connected_2m_dem_pm05_max_pct (41.76519974812845) exceeds bathtub_2m_lowland_pct (29.18911355208844).",
+    "data/figure_source/Fig5_tidal_metadata_joined_diagnostics.csv row 29: connected_2m_dem_pm1_max_pct (54.428741341915625) exceeds bathtub_2m_lowland_pct (29.18911355208844).",
+    "data/figure_source/Fig5_tidal_metadata_joined_diagnostics.csv row 30: connected_2m_dem_pm05_max_pct (10.986547085201794) exceeds bathtub_2m_lowland_pct (8.118952088742034).",
+    "data/figure_source/Fig5_tidal_metadata_joined_diagnostics.csv row 30: connected_2m_dem_pm1_max_pct (14.019353316025487) exceeds bathtub_2m_lowland_pct (8.118952088742034).",
+    "data/figure_source/Fig5_tidal_metadata_joined_diagnostics.csv row 31: connected_2m_dem_pm05_max_pct (9.24938647710925) exceeds bathtub_2m_lowland_pct (7.53998476770754).",
+    "data/figure_source/Fig5_tidal_metadata_joined_diagnostics.csv row 31: connected_2m_dem_pm1_max_pct (11.627316577811628) exceeds bathtub_2m_lowland_pct (7.53998476770754).",
+    "data/figure_source/Fig6_mask_aware_terrain_area_metrics.csv row 7 column proxy_minus_mask_connected_2m_area_km2 is negative (-2.7755575615628914e-17).",
+    "data/figure_source/Fig6_mask_aware_terrain_area_metrics.csv row 9 column proxy_minus_mask_connected_2m_area_km2 is negative (-2.7755575615628914e-17).",
+    "data/figure_source/Fig6_mask_aware_terrain_area_metrics.csv row 16 column proxy_minus_mask_connected_2m_area_km2 is negative (-1.3877787807814457e-17).",
+    "data/figure_source/Fig6_mask_aware_terrain_area_metrics.csv row 17 column proxy_minus_mask_connected_2m_area_km2 is negative (-8.326672684688674e-17).",
+    "data/figure_source/Fig6_mask_aware_terrain_area_metrics.csv row 18 column proxy_minus_mask_connected_2m_area_km2 is negative (-5.551115123125783e-17).",
+    "data/figure_source/Fig6_mask_aware_terrain_area_metrics.csv row 24 column proxy_minus_mask_connected_2m_area_km2 is negative (-2.7755575615628914e-17).",
+    "data/figure_source/Fig6_mask_aware_terrain_area_metrics.csv row 26 column proxy_minus_mask_connected_2m_area_km2 is negative (-5.551115123125783e-17).",
+    "data/figure_source/Fig6_mask_aware_terrain_area_metrics.csv row 33 column proxy_minus_mask_connected_2m_area_km2 is negative (-1.3877787807814457e-17).",
+    "data/figure_source/Fig6_mask_aware_terrain_area_metrics.csv row 39 column proxy_minus_mask_connected_2m_area_km2 is negative (-5.551115123125783e-17).",
+    "data/figure_source/Fig6_mask_aware_terrain_area_metrics.csv row 44 column proxy_minus_mask_connected_2m_area_km2 is negative (-1.3877787807814457e-17).",
+    "data/figure_source/Fig6_mask_aware_terrain_area_metrics.csv row 47 column proxy_minus_mask_connected_2m_area_km2 is negative (-2.7755575615628914e-17).",
+    "data/figure_source/Fig6_mask_aware_terrain_area_metrics.csv row 49 column proxy_minus_mask_connected_2m_area_km2 is negative (-9.020562075079397e-17).",
+    "data/figure_source/Fig6_mask_aware_terrain_area_metrics.csv row 53 column proxy_minus_mask_connected_2m_area_km2 is negative (-0.001159402146632793).",
+    "data/figure_source/Fig6_mask_aware_terrain_area_metrics.csv row 58 column proxy_minus_mask_connected_2m_area_km2 is negative (-5.551115123125783e-17).",
+    "data/figure_source/Fig6_mask_aware_terrain_area_metrics.csv row 59 column proxy_minus_mask_connected_2m_area_km2 is negative (-2.7755575615628914e-17).",
+    "data/figure_source/Fig6_mask_aware_terrain_area_metrics.csv row 61 column proxy_minus_mask_connected_2m_area_km2 is negative (-4.163336342344337e-17).",
+    "data/figure_source/Fig6_mask_aware_terrain_area_metrics.csv row 63 column proxy_minus_mask_connected_2m_area_km2 is negative (-2.7755575615628914e-17).",
+    "data/figure_source/Fig6_mask_aware_terrain_area_metrics.csv row 64 column proxy_minus_mask_connected_2m_area_km2 is negative (-4.163336342344337e-17).",
+    "data/figure_source/Fig6_mask_aware_terrain_area_metrics.csv row 68 column proxy_minus_mask_connected_2m_area_km2 is negative (-5.551115123125783e-17).",
+    "data/figure_source/Fig6_mask_aware_terrain_area_metrics.csv row 71 column proxy_minus_mask_connected_2m_area_km2 is negative (-2.220446049250313e-16).",
+    "data/figure_source/TableS_local_dtm_validation.csv row 2 column delta_connected_2m_fraction_pct has value 46.28372450063442, outside [0.0, 1.0].",
+    "data/figure_source/TableS_local_dtm_validation.csv row 2 column local_connected_2m_fraction_pct has value 10.326181204773693, outside [0.0, 1.0].",
+    "data/figure_source/TableS_local_dtm_validation.csv row 2 column fraction_difference_local_minus_delta_pct_points has value -35.95754329586073, outside [0.0, 1.0].",
+    "data/figure_source/TableS_local_dtm_validation.csv row 2 column area_difference_local_minus_delta_km2 is negative (-15.99380397522003).",
+    "data/figure_source/TableS_local_dtm_validation.csv row 2 column local_all_below_2m_fraction_pct has value 30.674275984928506, outside [0.0, 1.0].",
+    "data/figure_source/TableS_local_dtm_validation.csv row 2 column local_unconnected_2m_fraction_pct has value 20.34809478015481, outside [0.0, 1.0].",
+    "data/figure_source/TableS_local_dtm_validation.csv row 3 column delta_connected_2m_fraction_pct has value 6.2497829892873975, outside [0.0, 1.0].",
+    "data/figure_source/TableS_local_dtm_validation.csv row 3 column local_connected_2m_fraction_pct has value 8.972506692729358, outside [0.0, 1.0].",
+    "data/figure_source/TableS_local_dtm_validation.csv row 3 column fraction_difference_local_minus_delta_pct_points has value 2.72272370344196, outside [0.0, 1.0].",
+    "data/figure_source/TableS_local_dtm_validation.csv row 3 column local_all_below_2m_fraction_pct has value 9.025623592402157, outside [0.0, 1.0].",
+    "data/figure_source/TableS_local_dtm_validation.csv row 4 column delta_connected_2m_fraction_pct has value 16.551152457094858, outside [0.0, 1.0].",
+    "data/figure_source/TableS_local_dtm_validation.csv row 4 column local_connected_2m_fraction_pct has value 18.361340665417345, outside [0.0, 1.0].",
+    "data/figure_source/TableS_local_dtm_validation.csv row 4 column fraction_difference_local_minus_delta_pct_points has value 1.8101882083224865, outside [0.0, 1.0].",
+    "data/figure_source/TableS_local_dtm_validation.csv row 4 column local_all_below_2m_fraction_pct has value 19.615680009830726, outside [0.0, 1.0].",
+    "data/figure_source/TableS_local_dtm_validation.csv row 4 column local_unconnected_2m_fraction_pct has value 1.254339344413384, outside [0.0, 1.0].",
+    "data/figure_source/TableS_local_dtm_validation.csv row 5 column local_all_below_2m_fraction_pct has value 10.282622182394705, outside [0.0, 1.0].",
+    "data/figure_source/TableS_local_dtm_validation.csv row 5 column local_unconnected_2m_fraction_pct has value 10.282622182394705, outside [0.0, 1.0].",
+    "data/figure_source/TableS_local_dtm_validation.csv row 6 column delta_connected_2m_fraction_pct has value 71.95147092438195, outside [0.0, 1.0].",
+    "data/figure_source/TableS_local_dtm_validation.csv row 6 column local_connected_2m_fraction_pct has value 4.957557243170346, outside [0.0, 1.0].",
+    "data/figure_source/TableS_local_dtm_validation.csv row 6 column fraction_difference_local_minus_delta_pct_points has value -66.99391368121161, outside [0.0, 1.0].",
+    "data/figure_source/TableS_local_dtm_validation.csv row 6 column area_difference_local_minus_delta_km2 is negative (-19.556538486041443).",
+    "data/figure_source/TableS_local_dtm_validation.csv row 6 column local_all_below_2m_fraction_pct has value 67.31854067028434, outside [0.0, 1.0].",
+    "data/figure_source/TableS_local_dtm_validation.csv row 6 column local_unconnected_2m_fraction_pct has value 62.36098342711399, outside [0.0, 1.0].",
+    "data/figure_source/TableS_local_dtm_validation.csv row 7 column delta_connected_2m_fraction_pct has value 96.98050045594243, outside [0.0, 1.0].",
+    "data/figure_source/TableS_local_dtm_validation.csv row 7 column local_connected_2m_fraction_pct has value 93.36361827923676, outside [0.0, 1.0].",
+    "data/figure_source/TableS_local_dtm_validation.csv row 7 column fraction_difference_local_minus_delta_pct_points has value -3.6168821767056727, outside [0.0, 1.0].",
+    "data/figure_source/TableS_local_dtm_validation.csv row 7 column area_difference_local_minus_delta_km2 is negative (-4.377974277536808).",
+    "data/figure_source/TableS_local_dtm_validation.csv row 7 column local_all_below_2m_fraction_pct has value 93.5666230763461, outside [0.0, 1.0].",
+    "data/figure_source/TableS_local_dtm_validation.csv row 8 column delta_connected_2m_fraction_pct has value 46.732518797600925, outside [0.0, 1.0].",
+    "data/figure_source/TableS_local_dtm_validation.csv row 8 column local_connected_2m_fraction_pct has value 1.625498763005947, outside [0.0, 1.0].",
+    "data/figure_source/TableS_local_dtm_validation.csv row 8 column fraction_difference_local_minus_delta_pct_points has value -45.107020034594974, outside [0.0, 1.0].",
+    "data/figure_source/TableS_local_dtm_validation.csv row 8 column area_difference_local_minus_delta_km2 is negative (-24.27560673607223).",
+    "data/figure_source/TableS_local_dtm_validation.csv row 8 column local_all_below_2m_fraction_pct has value 44.90442907729101, outside [0.0, 1.0].",
+    "data/figure_source/TableS_local_dtm_validation.csv row 8 column local_unconnected_2m_fraction_pct has value 43.27893031428507, outside [0.0, 1.0].",
+    "reproducibility_package/source_tables/Fig4_connected_terrain_sensitivity.csv row 2: connected_2m_dem_shift_m1_pct (59.46914739267731) exceeds bathtub_2m_lowland_pct (42.77972177178459).",
+    "reproducibility_package/source_tables/Fig4_connected_terrain_sensitivity.csv row 2: connected_2m_dem_shift_m05_pct (49.987198088247844) exceeds bathtub_2m_lowland_pct (42.77972177178459).",
+    "reproducibility_package/source_tables/Fig4_connected_terrain_sensitivity.csv row 2: connected_2m_dem_pm05_max_pct (49.987198088247844) exceeds bathtub_2m_lowland_pct (42.77972177178459).",
+    "reproducibility_package/source_tables/Fig4_connected_terrain_sensitivity.csv row 2: connected_2m_dem_pm1_max_pct (59.46914739267731) exceeds bathtub_2m_lowland_pct (42.77972177178459).",
+    "reproducibility_package/source_tables/Fig4_connected_terrain_sensitivity.csv row 4: connected_2m_dem_shift_m1_pct (11.703020134228188) exceeds bathtub_2m_lowland_pct (8.263422818791947).",
+    "reproducibility_package/source_tables/Fig4_connected_terrain_sensitivity.csv row 4: connected_2m_dem_shift_m05_pct (10.318791946308725) exceeds bathtub_2m_lowland_pct (8.263422818791947).",
+    "reproducibility_package/source_tables/Fig4_connected_terrain_sensitivity.csv row 4: connected_2m_dem_pm05_max_pct (10.318791946308725) exceeds bathtub_2m_lowland_pct (8.263422818791947).",
+    "reproducibility_package/source_tables/Fig4_connected_terrain_sensitivity.csv row 4: connected_2m_dem_pm1_max_pct (11.703020134228188) exceeds bathtub_2m_lowland_pct (8.263422818791947).",
+    "reproducibility_package/source_tables/Fig4_connected_terrain_sensitivity.csv row 5: connected_2m_dem_shift_m1_pct (9.29835785881851) exceeds bathtub_2m_lowland_pct (7.63489016847942).",
+    "reproducibility_package/source_tables/Fig4_connected_terrain_sensitivity.csv row 5: connected_2m_dem_pm1_max_pct (9.29835785881851) exceeds bathtub_2m_lowland_pct (7.63489016847942).",
+    "reproducibility_package/source_tables/Fig4_connected_terrain_sensitivity.csv row 6: connected_2m_dem_shift_m1_pct (9.026151444184231) exceeds bathtub_2m_lowland_pct (7.240437158469946).",
+    "reproducibility_package/source_tables/Fig4_connected_terrain_sensitivity.csv row 6: connected_2m_dem_shift_m05_pct (7.572209211553474) exceeds bathtub_2m_lowland_pct (7.240437158469946).",
+    "reproducibility_package/source_tables/Fig4_connected_terrain_sensitivity.csv row 6: connected_2m_dem_pm05_max_pct (7.572209211553474) exceeds bathtub_2m_lowland_pct (7.240437158469946).",
+    "reproducibility_package/source_tables/Fig4_connected_terrain_sensitivity.csv row 6: connected_2m_dem_pm1_max_pct (9.026151444184231) exceeds bathtub_2m_lowland_pct (7.240437158469946).",
+    "reproducibility_package/source_tables/Fig4_terrain_screen_sensitivity_summary.csv row 3: connected_2m_max_pct (9.184574624668825) exceeds bathtub_2m_min_pct (5.216902200660901).",
+    "reproducibility_package/source_tables/Fig4_terrain_screen_sensitivity_summary.csv row 6: connected_2m_max_pct (6.743997841920691) exceeds bathtub_2m_min_pct (6.166035136066139).",
+    "reproducibility_package/source_tables/Fig4_terrain_screen_sensitivity_summary.csv row 7: connected_2m_max_pct (6.2990067956089915) exceeds bathtub_2m_min_pct (5.940199335548173).",
+    "reproducibility_package/source_tables/Fig4_terrain_screen_sensitivity_summary.csv row 10: connected_2m_max_pct (47.19626168224299) exceeds bathtub_2m_min_pct (31.94496560350219).",
+    "reproducibility_package/source_tables/Fig4_terrain_screen_sensitivity_summary.csv row 12: connected_2m_max_pct (11.34916039374638) exceeds bathtub_2m_min_pct (6.653157716987504).",
+    "reproducibility_package/source_tables/Fig4_terrain_screen_sensitivity_summary.csv row 13: connected_2m_max_pct (8.848080133555927) exceeds bathtub_2m_min_pct (6.990193613276339).",
+    "reproducibility_package/source_tables/Fig4_terrain_screen_sensitivity_summary.csv row 15: connected_2m_max_pct (43.016132803366844) exceeds bathtub_2m_min_pct (42.07588348862587).",
+    "reproducibility_package/source_tables/Fig4_terrain_screen_sensitivity_summary.csv row 16: connected_2m_max_pct (52.1431467217042) exceeds bathtub_2m_min_pct (42.77972177178459).",
+    "reproducibility_package/source_tables/Fig5_coastrp_component_context.csv row 2 column etc_to_total_ratio has value 1.0000000000000002, outside [0.0, 1.0].",
+    "reproducibility_package/source_tables/Fig5_coastrp_component_context.csv row 15 column etc_to_total_ratio has value 1.0000000000000002, outside [0.0, 1.0].",
+    "reproducibility_package/source_tables/Fig5_coastrp_component_context.csv row 15 column tc_to_total_ratio has value 1.0090090122341069, outside [0.0, 1.0].",
+    "reproducibility_package/source_tables/Fig5_coastrp_component_context.csv row 21 column etc_to_total_ratio has value 1.0000000000000002, outside [0.0, 1.0].",
+    "reproducibility_package/source_tables/Fig5_coastrp_component_context_summary.csv row 2 column max_tc_to_total_ratio has value 1.0090090122341069, outside [0.0, 1.0].",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening.csv row 2: connected_2m_dem_pm05_max_pct (10.318791946308725) exceeds bathtub_2m_lowland_pct (8.263422818791947).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening.csv row 2: connected_2m_dem_pm1_max_pct (11.703020134228188) exceeds bathtub_2m_lowland_pct (8.263422818791947).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening.csv row 4: connected_2m_dem_pm1_max_pct (9.29835785881851) exceeds bathtub_2m_lowland_pct (7.63489016847942).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening.csv row 5: connected_2m_dem_pm05_max_pct (7.572209211553474) exceeds bathtub_2m_lowland_pct (7.240437158469946).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening.csv row 5: connected_2m_dem_pm1_max_pct (9.026151444184231) exceeds bathtub_2m_lowland_pct (7.240437158469946).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening.csv row 6: connected_2m_dem_pm05_max_pct (49.987198088247844) exceeds bathtub_2m_lowland_pct (42.77972177178459).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening.csv row 6: connected_2m_dem_pm1_max_pct (59.46914739267731) exceeds bathtub_2m_lowland_pct (42.77972177178459).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening.csv row 7: connected_2m_dem_pm05_max_pct (15.951742627345844) exceeds bathtub_2m_lowland_pct (13.473764841057067).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening.csv row 7: connected_2m_dem_pm1_max_pct (20.39448487169667) exceeds bathtub_2m_lowland_pct (13.473764841057067).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening.csv row 8: connected_2m_dem_pm05_max_pct (81.12497190379861) exceeds bathtub_2m_lowland_pct (78.41368846931894).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening.csv row 8: connected_2m_dem_pm1_max_pct (83.29399865138234) exceeds bathtub_2m_lowland_pct (78.41368846931894).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening.csv row 9: connected_2m_dem_pm05_max_pct (16.786034019695613) exceeds bathtub_2m_lowland_pct (13.011041480155178).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening.csv row 9: connected_2m_dem_pm1_max_pct (21.038495971351836) exceeds bathtub_2m_lowland_pct (13.011041480155178).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening.csv row 10: connected_2m_dem_pm05_max_pct (79.90533077876705) exceeds bathtub_2m_lowland_pct (65.55467898869229).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening.csv row 10: connected_2m_dem_pm1_max_pct (85.31124384837898) exceeds bathtub_2m_lowland_pct (65.55467898869229).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening.csv row 11: connected_2m_dem_pm05_max_pct (98.91565888565982) exceeds bathtub_2m_lowland_pct (97.41258085684822).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening.csv row 11: connected_2m_dem_pm1_max_pct (99.56563857379457) exceeds bathtub_2m_lowland_pct (97.41258085684822).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening.csv row 12: connected_2m_dem_pm05_max_pct (31.21998078770413) exceeds bathtub_2m_lowland_pct (26.320845341018252).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening.csv row 12: connected_2m_dem_pm1_max_pct (35.6388088376561) exceeds bathtub_2m_lowland_pct (26.320845341018252).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening.csv row 13: connected_2m_dem_pm05_max_pct (13.003761418592156) exceeds bathtub_2m_lowland_pct (6.501880709296078).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening.csv row 13: connected_2m_dem_pm1_max_pct (19.666845781837722) exceeds bathtub_2m_lowland_pct (6.501880709296078).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening.csv row 15: connected_2m_dem_pm05_max_pct (16.205148205928236) exceeds bathtub_2m_lowland_pct (13.813052522100884).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening.csv row 15: connected_2m_dem_pm1_max_pct (19.429277171086845) exceeds bathtub_2m_lowland_pct (13.813052522100884).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening.csv row 16: connected_2m_dem_pm05_max_pct (7.2913140613364025) exceeds bathtub_2m_lowland_pct (5.761289012253741).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening.csv row 16: connected_2m_dem_pm1_max_pct (10.24981382438562) exceeds bathtub_2m_lowland_pct (5.761289012253741).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening.csv row 17: connected_2m_dem_pm05_max_pct (18.127765486725664) exceeds bathtub_2m_lowland_pct (15.804756637168142).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening.csv row 17: connected_2m_dem_pm1_max_pct (19.952986725663717) exceeds bathtub_2m_lowland_pct (15.804756637168142).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening.csv row 18: connected_2m_dem_pm05_max_pct (15.91138891442228) exceeds bathtub_2m_lowland_pct (12.464380917363728).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening.csv row 18: connected_2m_dem_pm1_max_pct (19.533045316665135) exceeds bathtub_2m_lowland_pct (12.464380917363728).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening.csv row 19: connected_2m_dem_pm05_max_pct (9.572301425661914) exceeds bathtub_2m_lowland_pct (6.272912423625255).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening.csv row 19: connected_2m_dem_pm1_max_pct (13.441955193482688) exceeds bathtub_2m_lowland_pct (6.272912423625255).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening.csv row 20: connected_2m_dem_pm05_max_pct (15.679772619611558) exceeds bathtub_2m_lowland_pct (12.979630506868782).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening.csv row 20: connected_2m_dem_pm1_max_pct (18.285172903837044) exceeds bathtub_2m_lowland_pct (12.979630506868782).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening.csv row 21: connected_2m_dem_pm05_max_pct (6.916932907348243) exceeds bathtub_2m_lowland_pct (6.006389776357827).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening.csv row 21: connected_2m_dem_pm1_max_pct (9.456869009584665) exceeds bathtub_2m_lowland_pct (6.006389776357827).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening.csv row 23: connected_2m_dem_pm05_max_pct (15.483555845001629) exceeds bathtub_2m_lowland_pct (14.799739498534679).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening.csv row 23: connected_2m_dem_pm1_max_pct (16.33018560729404) exceeds bathtub_2m_lowland_pct (14.799739498534679).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening.csv row 24: connected_2m_dem_pm05_max_pct (11.754365404898628) exceeds bathtub_2m_lowland_pct (10.992616899097621).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening.csv row 24: connected_2m_dem_pm1_max_pct (13.283722020391421) exceeds bathtub_2m_lowland_pct (10.992616899097621).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening.csv row 25: connected_2m_dem_pm05_max_pct (42.79631968248241) exceeds bathtub_2m_lowland_pct (26.227674544470503).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening.csv row 25: connected_2m_dem_pm1_max_pct (53.64964820494317) exceeds bathtub_2m_lowland_pct (26.227674544470503).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening.csv row 26: connected_2m_dem_pm05_max_pct (5.788362978595116) exceeds bathtub_2m_lowland_pct (3.044920108531806).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening.csv row 26: connected_2m_dem_pm1_max_pct (7.94392523364486) exceeds bathtub_2m_lowland_pct (3.044920108531806).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening.csv row 27: connected_2m_dem_pm05_max_pct (6.7736670293797605) exceeds bathtub_2m_lowland_pct (6.147986942328618).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening.csv row 27: connected_2m_dem_pm1_max_pct (7.6305767138193685) exceeds bathtub_2m_lowland_pct (6.147986942328618).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening.csv row 28: connected_2m_dem_pm1_max_pct (1.7713765416770135) exceeds bathtub_2m_lowland_pct (1.4568330436222168).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening.csv row 29: connected_2m_dem_pm05_max_pct (41.76519974812845) exceeds bathtub_2m_lowland_pct (29.189113552088436).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening.csv row 29: connected_2m_dem_pm1_max_pct (54.428741341915625) exceeds bathtub_2m_lowland_pct (29.189113552088436).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening.csv row 30: connected_2m_dem_pm05_max_pct (10.986547085201794) exceeds bathtub_2m_lowland_pct (8.118952088742034).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening.csv row 30: connected_2m_dem_pm1_max_pct (14.019353316025489) exceeds bathtub_2m_lowland_pct (8.118952088742034).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening.csv row 31: connected_2m_dem_pm05_max_pct (9.24938647710925) exceeds bathtub_2m_lowland_pct (7.53998476770754).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening.csv row 31: connected_2m_dem_pm1_max_pct (11.627316577811627) exceeds bathtub_2m_lowland_pct (7.53998476770754).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 2: connected_2m_dem_pm05_max_pct (10.318791946308725) exceeds bathtub_2m_lowland_pct (8.263422818791947).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 2: connected_2m_dem_pm1_max_pct (11.703020134228188) exceeds bathtub_2m_lowland_pct (8.263422818791947).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 4: connected_2m_dem_pm1_max_pct (9.29835785881851) exceeds bathtub_2m_lowland_pct (7.63489016847942).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 5: connected_2m_dem_pm05_max_pct (7.572209211553474) exceeds bathtub_2m_lowland_pct (7.240437158469946).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 5: connected_2m_dem_pm1_max_pct (9.026151444184231) exceeds bathtub_2m_lowland_pct (7.240437158469946).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 6: connected_2m_dem_pm05_max_pct (49.98719808824784) exceeds bathtub_2m_lowland_pct (42.77972177178459).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 6: connected_2m_dem_pm1_max_pct (59.46914739267731) exceeds bathtub_2m_lowland_pct (42.77972177178459).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 7: connected_2m_dem_pm05_max_pct (15.951742627345844) exceeds bathtub_2m_lowland_pct (13.473764841057069).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 7: connected_2m_dem_pm1_max_pct (20.39448487169667) exceeds bathtub_2m_lowland_pct (13.473764841057069).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 8: connected_2m_dem_pm05_max_pct (81.12497190379861) exceeds bathtub_2m_lowland_pct (78.41368846931894).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 8: connected_2m_dem_pm1_max_pct (83.29399865138234) exceeds bathtub_2m_lowland_pct (78.41368846931894).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 9: connected_2m_dem_pm05_max_pct (16.786034019695613) exceeds bathtub_2m_lowland_pct (13.011041480155178).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 9: connected_2m_dem_pm1_max_pct (21.03849597135184) exceeds bathtub_2m_lowland_pct (13.011041480155178).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 10: connected_2m_dem_pm05_max_pct (79.90533077876705) exceeds bathtub_2m_lowland_pct (65.55467898869229).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 10: connected_2m_dem_pm1_max_pct (85.31124384837898) exceeds bathtub_2m_lowland_pct (65.55467898869229).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 11: connected_2m_dem_pm05_max_pct (98.91565888565982) exceeds bathtub_2m_lowland_pct (97.41258085684822).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 11: connected_2m_dem_pm1_max_pct (99.56563857379456) exceeds bathtub_2m_lowland_pct (97.41258085684822).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 12: connected_2m_dem_pm05_max_pct (31.21998078770413) exceeds bathtub_2m_lowland_pct (26.32084534101825).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 12: connected_2m_dem_pm1_max_pct (35.6388088376561) exceeds bathtub_2m_lowland_pct (26.32084534101825).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 13: connected_2m_dem_pm05_max_pct (13.003761418592156) exceeds bathtub_2m_lowland_pct (6.501880709296078).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 13: connected_2m_dem_pm1_max_pct (19.66684578183772) exceeds bathtub_2m_lowland_pct (6.501880709296078).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 15: connected_2m_dem_pm05_max_pct (16.205148205928236) exceeds bathtub_2m_lowland_pct (13.813052522100884).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 15: connected_2m_dem_pm1_max_pct (19.429277171086845) exceeds bathtub_2m_lowland_pct (13.813052522100884).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 16: connected_2m_dem_pm05_max_pct (7.291314061336402) exceeds bathtub_2m_lowland_pct (5.761289012253741).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 16: connected_2m_dem_pm1_max_pct (10.24981382438562) exceeds bathtub_2m_lowland_pct (5.761289012253741).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 17: connected_2m_dem_pm05_max_pct (18.127765486725664) exceeds bathtub_2m_lowland_pct (15.804756637168142).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 17: connected_2m_dem_pm1_max_pct (19.95298672566372) exceeds bathtub_2m_lowland_pct (15.804756637168142).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 18: connected_2m_dem_pm05_max_pct (15.91138891442228) exceeds bathtub_2m_lowland_pct (12.464380917363728).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 18: connected_2m_dem_pm1_max_pct (19.53304531666513) exceeds bathtub_2m_lowland_pct (12.464380917363728).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 19: connected_2m_dem_pm05_max_pct (9.572301425661914) exceeds bathtub_2m_lowland_pct (6.272912423625255).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 19: connected_2m_dem_pm1_max_pct (13.441955193482688) exceeds bathtub_2m_lowland_pct (6.272912423625255).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 20: connected_2m_dem_pm05_max_pct (15.679772619611558) exceeds bathtub_2m_lowland_pct (12.979630506868782).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 20: connected_2m_dem_pm1_max_pct (18.285172903837044) exceeds bathtub_2m_lowland_pct (12.979630506868782).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 21: connected_2m_dem_pm05_max_pct (6.916932907348243) exceeds bathtub_2m_lowland_pct (6.006389776357827).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 21: connected_2m_dem_pm1_max_pct (9.456869009584665) exceeds bathtub_2m_lowland_pct (6.006389776357827).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 23: connected_2m_dem_pm05_max_pct (15.483555845001629) exceeds bathtub_2m_lowland_pct (14.79973949853468).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 23: connected_2m_dem_pm1_max_pct (16.33018560729404) exceeds bathtub_2m_lowland_pct (14.79973949853468).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 24: connected_2m_dem_pm05_max_pct (11.754365404898628) exceeds bathtub_2m_lowland_pct (10.99261689909762).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 24: connected_2m_dem_pm1_max_pct (13.28372202039142) exceeds bathtub_2m_lowland_pct (10.99261689909762).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 25: connected_2m_dem_pm05_max_pct (42.79631968248241) exceeds bathtub_2m_lowland_pct (26.227674544470503).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 25: connected_2m_dem_pm1_max_pct (53.64964820494317) exceeds bathtub_2m_lowland_pct (26.227674544470503).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 26: connected_2m_dem_pm05_max_pct (5.788362978595116) exceeds bathtub_2m_lowland_pct (3.044920108531806).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 26: connected_2m_dem_pm1_max_pct (7.94392523364486) exceeds bathtub_2m_lowland_pct (3.044920108531806).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 27: connected_2m_dem_pm05_max_pct (6.7736670293797605) exceeds bathtub_2m_lowland_pct (6.147986942328618).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 27: connected_2m_dem_pm1_max_pct (7.630576713819368) exceeds bathtub_2m_lowland_pct (6.147986942328618).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 28: connected_2m_dem_pm1_max_pct (1.7713765416770135) exceeds bathtub_2m_lowland_pct (1.4568330436222168).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 29: connected_2m_dem_pm05_max_pct (41.76519974812845) exceeds bathtub_2m_lowland_pct (29.18911355208844).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 29: connected_2m_dem_pm1_max_pct (54.428741341915625) exceeds bathtub_2m_lowland_pct (29.18911355208844).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 30: connected_2m_dem_pm05_max_pct (10.986547085201794) exceeds bathtub_2m_lowland_pct (8.118952088742034).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 30: connected_2m_dem_pm1_max_pct (14.019353316025487) exceeds bathtub_2m_lowland_pct (8.118952088742034).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 31: connected_2m_dem_pm05_max_pct (9.24938647710925) exceeds bathtub_2m_lowland_pct (7.53998476770754).",
+    "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening_with_uncertainty.csv row 31: connected_2m_dem_pm1_max_pct (11.627316577811628) exceeds bathtub_2m_lowland_pct (7.53998476770754).",
+    "reproducibility_package/source_tables/Fig5_process_terrain_typology.csv row 2: connected_2m_dem_pm05_max_pct (10.318791946308725) exceeds bathtub_2m_lowland_pct (8.263422818791947).",
+    "reproducibility_package/source_tables/Fig5_process_terrain_typology.csv row 2: connected_2m_dem_pm1_max_pct (11.703020134228188) exceeds bathtub_2m_lowland_pct (8.263422818791947).",
+    "reproducibility_package/source_tables/Fig5_process_terrain_typology.csv row 4: connected_2m_dem_pm1_max_pct (9.29835785881851) exceeds bathtub_2m_lowland_pct (7.63489016847942).",
+    "reproducibility_package/source_tables/Fig5_process_terrain_typology.csv row 5: connected_2m_dem_pm05_max_pct (7.572209211553474) exceeds bathtub_2m_lowland_pct (7.240437158469946).",
+    "reproducibility_package/source_tables/Fig5_process_terrain_typology.csv row 5: connected_2m_dem_pm1_max_pct (9.026151444184231) exceeds bathtub_2m_lowland_pct (7.240437158469946).",
+    "reproducibility_package/source_tables/Fig5_process_terrain_typology.csv row 6: connected_2m_dem_pm05_max_pct (49.98719808824784) exceeds bathtub_2m_lowland_pct (42.77972177178459).",
+    "reproducibility_package/source_tables/Fig5_process_terrain_typology.csv row 6: connected_2m_dem_pm1_max_pct (59.46914739267731) exceeds bathtub_2m_lowland_pct (42.77972177178459).",
+    "reproducibility_package/source_tables/Fig5_process_terrain_typology.csv row 7: connected_2m_dem_pm05_max_pct (15.951742627345844) exceeds bathtub_2m_lowland_pct (13.473764841057069).",
+    "reproducibility_package/source_tables/Fig5_process_terrain_typology.csv row 7: connected_2m_dem_pm1_max_pct (20.39448487169667) exceeds bathtub_2m_lowland_pct (13.473764841057069).",
+    "reproducibility_package/source_tables/Fig5_process_terrain_typology.csv row 8: connected_2m_dem_pm05_max_pct (81.12497190379861) exceeds bathtub_2m_lowland_pct (78.41368846931894).",
+    "reproducibility_package/source_tables/Fig5_process_terrain_typology.csv row 8: connected_2m_dem_pm1_max_pct (83.29399865138234) exceeds bathtub_2m_lowland_pct (78.41368846931894).",
+    "reproducibility_package/source_tables/Fig5_process_terrain_typology.csv row 9: connected_2m_dem_pm05_max_pct (16.786034019695613) exceeds bathtub_2m_lowland_pct (13.011041480155178).",
+    "reproducibility_package/source_tables/Fig5_process_terrain_typology.csv row 9: connected_2m_dem_pm1_max_pct (21.03849597135184) exceeds bathtub_2m_lowland_pct (13.011041480155178).",
+    "reproducibility_package/source_tables/Fig5_process_terrain_typology.csv row 10: connected_2m_dem_pm05_max_pct (79.90533077876705) exceeds bathtub_2m_lowland_pct (65.55467898869229).",
+    "reproducibility_package/source_tables/Fig5_process_terrain_typology.csv row 10: connected_2m_dem_pm1_max_pct (85.31124384837898) exceeds bathtub_2m_lowland_pct (65.55467898869229).",
+    "reproducibility_package/source_tables/Fig5_process_terrain_typology.csv row 11: connected_2m_dem_pm05_max_pct (98.91565888565982) exceeds bathtub_2m_lowland_pct (97.41258085684822).",
+    "reproducibility_package/source_tables/Fig5_process_terrain_typology.csv row 11: connected_2m_dem_pm1_max_pct (99.56563857379456) exceeds bathtub_2m_lowland_pct (97.41258085684822).",
+    "reproducibility_package/source_tables/Fig5_process_terrain_typology.csv row 12: connected_2m_dem_pm05_max_pct (31.21998078770413) exceeds bathtub_2m_lowland_pct (26.32084534101825).",
+    "reproducibility_package/source_tables/Fig5_process_terrain_typology.csv row 12: connected_2m_dem_pm1_max_pct (35.6388088376561) exceeds bathtub_2m_lowland_pct (26.32084534101825).",
+    "reproducibility_package/source_tables/Fig5_process_terrain_typology.csv row 13: connected_2m_dem_pm05_max_pct (13.003761418592156) exceeds bathtub_2m_lowland_pct (6.501880709296078).",
+    "reproducibility_package/source_tables/Fig5_process_terrain_typology.csv row 13: connected_2m_dem_pm1_max_pct (19.66684578183772) exceeds bathtub_2m_lowland_pct (6.501880709296078).",
+    "reproducibility_package/source_tables/Fig5_process_terrain_typology.csv row 15: connected_2m_dem_pm05_max_pct (16.205148205928236) exceeds bathtub_2m_lowland_pct (13.813052522100884).",
+    "reproducibility_package/source_tables/Fig5_process_terrain_typology.csv row 15: connected_2m_dem_pm1_max_pct (19.429277171086845) exceeds bathtub_2m_lowland_pct (13.813052522100884).",
+    "reproducibility_package/source_tables/Fig5_process_terrain_typology.csv row 16: connected_2m_dem_pm05_max_pct (7.291314061336402) exceeds bathtub_2m_lowland_pct (5.761289012253741).",
+    "reproducibility_package/source_tables/Fig5_process_terrain_typology.csv row 16: connected_2m_dem_pm1_max_pct (10.24981382438562) exceeds bathtub_2m_lowland_pct (5.761289012253741).",
+    "reproducibility_package/source_tables/Fig5_process_terrain_typology.csv row 17: connected_2m_dem_pm05_max_pct (18.127765486725664) exceeds bathtub_2m_lowland_pct (15.804756637168142).",
+    "reproducibility_package/source_tables/Fig5_process_terrain_typology.csv row 17: connected_2m_dem_pm1_max_pct (19.95298672566372) exceeds bathtub_2m_lowland_pct (15.804756637168142).",
+    "reproducibility_package/source_tables/Fig5_process_terrain_typology.csv row 18: connected_2m_dem_pm05_max_pct (15.91138891442228) exceeds bathtub_2m_lowland_pct (12.464380917363728).",
+    "reproducibility_package/source_tables/Fig5_process_terrain_typology.csv row 18: connected_2m_dem_pm1_max_pct (19.53304531666513) exceeds bathtub_2m_lowland_pct (12.464380917363728).",
+    "reproducibility_package/source_tables/Fig5_process_terrain_typology.csv row 19: connected_2m_dem_pm05_max_pct (9.572301425661914) exceeds bathtub_2m_lowland_pct (6.272912423625255).",
+    "reproducibility_package/source_tables/Fig5_process_terrain_typology.csv row 19: connected_2m_dem_pm1_max_pct (13.441955193482688) exceeds bathtub_2m_lowland_pct (6.272912423625255).",
+    "reproducibility_package/source_tables/Fig5_process_terrain_typology.csv row 20: connected_2m_dem_pm05_max_pct (15.679772619611558) exceeds bathtub_2m_lowland_pct (12.979630506868782).",
+    "reproducibility_package/source_tables/Fig5_process_terrain_typology.csv row 20: connected_2m_dem_pm1_max_pct (18.285172903837044) exceeds bathtub_2m_lowland_pct (12.979630506868782).",
+    "reproducibility_package/source_tables/Fig5_process_terrain_typology.csv row 21: connected_2m_dem_pm05_max_pct (6.916932907348243) exceeds bathtub_2m_lowland_pct (6.006389776357827).",
+    "reproducibility_package/source_tables/Fig5_process_terrain_typology.csv row 21: connected_2m_dem_pm1_max_pct (9.456869009584665) exceeds bathtub_2m_lowland_pct (6.006389776357827).",
+    "reproducibility_package/source_tables/Fig5_process_terrain_typology.csv row 23: connected_2m_dem_pm05_max_pct (15.483555845001629) exceeds bathtub_2m_lowland_pct (14.79973949853468).",
+    "reproducibility_package/source_tables/Fig5_process_terrain_typology.csv row 23: connected_2m_dem_pm1_max_pct (16.33018560729404) exceeds bathtub_2m_lowland_pct (14.79973949853468).",
+    "reproducibility_package/source_tables/Fig5_process_terrain_typology.csv row 24: connected_2m_dem_pm05_max_pct (11.754365404898628) exceeds bathtub_2m_lowland_pct (10.99261689909762).",
+    "reproducibility_package/source_tables/Fig5_process_terrain_typology.csv row 24: connected_2m_dem_pm1_max_pct (13.28372202039142) exceeds bathtub_2m_lowland_pct (10.99261689909762).",
+    "reproducibility_package/source_tables/Fig5_process_terrain_typology.csv row 25: connected_2m_dem_pm05_max_pct (42.79631968248241) exceeds bathtub_2m_lowland_pct (26.227674544470503).",
+    "reproducibility_package/source_tables/Fig5_process_terrain_typology.csv row 25: connected_2m_dem_pm1_max_pct (53.64964820494317) exceeds bathtub_2m_lowland_pct (26.227674544470503).",
+    "reproducibility_package/source_tables/Fig5_process_terrain_typology.csv row 26: connected_2m_dem_pm05_max_pct (5.788362978595116) exceeds bathtub_2m_lowland_pct (3.044920108531806).",
+    "reproducibility_package/source_tables/Fig5_process_terrain_typology.csv row 26: connected_2m_dem_pm1_max_pct (7.94392523364486) exceeds bathtub_2m_lowland_pct (3.044920108531806).",
+    "reproducibility_package/source_tables/Fig5_process_terrain_typology.csv row 27: connected_2m_dem_pm05_max_pct (6.7736670293797605) exceeds bathtub_2m_lowland_pct (6.147986942328618).",
+    "reproducibility_package/source_tables/Fig5_process_terrain_typology.csv row 27: connected_2m_dem_pm1_max_pct (7.630576713819368) exceeds bathtub_2m_lowland_pct (6.147986942328618).",
+    "reproducibility_package/source_tables/Fig5_process_terrain_typology.csv row 28: connected_2m_dem_pm1_max_pct (1.7713765416770135) exceeds bathtub_2m_lowland_pct (1.4568330436222168).",
+    "reproducibility_package/source_tables/Fig5_process_terrain_typology.csv row 29: connected_2m_dem_pm05_max_pct (41.76519974812845) exceeds bathtub_2m_lowland_pct (29.18911355208844).",
+    "reproducibility_package/source_tables/Fig5_process_terrain_typology.csv row 29: connected_2m_dem_pm1_max_pct (54.428741341915625) exceeds bathtub_2m_lowland_pct (29.18911355208844).",
+    "reproducibility_package/source_tables/Fig5_process_terrain_typology.csv row 30: connected_2m_dem_pm05_max_pct (10.986547085201794) exceeds bathtub_2m_lowland_pct (8.118952088742034).",
+    "reproducibility_package/source_tables/Fig5_process_terrain_typology.csv row 30: connected_2m_dem_pm1_max_pct (14.019353316025487) exceeds bathtub_2m_lowland_pct (8.118952088742034).",
+    "reproducibility_package/source_tables/Fig5_process_terrain_typology.csv row 31: connected_2m_dem_pm05_max_pct (9.24938647710925) exceeds bathtub_2m_lowland_pct (7.53998476770754).",
+    "reproducibility_package/source_tables/Fig5_process_terrain_typology.csv row 31: connected_2m_dem_pm1_max_pct (11.627316577811628) exceeds bathtub_2m_lowland_pct (7.53998476770754).",
+    "reproducibility_package/source_tables/Fig5_tidal_metadata_joined_diagnostics.csv row 2: connected_2m_dem_pm05_max_pct (10.318791946308725) exceeds bathtub_2m_lowland_pct (8.263422818791947).",
+    "reproducibility_package/source_tables/Fig5_tidal_metadata_joined_diagnostics.csv row 2: connected_2m_dem_pm1_max_pct (11.703020134228188) exceeds bathtub_2m_lowland_pct (8.263422818791947).",
+    "reproducibility_package/source_tables/Fig5_tidal_metadata_joined_diagnostics.csv row 4: connected_2m_dem_pm1_max_pct (9.29835785881851) exceeds bathtub_2m_lowland_pct (7.63489016847942).",
+    "reproducibility_package/source_tables/Fig5_tidal_metadata_joined_diagnostics.csv row 5: connected_2m_dem_pm05_max_pct (7.572209211553474) exceeds bathtub_2m_lowland_pct (7.240437158469946).",
+    "reproducibility_package/source_tables/Fig5_tidal_metadata_joined_diagnostics.csv row 5: connected_2m_dem_pm1_max_pct (9.026151444184231) exceeds bathtub_2m_lowland_pct (7.240437158469946).",
+    "reproducibility_package/source_tables/Fig5_tidal_metadata_joined_diagnostics.csv row 6: connected_2m_dem_pm05_max_pct (49.98719808824784) exceeds bathtub_2m_lowland_pct (42.77972177178459).",
+    "reproducibility_package/source_tables/Fig5_tidal_metadata_joined_diagnostics.csv row 6: connected_2m_dem_pm1_max_pct (59.46914739267731) exceeds bathtub_2m_lowland_pct (42.77972177178459).",
+    "reproducibility_package/source_tables/Fig5_tidal_metadata_joined_diagnostics.csv row 7: connected_2m_dem_pm05_max_pct (15.951742627345844) exceeds bathtub_2m_lowland_pct (13.473764841057069).",
+    "reproducibility_package/source_tables/Fig5_tidal_metadata_joined_diagnostics.csv row 7: connected_2m_dem_pm1_max_pct (20.39448487169667) exceeds bathtub_2m_lowland_pct (13.473764841057069).",
+    "reproducibility_package/source_tables/Fig5_tidal_metadata_joined_diagnostics.csv row 8: connected_2m_dem_pm05_max_pct (81.12497190379861) exceeds bathtub_2m_lowland_pct (78.41368846931894).",
+    "reproducibility_package/source_tables/Fig5_tidal_metadata_joined_diagnostics.csv row 8: connected_2m_dem_pm1_max_pct (83.29399865138234) exceeds bathtub_2m_lowland_pct (78.41368846931894).",
+    "reproducibility_package/source_tables/Fig5_tidal_metadata_joined_diagnostics.csv row 9: connected_2m_dem_pm05_max_pct (16.786034019695613) exceeds bathtub_2m_lowland_pct (13.011041480155178).",
+    "reproducibility_package/source_tables/Fig5_tidal_metadata_joined_diagnostics.csv row 9: connected_2m_dem_pm1_max_pct (21.03849597135184) exceeds bathtub_2m_lowland_pct (13.011041480155178).",
+    "reproducibility_package/source_tables/Fig5_tidal_metadata_joined_diagnostics.csv row 10: connected_2m_dem_pm05_max_pct (79.90533077876705) exceeds bathtub_2m_lowland_pct (65.55467898869229).",
+    "reproducibility_package/source_tables/Fig5_tidal_metadata_joined_diagnostics.csv row 10: connected_2m_dem_pm1_max_pct (85.31124384837898) exceeds bathtub_2m_lowland_pct (65.55467898869229).",
+    "reproducibility_package/source_tables/Fig5_tidal_metadata_joined_diagnostics.csv row 11: connected_2m_dem_pm05_max_pct (98.91565888565982) exceeds bathtub_2m_lowland_pct (97.41258085684822).",
+    "reproducibility_package/source_tables/Fig5_tidal_metadata_joined_diagnostics.csv row 11: connected_2m_dem_pm1_max_pct (99.56563857379456) exceeds bathtub_2m_lowland_pct (97.41258085684822).",
+    "reproducibility_package/source_tables/Fig5_tidal_metadata_joined_diagnostics.csv row 12: connected_2m_dem_pm05_max_pct (31.21998078770413) exceeds bathtub_2m_lowland_pct (26.32084534101825).",
+    "reproducibility_package/source_tables/Fig5_tidal_metadata_joined_diagnostics.csv row 12: connected_2m_dem_pm1_max_pct (35.6388088376561) exceeds bathtub_2m_lowland_pct (26.32084534101825).",
+    "reproducibility_package/source_tables/Fig5_tidal_metadata_joined_diagnostics.csv row 13: connected_2m_dem_pm05_max_pct (13.003761418592156) exceeds bathtub_2m_lowland_pct (6.501880709296078).",
+    "reproducibility_package/source_tables/Fig5_tidal_metadata_joined_diagnostics.csv row 13: connected_2m_dem_pm1_max_pct (19.66684578183772) exceeds bathtub_2m_lowland_pct (6.501880709296078).",
+    "reproducibility_package/source_tables/Fig5_tidal_metadata_joined_diagnostics.csv row 15: connected_2m_dem_pm05_max_pct (16.205148205928236) exceeds bathtub_2m_lowland_pct (13.813052522100884).",
+    "reproducibility_package/source_tables/Fig5_tidal_metadata_joined_diagnostics.csv row 15: connected_2m_dem_pm1_max_pct (19.429277171086845) exceeds bathtub_2m_lowland_pct (13.813052522100884).",
+    "reproducibility_package/source_tables/Fig5_tidal_metadata_joined_diagnostics.csv row 16: connected_2m_dem_pm05_max_pct (7.291314061336402) exceeds bathtub_2m_lowland_pct (5.761289012253741).",
+    "reproducibility_package/source_tables/Fig5_tidal_metadata_joined_diagnostics.csv row 16: connected_2m_dem_pm1_max_pct (10.24981382438562) exceeds bathtub_2m_lowland_pct (5.761289012253741).",
+    "reproducibility_package/source_tables/Fig5_tidal_metadata_joined_diagnostics.csv row 17: connected_2m_dem_pm05_max_pct (18.127765486725664) exceeds bathtub_2m_lowland_pct (15.804756637168142).",
+    "reproducibility_package/source_tables/Fig5_tidal_metadata_joined_diagnostics.csv row 17: connected_2m_dem_pm1_max_pct (19.95298672566372) exceeds bathtub_2m_lowland_pct (15.804756637168142).",
+    "reproducibility_package/source_tables/Fig5_tidal_metadata_joined_diagnostics.csv row 18: connected_2m_dem_pm05_max_pct (15.91138891442228) exceeds bathtub_2m_lowland_pct (12.464380917363728).",
+    "reproducibility_package/source_tables/Fig5_tidal_metadata_joined_diagnostics.csv row 18: connected_2m_dem_pm1_max_pct (19.53304531666513) exceeds bathtub_2m_lowland_pct (12.464380917363728).",
+    "reproducibility_package/source_tables/Fig5_tidal_metadata_joined_diagnostics.csv row 19: connected_2m_dem_pm05_max_pct (9.572301425661914) exceeds bathtub_2m_lowland_pct (6.272912423625255).",
+    "reproducibility_package/source_tables/Fig5_tidal_metadata_joined_diagnostics.csv row 19: connected_2m_dem_pm1_max_pct (13.441955193482688) exceeds bathtub_2m_lowland_pct (6.272912423625255).",
+    "reproducibility_package/source_tables/Fig5_tidal_metadata_joined_diagnostics.csv row 20: connected_2m_dem_pm05_max_pct (15.679772619611558) exceeds bathtub_2m_lowland_pct (12.979630506868782).",
+    "reproducibility_package/source_tables/Fig5_tidal_metadata_joined_diagnostics.csv row 20: connected_2m_dem_pm1_max_pct (18.285172903837044) exceeds bathtub_2m_lowland_pct (12.979630506868782).",
+    "reproducibility_package/source_tables/Fig5_tidal_metadata_joined_diagnostics.csv row 21: connected_2m_dem_pm05_max_pct (6.916932907348243) exceeds bathtub_2m_lowland_pct (6.006389776357827).",
+    "reproducibility_package/source_tables/Fig5_tidal_metadata_joined_diagnostics.csv row 21: connected_2m_dem_pm1_max_pct (9.456869009584665) exceeds bathtub_2m_lowland_pct (6.006389776357827).",
+    "reproducibility_package/source_tables/Fig5_tidal_metadata_joined_diagnostics.csv row 23: connected_2m_dem_pm05_max_pct (15.483555845001629) exceeds bathtub_2m_lowland_pct (14.79973949853468).",
+    "reproducibility_package/source_tables/Fig5_tidal_metadata_joined_diagnostics.csv row 23: connected_2m_dem_pm1_max_pct (16.33018560729404) exceeds bathtub_2m_lowland_pct (14.79973949853468).",
+    "reproducibility_package/source_tables/Fig5_tidal_metadata_joined_diagnostics.csv row 24: connected_2m_dem_pm05_max_pct (11.754365404898628) exceeds bathtub_2m_lowland_pct (10.99261689909762).",
+    "reproducibility_package/source_tables/Fig5_tidal_metadata_joined_diagnostics.csv row 24: connected_2m_dem_pm1_max_pct (13.28372202039142) exceeds bathtub_2m_lowland_pct (10.99261689909762).",
+    "reproducibility_package/source_tables/Fig5_tidal_metadata_joined_diagnostics.csv row 25: connected_2m_dem_pm05_max_pct (42.79631968248241) exceeds bathtub_2m_lowland_pct (26.227674544470503).",
+    "reproducibility_package/source_tables/Fig5_tidal_metadata_joined_diagnostics.csv row 25: connected_2m_dem_pm1_max_pct (53.64964820494317) exceeds bathtub_2m_lowland_pct (26.227674544470503).",
+    "reproducibility_package/source_tables/Fig5_tidal_metadata_joined_diagnostics.csv row 26: connected_2m_dem_pm05_max_pct (5.788362978595116) exceeds bathtub_2m_lowland_pct (3.044920108531806).",
+    "reproducibility_package/source_tables/Fig5_tidal_metadata_joined_diagnostics.csv row 26: connected_2m_dem_pm1_max_pct (7.94392523364486) exceeds bathtub_2m_lowland_pct (3.044920108531806).",
+    "reproducibility_package/source_tables/Fig5_tidal_metadata_joined_diagnostics.csv row 27: connected_2m_dem_pm05_max_pct (6.7736670293797605) exceeds bathtub_2m_lowland_pct (6.147986942328618).",
+    "reproducibility_package/source_tables/Fig5_tidal_metadata_joined_diagnostics.csv row 27: connected_2m_dem_pm1_max_pct (7.630576713819368) exceeds bathtub_2m_lowland_pct (6.147986942328618).",
+    "reproducibility_package/source_tables/Fig5_tidal_metadata_joined_diagnostics.csv row 28: connected_2m_dem_pm1_max_pct (1.7713765416770135) exceeds bathtub_2m_lowland_pct (1.4568330436222168).",
+    "reproducibility_package/source_tables/Fig5_tidal_metadata_joined_diagnostics.csv row 29: connected_2m_dem_pm05_max_pct (41.76519974812845) exceeds bathtub_2m_lowland_pct (29.18911355208844).",
+    "reproducibility_package/source_tables/Fig5_tidal_metadata_joined_diagnostics.csv row 29: connected_2m_dem_pm1_max_pct (54.428741341915625) exceeds bathtub_2m_lowland_pct (29.18911355208844).",
+    "reproducibility_package/source_tables/Fig5_tidal_metadata_joined_diagnostics.csv row 30: connected_2m_dem_pm05_max_pct (10.986547085201794) exceeds bathtub_2m_lowland_pct (8.118952088742034).",
+    "reproducibility_package/source_tables/Fig5_tidal_metadata_joined_diagnostics.csv row 30: connected_2m_dem_pm1_max_pct (14.019353316025487) exceeds bathtub_2m_lowland_pct (8.118952088742034).",
+    "reproducibility_package/source_tables/Fig5_tidal_metadata_joined_diagnostics.csv row 31: connected_2m_dem_pm05_max_pct (9.24938647710925) exceeds bathtub_2m_lowland_pct (7.53998476770754).",
+    "reproducibility_package/source_tables/Fig5_tidal_metadata_joined_diagnostics.csv row 31: connected_2m_dem_pm1_max_pct (11.627316577811628) exceeds bathtub_2m_lowland_pct (7.53998476770754).",
+    "reproducibility_package/source_tables/Fig6_mask_aware_terrain_area_metrics.csv row 7 column proxy_minus_mask_connected_2m_area_km2 is negative (-2.7755575615628914e-17).",
+    "reproducibility_package/source_tables/Fig6_mask_aware_terrain_area_metrics.csv row 9 column proxy_minus_mask_connected_2m_area_km2 is negative (-2.7755575615628914e-17).",
+    "reproducibility_package/source_tables/Fig6_mask_aware_terrain_area_metrics.csv row 16 column proxy_minus_mask_connected_2m_area_km2 is negative (-1.3877787807814457e-17).",
+    "reproducibility_package/source_tables/Fig6_mask_aware_terrain_area_metrics.csv row 17 column proxy_minus_mask_connected_2m_area_km2 is negative (-8.326672684688674e-17).",
+    "reproducibility_package/source_tables/Fig6_mask_aware_terrain_area_metrics.csv row 18 column proxy_minus_mask_connected_2m_area_km2 is negative (-5.551115123125783e-17).",
+    "reproducibility_package/source_tables/Fig6_mask_aware_terrain_area_metrics.csv row 24 column proxy_minus_mask_connected_2m_area_km2 is negative (-2.7755575615628914e-17).",
+    "reproducibility_package/source_tables/Fig6_mask_aware_terrain_area_metrics.csv row 26 column proxy_minus_mask_connected_2m_area_km2 is negative (-5.551115123125783e-17).",
+    "reproducibility_package/source_tables/Fig6_mask_aware_terrain_area_metrics.csv row 33 column proxy_minus_mask_connected_2m_area_km2 is negative (-1.3877787807814457e-17).",
+    "reproducibility_package/source_tables/Fig6_mask_aware_terrain_area_metrics.csv row 39 column proxy_minus_mask_connected_2m_area_km2 is negative (-5.551115123125783e-17).",
+    "reproducibility_package/source_tables/Fig6_mask_aware_terrain_area_metrics.csv row 44 column proxy_minus_mask_connected_2m_area_km2 is negative (-1.3877787807814457e-17).",
+    "reproducibility_package/source_tables/Fig6_mask_aware_terrain_area_metrics.csv row 47 column proxy_minus_mask_connected_2m_area_km2 is negative (-2.7755575615628914e-17).",
+    "reproducibility_package/source_tables/Fig6_mask_aware_terrain_area_metrics.csv row 49 column proxy_minus_mask_connected_2m_area_km2 is negative (-9.020562075079397e-17).",
+    "reproducibility_package/source_tables/Fig6_mask_aware_terrain_area_metrics.csv row 53 column proxy_minus_mask_connected_2m_area_km2 is negative (-0.001159402146632793).",
+    "reproducibility_package/source_tables/Fig6_mask_aware_terrain_area_metrics.csv row 58 column proxy_minus_mask_connected_2m_area_km2 is negative (-5.551115123125783e-17).",
+    "reproducibility_package/source_tables/Fig6_mask_aware_terrain_area_metrics.csv row 59 column proxy_minus_mask_connected_2m_area_km2 is negative (-2.7755575615628914e-17).",
+    "reproducibility_package/source_tables/Fig6_mask_aware_terrain_area_metrics.csv row 61 column proxy_minus_mask_connected_2m_area_km2 is negative (-4.163336342344337e-17).",
+    "reproducibility_package/source_tables/Fig6_mask_aware_terrain_area_metrics.csv row 63 column proxy_minus_mask_connected_2m_area_km2 is negative (-2.7755575615628914e-17).",
+    "reproducibility_package/source_tables/Fig6_mask_aware_terrain_area_metrics.csv row 64 column proxy_minus_mask_connected_2m_area_km2 is negative (-4.163336342344337e-17).",
+    "reproducibility_package/source_tables/Fig6_mask_aware_terrain_area_metrics.csv row 68 column proxy_minus_mask_connected_2m_area_km2 is negative (-5.551115123125783e-17).",
+    "reproducibility_package/source_tables/Fig6_mask_aware_terrain_area_metrics.csv row 71 column proxy_minus_mask_connected_2m_area_km2 is negative (-2.220446049250313e-16).",
+    "reproducibility_package/source_tables/processed_station_master_table.csv row 7 column proxy_minus_mask_connected_2m_area_km2 is negative (-2.775557561562892e-17).",
+    "reproducibility_package/source_tables/processed_station_master_table.csv row 9 column proxy_minus_mask_connected_2m_area_km2 is negative (-2.775557561562892e-17).",
+    "reproducibility_package/source_tables/processed_station_master_table.csv row 16 column proxy_minus_mask_connected_2m_area_km2 is negative (-1.3877787807814457e-17).",
+    "reproducibility_package/source_tables/processed_station_master_table.csv row 17 column proxy_minus_mask_connected_2m_area_km2 is negative (-8.326672684688674e-17).",
+    "reproducibility_package/source_tables/processed_station_master_table.csv row 18 column proxy_minus_mask_connected_2m_area_km2 is negative (-5.551115123125783e-17).",
+    "reproducibility_package/source_tables/processed_station_master_table.csv row 24 column proxy_minus_mask_connected_2m_area_km2 is negative (-2.775557561562892e-17).",
+    "reproducibility_package/source_tables/processed_station_master_table.csv row 26 column proxy_minus_mask_connected_2m_area_km2 is negative (-5.551115123125783e-17).",
+    "reproducibility_package/source_tables/processed_station_master_table.csv row 33 column proxy_minus_mask_connected_2m_area_km2 is negative (-1.3877787807814457e-17).",
+    "reproducibility_package/source_tables/processed_station_master_table.csv row 39 column proxy_minus_mask_connected_2m_area_km2 is negative (-5.551115123125783e-17).",
+    "reproducibility_package/source_tables/processed_station_master_table.csv row 44 column proxy_minus_mask_connected_2m_area_km2 is negative (-1.3877787807814457e-17).",
+    "reproducibility_package/source_tables/processed_station_master_table.csv row 47 column proxy_minus_mask_connected_2m_area_km2 is negative (-2.775557561562892e-17).",
+    "reproducibility_package/source_tables/processed_station_master_table.csv row 49 column proxy_minus_mask_connected_2m_area_km2 is negative (-9.020562075079396e-17).",
+    "reproducibility_package/source_tables/processed_station_master_table.csv row 53 column proxy_minus_mask_connected_2m_area_km2 is negative (-0.0011594021466327).",
+    "reproducibility_package/source_tables/processed_station_master_table.csv row 58 column proxy_minus_mask_connected_2m_area_km2 is negative (-5.551115123125783e-17).",
+    "reproducibility_package/source_tables/processed_station_master_table.csv row 59 column proxy_minus_mask_connected_2m_area_km2 is negative (-2.775557561562892e-17).",
+    "reproducibility_package/source_tables/processed_station_master_table.csv row 61 column proxy_minus_mask_connected_2m_area_km2 is negative (-4.163336342344337e-17).",
+    "reproducibility_package/source_tables/processed_station_master_table.csv row 63 column proxy_minus_mask_connected_2m_area_km2 is negative (-2.775557561562892e-17).",
+    "reproducibility_package/source_tables/processed_station_master_table.csv row 64 column proxy_minus_mask_connected_2m_area_km2 is negative (-4.163336342344337e-17).",
+    "reproducibility_package/source_tables/processed_station_master_table.csv row 68 column proxy_minus_mask_connected_2m_area_km2 is negative (-5.551115123125783e-17).",
+    "reproducibility_package/source_tables/processed_station_master_table.csv row 71 column proxy_minus_mask_connected_2m_area_km2 is negative (-2.220446049250313e-16).",
+    "reproducibility_package/source_tables/TableS_local_dtm_validation.csv row 2 column delta_connected_2m_fraction_pct has value 46.28372450063442, outside [0.0, 1.0].",
+    "reproducibility_package/source_tables/TableS_local_dtm_validation.csv row 2 column local_connected_2m_fraction_pct has value 10.326181204773693, outside [0.0, 1.0].",
+    "reproducibility_package/source_tables/TableS_local_dtm_validation.csv row 2 column fraction_difference_local_minus_delta_pct_points has value -35.95754329586073, outside [0.0, 1.0].",
+    "reproducibility_package/source_tables/TableS_local_dtm_validation.csv row 2 column area_difference_local_minus_delta_km2 is negative (-15.99380397522003).",
+    "reproducibility_package/source_tables/TableS_local_dtm_validation.csv row 2 column local_all_below_2m_fraction_pct has value 30.674275984928506, outside [0.0, 1.0].",
+    "reproducibility_package/source_tables/TableS_local_dtm_validation.csv row 2 column local_unconnected_2m_fraction_pct has value 20.34809478015481, outside [0.0, 1.0].",
+    "reproducibility_package/source_tables/TableS_local_dtm_validation.csv row 3 column delta_connected_2m_fraction_pct has value 6.2497829892873975, outside [0.0, 1.0].",
+    "reproducibility_package/source_tables/TableS_local_dtm_validation.csv row 3 column local_connected_2m_fraction_pct has value 8.972506692729358, outside [0.0, 1.0].",
+    "reproducibility_package/source_tables/TableS_local_dtm_validation.csv row 3 column fraction_difference_local_minus_delta_pct_points has value 2.72272370344196, outside [0.0, 1.0].",
+    "reproducibility_package/source_tables/TableS_local_dtm_validation.csv row 3 column local_all_below_2m_fraction_pct has value 9.025623592402157, outside [0.0, 1.0].",
+    "reproducibility_package/source_tables/TableS_local_dtm_validation.csv row 4 column delta_connected_2m_fraction_pct has value 16.551152457094858, outside [0.0, 1.0].",
+    "reproducibility_package/source_tables/TableS_local_dtm_validation.csv row 4 column local_connected_2m_fraction_pct has value 18.361340665417345, outside [0.0, 1.0].",
+    "reproducibility_package/source_tables/TableS_local_dtm_validation.csv row 4 column fraction_difference_local_minus_delta_pct_points has value 1.8101882083224865, outside [0.0, 1.0].",
+    "reproducibility_package/source_tables/TableS_local_dtm_validation.csv row 4 column local_all_below_2m_fraction_pct has value 19.615680009830726, outside [0.0, 1.0].",
+    "reproducibility_package/source_tables/TableS_local_dtm_validation.csv row 4 column local_unconnected_2m_fraction_pct has value 1.254339344413384, outside [0.0, 1.0].",
+    "reproducibility_package/source_tables/TableS_local_dtm_validation.csv row 5 column local_all_below_2m_fraction_pct has value 10.282622182394705, outside [0.0, 1.0].",
+    "reproducibility_package/source_tables/TableS_local_dtm_validation.csv row 5 column local_unconnected_2m_fraction_pct has value 10.282622182394705, outside [0.0, 1.0].",
+    "reproducibility_package/source_tables/TableS_local_dtm_validation.csv row 6 column delta_connected_2m_fraction_pct has value 71.95147092438195, outside [0.0, 1.0].",
+    "reproducibility_package/source_tables/TableS_local_dtm_validation.csv row 6 column local_connected_2m_fraction_pct has value 4.957557243170346, outside [0.0, 1.0].",
+    "reproducibility_package/source_tables/TableS_local_dtm_validation.csv row 6 column fraction_difference_local_minus_delta_pct_points has value -66.99391368121161, outside [0.0, 1.0].",
+    "reproducibility_package/source_tables/TableS_local_dtm_validation.csv row 6 column area_difference_local_minus_delta_km2 is negative (-19.556538486041443).",
+    "reproducibility_package/source_tables/TableS_local_dtm_validation.csv row 6 column local_all_below_2m_fraction_pct has value 67.31854067028434, outside [0.0, 1.0].",
+    "reproducibility_package/source_tables/TableS_local_dtm_validation.csv row 6 column local_unconnected_2m_fraction_pct has value 62.36098342711399, outside [0.0, 1.0].",
+    "reproducibility_package/source_tables/TableS_local_dtm_validation.csv row 7 column delta_connected_2m_fraction_pct has value 96.98050045594243, outside [0.0, 1.0].",
+    "reproducibility_package/source_tables/TableS_local_dtm_validation.csv row 7 column local_connected_2m_fraction_pct has value 93.36361827923676, outside [0.0, 1.0].",
+    "reproducibility_package/source_tables/TableS_local_dtm_validation.csv row 7 column fraction_difference_local_minus_delta_pct_points has value -3.6168821767056727, outside [0.0, 1.0].",
+    "reproducibility_package/source_tables/TableS_local_dtm_validation.csv row 7 column area_difference_local_minus_delta_km2 is negative (-4.377974277536808).",
+    "reproducibility_package/source_tables/TableS_local_dtm_validation.csv row 7 column local_all_below_2m_fraction_pct has value 93.5666230763461, outside [0.0, 1.0].",
+    "reproducibility_package/source_tables/TableS_local_dtm_validation.csv row 8 column delta_connected_2m_fraction_pct has value 46.732518797600925, outside [0.0, 1.0].",
+    "reproducibility_package/source_tables/TableS_local_dtm_validation.csv row 8 column local_connected_2m_fraction_pct has value 1.625498763005947, outside [0.0, 1.0].",
+    "reproducibility_package/source_tables/TableS_local_dtm_validation.csv row 8 column fraction_difference_local_minus_delta_pct_points has value -45.107020034594974, outside [0.0, 1.0].",
+    "reproducibility_package/source_tables/TableS_local_dtm_validation.csv row 8 column area_difference_local_minus_delta_km2 is negative (-24.27560673607223).",
+    "reproducibility_package/source_tables/TableS_local_dtm_validation.csv row 8 column local_all_below_2m_fraction_pct has value 44.90442907729101, outside [0.0, 1.0].",
+    "reproducibility_package/source_tables/TableS_local_dtm_validation.csv row 8 column local_unconnected_2m_fraction_pct has value 43.27893031428507, outside [0.0, 1.0]."
+  ],
+  "warnings": [
+    "data/figure_source/Fig2_gssr_evt_diagnostics.csv column n_annual_maxima is constant across 8 rows.",
+    "data/figure_source/Fig4_connectivity_component_metrics.csv column eta_m is constant across 1270 rows.",
+    "data/figure_source/Fig4_dem_error_ensemble.csv column eta_m is constant across 25 rows.",
+    "data/figure_source/Fig5_candidate_pool_terrain_screening.csv column buffer_deg is constant across 47 rows.",
+    "data/figure_source/Fig5_candidate_pool_terrain_screening.csv column lowland_max_m is constant across 47 rows.",
+    "data/figure_source/Fig5_coastrp_component_context.csv column coast_rp_tc_rp10_m is constant across 30 rows.",
+    "data/figure_source/Fig5_gssr_evt_diagnostics.csv column n_annual_maxima is constant across 30 rows.",
+    "data/figure_source/Fig5_rank_discordance_robustness.csv column n_sites is constant across 9 rows.",
+    "data/figure_source/Fig5_rank_discordance_robustness.csv column top_n is constant across 9 rows.",
+    "data/figure_source/Fig5_rank_permutation_null_summary.csv column n_permutations is constant across 4 rows.",
+    "data/figure_source/Fig5_rank_permutation_null_summary.csv column overlap_null_p025 is constant across 4 rows.",
+    "data/figure_source/Fig5_rank_permutation_null_summary.csv column overlap_null_p025 is all zeros across 4 rows.",
+    "data/figure_source/Fig6_fixed10km_terrain_area_metrics.csv column raster_nodata is constant across 74 rows.",
+    "data/figure_source/TableS_local_dtm_validation.csv column analysis_resolution_m is constant across 7 rows.",
+    "reproducibility_package/source_tables/Fig2_gssr_evt_diagnostics.csv column n_annual_maxima is constant across 8 rows.",
+    "reproducibility_package/source_tables/Fig4_connectivity_component_metrics.csv column eta_m is constant across 1270 rows.",
+    "reproducibility_package/source_tables/Fig4_dem_error_ensemble.csv column eta_m is constant across 25 rows.",
+    "reproducibility_package/source_tables/Fig5_candidate_pool_terrain_screening.csv column buffer_deg is constant across 47 rows.",
+    "reproducibility_package/source_tables/Fig5_candidate_pool_terrain_screening.csv column lowland_max_m is constant across 47 rows.",
+    "reproducibility_package/source_tables/Fig5_coastrp_component_context.csv column coast_rp_tc_rp10_m is constant across 30 rows.",
+    "reproducibility_package/source_tables/Fig5_gssr_evt_diagnostics.csv column n_annual_maxima is constant across 30 rows.",
+    "reproducibility_package/source_tables/Fig5_rank_discordance_robustness.csv column n_sites is constant across 9 rows.",
+    "reproducibility_package/source_tables/Fig5_rank_discordance_robustness.csv column top_n is constant across 9 rows.",
+    "reproducibility_package/source_tables/Fig5_rank_permutation_null_summary.csv column n_permutations is constant across 4 rows.",
+    "reproducibility_package/source_tables/Fig5_rank_permutation_null_summary.csv column overlap_null_p025 is constant across 4 rows.",
+    "reproducibility_package/source_tables/Fig5_rank_permutation_null_summary.csv column overlap_null_p025 is all zeros across 4 rows.",
+    "reproducibility_package/source_tables/Fig6_fixed10km_terrain_area_metrics.csv column raster_nodata is constant across 74 rows.",
+    "reproducibility_package/source_tables/TableS_local_dtm_validation.csv column analysis_resolution_m is constant across 7 rows."
+  ],
+  "notes": [],
+  "images": [
+    {
+      "name": "manuscript/process_terrain_coastal_flood_CEE_manuscript_review.html:embedded-image-1.png",
+      "bytes": 588527,
+      "width": 5776,
+      "height": 2980
+    },
+    {
+      "name": "manuscript/process_terrain_coastal_flood_CEE_manuscript_review.html:embedded-image-2.png",
+      "bytes": 459165,
+      "width": 5435,
+      "height": 2744
+    },
+    {
+      "name": "manuscript/process_terrain_coastal_flood_CEE_manuscript_review.html:embedded-image-3.png",
+      "bytes": 758408,
+      "width": 5382,
+      "height": 2831
+    },
+    {
+      "name": "manuscript/process_terrain_coastal_flood_CEE_manuscript_review.html:embedded-image-4.png",
+      "bytes": 2957491,
+      "width": 5311,
+      "height": 3706
+    },
+    {
+      "name": "manuscript/process_terrain_coastal_flood_CEE_manuscript_review.html:embedded-image-5.png",
+      "bytes": 699783,
+      "width": 5320,
+      "height": 3594
+    }
+  ],
+  "tables": [
+    {
+      "path": "data/figure_source/Fig1_station_metadata.csv",
+      "rows": 8,
+      "columns": 8
+    },
+    {
+      "path": "data/figure_source/Fig2_coastrp_spatial_sensitivity.csv",
+      "rows": 8,
+      "columns": 13
+    },
+    {
+      "path": "data/figure_source/Fig2_D10_rank_uncertainty.csv",
+      "rows": 8,
+      "columns": 10
+    },
+    {
+      "path": "data/figure_source/Fig2_D10_rank_uncertainty_summary.csv",
+      "rows": 1,
+      "columns": 4
+    },
+    {
+      "path": "data/figure_source/Fig2_gssr_evt_diagnostics.csv",
+      "rows": 8,
+      "columns": 14
+    },
+    {
+      "path": "data/figure_source/Fig2_gssr_rp10_bootstrap.csv",
+      "rows": 8,
+      "columns": 5
+    },
+    {
+      "path": "data/figure_source/Fig2_tidal_regime_metadata.csv",
+      "rows": 8,
+      "columns": 12
+    },
+    {
+      "path": "data/figure_source/Fig2_tidal_regime_metadata_source_verified.csv",
+      "rows": 8,
+      "columns": 12
+    },
+    {
+      "path": "data/figure_source/Fig2_water_level_divergence.csv",
+      "rows": 8,
+      "columns": 17
+    },
+    {
+      "path": "data/figure_source/Fig2_water_level_divergence_with_uncertainty.csv",
+      "rows": 8,
+      "columns": 30
+    },
+    {
+      "path": "data/figure_source/Fig3_charleston-sc_pressure_bins.csv",
+      "rows": 26,
+      "columns": 6
+    },
+    {
+      "path": "data/figure_source/Fig3_daily_wind_direction_metrics.csv",
+      "rows": 90591,
+      "columns": 9
+    },
+    {
+      "path": "data/figure_source/Fig3_driver_correlations.csv",
+      "rows": 8,
+      "columns": 7
+    },
+    {
+      "path": "data/figure_source/Fig3_event_composites.csv",
+      "rows": 1736,
+      "columns": 14
+    },
+    {
+      "path": "data/figure_source/Fig3_newlyn-p001-uk_pressure_bins.csv",
+      "rows": 26,
+      "columns": 6
+    },
+    {
+      "path": "data/figure_source/Fig4_connected_terrain_sensitivity.csv",
+      "rows": 5,
+      "columns": 31
+    },
+    {
+      "path": "data/figure_source/Fig4_connectivity_audit_summary.csv",
+      "rows": 15,
+      "columns": 20
+    },
+    {
+      "path": "data/figure_source/Fig4_connectivity_component_metrics.csv",
+      "rows": 1270,
+      "columns": 13
+    },
+    {
+      "path": "data/figure_source/Fig4_dem_error_ensemble.csv",
+      "rows": 25,
+      "columns": 5
+    },
+    {
+      "path": "data/figure_source/Fig4_hypsometry_curves.csv",
+      "rows": 900,
+      "columns": 3
+    },
+    {
+      "path": "data/figure_source/Fig4_terrain_screen_sensitivity_summary.csv",
+      "rows": 15,
+      "columns": 7
+    },
+    {
+      "path": "data/figure_source/Fig4_terrain_sensitivity.csv",
+      "rows": 5,
+      "columns": 10
+    },
+    {
+      "path": "data/figure_source/Fig4_terrain_window_denominator_seed_sensitivity.csv",
+      "rows": 40,
+      "columns": 11
+    },
+    {
+      "path": "data/figure_source/Fig5_candidate_pool_terrain_screening.csv",
+      "rows": 47,
+      "columns": 19
+    },
+    {
+      "path": "data/figure_source/Fig5_candidate_pool_threshold_sensitivity.csv",
+      "rows": 3,
+      "columns": 13
+    },
+    {
+      "path": "data/figure_source/Fig5_coastrp_component_context.csv",
+      "rows": 30,
+      "columns": 10
+    },
+    {
+      "path": "data/figure_source/Fig5_coastrp_component_context_summary.csv",
+      "rows": 1,
+      "columns": 8
+    },
+    {
+      "path": "data/figure_source/Fig5_D10_prediction_interval_scenario_summary.csv",
+      "rows": 3,
+      "columns": 6
+    },
+    {
+      "path": "data/figure_source/Fig5_D10_prediction_interval_scenarios.csv",
+      "rows": 30,
+      "columns": 13
+    },
+    {
+      "path": "data/figure_source/Fig5_D10_rank_uncertainty.csv",
+      "rows": 30,
+      "columns": 10
+    },
+    {
+      "path": "data/figure_source/Fig5_D10_rank_uncertainty_summary.csv",
+      "rows": 1,
+      "columns": 7
+    },
+    {
+      "path": "data/figure_source/Fig5_extended_station_subset.csv",
+      "rows": 30,
+      "columns": 10
+    },
+    {
+      "path": "data/figure_source/Fig5_gssr_evt_diagnostics.csv",
+      "rows": 30,
+      "columns": 15
+    },
+    {
+      "path": "data/figure_source/Fig5_leave_one_sector_sensitivity.csv",
+      "rows": 14,
+      "columns": 10
+    },
+    {
+      "path": "data/figure_source/Fig5_nw_europe_extended_screening.csv",
+      "rows": 30,
+      "columns": 39
+    },
+    {
+      "path": "data/figure_source/Fig5_nw_europe_extended_screening_robust.csv",
+      "rows": 30,
+      "columns": 43
+    },
+    {
+      "path": "data/figure_source/Fig5_nw_europe_extended_screening_with_uncertainty.csv",
+      "rows": 30,
+      "columns": 52
+    },
+    {
+      "path": "data/figure_source/Fig5_nw_europe_rank_mismatch_diagnostics.csv",
+      "rows": 1,
+      "columns": 9
+    },
+    {
+      "path": "data/figure_source/Fig5_process_terrain_typology.csv",
+      "rows": 30,
+      "columns": 40
+    },
+    {
+      "path": "data/figure_source/Fig5_rank_discordance_robustness.csv",
+      "rows": 9,
+      "columns": 12
+    },
+    {
+      "path": "data/figure_source/Fig5_rank_mismatch_diagnostics.csv",
+      "rows": 1,
+      "columns": 9
+    },
+    {
+      "path": "data/figure_source/Fig5_rank_permutation_null_summary.csv",
+      "rows": 4,
+      "columns": 22
+    },
+    {
+      "path": "data/figure_source/Fig5_station_candidate_audit.csv",
+      "rows": 74,
+      "columns": 20
+    },
+    {
+      "path": "data/figure_source/Fig5_subset_selection_threshold_sensitivity.csv",
+      "rows": 6,
+      "columns": 13
+    },
+    {
+      "path": "data/figure_source/Fig5_tidal_available_rank_correlations.csv",
+      "rows": 3,
+      "columns": 11
+    },
+    {
+      "path": "data/figure_source/Fig5_tidal_metadata_coverage_summary.csv",
+      "rows": 3,
+      "columns": 3
+    },
+    {
+      "path": "data/figure_source/Fig5_tidal_metadata_joined_diagnostics.csv",
+      "rows": 30,
+      "columns": 45
+    },
+    {
+      "path": "data/figure_source/Fig5_tidal_regime_metadata_source_tracked.csv",
+      "rows": 30,
+      "columns": 13
+    },
+    {
+      "path": "data/figure_source/Fig6_archetype_map_selection.csv",
+      "rows": 3,
+      "columns": 11
+    },
+    {
+      "path": "data/figure_source/Fig6_deltadtm_mask_seed_audit.csv",
+      "rows": 1,
+      "columns": 9
+    },
+    {
+      "path": "data/figure_source/Fig6_fixed10km_terrain_area_metrics.csv",
+      "rows": 74,
+      "columns": 112
+    },
+    {
+      "path": "data/figure_source/Fig6_mask_aware_archetype_map_selection.csv",
+      "rows": 3,
+      "columns": 11
+    },
+    {
+      "path": "data/figure_source/Fig6_mask_aware_rank_metrics_fraction_area_samples.csv",
+      "rows": 9,
+      "columns": 11
+    },
+    {
+      "path": "data/figure_source/Fig6_mask_aware_terrain_area_metrics.csv",
+      "rows": 74,
+      "columns": 90
+    },
+    {
+      "path": "data/figure_source/Fig6_mask_aware_topk_overlap_null_envelope.csv",
+      "rows": 63,
+      "columns": 13
+    },
+    {
+      "path": "data/figure_source/Fig6_mask_aware_two_sided_permutation_association.csv",
+      "rows": 9,
+      "columns": 13
+    },
+    {
+      "path": "data/figure_source/Fig6_mask_class_counts.csv",
+      "rows": 74,
+      "columns": 16
+    },
+    {
+      "path": "data/figure_source/Fig6_rank_metrics_fraction_area_samples.csv",
+      "rows": 9,
+      "columns": 11
+    },
+    {
+      "path": "data/figure_source/Fig6_topk_overlap_null_envelope.csv",
+      "rows": 63,
+      "columns": 13
+    },
+    {
+      "path": "data/figure_source/Fig6_two_sided_permutation_association.csv",
+      "rows": 9,
+      "columns": 13
+    },
+    {
+      "path": "data/figure_source/Table1_data_products.csv",
+      "rows": 4,
+      "columns": 6
+    },
+    {
+      "path": "data/figure_source/Table2_water_level_indicators.csv",
+      "rows": 8,
+      "columns": 12
+    },
+    {
+      "path": "data/figure_source/Table3_driver_correlations.csv",
+      "rows": 8,
+      "columns": 6
+    },
+    {
+      "path": "data/figure_source/Table3_process_terrain_typology.csv",
+      "rows": 5,
+      "columns": 5
+    },
+    {
+      "path": "data/figure_source/Table4_deltadtm_connected_sensitivity.csv",
+      "rows": 5,
+      "columns": 17
+    },
+    {
+      "path": "data/figure_source/Table4_deltadtm_sensitivity.csv",
+      "rows": 5,
+      "columns": 10
+    },
+    {
+      "path": "data/figure_source/TableS_local_dtm_validation.csv",
+      "rows": 7,
+      "columns": 33
+    },
+    {
+      "path": "reproducibility_package/source_tables/Fig1_station_metadata.csv",
+      "rows": 8,
+      "columns": 8
+    },
+    {
+      "path": "reproducibility_package/source_tables/Fig2_coastrp_spatial_sensitivity.csv",
+      "rows": 8,
+      "columns": 13
+    },
+    {
+      "path": "reproducibility_package/source_tables/Fig2_D10_rank_uncertainty.csv",
+      "rows": 8,
+      "columns": 10
+    },
+    {
+      "path": "reproducibility_package/source_tables/Fig2_D10_rank_uncertainty_summary.csv",
+      "rows": 1,
+      "columns": 4
+    },
+    {
+      "path": "reproducibility_package/source_tables/Fig2_gssr_evt_diagnostics.csv",
+      "rows": 8,
+      "columns": 14
+    },
+    {
+      "path": "reproducibility_package/source_tables/Fig2_gssr_rp10_bootstrap.csv",
+      "rows": 8,
+      "columns": 5
+    },
+    {
+      "path": "reproducibility_package/source_tables/Fig2_tidal_regime_metadata.csv",
+      "rows": 8,
+      "columns": 12
+    },
+    {
+      "path": "reproducibility_package/source_tables/Fig2_tidal_regime_metadata_source_verified.csv",
+      "rows": 8,
+      "columns": 12
+    },
+    {
+      "path": "reproducibility_package/source_tables/Fig2_water_level_divergence.csv",
+      "rows": 8,
+      "columns": 17
+    },
+    {
+      "path": "reproducibility_package/source_tables/Fig2_water_level_divergence_with_uncertainty.csv",
+      "rows": 8,
+      "columns": 30
+    },
+    {
+      "path": "reproducibility_package/source_tables/Fig3_charleston-sc_pressure_bins.csv",
+      "rows": 26,
+      "columns": 6
+    },
+    {
+      "path": "reproducibility_package/source_tables/Fig3_daily_wind_direction_metrics.csv",
+      "rows": 90591,
+      "columns": 9
+    },
+    {
+      "path": "reproducibility_package/source_tables/Fig3_driver_correlations.csv",
+      "rows": 8,
+      "columns": 7
+    },
+    {
+      "path": "reproducibility_package/source_tables/Fig3_event_composites.csv",
+      "rows": 1736,
+      "columns": 14
+    },
+    {
+      "path": "reproducibility_package/source_tables/Fig3_newlyn-p001-uk_pressure_bins.csv",
+      "rows": 26,
+      "columns": 6
+    },
+    {
+      "path": "reproducibility_package/source_tables/Fig4_connected_terrain_sensitivity.csv",
+      "rows": 5,
+      "columns": 31
+    },
+    {
+      "path": "reproducibility_package/source_tables/Fig4_connectivity_audit_summary.csv",
+      "rows": 15,
+      "columns": 20
+    },
+    {
+      "path": "reproducibility_package/source_tables/Fig4_connectivity_component_metrics.csv",
+      "rows": 1270,
+      "columns": 13
+    },
+    {
+      "path": "reproducibility_package/source_tables/Fig4_dem_error_ensemble.csv",
+      "rows": 25,
+      "columns": 5
+    },
+    {
+      "path": "reproducibility_package/source_tables/Fig4_hypsometry_curves.csv",
+      "rows": 900,
+      "columns": 3
+    },
+    {
+      "path": "reproducibility_package/source_tables/Fig4_terrain_screen_sensitivity_summary.csv",
+      "rows": 15,
+      "columns": 7
+    },
+    {
+      "path": "reproducibility_package/source_tables/Fig4_terrain_sensitivity.csv",
+      "rows": 5,
+      "columns": 10
+    },
+    {
+      "path": "reproducibility_package/source_tables/Fig4_terrain_window_denominator_seed_sensitivity.csv",
+      "rows": 40,
+      "columns": 11
+    },
+    {
+      "path": "reproducibility_package/source_tables/Fig5_candidate_pool_terrain_screening.csv",
+      "rows": 47,
+      "columns": 19
+    },
+    {
+      "path": "reproducibility_package/source_tables/Fig5_candidate_pool_threshold_sensitivity.csv",
+      "rows": 3,
+      "columns": 13
+    },
+    {
+      "path": "reproducibility_package/source_tables/Fig5_coastrp_component_context.csv",
+      "rows": 30,
+      "columns": 10
+    },
+    {
+      "path": "reproducibility_package/source_tables/Fig5_coastrp_component_context_summary.csv",
+      "rows": 1,
+      "columns": 8
+    },
+    {
+      "path": "reproducibility_package/source_tables/Fig5_D10_prediction_interval_scenario_summary.csv",
+      "rows": 3,
+      "columns": 6
+    },
+    {
+      "path": "reproducibility_package/source_tables/Fig5_D10_prediction_interval_scenarios.csv",
+      "rows": 30,
+      "columns": 13
+    },
+    {
+      "path": "reproducibility_package/source_tables/Fig5_D10_rank_uncertainty.csv",
+      "rows": 30,
+      "columns": 10
+    },
+    {
+      "path": "reproducibility_package/source_tables/Fig5_D10_rank_uncertainty_summary.csv",
+      "rows": 1,
+      "columns": 7
+    },
+    {
+      "path": "reproducibility_package/source_tables/Fig5_extended_station_subset.csv",
+      "rows": 30,
+      "columns": 10
+    },
+    {
+      "path": "reproducibility_package/source_tables/Fig5_gssr_evt_diagnostics.csv",
+      "rows": 30,
+      "columns": 15
+    },
+    {
+      "path": "reproducibility_package/source_tables/Fig5_leave_one_sector_sensitivity.csv",
+      "rows": 14,
+      "columns": 10
+    },
+    {
+      "path": "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening.csv",
+      "rows": 30,
+      "columns": 39
+    },
+    {
+      "path": "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening_robust.csv",
+      "rows": 30,
+      "columns": 43
+    },
+    {
+      "path": "reproducibility_package/source_tables/Fig5_nw_europe_extended_screening_with_uncertainty.csv",
+      "rows": 30,
+      "columns": 52
+    },
+    {
+      "path": "reproducibility_package/source_tables/Fig5_nw_europe_rank_mismatch_diagnostics.csv",
+      "rows": 1,
+      "columns": 9
+    },
+    {
+      "path": "reproducibility_package/source_tables/Fig5_process_terrain_typology.csv",
+      "rows": 30,
+      "columns": 40
+    },
+    {
+      "path": "reproducibility_package/source_tables/Fig5_rank_discordance_robustness.csv",
+      "rows": 9,
+      "columns": 12
+    },
+    {
+      "path": "reproducibility_package/source_tables/Fig5_rank_mismatch_diagnostics.csv",
+      "rows": 1,
+      "columns": 9
+    },
+    {
+      "path": "reproducibility_package/source_tables/Fig5_rank_permutation_null_summary.csv",
+      "rows": 4,
+      "columns": 22
+    },
+    {
+      "path": "reproducibility_package/source_tables/Fig5_station_candidate_audit.csv",
+      "rows": 74,
+      "columns": 20
+    },
+    {
+      "path": "reproducibility_package/source_tables/Fig5_subset_selection_threshold_sensitivity.csv",
+      "rows": 6,
+      "columns": 13
+    },
+    {
+      "path": "reproducibility_package/source_tables/Fig5_tidal_available_rank_correlations.csv",
+      "rows": 3,
+      "columns": 11
+    },
+    {
+      "path": "reproducibility_package/source_tables/Fig5_tidal_metadata_coverage_summary.csv",
+      "rows": 3,
+      "columns": 3
+    },
+    {
+      "path": "reproducibility_package/source_tables/Fig5_tidal_metadata_joined_diagnostics.csv",
+      "rows": 30,
+      "columns": 45
+    },
+    {
+      "path": "reproducibility_package/source_tables/Fig5_tidal_regime_metadata_source_tracked.csv",
+      "rows": 30,
+      "columns": 13
+    },
+    {
+      "path": "reproducibility_package/source_tables/Fig6_archetype_map_selection.csv",
+      "rows": 3,
+      "columns": 11
+    },
+    {
+      "path": "reproducibility_package/source_tables/Fig6_deltadtm_mask_seed_audit.csv",
+      "rows": 1,
+      "columns": 9
+    },
+    {
+      "path": "reproducibility_package/source_tables/Fig6_fixed10km_terrain_area_metrics.csv",
+      "rows": 74,
+      "columns": 112
+    },
+    {
+      "path": "reproducibility_package/source_tables/Fig6_mask_aware_archetype_map_selection.csv",
+      "rows": 3,
+      "columns": 11
+    },
+    {
+      "path": "reproducibility_package/source_tables/Fig6_mask_aware_rank_metrics_fraction_area_samples.csv",
+      "rows": 9,
+      "columns": 11
+    },
+    {
+      "path": "reproducibility_package/source_tables/Fig6_mask_aware_terrain_area_metrics.csv",
+      "rows": 74,
+      "columns": 90
+    },
+    {
+      "path": "reproducibility_package/source_tables/Fig6_mask_aware_topk_overlap_null_envelope.csv",
+      "rows": 63,
+      "columns": 13
+    },
+    {
+      "path": "reproducibility_package/source_tables/Fig6_mask_aware_two_sided_permutation_association.csv",
+      "rows": 9,
+      "columns": 13
+    },
+    {
+      "path": "reproducibility_package/source_tables/Fig6_mask_class_counts.csv",
+      "rows": 74,
+      "columns": 16
+    },
+    {
+      "path": "reproducibility_package/source_tables/Fig6_rank_metrics_fraction_area_samples.csv",
+      "rows": 9,
+      "columns": 11
+    },
+    {
+      "path": "reproducibility_package/source_tables/Fig6_topk_overlap_null_envelope.csv",
+      "rows": 63,
+      "columns": 13
+    },
+    {
+      "path": "reproducibility_package/source_tables/Fig6_two_sided_permutation_association.csv",
+      "rows": 9,
+      "columns": 13
+    },
+    {
+      "path": "reproducibility_package/source_tables/processed_station_master_table.csv",
+      "rows": 74,
+      "columns": 40
+    },
+    {
+      "path": "reproducibility_package/source_tables/Table1_data_products.csv",
+      "rows": 4,
+      "columns": 6
+    },
+    {
+      "path": "reproducibility_package/source_tables/Table2_water_level_indicators.csv",
+      "rows": 8,
+      "columns": 12
+    },
+    {
+      "path": "reproducibility_package/source_tables/Table3_driver_correlations.csv",
+      "rows": 8,
+      "columns": 6
+    },
+    {
+      "path": "reproducibility_package/source_tables/Table3_process_terrain_typology.csv",
+      "rows": 5,
+      "columns": 5
+    },
+    {
+      "path": "reproducibility_package/source_tables/Table4_deltadtm_connected_sensitivity.csv",
+      "rows": 5,
+      "columns": 17
+    },
+    {
+      "path": "reproducibility_package/source_tables/Table4_deltadtm_sensitivity.csv",
+      "rows": 5,
+      "columns": 10
+    },
+    {
+      "path": "reproducibility_package/source_tables/TableS_local_dtm_validation.csv",
+      "rows": 7,
+      "columns": 33
+    }
+  ]
+}

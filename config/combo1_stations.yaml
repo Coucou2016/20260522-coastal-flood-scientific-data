@@ -1,0 +1,91 @@
+# Combo 1 MVP pilot stations (expand later)
+# Reanalysis product for GSSR: ERA5 / "ERA-Five" (1979-2019)
+# Coordinates from GSSR web-map metadata (eraint.geojson, WGS84)
+
+meta:
+  description: "MVP tide gauges for Combo1 — UK/NW Europe core + global spot checks"
+  gssr_reanalysis: era5
+  gssr_github_folder: erafive
+  open_meteo_model: era5
+  timezone: UTC
+
+stations:
+  - id: sheerness-p015-uk
+    name: Sheerness
+    country: UK
+    lat: 51.442
+    lon: 0.74306
+    gssr_archive: sheerness_p015_uk.7z
+    notes: "Thames estuary; good for North Sea storm events"
+
+  - id: newlyn-p001-uk
+    name: Newlyn
+    country: UK
+    lat: 50.102
+    lon: -5.5417
+    gssr_archive: newlyn_p001_uk.7z
+    notes: "SW England; Atlantic exposure"
+
+  - id: aberdeen-p038-uk
+    name: Aberdeen
+    country: UK
+    lat: 57.143
+    lon: -2.0745
+    gssr_archive: aberdeen_p038_uk.7z
+    notes: "North Sea ETC surge comparison"
+
+  - id: hoekvanholla-hvh-nl
+    name: Hoek van Holland
+    country: Netherlands
+    lat: 51.977
+    lon: 4.12
+    gssr_archive: hoekvanholla_hvh_nl.7z
+    notes: "North Sea; pairs with COAST-RP coastal points"
+
+  - id: brest-france
+    name: Brest
+    country: France
+    lat: 48.383
+    lon: -4.5
+    gssr_archive: brest_.7z
+    notes: "Eastern Atlantic validation"
+
+  - id: newyork-the-battery
+    name: New York (The Battery)
+    country: USA
+    lat: 40.701
+    lon: -74.014
+    gssr_archive: newyork_thebattery__usa.7z
+    notes: "US East Coast TC/ETC mix"
+
+  - id: hong-kong-b
+    name: Hong Kong (Quarry Bay B)
+    country: China
+    lat: 22.3
+    lon: 114.2
+    gssr_archive: hong_kong_b_329b_china.7z
+    notes: "NW Pacific TC surge context"
+
+  - id: charleston-sc
+    name: Charleston, SC
+    country: USA
+    lat: 32.782
+    lon: -79.925
+    gssr_archive: charleston,sc_261a_usa.7z
+    notes: "US SE Atlantic (261a UHSLC)"
+
+# Default Open-Meteo windows (override via CLI)
+open_meteo_defaults:
+  # Climatology slice for driver–surge correlation
+  climatology_start: "1980-01-01"
+  climatology_end: "2010-12-31"
+  # Example storm window (UK 2013–2014); use for event-based mode
+  event_start: "2013-12-01"
+  event_end: "2014-02-28"
+
+# DeltaDTM MVP bounding box (UK + southern North Sea) — WGS84
+deltadtm_mvp_bbox:
+  west: -6.5
+  south: 49.5
+  east: 4.5
+  north: 58.5

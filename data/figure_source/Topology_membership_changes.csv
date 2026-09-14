@@ -1,0 +1,205 @@
+station_id,station,terrain_metric,four_neighbour_value,eight_neighbour_value,eight_minus_four,four_neighbour_top20,eight_neighbour_top20,membership_change
+esbjerg-130121-denmark,Esbjerg 130121 Denmark,connected_reference_land_pct,8.191808089328422,8.383522973463926,0.19171488413550364,True,True,unchanged
+denhelder-hel-nl,Denhelder Hel Nl,connected_reference_land_pct,71.72956690123473,71.84814639391952,0.11857949268478762,True,True,unchanged
+lerwick-p041-uk,Lerwick P041 Uk,connected_reference_land_pct,2.338164098447598,2.3748536029783662,0.03668950453076825,False,False,unchanged
+cuxhaven-germany,Cuxhaven Germany,connected_reference_land_pct,59.51166318405801,60.40529970309482,0.8936365190368107,True,True,unchanged
+delfzijl-del-nl,Delfzijl Del Nl,connected_reference_land_pct,96.7041475798126,96.98471755553156,0.2805699757189615,True,True,unchanged
+portpatrick-p063-uk,Portpatrick P063 Uk,connected_reference_land_pct,0.5459312309154548,0.5477449582969285,0.0018137273814736732,False,False,unchanged
+newlyn-p001-uk,Newlyn,connected_reference_land_pct,0.4461096259513163,0.4461096259513163,0.0,False,False,unchanged
+fishguard-p055-uk,Fishguard P055 Uk,connected_reference_land_pct,0.1777843980878847,0.2240465178795173,0.04626211979163258,False,False,unchanged
+hoekvanholla-hvh-nl,Hoek van Holland,connected_reference_land_pct,2.639660904814097,46.6965854141011,44.056924509287,False,True,entered_under_8n
+milfordhaven-p056-uk,Milfordhaven P056 Uk,connected_reference_land_pct,0.4719512455229929,0.4734737951955045,0.0015225496725115861,False,False,unchanged
+tregde-006-norway,Tregde 006 Norway,connected_reference_land_pct,5.706738471262798,5.767709962772263,0.06097149150946457,True,False,left_under_8n
+lowestoft-p024-uk,Lowestoft P024 Uk,connected_reference_land_pct,1.4161572262689828,11.569722445010646,10.153565218741663,False,True,entered_under_8n
+wick-p035-uk,Wick P035 Uk,connected_reference_land_pct,1.551761192430147,1.55445092266558,0.002689730235432952,False,False,unchanged
+stornoway-p042-uk,Stornoway P042 Uk,connected_reference_land_pct,1.9106908819389867,1.916050469673037,0.0053595877340502085,False,False,unchanged
+le-conquet,Le Conquet France,connected_reference_land_pct,0.3041908836917451,0.3041908836917451,0.0,False,False,unchanged
+brest,Brest,connected_reference_land_pct,0.2812704050968057,0.3106057010300284,0.029335295933222705,False,False,unchanged
+port-tudy,Port Tudy France,connected_reference_land_pct,1.2427399734825972,1.2469098497038933,0.004169876221296054,False,False,unchanged
+cherbourg,Cherbourg France,connected_reference_land_pct,1.3505094713173649,1.3847896063747511,0.03428013505738625,False,False,unchanged
+saint-nazaire,Saint Nazaire France,connected_reference_land_pct,0.5838512306731046,0.5929904031134542,0.009139172440349563,False,False,unchanged
+saint-gildas,Saint Gildas France,connected_reference_land_pct,4.466066718808651,4.466066718808651,0.0,False,False,unchanged
+le-havre,Le Havre France,connected_reference_land_pct,3.3123282930789943,3.3343090366074466,0.02198074352845225,False,False,unchanged
+dunkerque,Dunkerque France,connected_reference_land_pct,30.571338948946885,31.264342407303552,0.6930034583566673,True,True,unchanged
+roscoff,Roscoff France,connected_reference_land_pct,0.8687521849600573,0.8777324062135216,0.008980221253464205,False,False,unchanged
+boulogne-sur-mer,Boulogne Sur Mer,connected_reference_land_pct,0.9422709688077456,0.9422709688077456,0.0,False,False,unchanged
+dieppe,Dieppe France,connected_reference_land_pct,0.2475849389584862,0.2509923724297647,0.003407433471278476,False,False,unchanged
+immingham-p026-uk,Immingham P026 Uk,connected_reference_land_pct,0.405551107261522,14.0773976261235,13.671846518861978,False,True,entered_under_8n
+aberdeen-p038-uk,Aberdeen,connected_reference_land_pct,0.9823117679861098,0.9900842278022072,0.007772459816097421,False,False,unchanged
+millport-p049-uk,Millport P049 Uk,connected_reference_land_pct,1.5372889898712576,1.7389812195043473,0.20169222963308964,False,False,unchanged
+holyhead-p054-uk,Holyhead P054 Uk,connected_reference_land_pct,5.703169358112871,6.10879547920478,0.40562612109190876,True,False,left_under_8n
+sheerness-p015-uk,Sheerness,connected_reference_land_pct,42.70017683098357,43.29129650805295,0.5911196770693792,True,True,unchanged
+heysham-p050-uk,Heysham P050 Uk,connected_reference_land_pct,1.113775569253171,1.117137266258165,0.003361697004993891,False,False,unchanged
+northshields-p032-uk,Northshields P032 Uk,connected_reference_land_pct,0.151874066358375,0.1623757054849213,0.010501639126546308,False,False,unchanged
+whitby-p174-uk,Whitby P174 Uk,connected_reference_land_pct,0.2741051182938361,0.2926097255571948,0.018504607263358674,False,False,unchanged
+dover-p012-uk,Dover P012 Uk,connected_reference_land_pct,0.2676154228978248,0.2695545551270461,0.0019391322292213187,False,False,unchanged
+ullapool-p043-uk,Ullapool P043 Uk,connected_reference_land_pct,0.2759359647574579,0.2768936007450529,0.000957635987595018,False,False,unchanged
+newhaven-p011-uk,Newhaven P011 Uk,connected_reference_land_pct,3.784827462088329,4.01620830286125,0.23138084077292076,False,False,unchanged
+calais,Calais France,connected_reference_land_pct,28.692042458560454,31.587854641553392,2.8958121829929375,True,True,unchanged
+ilfracombe-p061-uk,Ilfracombe P061 Uk,connected_reference_land_pct,0.170887292018717,0.170887292018717,0.0,False,False,unchanged
+felixstowe-p204-uk,Felixstowe P204 Uk,connected_reference_land_pct,26.792648112450603,27.175056661938417,0.38240854948781333,True,True,unchanged
+leith-p034-uk,Leith P034 Uk,connected_reference_land_pct,0.2425568224546591,0.2603087337318335,0.017751911277174404,False,False,unchanged
+tobermory-p223-uk,Tobermory P223 Uk,connected_reference_land_pct,0.5272259754459309,0.5301498014413123,0.002923825995381435,False,False,unchanged
+cromer-p183-uk,Cromer P183 Uk,connected_reference_land_pct,0.3148273668589218,0.3148273668589218,0.0,False,False,unchanged
+avonmouth-p060-uk,Avonmouth P060 Uk,connected_reference_land_pct,0.4416239744886909,0.4416239744886909,0.0,False,False,unchanged
+hinkleypoint-p003-uk,Hinkleypoint P003 Uk,connected_reference_land_pct,0.1089115744836246,0.1089115744836246,0.0,False,False,unchanged
+mumbles-p932-uk,Mumbles P932 Uk,connected_reference_land_pct,0.1945994287234441,0.1945994287234441,0.0,False,False,unchanged
+devonport-p002-uk,Devonport P002 Uk,connected_reference_land_pct,0.9373682611317358,0.9443208926866244,0.0069526315548886775,False,False,unchanged
+weymouth-p991-uk,Weymouth P991 Uk,connected_reference_land_pct,3.0426717408501323,4.656639873497204,1.6139681326470714,False,False,unchanged
+barmouth-p923-uk,Barmouth P923 Uk,connected_reference_land_pct,5.8864644150122505,6.322552554026013,0.4360881390137621,True,False,left_under_8n
+portsmouth-p008-uk,Portsmouth P008 Uk,connected_reference_land_pct,15.008111105282625,15.40051653285012,0.3924054275674944,True,True,unchanged
+malin-head-834a-ireland,Malin Head 834a,connected_reference_land_pct,1.1839794584559575,1.1885759712522856,0.004596512796328112,False,False,unchanged
+kinlochbervi-p918-uk,Kinlochbervi P918 Uk,connected_reference_land_pct,0.6898978614936632,0.6990340578215161,0.009136196327852897,False,False,unchanged
+porterin-p919-uk,Porterin P919 Uk,connected_reference_land_pct,2.170248722730568,2.170248722730568,0.0,False,False,unchanged
+workington-p217-uk,Workington P217 Uk,connected_reference_land_pct,0.8188615159616031,0.8188615159616031,0.0,False,False,unchanged
+sthelier-p074-uk,Sthelier P074 Uk,connected_reference_land_pct,0.2278825432592459,0.2278825432592459,0.0,False,False,unchanged
+gladstone-p234-uk,Gladstone P234 Uk,connected_reference_land_pct,0.2052718278171993,0.2111373851063349,0.005865557289135598,False,False,unchanged
+llandudno-p007-uk,Llandudno P007 Uk,connected_reference_land_pct,0.3493546735255928,0.3493546735255928,0.0,False,False,unchanged
+portellen-p202-uk,Portellen P202 Uk,connected_reference_land_pct,0.9556467004705635,0.9556467004705635,0.0,False,False,unchanged
+saint-malo,Saint Malo France,connected_reference_land_pct,0.3330698954304849,0.3330698954304849,0.0,False,False,unchanged
+newport-p057-uk,Newport P057 Uk,connected_reference_land_pct,0.1481765908651031,0.1524843688094212,0.0043077779443181086,False,False,unchanged
+portrush-p935-uk,Portrush P935 Uk,connected_reference_land_pct,0.9215061889836662,0.9215061889836662,0.0,False,False,unchanged
+bangor-p662-uk,Bangor P662 Uk,connected_reference_land_pct,1.5924545966467245,1.5924545966467245,0.0,False,False,unchanged
+stmarys-p231-uk,Stmarys P231 Uk,connected_reference_land_pct,18.217946719371763,18.22563750881284,0.007690789441078039,True,True,unchanged
+bournemouth-p988-uk,Bournemouth P988 Uk,connected_reference_land_pct,0.7168904100586826,0.7186226055924627,0.0017321955337801231,False,False,unchanged
+concarneau,Concarneau France,connected_reference_land_pct,0.9441382831253974,0.9478919738876944,0.003753690762297035,False,False,unchanged
+le-crouesty,Le Crouesty France,connected_reference_land_pct,1.62032858705126,1.651211690450249,0.03088310339898892,False,False,unchanged
+morayfirth-p207-uk,Morayfirth P207 Uk,connected_reference_land_pct,3.833986015061957,3.847529405216591,0.013543390154634238,False,False,unchanged
+harwich-p022-uk,Harwich P022 Uk,connected_reference_land_pct,22.271616626467065,22.789858703200824,0.5182420767337597,True,True,unchanged
+portbury-p341-uk,Portbury P341 Uk,connected_reference_land_pct,0.3741224412326132,0.3741224412326132,0.0,False,False,unchanged
+esbjerg-130121-denmark,Esbjerg 130121 Denmark,connected_area_km2,4.925742995340043,5.04102136091395,0.11527836557390714,True,True,unchanged
+denhelder-hel-nl,Denhelder Hel Nl,connected_area_km2,20.85450565370344,20.88898120970412,0.034475556000678864,True,True,unchanged
+lerwick-p041-uk,Lerwick P041 Uk,connected_area_km2,1.3310213944908726,1.35190723202304,0.02088583753216744,False,False,unchanged
+cuxhaven-germany,Cuxhaven Germany,connected_area_km2,28.54984347963728,28.978552431482257,0.42870895184497826,True,True,unchanged
+delfzijl-del-nl,Delfzijl Del Nl,connected_area_km2,61.30311153549263,61.48097166812876,0.17786013263612688,True,True,unchanged
+portpatrick-p063-uk,Portpatrick P063 Uk,connected_area_km2,0.2479676470429266,0.2487914608965638,0.0008238138536371953,False,False,unchanged
+newlyn-p001-uk,Newlyn,connected_area_km2,0.2762932822932256,0.2762932822932256,0.0,False,False,unchanged
+fishguard-p055-uk,Fishguard P055 Uk,connected_area_km2,0.0722313329757442,0.0910269900456145,0.018795657069870297,False,False,unchanged
+hoekvanholla-hvh-nl,Hoek van Holland,connected_area_km2,1.4109790180695978,24.9607448118158,23.549765793746204,False,True,entered_under_8n
+milfordhaven-p056-uk,Milfordhaven P056 Uk,connected_area_km2,0.3667188963427887,0.367901958662948,0.0011830623201593005,False,False,unchanged
+tregde-006-norway,Tregde 006 Norway,connected_area_km2,2.743390452234989,2.7727011712223577,0.029310718987368922,True,False,left_under_8n
+lowestoft-p024-uk,Lowestoft P024 Uk,connected_area_km2,0.6695068487931946,5.469737591198582,4.800230742405388,False,True,entered_under_8n
+wick-p035-uk,Wick P035 Uk,connected_area_km2,0.8640743083235205,0.8655720431580403,0.0014977348345197594,False,False,unchanged
+stornoway-p042-uk,Stornoway P042 Uk,connected_area_km2,1.342972594491389,1.3467397027728172,0.003767108281428122,False,False,unchanged
+le-conquet,Le Conquet France,connected_area_km2,0.1090500106753151,0.1090500106753151,0.0,False,False,unchanged
+brest,Brest,connected_area_km2,0.1761772715744469,0.1945518047805458,0.018374533206098886,False,False,unchanged
+port-tudy,Port Tudy France,connected_area_km2,0.1916004240849682,0.1922433180687702,0.0006428939838020176,False,False,unchanged
+cherbourg,Cherbourg France,connected_area_km2,0.7787125268263957,0.7984786752003483,0.01976614837395263,False,False,unchanged
+saint-nazaire,Saint Nazaire France,connected_area_km2,0.330768580987012,0.3359461860697399,0.00517760508272791,False,False,unchanged
+saint-gildas,Saint Gildas France,connected_area_km2,0.6521308885363524,0.6521308885363524,0.0,False,False,unchanged
+le-havre,Le Havre France,connected_area_km2,1.4010474281228575,1.410344835101844,0.0092974069789864,False,False,unchanged
+dunkerque,Dunkerque France,connected_area_km2,16.082790875759464,16.447362074801184,0.36457119904171975,True,True,unchanged
+roscoff,Roscoff France,connected_area_km2,0.243594995882567,0.2461130177041325,0.0025180218215654915,False,False,unchanged
+boulogne-sur-mer,Boulogne Sur Mer,connected_area_km2,0.44122581479523,0.44122581479523,0.0,False,False,unchanged
+dieppe,Dieppe France,connected_area_km2,0.1338828645254773,0.1357254521874484,0.0018425876619710957,False,False,unchanged
+immingham-p026-uk,Immingham P026 Uk,connected_area_km2,0.2494598543760564,8.659193623017385,8.40973376864133,False,True,entered_under_8n
+aberdeen-p038-uk,Aberdeen,connected_area_km2,0.5234240484859856,0.5275655975503697,0.004141549064384131,False,False,unchanged
+millport-p049-uk,Millport P049 Uk,connected_area_km2,0.6877714063785553,0.7780069764921445,0.09023557011358918,False,False,unchanged
+holyhead-p054-uk,Holyhead P054 Uk,connected_area_km2,2.1897527668678847,2.345494401948629,0.15574163508074435,True,False,left_under_8n
+sheerness-p015-uk,Sheerness,connected_area_km2,20.36433158513328,20.64624510408628,0.2819135189530009,True,True,unchanged
+heysham-p050-uk,Heysham P050 Uk,connected_area_km2,0.3714909052891354,0.3726121723542141,0.0011212670650787016,False,False,unchanged
+northshields-p032-uk,Northshields P032 Uk,connected_area_km2,0.1028968740532931,0.1100118862766936,0.0071150122234004964,False,False,unchanged
+whitby-p174-uk,Whitby P174 Uk,connected_area_km2,0.1354913271798507,0.1446382333473112,0.0091469061674605,False,False,unchanged
+dover-p012-uk,Dover P012 Uk,connected_area_km2,0.1239613728417988,0.1248595927226007,0.0008982198808019093,False,False,unchanged
+ullapool-p043-uk,Ullapool P043 Uk,connected_area_km2,0.2190439214422346,0.2198041135477523,0.0007601921055176986,False,False,unchanged
+newhaven-p011-uk,Newhaven P011 Uk,connected_area_km2,2.031467472886417,2.155658775287279,0.12419130240086229,False,False,unchanged
+calais,Calais France,connected_area_km2,14.955355982078956,16.46476062332921,1.5094046412502529,True,True,unchanged
+ilfracombe-p061-uk,Ilfracombe P061 Uk,connected_area_km2,0.0824781100564081,0.0824781100564081,0.0,False,False,unchanged
+felixstowe-p204-uk,Felixstowe P204 Uk,connected_area_km2,10.628446821913156,10.780145486241429,0.15169866432827206,True,True,unchanged
+leith-p034-uk,Leith P034 Uk,connected_area_km2,0.0875091806904092,0.0939136808641561,0.006404500173746899,False,False,unchanged
+tobermory-p223-uk,Tobermory P223 Uk,connected_area_km2,0.2839238764415712,0.2854984271073407,0.001574550665769503,False,False,unchanged
+cromer-p183-uk,Cromer P183 Uk,connected_area_km2,0.1423136607528017,0.1423136607528017,0.0,False,False,unchanged
+avonmouth-p060-uk,Avonmouth P060 Uk,connected_area_km2,0.2404948992844899,0.2404948992844899,0.0,False,False,unchanged
+hinkleypoint-p003-uk,Hinkleypoint P003 Uk,connected_area_km2,0.0430352617200434,0.0430352617200434,0.0,False,False,unchanged
+mumbles-p932-uk,Mumbles P932 Uk,connected_area_km2,0.0450451505040506,0.0450451505040506,0.0,False,False,unchanged
+devonport-p002-uk,Devonport P002 Uk,connected_area_km2,0.6153274771969335,0.6198914734532012,0.004563996256267688,False,False,unchanged
+weymouth-p991-uk,Weymouth P991 Uk,connected_area_km2,1.3504910347851722,2.0668514177687918,0.7163603829836196,False,False,unchanged
+barmouth-p923-uk,Barmouth P923 Uk,connected_area_km2,3.5345509945371414,3.796401853862133,0.2618508593249915,True,True,unchanged
+portsmouth-p008-uk,Portsmouth P008 Uk,connected_area_km2,9.509831301370143,9.758477476210588,0.24864617484044516,True,True,unchanged
+malin-head-834a-ireland,Malin Head 834a,connected_area_km2,0.4188771602636267,0.4205033491417279,0.0016261888781011757,False,False,unchanged
+kinlochbervi-p918-uk,Kinlochbervi P918 Uk,connected_area_km2,0.4901964730765165,0.4966880589578697,0.0064915858813532346,False,False,unchanged
+porterin-p919-uk,Porterin P919 Uk,connected_area_km2,0.7229360885908622,0.7229360885908622,0.0,False,False,unchanged
+workington-p217-uk,Workington P217 Uk,connected_area_km2,0.3617803076576811,0.3617803076576811,0.0,False,False,unchanged
+sthelier-p074-uk,Sthelier P074 Uk,connected_area_km2,0.1253743814708469,0.1253743814708469,0.0,False,False,unchanged
+gladstone-p234-uk,Gladstone P234 Uk,connected_area_km2,0.1392600232667154,0.1432393206366628,0.003979297369947399,False,False,unchanged
+llandudno-p007-uk,Llandudno P007 Uk,connected_area_km2,0.10601990213685,0.10601990213685,0.0,False,False,unchanged
+portellen-p202-uk,Portellen P202 Uk,connected_area_km2,0.5623902542956426,0.5623902542956426,0.0,False,False,unchanged
+saint-malo,Saint Malo France,connected_area_km2,0.183339715522832,0.183339715522832,0.0,False,False,unchanged
+newport-p057-uk,Newport P057 Uk,connected_area_km2,0.1020594218577309,0.1050264851699706,0.0029670633122396983,False,False,unchanged
+portrush-p935-uk,Portrush P935 Uk,connected_area_km2,0.3887853552434568,0.3887853552434568,0.0,False,False,unchanged
+bangor-p662-uk,Bangor P662 Uk,connected_area_km2,0.9127146371586176,0.9127146371586176,0.0,False,False,unchanged
+stmarys-p231-uk,Stmarys P231 Uk,connected_area_km2,2.9111032876105467,2.9123322231635558,0.0012289355530090695,True,False,left_under_8n
+bournemouth-p988-uk,Bournemouth P988 Uk,connected_area_km2,0.3752046593106351,0.3761112523212155,0.000906593010580381,False,False,unchanged
+concarneau,Concarneau France,connected_area_km2,0.6439670340149576,0.6465273084472197,0.002560274432262144,False,False,unchanged
+le-crouesty,Le Crouesty France,connected_area_km2,0.4391035937942356,0.4474728108767371,0.008369217082501546,False,False,unchanged
+morayfirth-p207-uk,Morayfirth P207 Uk,connected_area_km2,1.447523214615027,1.452636527907356,0.005113313292329114,False,False,unchanged
+harwich-p022-uk,Harwich P022 Uk,connected_area_km2,12.966200510910037,13.267913260048095,0.30171274913805846,True,True,unchanged
+portbury-p341-uk,Portbury P341 Uk,connected_area_km2,0.218290774396506,0.218290774396506,0.0,False,False,unchanged
+esbjerg-130121-denmark,Esbjerg 130121 Denmark,conditional_connectivity_pct,88.7970253232885,90.87516378012182,2.0781384568333294,False,False,unchanged
+denhelder-hel-nl,Denhelder Hel Nl,conditional_connectivity_pct,98.3267941379817,98.4893427475705,0.16254860958881068,False,False,unchanged
+lerwick-p041-uk,Lerwick P041 Uk,conditional_connectivity_pct,93.77919992905144,95.2507443698258,1.4715444407743519,False,False,unchanged
+cuxhaven-germany,Cuxhaven Germany,conditional_connectivity_pct,97.03156584285402,98.48860713689952,1.4570412940454958,False,False,unchanged
+delfzijl-del-nl,Delfzijl Del Nl,conditional_connectivity_pct,99.69223283390473,99.98147221034915,0.2892393764444279,True,True,unchanged
+portpatrick-p063-uk,Portpatrick P063 Uk,conditional_connectivity_pct,99.6688737424233,100.0,0.3311262575766989,True,True,unchanged
+newlyn-p001-uk,Newlyn,conditional_connectivity_pct,98.3669470901754,98.3669470901754,0.0,False,False,unchanged
+fishguard-p055-uk,Fishguard P055 Uk,conditional_connectivity_pct,78.34043469037205,98.72577003561986,20.38533534524781,False,False,unchanged
+hoekvanholla-hvh-nl,Hoek van Holland,conditional_connectivity_pct,5.483815121754358,97.010733750355,91.52691862860064,False,False,unchanged
+milfordhaven-p056-uk,Milfordhaven P056 Uk,conditional_connectivity_pct,82.33691263767486,82.6025376160202,0.26562497834534327,False,False,unchanged
+tregde-006-norway,Tregde 006 Norway,conditional_connectivity_pct,86.39709005030394,87.32016712295608,0.9230770726521342,False,False,unchanged
+lowestoft-p024-uk,Lowestoft P024 Uk,conditional_connectivity_pct,11.706644607820175,95.64095452289432,83.93430991507414,False,False,unchanged
+wick-p035-uk,Wick P035 Uk,conditional_connectivity_pct,98.2128693679535,98.38310569396567,0.17023632601217287,False,False,unchanged
+stornoway-p042-uk,Stornoway P042 Uk,conditional_connectivity_pct,84.45068919131747,84.68757778601393,0.23688859469646673,False,False,unchanged
+le-conquet,Le Conquet France,conditional_connectivity_pct,90.05336644827067,90.05336644827067,0.0,False,False,unchanged
+brest,Brest,conditional_connectivity_pct,61.24460203281081,67.63215113996486,6.387549107154051,False,False,unchanged
+port-tudy,Port Tudy France,conditional_connectivity_pct,99.66558318371722,100.0,0.33441681628278275,True,True,unchanged
+cherbourg,Cherbourg France,conditional_connectivity_pct,91.8404374265214,94.17163366436752,2.3311962378461146,False,False,unchanged
+saint-nazaire,Saint Nazaire France,conditional_connectivity_pct,5.464565435994638,5.550103674517408,0.0855382385227701,False,False,unchanged
+saint-gildas,Saint Gildas France,conditional_connectivity_pct,99.30836943073518,99.30836943073518,0.0,True,False,left_under_8n
+le-havre,Le Havre France,conditional_connectivity_pct,92.0963623558249,92.7075175136867,0.611155157861802,False,False,unchanged
+dunkerque,Dunkerque France,conditional_connectivity_pct,88.40684729252648,90.41088941244944,2.004042119922957,False,False,unchanged
+roscoff,Roscoff France,conditional_connectivity_pct,95.31978987238004,96.30510285081824,0.985312978438202,False,False,unchanged
+boulogne-sur-mer,Boulogne Sur Mer,conditional_connectivity_pct,99.79502138116156,99.79502138116156,0.0,True,True,unchanged
+dieppe,Dieppe France,conditional_connectivity_pct,85.82272706817814,87.00387820781812,1.1811511396399794,False,False,unchanged
+immingham-p026-uk,Immingham P026 Uk,conditional_connectivity_pct,2.013509096440562,69.89246895615557,67.87895985971501,False,False,unchanged
+aberdeen-p038-uk,Aberdeen,conditional_connectivity_pct,83.98080176246037,84.64529284186644,0.6644910794060621,False,False,unchanged
+millport-p049-uk,Millport P049 Uk,conditional_connectivity_pct,84.63258446884353,95.73637482550338,11.103790356659843,False,False,unchanged
+holyhead-p054-uk,Holyhead P054 Uk,conditional_connectivity_pct,71.68762356544609,76.78625747428912,5.098633908843027,False,False,unchanged
+sheerness-p015-uk,Sheerness,conditional_connectivity_pct,93.41160879363758,94.70475191674896,1.2931431231113777,False,False,unchanged
+heysham-p050-uk,Heysham P050 Uk,conditional_connectivity_pct,99.10250709384016,99.40162714143476,0.29912004759459876,False,True,entered_under_8n
+northshields-p032-uk,Northshields P032 Uk,conditional_connectivity_pct,76.42094183067314,81.7052222352207,5.284280404547559,False,False,unchanged
+whitby-p174-uk,Whitby P174 Uk,conditional_connectivity_pct,61.04020880311484,65.16098224290234,4.120773439787499,False,False,unchanged
+dover-p012-uk,Dover P012 Uk,conditional_connectivity_pct,93.87847216042358,94.55871236864893,0.6802402082253423,False,False,unchanged
+ullapool-p043-uk,Ullapool P043 Uk,conditional_connectivity_pct,98.96995129129566,99.3134265868425,0.3434752955468383,False,False,unchanged
+newhaven-p011-uk,Newhaven P011 Uk,conditional_connectivity_pct,64.71010033444385,68.66607390836798,3.955973573924126,False,False,unchanged
+calais,Calais France,conditional_connectivity_pct,76.72140825047491,84.46469766700835,7.743289416533443,False,False,unchanged
+ilfracombe-p061-uk,Ilfracombe P061 Uk,conditional_connectivity_pct,100.0,100.0,0.0,True,True,unchanged
+felixstowe-p204-uk,Felixstowe P204 Uk,conditional_connectivity_pct,96.24682215216916,97.62054256597622,1.3737204138070638,False,False,unchanged
+leith-p034-uk,Leith P034 Uk,conditional_connectivity_pct,82.8235243280048,88.88509720257721,6.06157287457242,False,False,unchanged
+tobermory-p223-uk,Tobermory P223 Uk,conditional_connectivity_pct,99.44849059880198,100.0,0.5515094011980182,True,True,unchanged
+cromer-p183-uk,Cromer P183 Uk,conditional_connectivity_pct,100.0,100.0,0.0,True,True,unchanged
+avonmouth-p060-uk,Avonmouth P060 Uk,conditional_connectivity_pct,97.12348022704955,97.12348022704955,0.0,False,False,unchanged
+hinkleypoint-p003-uk,Hinkleypoint P003 Uk,conditional_connectivity_pct,100.0,100.0,0.0,True,True,unchanged
+mumbles-p932-uk,Mumbles P932 Uk,conditional_connectivity_pct,93.82987075432092,93.82987075432092,0.0,False,False,unchanged
+devonport-p002-uk,Devonport P002 Uk,conditional_connectivity_pct,95.60480730816704,96.31392562126985,0.709118313102806,False,False,unchanged
+weymouth-p991-uk,Weymouth P991 Uk,conditional_connectivity_pct,59.202363772065695,90.60592506415443,31.40356129208874,False,False,unchanged
+barmouth-p923-uk,Barmouth P923 Uk,conditional_connectivity_pct,87.94606964037398,94.461396182608,6.515326542234021,False,False,unchanged
+portsmouth-p008-uk,Portsmouth P008 Uk,conditional_connectivity_pct,88.82605635448317,91.14852227830262,2.3224659238194505,False,False,unchanged
+malin-head-834a-ireland,Malin Head 834a,conditional_connectivity_pct,99.42103633414617,99.80701436988848,0.38597803574231193,True,True,unchanged
+kinlochbervi-p918-uk,Kinlochbervi P918 Uk,conditional_connectivity_pct,94.51192522722904,95.76353006961808,1.2516048423890425,False,False,unchanged
+porterin-p919-uk,Porterin P919 Uk,conditional_connectivity_pct,100.0,100.0,0.0,True,True,unchanged
+workington-p217-uk,Workington P217 Uk,conditional_connectivity_pct,100.0,100.0,0.0,True,True,unchanged
+sthelier-p074-uk,Sthelier P074 Uk,conditional_connectivity_pct,100.0,100.0,0.0,True,True,unchanged
+gladstone-p234-uk,Gladstone P234 Uk,conditional_connectivity_pct,66.39638158905643,68.29363063751688,1.897249048460452,False,False,unchanged
+llandudno-p007-uk,Llandudno P007 Uk,conditional_connectivity_pct,42.31962968125141,42.31962968125141,0.0,False,False,unchanged
+portellen-p202-uk,Portellen P202 Uk,conditional_connectivity_pct,99.2873943613343,99.2873943613343,0.0,False,False,unchanged
+saint-malo,Saint Malo France,conditional_connectivity_pct,68.4587353856078,68.4587353856078,0.0,False,False,unchanged
+newport-p057-uk,Newport P057 Uk,conditional_connectivity_pct,90.52795073354658,93.15977204376496,2.6318213102183847,False,False,unchanged
+portrush-p935-uk,Portrush P935 Uk,conditional_connectivity_pct,82.62697056615141,82.62697056615141,0.0,False,False,unchanged
+bangor-p662-uk,Bangor P662 Uk,conditional_connectivity_pct,100.0,100.0,0.0,True,True,unchanged
+stmarys-p231-uk,Stmarys P231 Uk,conditional_connectivity_pct,96.02959215253112,96.07013148359484,0.040539331063712325,False,False,unchanged
+bournemouth-p988-uk,Bournemouth P988 Uk,conditional_connectivity_pct,81.18308756933216,81.37924723297526,0.1961596636431011,False,False,unchanged
+concarneau,Concarneau France,conditional_connectivity_pct,98.8214151161272,99.2143078095689,0.392892693441695,False,False,unchanged
+le-crouesty,Le Crouesty France,conditional_connectivity_pct,35.6050806576643,36.283705596005404,0.6786249383411018,False,False,unchanged
+morayfirth-p207-uk,Morayfirth P207 Uk,conditional_connectivity_pct,92.63670134416034,92.96393649421394,0.32723515005359616,False,False,unchanged
+harwich-p022-uk,Harwich P022 Uk,conditional_connectivity_pct,90.9411678320632,93.05729350306068,2.1161256709974765,False,False,unchanged
+portbury-p341-uk,Portbury P341 Uk,conditional_connectivity_pct,97.61088741972566,97.61088741972566,0.0,False,False,unchanged

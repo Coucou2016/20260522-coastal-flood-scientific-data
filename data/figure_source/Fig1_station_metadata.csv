@@ -1,0 +1,11 @@
+station_id,station,country,lat,lon,terrain_screen,station_label,coordinate_label
+sheerness-p015-uk,Sheerness,UK,51.442,0.74306,True,Sheerness,"0.74E, 51.44N"
+newlyn-p001-uk,Newlyn,UK,50.102,-5.5417,True,Newlyn,"5.54W, 50.10N"
+aberdeen-p038-uk,Aberdeen,UK,57.143,-2.0745,True,Aberdeen,"2.07W, 57.14N"
+hoekvanholla-hvh-nl,Hoek van Holland,Netherlands,51.977,4.12,True,"Hoek van
+Holland","4.12E, 51.98N"
+brest-france,Brest,France,48.383,-4.5,True,Brest,"4.50W, 48.38N"
+newyork-the-battery,New York (The Battery),USA,40.701,-74.014,False,"New York
+(The Battery)","74.01W, 40.70N"
+hong-kong-b,Hong Kong (Quarry Bay B),China,22.3,114.2,False,Hong Kong,"114.20E, 22.30N"
+charleston-sc,"Charleston, SC",USA,32.782,-79.925,False,Charleston,"79.92W, 32.78N"

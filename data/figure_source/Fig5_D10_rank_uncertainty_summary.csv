@@ -1,0 +1,2 @@
+n_sites,n_iter,top_n,D10_rank_uncertainty_method,spearman_D10_vs_connected_2m_p025,spearman_D10_vs_connected_2m_p500,spearman_D10_vs_connected_2m_p975
+30,5000,6,triangular Monte Carlo from GSSR bootstrap and COAST-RP local spatial ranges,-0.40111234705228027,-0.3815350389321468,-0.36106785317018913

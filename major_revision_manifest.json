@@ -1,0 +1,253 @@
+{
+  "schema": "coastal-flood-major-revision-manifest-v1",
+  "generated_utc": "2026-09-14T11:49:26.621405+00:00",
+  "python": "3.13.12 | packaged by Anaconda, Inc. | (main, Feb 24 2026, 16:05:56) [MSC v.1942 64 bit (AMD64)]",
+  "steps": [
+    {
+      "name": "frozen 68-station analysis",
+      "command": [
+        "E:\\Miniconda3\\python.exe",
+        "scripts/rebuild_frozen_primary_analysis.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "external-review spatial and topology diagnostics",
+      "command": [
+        "E:\\Miniconda3\\python.exe",
+        "scripts/add_external_review_diagnostics.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "local-DTM product/datum cross-check",
+      "command": [
+        "E:\\Miniconda3\\python.exe",
+        "scripts/add_local_dtm_validation.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "SciencePlots figures",
+      "command": [
+        "E:\\Miniconda3\\python.exe",
+        "scripts/make_major_revision_figures.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "standalone manuscript",
+      "command": [
+        "E:\\Miniconda3\\python.exe",
+        "scripts/build_standalone_paper.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "supplementary information",
+      "command": [
+        "E:\\Miniconda3\\python.exe",
+        "scripts/build_supplementary_information.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "research report",
+      "command": [
+        "E:\\Miniconda3\\python.exe",
+        "scripts/build_research_report_v2.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "scientific-integrity review",
+      "command": [
+        "E:\\Miniconda3\\python.exe",
+        "scripts/build_scientific_integrity_review_v2.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "standalone HTML validation",
+      "command": [
+        "E:\\Miniconda3\\python.exe",
+        "scripts/validate_standalone_html.py",
+        "paper.html",
+        "supplementary_information.html",
+        "report.html",
+        "manuscript/scientific_integrity_review.html"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "scientific contracts",
+      "command": [
+        "E:\\Miniconda3\\python.exe",
+        "-m",
+        "pytest",
+        "tests",
+        "-q",
+        "--import-mode=importlib"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "paper.html",
+      "bytes": 7240297,
+      "sha256": "539ab3e1bb9e5485a933ba204a35fc757a1cad7ecd6976d459705e0402ed8b0e"
+    },
+    {
+      "path": "paper.md",
+      "bytes": 7232625,
+      "sha256": "49ec5a0d271880acce7c629d4ce70e77153b5584ee38a145689229c7e3a03e30"
+    },
+    {
+      "path": "paper.pdf",
+      "bytes": 5414745,
+      "sha256": "df957b5a3f0f70fc3ea5f8dc574fdfe04dd119c534f1dfca2a64ab5f39502236"
+    },
+    {
+      "path": "supplementary_information.html",
+      "bytes": 3535211,
+      "sha256": "ce5ea22693fba8f812e1d8b0c45d4b38d09193c96831e96dc90da3edc20c8e98"
+    },
+    {
+      "path": "supplementary_information.md",
+      "bytes": 3504677,
+      "sha256": "e287a3ad3763a19e004f0488e4f440464b4945c351451547af715f52b04d3c3c"
+    },
+    {
+      "path": "supplementary_information.pdf",
+      "bytes": 4094272,
+      "sha256": "96d055fbe30992aecb81768e860477d60bf260e1c299323a25342dc3010ca2d4"
+    },
+    {
+      "path": "report.html",
+      "bytes": 3784428,
+      "sha256": "6b4942876e91dc7e197b2648d6386b8c146326ed1ccfe16a0af505d64b31d9e9"
+    },
+    {
+      "path": "report.md",
+      "bytes": 3774972,
+      "sha256": "8362314882856abce58ca16a4d52ed1f7b1b0afac1373f55122243f6c50136d5"
+    },
+    {
+      "path": "report.pdf",
+      "bytes": 3908670,
+      "sha256": "8ff8320604e32e948b1d2ca11c159b394b20eabf61515f2d0b079eea55ba9ad0"
+    },
+    {
+      "path": "manuscript/scientific_integrity_review.html",
+      "bytes": 27156,
+      "sha256": "65af059d80c90181f941258972c3c0df8c1a7ea760f183a856a6467dcd6cd1b3"
+    },
+    {
+      "path": "manuscript/scientific_integrity_review.md",
+      "bytes": 19104,
+      "sha256": "f15fe39bcfeb7b5ff1e6840e3ae85568a7c3c4e801e76590af1be7b2437f3b68"
+    },
+    {
+      "path": "manuscript/scientific_integrity_review.pdf",
+      "bytes": 861165,
+      "sha256": "157dca1b61c0793400b6ab59896648d99397514fa9d7526816af3478249ef6f2"
+    },
+    {
+      "path": "manuscript/external_review_resolution.md",
+      "bytes": 8864,
+      "sha256": "0bb6cc9aed4cbcda1ad65a19e002aa73d8b403116fc51d3bcc2a4c566e021434"
+    },
+    {
+      "path": "data/figure_source/Primary_terrain_components_68stations.csv",
+      "bytes": 31386,
+      "sha256": "c516a97298a87ddd8d1746d8975e23afff94043a2a030c2e8eee6707c6c6893e"
+    },
+    {
+      "path": "data/figure_source/Terrain_robustness_grid_74stations.csv",
+      "bytes": 1321599,
+      "sha256": "5708031c3492aa47f2bf456d52df5dcbe1d22ac427e5dc7e5d168723b56539af"
+    },
+    {
+      "path": "data/figure_source/Rank_robustness_one_at_a_time.csv",
+      "bytes": 35926,
+      "sha256": "dc43ead84439e0d72c1f71ddf9bde1cca9334fdbf399e2385a020b3f3b5e2b2d"
+    },
+    {
+      "path": "data/figure_source/Spatial_sector_bootstrap_intervals.csv",
+      "bytes": 1316,
+      "sha256": "2e73a799fcb280cb37daab1a6d7347b632c546b0a4a9bc4d70512d1055e93124"
+    },
+    {
+      "path": "data/figure_source/Topk_spatial_null_curves.csv",
+      "bytes": 5811,
+      "sha256": "ea385515afb10a2448160909057daf2e4e6f2b5356f76d1d6349b9331ee16042"
+    },
+    {
+      "path": "data/figure_source/Return_period_sensitivity.csv",
+      "bytes": 8146,
+      "sha256": "51397a192a4e7e413c0f22d1afb044d17eaca7c956f234c09c00fc49629e8a3b"
+    },
+    {
+      "path": "data/figure_source/Denominator_adjusted_associations.csv",
+      "bytes": 884,
+      "sha256": "0f8dea8b42895a42fa1d672edfe2a022dae900643d6d93c2316633de802a2823"
+    },
+    {
+      "path": "data/figure_source/Topology_sensitivity_summary.csv",
+      "bytes": 422,
+      "sha256": "85f7263bc4da748e07eb96bf6231c94ffe4072d62aa8294743b91ea62916602b"
+    },
+    {
+      "path": "data/figure_source/Match_distance_audit_74stations.csv",
+      "bytes": 37578,
+      "sha256": "d255f5fa00644be1d371c8df1a789c307bbe89f7d463842f151b046203380df0"
+    },
+    {
+      "path": "data/figure_source/TableS_local_dtm_product_datum_crosscheck.csv",
+      "bytes": 9733,
+      "sha256": "6b9c4656676341d87c2ea8b0a84c307c984ed1e04439dca7b3e0563329ae9928"
+    },
+    {
+      "path": "data/figure_source/TableS_tidal_regime_metadata_source_tracked.csv",
+      "bytes": 8753,
+      "sha256": "1a4640c59e8b1f6748abf0f6e8e9713ddb5ef26aba7d4d123d5b599eb6eb6cf5"
+    },
+    {
+      "path": "figures/main/Fig1_process_terrain_design.pdf",
+      "bytes": 629281,
+      "sha256": "633887320b286f7114331105cbfa92aeaead6a06bb4c6e4475d3382d102f31ad"
+    },
+    {
+      "path": "figures/main/Fig2_regional_screening_agreement.pdf",
+      "bytes": 72951,
+      "sha256": "d6dc6c1344b135871943b6b6e66eddd0429869b91c4fecfde76241e38c4cb278"
+    },
+    {
+      "path": "figures/main/Fig3_connected_terrain_contrasts.pdf",
+      "bytes": 150912,
+      "sha256": "dc42d69dfb0b45719760c877fa0a88377a23c45694008766319a42092107fdda"
+    },
+    {
+      "path": "figures/main/Fig4_metric_decomposition_robustness.pdf",
+      "bytes": 94181,
+      "sha256": "740f29529ae34f657a964057bbb614c8368cb8327111d49c131e8b13a838e3f2"
+    },
+    {
+      "path": "figures/main/FigS4_elevation_product_datum_sensitivity.pdf",
+      "bytes": 65575,
+      "sha256": "6a134622736e37e568282b43f4dd7620647ef53eb4da1eb9ad399beea1225d7e"
+    },
+    {
+      "path": "figures/main/FigS5_coastrp_match_audit.pdf",
+      "bytes": 439790,
+      "sha256": "f09af9ebe555b105db79975cb3b3af03dc3430c50203def5011a3e2ba1d38ae9"
+    }
+  ],
+  "manual_items_remaining": [
+    "authors, affiliations, funding and contributions",
+    "repository DOI or private reviewer link",
+    "common vertical-datum harmonization for national/local DTM comparisons",
+    "independent dynamic or observed hazard benchmark"
+  ]
+}

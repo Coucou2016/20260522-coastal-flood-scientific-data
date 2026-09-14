@@ -1,0 +1,117 @@
+{
+  "passed": true,
+  "blocker_count": 0,
+  "warning_count": 15,
+  "blockers": [],
+  "warnings": [
+    "Review matrix audit: Row 12 (Fig1_station_metadata.csv) is data/raster artifact; confirm caption flag means linked caption/source traceability.",
+    "Review matrix audit: Row 13 (Fig2_water_level_divergence.csv) is data/raster artifact; confirm caption flag means linked caption/source traceability.",
+    "Review matrix audit: Row 14 (Fig3_charleston-sc_pressure_bins.csv) is data/raster artifact; confirm caption flag means linked caption/source traceability.",
+    "Review matrix audit: Row 15 (Fig3_driver_correlations.csv) is data/raster artifact; confirm caption flag means linked caption/source traceability.",
+    "Review matrix audit: Row 16 (Fig3_newlyn-p001-uk_pressure_bins.csv) is data/raster artifact; confirm caption flag means linked caption/source traceability.",
+    "Review matrix audit: Row 17 (Fig4_connected_terrain_sensitivity.csv) is data/raster artifact; confirm caption flag means linked caption/source traceability.",
+    "Review matrix audit: Row 18 (Fig4_hypsometry_curves.csv) is data/raster artifact; confirm caption flag means linked caption/source traceability.",
+    "Review matrix audit: Row 19 (Fig4_terrain_sensitivity.csv) is data/raster artifact; confirm caption flag means linked caption/source traceability.",
+    "Review matrix audit: Row 20 (Fig5_process_terrain_typology.csv) is data/raster artifact; confirm caption flag means linked caption/source traceability.",
+    "Review matrix audit: Row 21 (Table1_data_products.csv) is data/raster artifact; confirm caption flag means linked caption/source traceability.",
+    "Review matrix audit: Row 22 (Table2_water_level_indicators.csv) is data/raster artifact; confirm caption flag means linked caption/source traceability.",
+    "Review matrix audit: Row 23 (Table3_driver_correlations.csv) is data/raster artifact; confirm caption flag means linked caption/source traceability.",
+    "Review matrix audit: Row 24 (Table3_process_terrain_typology.csv) is data/raster artifact; confirm caption flag means linked caption/source traceability.",
+    "Review matrix audit: Row 25 (Table4_deltadtm_connected_sensitivity.csv) is data/raster artifact; confirm caption flag means linked caption/source traceability.",
+    "Review matrix audit: Row 26 (Table4_deltadtm_sensitivity.csv) is data/raster artifact; confirm caption flag means linked caption/source traceability."
+  ],
+  "sections": [
+    {
+      "label": "Submission-ready scripts",
+      "report": "logs\\submission_ready_gate_scripts_audit.json",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "notes": [
+        "Submission-ready gate entrypoints and helper scripts are present and wired together."
+      ]
+    },
+    {
+      "label": "Core publication gate",
+      "report": "logs\\publication_gate_report.json",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "notes": []
+    },
+    {
+      "label": "Review matrix template",
+      "report": "logs\\final_figure_data_review_matrix_template.json",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "notes": []
+    },
+    {
+      "label": "Review matrix audit",
+      "report": "logs\\final_figure_data_review_matrix_audit.json",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "Row 12 (Fig1_station_metadata.csv) is data/raster artifact; confirm caption flag means linked caption/source traceability.",
+        "Row 13 (Fig2_water_level_divergence.csv) is data/raster artifact; confirm caption flag means linked caption/source traceability.",
+        "Row 14 (Fig3_charleston-sc_pressure_bins.csv) is data/raster artifact; confirm caption flag means linked caption/source traceability.",
+        "Row 15 (Fig3_driver_correlations.csv) is data/raster artifact; confirm caption flag means linked caption/source traceability.",
+        "Row 16 (Fig3_newlyn-p001-uk_pressure_bins.csv) is data/raster artifact; confirm caption flag means linked caption/source traceability.",
+        "Row 17 (Fig4_connected_terrain_sensitivity.csv) is data/raster artifact; confirm caption flag means linked caption/source traceability.",
+        "Row 18 (Fig4_hypsometry_curves.csv) is data/raster artifact; confirm caption flag means linked caption/source traceability.",
+        "Row 19 (Fig4_terrain_sensitivity.csv) is data/raster artifact; confirm caption flag means linked caption/source traceability.",
+        "Row 20 (Fig5_process_terrain_typology.csv) is data/raster artifact; confirm caption flag means linked caption/source traceability.",
+        "Row 21 (Table1_data_products.csv) is data/raster artifact; confirm caption flag means linked caption/source traceability.",
+        "Row 22 (Table2_water_level_indicators.csv) is data/raster artifact; confirm caption flag means linked caption/source traceability.",
+        "Row 23 (Table3_driver_correlations.csv) is data/raster artifact; confirm caption flag means linked caption/source traceability.",
+        "Row 24 (Table3_process_terrain_typology.csv) is data/raster artifact; confirm caption flag means linked caption/source traceability.",
+        "Row 25 (Table4_deltadtm_connected_sensitivity.csv) is data/raster artifact; confirm caption flag means linked caption/source traceability.",
+        "Row 26 (Table4_deltadtm_sensitivity.csv) is data/raster artifact; confirm caption flag means linked caption/source traceability."
+      ],
+      "notes": [
+        "Reviewed matrix rows: 26"
+      ]
+    },
+    {
+      "label": "Issue register audit",
+      "report": "logs\\final_figure_data_issue_register_audit.json",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "notes": [
+        "No figure/data issues are listed; attestation evidence must support this."
+      ]
+    },
+    {
+      "label": "Figure/data sign-off audit",
+      "report": "logs\\final_figure_data_signoff_audit.json",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "notes": [
+        "Accepted limitations listed: 1"
+      ]
+    },
+    {
+      "label": "Evidence bundle audit",
+      "report": "logs\\submission_ready_evidence_bundle_audit.json",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "notes": [
+        "Submission-ready evidence bundle manifest and SHA256 sidecar are internally consistent."
+      ]
+    },
+    {
+      "label": "Submission-ready gate",
+      "report": "logs\\submission_ready_gate_report.json",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "notes": [
+        "Combined terminal log: logs\\submission_ready_gate_周二_2026-06-16__0-41-34-77.log"
+      ]
+    }
+  ]
+}

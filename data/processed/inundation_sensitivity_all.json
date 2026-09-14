@@ -1,0 +1,303 @@
+[
+  {
+    "station_id": "aberdeen-p038-uk",
+    "station_name": "Aberdeen",
+    "country": "UK",
+    "lat": 57.143,
+    "lon": -2.0745,
+    "bbox": [
+      -2.1145,
+      57.103,
+      -2.0345,
+      57.183
+    ],
+    "dem_source": "DeltaDTM:DeltaDTM_v1_1_N57W003.tif",
+    "tile_files": [
+      "DeltaDTM_v1_1_N57W003.tif"
+    ],
+    "raster_meta": {
+      "crs": "EPSG:4326",
+      "resolution": [
+        0.00041666666666666664,
+        0.0002777777777777778
+      ],
+      "nodata": -9999.0,
+      "tile_file": "DeltaDTM_v1_1_N57W003.tif"
+    },
+    "deltadtm_tiles_in_bbox": 1,
+    "slr_levels_m": [
+      0.5,
+      1.0,
+      2.0
+    ],
+    "dem_stats": {
+      "n_valid_cells": 31891,
+      "n_total_cells": 55296,
+      "valid_fraction": 0.5767324942129629,
+      "elev_min_m": -3.6172704696655273,
+      "elev_max_m": 30.0,
+      "elev_mean_m": 20.410858354725647,
+      "elev_median_m": 22.46181869506836,
+      "elev_below_0m_fraction": 0.003292464958765796,
+      "elev_below_2m_fraction": 0.023266752375278293
+    },
+    "flooded_fraction_all_valid": {
+      "0.5": 0.0076824182371201906,
+      "1.0": 0.012103728324605689,
+      "2.0": 0.023266752375278293
+    },
+    "flooded_fraction_coastal_lowland": {
+      "0.5": 0.02390710382513661,
+      "1.0": 0.037665886026541764,
+      "2.0": 0.07240437158469945
+    },
+    "flooded_fraction": {
+      "0.5": 0.02390710382513661,
+      "1.0": 0.037665886026541764,
+      "2.0": 0.07240437158469945
+    },
+    "figure": "E:\\Projects\\20260522-coastal-flood-scientific-data\\figures\\inundation_sensitivity_aberdeen-p038-uk.png",
+    "geojson": "E:\\Projects\\20260522-coastal-flood-scientific-data\\data\\processed\\inundation_aberdeen-p038-uk.geojson"
+  },
+  {
+    "station_id": "brest-france",
+    "station_name": "Brest",
+    "country": "France",
+    "lat": 48.383,
+    "lon": -4.5,
+    "bbox": [
+      -4.54,
+      48.343,
+      -4.46,
+      48.423
+    ],
+    "dem_source": "DeltaDTM:DeltaDTM_v1_1_N48W005.tif",
+    "tile_files": [
+      "DeltaDTM_v1_1_N48W005.tif"
+    ],
+    "raster_meta": {
+      "crs": "EPSG:4326",
+      "resolution": [
+        0.0002777777777777778,
+        0.0002777777777777778
+      ],
+      "nodata": -9999.0,
+      "tile_file": "DeltaDTM_v1_1_N48W005.tif"
+    },
+    "deltadtm_tiles_in_bbox": 1,
+    "slr_levels_m": [
+      0.5,
+      1.0,
+      2.0
+    ],
+    "dem_stats": {
+      "n_valid_cells": 49354,
+      "n_total_cells": 82944,
+      "valid_fraction": 0.5950279706790124,
+      "elev_min_m": -16.32270050048828,
+      "elev_max_m": 30.0,
+      "elev_mean_m": 27.170997298995257,
+      "elev_median_m": 30.0,
+      "elev_below_0m_fraction": 0.0026745552538801312,
+      "elev_below_2m_fraction": 0.007253718037038538
+    },
+    "flooded_fraction_all_valid": {
+      "0.5": 0.0034850265429347167,
+      "1.0": 0.0049641366454593345,
+      "2.0": 0.007253718037038538
+    },
+    "flooded_fraction_coastal_lowland": {
+      "0.5": 0.03668159522286202,
+      "1.0": 0.05224994668372787,
+      "2.0": 0.0763489016847942
+    },
+    "flooded_fraction": {
+      "0.5": 0.03668159522286202,
+      "1.0": 0.05224994668372787,
+      "2.0": 0.0763489016847942
+    },
+    "figure": "E:\\Projects\\20260522-coastal-flood-scientific-data\\figures\\inundation_sensitivity_brest-france.png",
+    "geojson": "E:\\Projects\\20260522-coastal-flood-scientific-data\\data\\processed\\inundation_brest-france.geojson"
+  },
+  {
+    "station_id": "hoekvanholla-hvh-nl",
+    "station_name": "Hoek van Holland",
+    "country": "Netherlands",
+    "lat": 51.977,
+    "lon": 4.12,
+    "bbox": [
+      4.08,
+      51.937,
+      4.16,
+      52.016999999999996
+    ],
+    "dem_source": "DeltaDTM:mosaic(2)",
+    "tile_files": [
+      "DeltaDTM_v1_1_N52E004.tif",
+      "DeltaDTM_v1_1_N51E004.tif"
+    ],
+    "raster_meta": {
+      "crs": "EPSG:4326",
+      "resolution": [
+        0.00041666666666666664,
+        0.0002777777777777778
+      ],
+      "nodata": -9999.0,
+      "tile_file": "DeltaDTM_v1_1_N52E004.tif+DeltaDTM_v1_1_N51E004.tif"
+    },
+    "deltadtm_tiles_in_bbox": 2,
+    "slr_levels_m": [
+      0.5,
+      1.0,
+      2.0
+    ],
+    "dem_stats": {
+      "n_valid_cells": 41004,
+      "n_total_cells": 82944,
+      "valid_fraction": 0.4943576388888889,
+      "elev_min_m": -6.6184186935424805,
+      "elev_max_m": 17.80402374267578,
+      "elev_mean_m": 3.524439921757776,
+      "elev_median_m": 3.8539462089538574,
+      "elev_below_0m_fraction": 0.010194127402204663,
+      "elev_below_2m_fraction": 0.3471124768315286
+    },
+    "flooded_fraction_all_valid": {
+      "0.5": 0.0514827821675934,
+      "1.0": 0.1566920300458492,
+      "2.0": 0.3471124768315286
+    },
+    "flooded_fraction_coastal_lowland": {
+      "0.5": 0.051489060708797774,
+      "1.0": 0.15671113929608038,
+      "2.0": 0.3471548086538696
+    },
+    "flooded_fraction": {
+      "0.5": 0.051489060708797774,
+      "1.0": 0.15671113929608038,
+      "2.0": 0.3471548086538696
+    },
+    "figure": "E:\\Projects\\20260522-coastal-flood-scientific-data\\figures\\inundation_sensitivity_hoekvanholla-hvh-nl.png",
+    "geojson": "E:\\Projects\\20260522-coastal-flood-scientific-data\\data\\processed\\inundation_hoekvanholla-hvh-nl.geojson"
+  },
+  {
+    "station_id": "newlyn-p001-uk",
+    "station_name": "Newlyn",
+    "country": "UK",
+    "lat": 50.102,
+    "lon": -5.5417,
+    "bbox": [
+      -5.5817,
+      50.062,
+      -5.5017,
+      50.141999999999996
+    ],
+    "dem_source": "DeltaDTM:DeltaDTM_v1_1_N50W006.tif",
+    "tile_files": [
+      "DeltaDTM_v1_1_N50W006.tif"
+    ],
+    "raster_meta": {
+      "crs": "EPSG:4326",
+      "resolution": [
+        0.00041666666666666664,
+        0.0002777777777777778
+      ],
+      "nodata": -9999.0,
+      "tile_file": "DeltaDTM_v1_1_N50W006.tif"
+    },
+    "deltadtm_tiles_in_bbox": 1,
+    "slr_levels_m": [
+      0.5,
+      1.0,
+      2.0
+    ],
+    "dem_stats": {
+      "n_valid_cells": 34265,
+      "n_total_cells": 55296,
+      "valid_fraction": 0.6196650752314815,
+      "elev_min_m": -2.137014627456665,
+      "elev_max_m": 30.0,
+      "elev_mean_m": 28.012232951255477,
+      "elev_median_m": 30.0,
+      "elev_below_0m_fraction": 0.0008755289654166059,
+      "elev_below_2m_fraction": 0.005749306872902379
+    },
+    "flooded_fraction_all_valid": {
+      "0.5": 0.0017510579308332118,
+      "1.0": 0.0029184298847220198,
+      "2.0": 0.005749306872902379
+    },
+    "flooded_fraction_coastal_lowland": {
+      "0.5": 0.025167785234899327,
+      "1.0": 0.04194630872483222,
+      "2.0": 0.08263422818791946
+    },
+    "flooded_fraction": {
+      "0.5": 0.025167785234899327,
+      "1.0": 0.04194630872483222,
+      "2.0": 0.08263422818791946
+    },
+    "figure": "E:\\Projects\\20260522-coastal-flood-scientific-data\\figures\\inundation_sensitivity_newlyn-p001-uk.png",
+    "geojson": "E:\\Projects\\20260522-coastal-flood-scientific-data\\data\\processed\\inundation_newlyn-p001-uk.geojson"
+  },
+  {
+    "station_id": "sheerness-p015-uk",
+    "station_name": "Sheerness",
+    "country": "UK",
+    "lat": 51.442,
+    "lon": 0.74306,
+    "bbox": [
+      0.70306,
+      51.402,
+      0.7830600000000001,
+      51.482
+    ],
+    "dem_source": "DeltaDTM:DeltaDTM_v1_1_N51E000.tif",
+    "tile_files": [
+      "DeltaDTM_v1_1_N51E000.tif"
+    ],
+    "raster_meta": {
+      "crs": "EPSG:4326",
+      "resolution": [
+        0.00041666666666666664,
+        0.0002777777777777778
+      ],
+      "nodata": -9999.0,
+      "tile_file": "DeltaDTM_v1_1_N51E000.tif"
+    },
+    "deltadtm_tiles_in_bbox": 1,
+    "slr_levels_m": [
+      0.5,
+      1.0,
+      2.0
+    ],
+    "dem_stats": {
+      "n_valid_cells": 24432,
+      "n_total_cells": 55296,
+      "valid_fraction": 0.4418402777777778,
+      "elev_min_m": -6.6823906898498535,
+      "elev_max_m": 30.0,
+      "elev_mean_m": 4.455923747832634,
+      "elev_median_m": 2.4701616764068604,
+      "elev_below_0m_fraction": 0.006262278978388998,
+      "elev_below_2m_fraction": 0.410322527832351
+    },
+    "flooded_fraction_all_valid": {
+      "0.5": 0.020464963981663392,
+      "1.0": 0.09765880812049771,
+      "2.0": 0.410322527832351
+    },
+    "flooded_fraction_coastal_lowland": {
+      "0.5": 0.02133651958692498,
+      "1.0": 0.10181787146880601,
+      "2.0": 0.42779721771784585
+    },
+    "flooded_fraction": {
+      "0.5": 0.02133651958692498,
+      "1.0": 0.10181787146880601,
+      "2.0": 0.42779721771784585
+    },
+    "figure": "E:\\Projects\\20260522-coastal-flood-scientific-data\\figures\\inundation_sensitivity_sheerness-p015-uk.png",
+    "geojson": "E:\\Projects\\20260522-coastal-flood-scientific-data\\data\\processed\\inundation_sheerness-p015-uk.geojson"
+  }
+]

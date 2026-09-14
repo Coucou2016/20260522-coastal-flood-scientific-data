@@ -1,0 +1,10 @@
+{
+  "status": "failed",
+  "generated_utc": "2026-08-15T15:48:52+00:00",
+  "error": "publication readiness audit failed with exit code 1",
+  "failure_log": "logs/cee_publication_finalize_failed.md",
+  "publication_package_exists": false,
+  "publication_package_zip_exists": false,
+  "safe_to_use_existing_package": false,
+  "next_step": "Resolve the failure log, then rerun scripts/finalize_cee_publication_package.py."
+}

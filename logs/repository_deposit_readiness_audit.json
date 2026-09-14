@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "errors": [],
+  "warnings": [],
+  "files_checked": [
+    "README.md",
+    "final_archive_manifest.json",
+    "manuscript/citation_metadata_template.md",
+    "manuscript/data_code_availability_final_draft.md",
+    "manuscript/data_repository_deposit_checklist.md",
+    "manuscript/figure_source_data_dictionary.md",
+    "manuscript/license_decision_notes.md",
+    "manuscript/software_environment.md",
+    "publication_package.zip",
+    "requirements-publication.txt",
+    "scripts/install_publication_requirements.cmd",
+    "scripts/run_python_checked.cmd"
+  ]
+}

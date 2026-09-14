@@ -1,0 +1,1530 @@
+{
+  "status": "template_only",
+  "reviewer": "",
+  "review_date": "",
+  "scope": {
+    "manuscript": "manuscript/process_terrain_coastal_flood_CEE_manuscript.md",
+    "review_html": "manuscript/process_terrain_coastal_flood_CEE_manuscript_review.html",
+    "artifacts": "template derived from available audit logs; reviewer must confirm completeness"
+  },
+  "required_artifacts": [
+    {
+      "artifact_id": "embedded-image-1.png",
+      "artifact_type": "figure",
+      "evidence": "logs\\manuscript_figure_inventory.json: embedded-image-1.png; logs\\figure_deliverables_audit.json: embedded-image-1.png"
+    },
+    {
+      "artifact_id": "embedded-image-2.png",
+      "artifact_type": "figure",
+      "evidence": "logs\\manuscript_figure_inventory.json: embedded-image-2.png; logs\\figure_deliverables_audit.json: embedded-image-2.png"
+    },
+    {
+      "artifact_id": "embedded-image-3.png",
+      "artifact_type": "figure",
+      "evidence": "logs\\manuscript_figure_inventory.json: embedded-image-3.png; logs\\figure_deliverables_audit.json: embedded-image-3.png"
+    },
+    {
+      "artifact_id": "embedded-image-4.png",
+      "artifact_type": "figure",
+      "evidence": "logs\\manuscript_figure_inventory.json: embedded-image-4.png; logs\\figure_deliverables_audit.json: embedded-image-4.png"
+    },
+    {
+      "artifact_id": "embedded-image-5.png",
+      "artifact_type": "figure",
+      "evidence": "logs\\manuscript_figure_inventory.json: embedded-image-5.png"
+    },
+    {
+      "artifact_id": "process_terrain_coastal_flood_CEE_manuscript_review.html:embedded-image-1.png",
+      "artifact_type": "figure",
+      "evidence": "logs\\figure_data_integrity_audit.json: manuscript/process_terrain_coastal_flood_CEE_manuscript_review.html:embedded-image-1.png"
+    },
+    {
+      "artifact_id": "process_terrain_coastal_flood_CEE_manuscript_review.html:embedded-image-2.png",
+      "artifact_type": "figure",
+      "evidence": "logs\\figure_data_integrity_audit.json: manuscript/process_terrain_coastal_flood_CEE_manuscript_review.html:embedded-image-2.png"
+    },
+    {
+      "artifact_id": "process_terrain_coastal_flood_CEE_manuscript_review.html:embedded-image-3.png",
+      "artifact_type": "figure",
+      "evidence": "logs\\figure_data_integrity_audit.json: manuscript/process_terrain_coastal_flood_CEE_manuscript_review.html:embedded-image-3.png"
+    },
+    {
+      "artifact_id": "process_terrain_coastal_flood_CEE_manuscript_review.html:embedded-image-4.png",
+      "artifact_type": "figure",
+      "evidence": "logs\\figure_data_integrity_audit.json: manuscript/process_terrain_coastal_flood_CEE_manuscript_review.html:embedded-image-4.png"
+    },
+    {
+      "artifact_id": "process_terrain_coastal_flood_CEE_manuscript_review.html:embedded-image-5.png",
+      "artifact_type": "figure",
+      "evidence": "logs\\figure_data_integrity_audit.json: manuscript/process_terrain_coastal_flood_CEE_manuscript_review.html:embedded-image-5.png"
+    },
+    {
+      "artifact_id": "publication_package.zip",
+      "artifact_type": "package_artifact",
+      "evidence": "final_archive_manifest.json: publication_package.zip"
+    },
+    {
+      "artifact_id": "Fig1_station_metadata.csv",
+      "artifact_type": "source_data_table",
+      "evidence": "logs\\figure_deliverables_audit.json: data/figure_source/Fig1_station_metadata.csv; logs\\figure_data_integrity_audit.json: data/figure_source/Fig1_station_metadata.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig1_station_metadata.csv"
+    },
+    {
+      "artifact_id": "Fig2_D10_rank_uncertainty.csv",
+      "artifact_type": "source_data_table",
+      "evidence": "logs\\figure_deliverables_audit.json: data/figure_source/Fig2_D10_rank_uncertainty.csv; logs\\figure_data_integrity_audit.json: data/figure_source/Fig2_D10_rank_uncertainty.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig2_D10_rank_uncertainty.csv"
+    },
+    {
+      "artifact_id": "Fig2_D10_rank_uncertainty_summary.csv",
+      "artifact_type": "source_data_table",
+      "evidence": "logs\\figure_deliverables_audit.json: data/figure_source/Fig2_D10_rank_uncertainty_summary.csv; logs\\figure_data_integrity_audit.json: data/figure_source/Fig2_D10_rank_uncertainty_summary.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig2_D10_rank_uncertainty_summary.csv"
+    },
+    {
+      "artifact_id": "Fig2_coastrp_spatial_sensitivity.csv",
+      "artifact_type": "source_data_table",
+      "evidence": "logs\\figure_deliverables_audit.json: data/figure_source/Fig2_coastrp_spatial_sensitivity.csv; logs\\figure_data_integrity_audit.json: data/figure_source/Fig2_coastrp_spatial_sensitivity.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig2_coastrp_spatial_sensitivity.csv"
+    },
+    {
+      "artifact_id": "Fig2_gssr_evt_diagnostics.csv",
+      "artifact_type": "source_data_table",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig2_gssr_evt_diagnostics.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig2_gssr_evt_diagnostics.csv"
+    },
+    {
+      "artifact_id": "Fig2_gssr_rp10_bootstrap.csv",
+      "artifact_type": "source_data_table",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig2_gssr_rp10_bootstrap.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig2_gssr_rp10_bootstrap.csv"
+    },
+    {
+      "artifact_id": "Fig2_tidal_regime_metadata.csv",
+      "artifact_type": "source_data_table",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig2_tidal_regime_metadata.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig2_tidal_regime_metadata.csv"
+    },
+    {
+      "artifact_id": "Fig2_tidal_regime_metadata_source_verified.csv",
+      "artifact_type": "source_data_table",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig2_tidal_regime_metadata_source_verified.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig2_tidal_regime_metadata_source_verified.csv"
+    },
+    {
+      "artifact_id": "Fig2_water_level_divergence.csv",
+      "artifact_type": "source_data_table",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig2_water_level_divergence.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig2_water_level_divergence.csv"
+    },
+    {
+      "artifact_id": "Fig2_water_level_divergence_with_uncertainty.csv",
+      "artifact_type": "source_data_table",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig2_water_level_divergence_with_uncertainty.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig2_water_level_divergence_with_uncertainty.csv"
+    },
+    {
+      "artifact_id": "Fig3_charleston-sc_pressure_bins.csv",
+      "artifact_type": "source_data_table",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig3_charleston-sc_pressure_bins.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig3_charleston-sc_pressure_bins.csv"
+    },
+    {
+      "artifact_id": "Fig3_daily_wind_direction_metrics.csv",
+      "artifact_type": "source_data_table",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig3_daily_wind_direction_metrics.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig3_daily_wind_direction_metrics.csv"
+    },
+    {
+      "artifact_id": "Fig3_driver_correlations.csv",
+      "artifact_type": "source_data_table",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig3_driver_correlations.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig3_driver_correlations.csv"
+    },
+    {
+      "artifact_id": "Fig3_event_composites.csv",
+      "artifact_type": "source_data_table",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig3_event_composites.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig3_event_composites.csv"
+    },
+    {
+      "artifact_id": "Fig3_newlyn-p001-uk_pressure_bins.csv",
+      "artifact_type": "source_data_table",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig3_newlyn-p001-uk_pressure_bins.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig3_newlyn-p001-uk_pressure_bins.csv"
+    },
+    {
+      "artifact_id": "Fig4_connected_terrain_sensitivity.csv",
+      "artifact_type": "source_data_table",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig4_connected_terrain_sensitivity.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig4_connected_terrain_sensitivity.csv"
+    },
+    {
+      "artifact_id": "Fig4_connectivity_audit_summary.csv",
+      "artifact_type": "source_data_table",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig4_connectivity_audit_summary.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig4_connectivity_audit_summary.csv"
+    },
+    {
+      "artifact_id": "Fig4_connectivity_component_metrics.csv",
+      "artifact_type": "source_data_table",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig4_connectivity_component_metrics.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig4_connectivity_component_metrics.csv"
+    },
+    {
+      "artifact_id": "Fig4_dem_error_ensemble.csv",
+      "artifact_type": "source_data_table",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig4_dem_error_ensemble.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig4_dem_error_ensemble.csv"
+    },
+    {
+      "artifact_id": "Fig4_hypsometry_curves.csv",
+      "artifact_type": "source_data_table",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig4_hypsometry_curves.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig4_hypsometry_curves.csv"
+    },
+    {
+      "artifact_id": "Fig4_terrain_screen_sensitivity_summary.csv",
+      "artifact_type": "source_data_table",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig4_terrain_screen_sensitivity_summary.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig4_terrain_screen_sensitivity_summary.csv"
+    },
+    {
+      "artifact_id": "Fig4_terrain_sensitivity.csv",
+      "artifact_type": "source_data_table",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig4_terrain_sensitivity.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig4_terrain_sensitivity.csv"
+    },
+    {
+      "artifact_id": "Fig4_terrain_window_denominator_seed_sensitivity.csv",
+      "artifact_type": "source_data_table",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig4_terrain_window_denominator_seed_sensitivity.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig4_terrain_window_denominator_seed_sensitivity.csv"
+    },
+    {
+      "artifact_id": "Fig5_D10_prediction_interval_scenario_summary.csv",
+      "artifact_type": "source_data_table",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig5_D10_prediction_interval_scenario_summary.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig5_D10_prediction_interval_scenario_summary.csv"
+    },
+    {
+      "artifact_id": "Fig5_D10_prediction_interval_scenarios.csv",
+      "artifact_type": "source_data_table",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig5_D10_prediction_interval_scenarios.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig5_D10_prediction_interval_scenarios.csv"
+    },
+    {
+      "artifact_id": "Fig5_D10_rank_uncertainty.csv",
+      "artifact_type": "source_data_table",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig5_D10_rank_uncertainty.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig5_D10_rank_uncertainty.csv"
+    },
+    {
+      "artifact_id": "Fig5_D10_rank_uncertainty_summary.csv",
+      "artifact_type": "source_data_table",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig5_D10_rank_uncertainty_summary.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig5_D10_rank_uncertainty_summary.csv"
+    },
+    {
+      "artifact_id": "Fig5_candidate_pool_terrain_screening.csv",
+      "artifact_type": "source_data_table",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig5_candidate_pool_terrain_screening.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig5_candidate_pool_terrain_screening.csv"
+    },
+    {
+      "artifact_id": "Fig5_candidate_pool_threshold_sensitivity.csv",
+      "artifact_type": "source_data_table",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig5_candidate_pool_threshold_sensitivity.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig5_candidate_pool_threshold_sensitivity.csv"
+    },
+    {
+      "artifact_id": "Fig5_coastrp_component_context.csv",
+      "artifact_type": "source_data_table",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig5_coastrp_component_context.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig5_coastrp_component_context.csv"
+    },
+    {
+      "artifact_id": "Fig5_coastrp_component_context_summary.csv",
+      "artifact_type": "source_data_table",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig5_coastrp_component_context_summary.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig5_coastrp_component_context_summary.csv"
+    },
+    {
+      "artifact_id": "Fig5_extended_station_subset.csv",
+      "artifact_type": "source_data_table",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig5_extended_station_subset.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig5_extended_station_subset.csv"
+    },
+    {
+      "artifact_id": "Fig5_gssr_evt_diagnostics.csv",
+      "artifact_type": "source_data_table",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig5_gssr_evt_diagnostics.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig5_gssr_evt_diagnostics.csv"
+    },
+    {
+      "artifact_id": "Fig5_leave_one_sector_sensitivity.csv",
+      "artifact_type": "source_data_table",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig5_leave_one_sector_sensitivity.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig5_leave_one_sector_sensitivity.csv"
+    },
+    {
+      "artifact_id": "Fig5_nw_europe_extended_screening.csv",
+      "artifact_type": "source_data_table",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig5_nw_europe_extended_screening.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig5_nw_europe_extended_screening.csv"
+    },
+    {
+      "artifact_id": "Fig5_nw_europe_extended_screening_robust.csv",
+      "artifact_type": "source_data_table",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig5_nw_europe_extended_screening_robust.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig5_nw_europe_extended_screening_robust.csv"
+    },
+    {
+      "artifact_id": "Fig5_nw_europe_extended_screening_with_uncertainty.csv",
+      "artifact_type": "source_data_table",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig5_nw_europe_extended_screening_with_uncertainty.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig5_nw_europe_extended_screening_with_uncertainty.csv"
+    },
+    {
+      "artifact_id": "Fig5_nw_europe_rank_mismatch_diagnostics.csv",
+      "artifact_type": "source_data_table",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig5_nw_europe_rank_mismatch_diagnostics.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig5_nw_europe_rank_mismatch_diagnostics.csv"
+    },
+    {
+      "artifact_id": "Fig5_process_terrain_typology.csv",
+      "artifact_type": "source_data_table",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig5_process_terrain_typology.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig5_process_terrain_typology.csv"
+    },
+    {
+      "artifact_id": "Fig5_rank_discordance_robustness.csv",
+      "artifact_type": "source_data_table",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig5_rank_discordance_robustness.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig5_rank_discordance_robustness.csv"
+    },
+    {
+      "artifact_id": "Fig5_rank_mismatch_diagnostics.csv",
+      "artifact_type": "source_data_table",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig5_rank_mismatch_diagnostics.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig5_rank_mismatch_diagnostics.csv"
+    },
+    {
+      "artifact_id": "Fig5_rank_permutation_null_summary.csv",
+      "artifact_type": "source_data_table",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig5_rank_permutation_null_summary.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig5_rank_permutation_null_summary.csv"
+    },
+    {
+      "artifact_id": "Fig5_station_candidate_audit.csv",
+      "artifact_type": "source_data_table",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig5_station_candidate_audit.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig5_station_candidate_audit.csv"
+    },
+    {
+      "artifact_id": "Fig5_subset_selection_threshold_sensitivity.csv",
+      "artifact_type": "source_data_table",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig5_subset_selection_threshold_sensitivity.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig5_subset_selection_threshold_sensitivity.csv"
+    },
+    {
+      "artifact_id": "Fig5_tidal_available_rank_correlations.csv",
+      "artifact_type": "source_data_table",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig5_tidal_available_rank_correlations.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig5_tidal_available_rank_correlations.csv"
+    },
+    {
+      "artifact_id": "Fig5_tidal_metadata_coverage_summary.csv",
+      "artifact_type": "source_data_table",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig5_tidal_metadata_coverage_summary.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig5_tidal_metadata_coverage_summary.csv"
+    },
+    {
+      "artifact_id": "Fig5_tidal_metadata_joined_diagnostics.csv",
+      "artifact_type": "source_data_table",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig5_tidal_metadata_joined_diagnostics.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig5_tidal_metadata_joined_diagnostics.csv"
+    },
+    {
+      "artifact_id": "Fig5_tidal_regime_metadata_source_tracked.csv",
+      "artifact_type": "source_data_table",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig5_tidal_regime_metadata_source_tracked.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig5_tidal_regime_metadata_source_tracked.csv"
+    },
+    {
+      "artifact_id": "Fig6_archetype_map_selection.csv",
+      "artifact_type": "source_data_table",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig6_archetype_map_selection.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig6_archetype_map_selection.csv"
+    },
+    {
+      "artifact_id": "Fig6_deltadtm_mask_seed_audit.csv",
+      "artifact_type": "source_data_table",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig6_deltadtm_mask_seed_audit.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig6_deltadtm_mask_seed_audit.csv"
+    },
+    {
+      "artifact_id": "Fig6_fixed10km_terrain_area_metrics.csv",
+      "artifact_type": "source_data_table",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig6_fixed10km_terrain_area_metrics.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig6_fixed10km_terrain_area_metrics.csv"
+    },
+    {
+      "artifact_id": "Fig6_mask_aware_archetype_map_selection.csv",
+      "artifact_type": "source_data_table",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig6_mask_aware_archetype_map_selection.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig6_mask_aware_archetype_map_selection.csv"
+    },
+    {
+      "artifact_id": "Fig6_mask_aware_rank_metrics_fraction_area_samples.csv",
+      "artifact_type": "source_data_table",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig6_mask_aware_rank_metrics_fraction_area_samples.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig6_mask_aware_rank_metrics_fraction_area_samples.csv"
+    },
+    {
+      "artifact_id": "Fig6_mask_aware_terrain_area_metrics.csv",
+      "artifact_type": "source_data_table",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig6_mask_aware_terrain_area_metrics.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig6_mask_aware_terrain_area_metrics.csv"
+    },
+    {
+      "artifact_id": "Fig6_mask_aware_topk_overlap_null_envelope.csv",
+      "artifact_type": "source_data_table",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig6_mask_aware_topk_overlap_null_envelope.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig6_mask_aware_topk_overlap_null_envelope.csv"
+    },
+    {
+      "artifact_id": "Fig6_mask_aware_two_sided_permutation_association.csv",
+      "artifact_type": "source_data_table",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig6_mask_aware_two_sided_permutation_association.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig6_mask_aware_two_sided_permutation_association.csv"
+    },
+    {
+      "artifact_id": "Fig6_mask_class_counts.csv",
+      "artifact_type": "source_data_table",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig6_mask_class_counts.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig6_mask_class_counts.csv"
+    },
+    {
+      "artifact_id": "Fig6_rank_metrics_fraction_area_samples.csv",
+      "artifact_type": "source_data_table",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig6_rank_metrics_fraction_area_samples.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig6_rank_metrics_fraction_area_samples.csv"
+    },
+    {
+      "artifact_id": "Fig6_topk_overlap_null_envelope.csv",
+      "artifact_type": "source_data_table",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig6_topk_overlap_null_envelope.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig6_topk_overlap_null_envelope.csv"
+    },
+    {
+      "artifact_id": "Fig6_two_sided_permutation_association.csv",
+      "artifact_type": "source_data_table",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig6_two_sided_permutation_association.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig6_two_sided_permutation_association.csv"
+    },
+    {
+      "artifact_id": "Table1_data_products.csv",
+      "artifact_type": "source_data_table",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Table1_data_products.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Table1_data_products.csv"
+    },
+    {
+      "artifact_id": "Table2_water_level_indicators.csv",
+      "artifact_type": "source_data_table",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Table2_water_level_indicators.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Table2_water_level_indicators.csv"
+    },
+    {
+      "artifact_id": "Table3_driver_correlations.csv",
+      "artifact_type": "source_data_table",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Table3_driver_correlations.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Table3_driver_correlations.csv"
+    },
+    {
+      "artifact_id": "Table3_process_terrain_typology.csv",
+      "artifact_type": "source_data_table",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Table3_process_terrain_typology.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Table3_process_terrain_typology.csv"
+    },
+    {
+      "artifact_id": "Table4_deltadtm_connected_sensitivity.csv",
+      "artifact_type": "source_data_table",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Table4_deltadtm_connected_sensitivity.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Table4_deltadtm_connected_sensitivity.csv"
+    },
+    {
+      "artifact_id": "Table4_deltadtm_sensitivity.csv",
+      "artifact_type": "source_data_table",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Table4_deltadtm_sensitivity.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Table4_deltadtm_sensitivity.csv"
+    },
+    {
+      "artifact_id": "TableS_local_dtm_validation.csv",
+      "artifact_type": "source_data_table",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/TableS_local_dtm_validation.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/TableS_local_dtm_validation.csv"
+    },
+    {
+      "artifact_id": "processed_station_master_table.csv",
+      "artifact_type": "source_data_table",
+      "evidence": "logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/processed_station_master_table.csv"
+    }
+  ],
+  "rows": [
+    {
+      "artifact_id": "embedded-image-1.png",
+      "artifact_type": "figure",
+      "status": "pending",
+      "evidence": "logs\\manuscript_figure_inventory.json: embedded-image-1.png; logs\\figure_deliverables_audit.json: embedded-image-1.png",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "embedded-image-2.png",
+      "artifact_type": "figure",
+      "status": "pending",
+      "evidence": "logs\\manuscript_figure_inventory.json: embedded-image-2.png; logs\\figure_deliverables_audit.json: embedded-image-2.png",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "embedded-image-3.png",
+      "artifact_type": "figure",
+      "status": "pending",
+      "evidence": "logs\\manuscript_figure_inventory.json: embedded-image-3.png; logs\\figure_deliverables_audit.json: embedded-image-3.png",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "embedded-image-4.png",
+      "artifact_type": "figure",
+      "status": "pending",
+      "evidence": "logs\\manuscript_figure_inventory.json: embedded-image-4.png; logs\\figure_deliverables_audit.json: embedded-image-4.png",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "embedded-image-5.png",
+      "artifact_type": "figure",
+      "status": "pending",
+      "evidence": "logs\\manuscript_figure_inventory.json: embedded-image-5.png",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "process_terrain_coastal_flood_CEE_manuscript_review.html:embedded-image-1.png",
+      "artifact_type": "figure",
+      "status": "pending",
+      "evidence": "logs\\figure_data_integrity_audit.json: manuscript/process_terrain_coastal_flood_CEE_manuscript_review.html:embedded-image-1.png",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "process_terrain_coastal_flood_CEE_manuscript_review.html:embedded-image-2.png",
+      "artifact_type": "figure",
+      "status": "pending",
+      "evidence": "logs\\figure_data_integrity_audit.json: manuscript/process_terrain_coastal_flood_CEE_manuscript_review.html:embedded-image-2.png",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "process_terrain_coastal_flood_CEE_manuscript_review.html:embedded-image-3.png",
+      "artifact_type": "figure",
+      "status": "pending",
+      "evidence": "logs\\figure_data_integrity_audit.json: manuscript/process_terrain_coastal_flood_CEE_manuscript_review.html:embedded-image-3.png",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "process_terrain_coastal_flood_CEE_manuscript_review.html:embedded-image-4.png",
+      "artifact_type": "figure",
+      "status": "pending",
+      "evidence": "logs\\figure_data_integrity_audit.json: manuscript/process_terrain_coastal_flood_CEE_manuscript_review.html:embedded-image-4.png",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "process_terrain_coastal_flood_CEE_manuscript_review.html:embedded-image-5.png",
+      "artifact_type": "figure",
+      "status": "pending",
+      "evidence": "logs\\figure_data_integrity_audit.json: manuscript/process_terrain_coastal_flood_CEE_manuscript_review.html:embedded-image-5.png",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "publication_package.zip",
+      "artifact_type": "package_artifact",
+      "status": "pending",
+      "evidence": "final_archive_manifest.json: publication_package.zip",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "Fig1_station_metadata.csv",
+      "artifact_type": "source_data_table",
+      "status": "pending",
+      "evidence": "logs\\figure_deliverables_audit.json: data/figure_source/Fig1_station_metadata.csv; logs\\figure_data_integrity_audit.json: data/figure_source/Fig1_station_metadata.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig1_station_metadata.csv",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "Fig2_D10_rank_uncertainty.csv",
+      "artifact_type": "source_data_table",
+      "status": "pending",
+      "evidence": "logs\\figure_deliverables_audit.json: data/figure_source/Fig2_D10_rank_uncertainty.csv; logs\\figure_data_integrity_audit.json: data/figure_source/Fig2_D10_rank_uncertainty.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig2_D10_rank_uncertainty.csv",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "Fig2_D10_rank_uncertainty_summary.csv",
+      "artifact_type": "source_data_table",
+      "status": "pending",
+      "evidence": "logs\\figure_deliverables_audit.json: data/figure_source/Fig2_D10_rank_uncertainty_summary.csv; logs\\figure_data_integrity_audit.json: data/figure_source/Fig2_D10_rank_uncertainty_summary.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig2_D10_rank_uncertainty_summary.csv",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "Fig2_coastrp_spatial_sensitivity.csv",
+      "artifact_type": "source_data_table",
+      "status": "pending",
+      "evidence": "logs\\figure_deliverables_audit.json: data/figure_source/Fig2_coastrp_spatial_sensitivity.csv; logs\\figure_data_integrity_audit.json: data/figure_source/Fig2_coastrp_spatial_sensitivity.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig2_coastrp_spatial_sensitivity.csv",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "Fig2_gssr_evt_diagnostics.csv",
+      "artifact_type": "source_data_table",
+      "status": "pending",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig2_gssr_evt_diagnostics.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig2_gssr_evt_diagnostics.csv",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "Fig2_gssr_rp10_bootstrap.csv",
+      "artifact_type": "source_data_table",
+      "status": "pending",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig2_gssr_rp10_bootstrap.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig2_gssr_rp10_bootstrap.csv",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "Fig2_tidal_regime_metadata.csv",
+      "artifact_type": "source_data_table",
+      "status": "pending",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig2_tidal_regime_metadata.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig2_tidal_regime_metadata.csv",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "Fig2_tidal_regime_metadata_source_verified.csv",
+      "artifact_type": "source_data_table",
+      "status": "pending",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig2_tidal_regime_metadata_source_verified.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig2_tidal_regime_metadata_source_verified.csv",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "Fig2_water_level_divergence.csv",
+      "artifact_type": "source_data_table",
+      "status": "pending",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig2_water_level_divergence.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig2_water_level_divergence.csv",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "Fig2_water_level_divergence_with_uncertainty.csv",
+      "artifact_type": "source_data_table",
+      "status": "pending",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig2_water_level_divergence_with_uncertainty.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig2_water_level_divergence_with_uncertainty.csv",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "Fig3_charleston-sc_pressure_bins.csv",
+      "artifact_type": "source_data_table",
+      "status": "pending",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig3_charleston-sc_pressure_bins.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig3_charleston-sc_pressure_bins.csv",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "Fig3_daily_wind_direction_metrics.csv",
+      "artifact_type": "source_data_table",
+      "status": "pending",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig3_daily_wind_direction_metrics.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig3_daily_wind_direction_metrics.csv",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "Fig3_driver_correlations.csv",
+      "artifact_type": "source_data_table",
+      "status": "pending",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig3_driver_correlations.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig3_driver_correlations.csv",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "Fig3_event_composites.csv",
+      "artifact_type": "source_data_table",
+      "status": "pending",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig3_event_composites.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig3_event_composites.csv",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "Fig3_newlyn-p001-uk_pressure_bins.csv",
+      "artifact_type": "source_data_table",
+      "status": "pending",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig3_newlyn-p001-uk_pressure_bins.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig3_newlyn-p001-uk_pressure_bins.csv",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "Fig4_connected_terrain_sensitivity.csv",
+      "artifact_type": "source_data_table",
+      "status": "pending",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig4_connected_terrain_sensitivity.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig4_connected_terrain_sensitivity.csv",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "Fig4_connectivity_audit_summary.csv",
+      "artifact_type": "source_data_table",
+      "status": "pending",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig4_connectivity_audit_summary.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig4_connectivity_audit_summary.csv",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "Fig4_connectivity_component_metrics.csv",
+      "artifact_type": "source_data_table",
+      "status": "pending",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig4_connectivity_component_metrics.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig4_connectivity_component_metrics.csv",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "Fig4_dem_error_ensemble.csv",
+      "artifact_type": "source_data_table",
+      "status": "pending",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig4_dem_error_ensemble.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig4_dem_error_ensemble.csv",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "Fig4_hypsometry_curves.csv",
+      "artifact_type": "source_data_table",
+      "status": "pending",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig4_hypsometry_curves.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig4_hypsometry_curves.csv",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "Fig4_terrain_screen_sensitivity_summary.csv",
+      "artifact_type": "source_data_table",
+      "status": "pending",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig4_terrain_screen_sensitivity_summary.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig4_terrain_screen_sensitivity_summary.csv",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "Fig4_terrain_sensitivity.csv",
+      "artifact_type": "source_data_table",
+      "status": "pending",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig4_terrain_sensitivity.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig4_terrain_sensitivity.csv",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "Fig4_terrain_window_denominator_seed_sensitivity.csv",
+      "artifact_type": "source_data_table",
+      "status": "pending",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig4_terrain_window_denominator_seed_sensitivity.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig4_terrain_window_denominator_seed_sensitivity.csv",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "Fig5_D10_prediction_interval_scenario_summary.csv",
+      "artifact_type": "source_data_table",
+      "status": "pending",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig5_D10_prediction_interval_scenario_summary.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig5_D10_prediction_interval_scenario_summary.csv",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "Fig5_D10_prediction_interval_scenarios.csv",
+      "artifact_type": "source_data_table",
+      "status": "pending",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig5_D10_prediction_interval_scenarios.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig5_D10_prediction_interval_scenarios.csv",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "Fig5_D10_rank_uncertainty.csv",
+      "artifact_type": "source_data_table",
+      "status": "pending",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig5_D10_rank_uncertainty.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig5_D10_rank_uncertainty.csv",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "Fig5_D10_rank_uncertainty_summary.csv",
+      "artifact_type": "source_data_table",
+      "status": "pending",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig5_D10_rank_uncertainty_summary.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig5_D10_rank_uncertainty_summary.csv",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "Fig5_candidate_pool_terrain_screening.csv",
+      "artifact_type": "source_data_table",
+      "status": "pending",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig5_candidate_pool_terrain_screening.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig5_candidate_pool_terrain_screening.csv",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "Fig5_candidate_pool_threshold_sensitivity.csv",
+      "artifact_type": "source_data_table",
+      "status": "pending",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig5_candidate_pool_threshold_sensitivity.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig5_candidate_pool_threshold_sensitivity.csv",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "Fig5_coastrp_component_context.csv",
+      "artifact_type": "source_data_table",
+      "status": "pending",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig5_coastrp_component_context.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig5_coastrp_component_context.csv",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "Fig5_coastrp_component_context_summary.csv",
+      "artifact_type": "source_data_table",
+      "status": "pending",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig5_coastrp_component_context_summary.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig5_coastrp_component_context_summary.csv",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "Fig5_extended_station_subset.csv",
+      "artifact_type": "source_data_table",
+      "status": "pending",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig5_extended_station_subset.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig5_extended_station_subset.csv",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "Fig5_gssr_evt_diagnostics.csv",
+      "artifact_type": "source_data_table",
+      "status": "pending",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig5_gssr_evt_diagnostics.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig5_gssr_evt_diagnostics.csv",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "Fig5_leave_one_sector_sensitivity.csv",
+      "artifact_type": "source_data_table",
+      "status": "pending",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig5_leave_one_sector_sensitivity.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig5_leave_one_sector_sensitivity.csv",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "Fig5_nw_europe_extended_screening.csv",
+      "artifact_type": "source_data_table",
+      "status": "pending",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig5_nw_europe_extended_screening.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig5_nw_europe_extended_screening.csv",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "Fig5_nw_europe_extended_screening_robust.csv",
+      "artifact_type": "source_data_table",
+      "status": "pending",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig5_nw_europe_extended_screening_robust.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig5_nw_europe_extended_screening_robust.csv",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "Fig5_nw_europe_extended_screening_with_uncertainty.csv",
+      "artifact_type": "source_data_table",
+      "status": "pending",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig5_nw_europe_extended_screening_with_uncertainty.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig5_nw_europe_extended_screening_with_uncertainty.csv",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "Fig5_nw_europe_rank_mismatch_diagnostics.csv",
+      "artifact_type": "source_data_table",
+      "status": "pending",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig5_nw_europe_rank_mismatch_diagnostics.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig5_nw_europe_rank_mismatch_diagnostics.csv",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "Fig5_process_terrain_typology.csv",
+      "artifact_type": "source_data_table",
+      "status": "pending",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig5_process_terrain_typology.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig5_process_terrain_typology.csv",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "Fig5_rank_discordance_robustness.csv",
+      "artifact_type": "source_data_table",
+      "status": "pending",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig5_rank_discordance_robustness.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig5_rank_discordance_robustness.csv",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "Fig5_rank_mismatch_diagnostics.csv",
+      "artifact_type": "source_data_table",
+      "status": "pending",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig5_rank_mismatch_diagnostics.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig5_rank_mismatch_diagnostics.csv",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "Fig5_rank_permutation_null_summary.csv",
+      "artifact_type": "source_data_table",
+      "status": "pending",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig5_rank_permutation_null_summary.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig5_rank_permutation_null_summary.csv",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "Fig5_station_candidate_audit.csv",
+      "artifact_type": "source_data_table",
+      "status": "pending",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig5_station_candidate_audit.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig5_station_candidate_audit.csv",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "Fig5_subset_selection_threshold_sensitivity.csv",
+      "artifact_type": "source_data_table",
+      "status": "pending",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig5_subset_selection_threshold_sensitivity.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig5_subset_selection_threshold_sensitivity.csv",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "Fig5_tidal_available_rank_correlations.csv",
+      "artifact_type": "source_data_table",
+      "status": "pending",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig5_tidal_available_rank_correlations.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig5_tidal_available_rank_correlations.csv",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "Fig5_tidal_metadata_coverage_summary.csv",
+      "artifact_type": "source_data_table",
+      "status": "pending",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig5_tidal_metadata_coverage_summary.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig5_tidal_metadata_coverage_summary.csv",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "Fig5_tidal_metadata_joined_diagnostics.csv",
+      "artifact_type": "source_data_table",
+      "status": "pending",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig5_tidal_metadata_joined_diagnostics.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig5_tidal_metadata_joined_diagnostics.csv",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "Fig5_tidal_regime_metadata_source_tracked.csv",
+      "artifact_type": "source_data_table",
+      "status": "pending",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig5_tidal_regime_metadata_source_tracked.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig5_tidal_regime_metadata_source_tracked.csv",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "Fig6_archetype_map_selection.csv",
+      "artifact_type": "source_data_table",
+      "status": "pending",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig6_archetype_map_selection.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig6_archetype_map_selection.csv",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "Fig6_deltadtm_mask_seed_audit.csv",
+      "artifact_type": "source_data_table",
+      "status": "pending",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig6_deltadtm_mask_seed_audit.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig6_deltadtm_mask_seed_audit.csv",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "Fig6_fixed10km_terrain_area_metrics.csv",
+      "artifact_type": "source_data_table",
+      "status": "pending",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig6_fixed10km_terrain_area_metrics.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig6_fixed10km_terrain_area_metrics.csv",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "Fig6_mask_aware_archetype_map_selection.csv",
+      "artifact_type": "source_data_table",
+      "status": "pending",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig6_mask_aware_archetype_map_selection.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig6_mask_aware_archetype_map_selection.csv",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "Fig6_mask_aware_rank_metrics_fraction_area_samples.csv",
+      "artifact_type": "source_data_table",
+      "status": "pending",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig6_mask_aware_rank_metrics_fraction_area_samples.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig6_mask_aware_rank_metrics_fraction_area_samples.csv",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "Fig6_mask_aware_terrain_area_metrics.csv",
+      "artifact_type": "source_data_table",
+      "status": "pending",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig6_mask_aware_terrain_area_metrics.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig6_mask_aware_terrain_area_metrics.csv",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "Fig6_mask_aware_topk_overlap_null_envelope.csv",
+      "artifact_type": "source_data_table",
+      "status": "pending",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig6_mask_aware_topk_overlap_null_envelope.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig6_mask_aware_topk_overlap_null_envelope.csv",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "Fig6_mask_aware_two_sided_permutation_association.csv",
+      "artifact_type": "source_data_table",
+      "status": "pending",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig6_mask_aware_two_sided_permutation_association.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig6_mask_aware_two_sided_permutation_association.csv",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "Fig6_mask_class_counts.csv",
+      "artifact_type": "source_data_table",
+      "status": "pending",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig6_mask_class_counts.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig6_mask_class_counts.csv",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "Fig6_rank_metrics_fraction_area_samples.csv",
+      "artifact_type": "source_data_table",
+      "status": "pending",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig6_rank_metrics_fraction_area_samples.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig6_rank_metrics_fraction_area_samples.csv",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "Fig6_topk_overlap_null_envelope.csv",
+      "artifact_type": "source_data_table",
+      "status": "pending",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig6_topk_overlap_null_envelope.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig6_topk_overlap_null_envelope.csv",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "Fig6_two_sided_permutation_association.csv",
+      "artifact_type": "source_data_table",
+      "status": "pending",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Fig6_two_sided_permutation_association.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Fig6_two_sided_permutation_association.csv",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "Table1_data_products.csv",
+      "artifact_type": "source_data_table",
+      "status": "pending",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Table1_data_products.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Table1_data_products.csv",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "Table2_water_level_indicators.csv",
+      "artifact_type": "source_data_table",
+      "status": "pending",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Table2_water_level_indicators.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Table2_water_level_indicators.csv",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "Table3_driver_correlations.csv",
+      "artifact_type": "source_data_table",
+      "status": "pending",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Table3_driver_correlations.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Table3_driver_correlations.csv",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "Table3_process_terrain_typology.csv",
+      "artifact_type": "source_data_table",
+      "status": "pending",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Table3_process_terrain_typology.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Table3_process_terrain_typology.csv",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "Table4_deltadtm_connected_sensitivity.csv",
+      "artifact_type": "source_data_table",
+      "status": "pending",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Table4_deltadtm_connected_sensitivity.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Table4_deltadtm_connected_sensitivity.csv",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "Table4_deltadtm_sensitivity.csv",
+      "artifact_type": "source_data_table",
+      "status": "pending",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/Table4_deltadtm_sensitivity.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/Table4_deltadtm_sensitivity.csv",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "TableS_local_dtm_validation.csv",
+      "artifact_type": "source_data_table",
+      "status": "pending",
+      "evidence": "logs\\figure_data_integrity_audit.json: data/figure_source/TableS_local_dtm_validation.csv; logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/TableS_local_dtm_validation.csv",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    },
+    {
+      "artifact_id": "processed_station_master_table.csv",
+      "artifact_type": "source_data_table",
+      "status": "pending",
+      "evidence": "logs\\figure_data_integrity_audit.json: reproducibility_package/source_tables/processed_station_master_table.csv",
+      "caption_matches_rendered_artifact": false,
+      "rendered_artifact_checked": false,
+      "source_data_checked": false,
+      "numeric_sanity_checked": false,
+      "visual_quality_checked": false,
+      "package_artifact_checked": false,
+      "issue_register_cross_checked": false,
+      "notes": ""
+    }
+  ],
+  "completion_attestation": {
+    "status": "pending",
+    "evidence": "",
+    "notes": "Copy reviewed entries into final_figure_data_review_matrix.json after manual verification."
+  },
+  "template_metadata": {
+    "inputs_seen": [
+      "logs\\manuscript_figure_inventory.json",
+      "logs\\figure_deliverables_audit.json",
+      "logs\\figure_data_integrity_audit.json",
+      "final_archive_manifest.json"
+    ],
+    "missing_inputs": [],
+    "artifact_count": 79
+  }
+}
