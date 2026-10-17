@@ -1,0 +1,18 @@
+{
+  "generated_utc": "2026-10-17T16:58:37.531576+00:00",
+  "archive_sha256": "a32b59575011addf7ceb4d67fc80c2b1819f628b06f7d49c925ddae099c056db",
+  "status": "PASS",
+  "environment_scope": "clean temporary venv; dependencies solved from packaged pyproject.toml",
+  "content_hashes_verified": 339,
+  "deterministic_outputs": [
+    "data/figure_source/Primary_terrain_components_68stations.csv",
+    "data/figure_source/Return_period_sensitivity.csv",
+    "data/figure_source/Spatial_block_bootstrap_intervals.csv",
+    "data/figure_source/Topk_spatial_null_curves.csv",
+    "data/figure_source/Decision_instability_station_metrics.csv",
+    "data/figure_source/COAST_RP_same_coast_match_audit.csv",
+    "manuscript/process_terrain_coastal_flood_CEE_manuscript.md",
+    "supplementary_information.md",
+    "report.md"
+  ]
+}
