@@ -1,0 +1,12 @@
+{
+  "n_sites": 68,
+  "top20_n": 14,
+  "top20_overlap": 1,
+  "median_absolute_rank_displacement": 26.0,
+  "maximum_absolute_rank_displacement": 64,
+  "median_terrain_top20_selection_frequency": 0.0,
+  "stations_always_selected": 6,
+  "stations_never_selected": 40,
+  "pareto_front_sites": 5,
+  "scope": "Decision stability across archived prespecified terrain configurations; no external hazard truth benchmark."
+}

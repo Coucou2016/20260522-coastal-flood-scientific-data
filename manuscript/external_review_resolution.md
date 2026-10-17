@@ -1,4 +1,6 @@
-# External Major-Revision Resolution Matrix
+# Historical Pre-submission Resolution Matrix
+
+**Superseded evidence:** This record describes the earlier six-sector workflow. Its numerical spatial-null results and topology descriptions must not be used for the current manuscript. The current evidence is in `internal_scientific_consistency_audit.md`, `config/coastal_spatial_blocks_v2.csv`, `Return_period_sensitivity.csv`, and `Spatial_block_bootstrap_intervals.csv`. Current primary topology is water-8/land-4, with all four combinations tested. Current inference uses three block scales. This is an internal pre-submission record, not a confidential journal reviewer report or independent validation certificate.
 
 **Manuscript:** *Storm-tide magnitude and standardized connected terrain yield non-interchangeable coastal screening priorities in a Northwest European station network*  
 **Purpose:** auditable mapping from the external review to code, source data, figures and manuscript text.  

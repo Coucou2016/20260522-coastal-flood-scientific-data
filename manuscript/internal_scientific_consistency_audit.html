@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>科学真实性、准确性与完整性内部审查文档</title>
+  <style>
+
+:root {
+  --paper: #ffffff;
+  --page: #ffffff;
+  --ink: #1b2430;
+  --muted: #5f6b78;
+  --line: #d9dde3;
+  --soft: #eef3f6;
+  --accent: #1b2430;
+  --accent-2: #1b2430;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  color: var(--ink);
+  background: #ffffff;
+  font-family: Georgia, "Times New Roman", "Noto Serif CJK SC", "Source Han Serif SC", "Microsoft YaHei", serif;
+  line-height: 1.68;
+  font-size: 16px;
+}
+.page {
+  max-width: 1060px;
+  margin: 0 auto;
+  background: var(--page);
+  padding: 56px 72px 72px;
+  box-shadow: none;
+}
+h1 {
+  margin: 0 0 18px;
+  font-size: 2.35rem;
+  line-height: 1.12;
+  letter-spacing: 0;
+}
+h2 {
+  margin: 38px 0 14px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--line);
+  font-size: 1.55rem;
+  line-height: 1.25;
+}
+h3 {
+  margin: 28px 0 10px;
+  color: var(--accent);
+  font-size: 1.17rem;
+}
+h4 {
+  margin: 22px 0 8px;
+  color: var(--accent-2);
+  font-size: 1rem;
+}
+p {
+  margin: 0 0 12px;
+  text-align: justify;
+}
+strong { font-weight: 700; }
+em { font-style: italic; }
+code {
+  padding: 1px 4px;
+  border-radius: 4px;
+  background: #f0f2f4;
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 0.92em;
+}
+hr {
+  border: 0;
+  border-top: 1px solid var(--line);
+  margin: 22px 0;
+}
+.bullet {
+  padding-left: 18px;
+  text-align: left;
+}
+.figure-block {
+  margin: 18px 0 28px;
+  padding: 0;
+  border: 0;
+  background: #ffffff;
+  break-inside: avoid;
+}
+.figure-block figcaption {
+  margin: 0 0 10px;
+  color: var(--ink);
+  font-weight: 700;
+  line-height: 1.35;
+  text-align: left;
+}
+.figure-block img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #e5e8ec;
+  background: #fff;
+}
+.table-block {
+  margin: 18px 0 28px;
+}
+.table-block figcaption {
+  margin: 0 0 8px;
+  font-weight: 700;
+}
+.scroll-table {
+  width: 100%;
+  overflow-x: auto;
+}
+table {
+  width: 100%;
+  min-width: 720px;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+caption {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+th, td {
+  border: 1px solid var(--line);
+  padding: 7px 9px;
+  vertical-align: top;
+  text-align: left;
+}
+th {
+  background: var(--soft);
+  font-weight: 700;
+}
+tbody tr:nth-child(even) td {
+  background: #fafafa;
+}
+.math, .equation {
+  font-family: "Cambria Math", "Times New Roman", serif;
+}
+.equation {
+  margin: 14px 0 16px;
+  padding: 10px 14px;
+  text-align: center;
+  background: #fbfcfd;
+  border: 1px solid var(--line);
+}
+@media (max-width: 760px) {
+  .page {
+    padding: 28px 18px 42px;
+    box-shadow: none;
+  }
+  h1 { font-size: 1.85rem; }
+  table { font-size: 0.84rem; }
+}
+@media print {
+  @page {
+    size: A4;
+    margin: 16mm 15mm 18mm;
+  }
+  body { background: #fff; }
+  .page {
+    max-width: none;
+    box-shadow: none;
+    padding: 0;
+  }
+  h1, h2, h3, h4 { break-after: avoid; }
+  .figure-block, .table-block, table { break-inside: avoid; }
+  .figure-block {
+    margin: 12px 0 20px;
+    padding: 8px;
+  }
+  .figure-block img {
+    max-height: 235mm;
+    object-fit: contain;
+  }
+  .scroll-table {
+    overflow: visible;
+  }
+  table {
+    width: 100%;
+    min-width: 0;
+    table-layout: fixed;
+    font-size: 7.2pt;
+  }
+  th, td {
+    padding: 3px 4px;
+    overflow-wrap: anywhere;
+    word-break: normal;
+  }
+}
+
+  </style>
+</head>
+<body>
+<main class="page">
+<h1 id="">科学真实性、准确性与完整性内部审查文档</h1>
+<p><strong>对应稿件：</strong> <em>Limited concordance between storm-tide magnitude and standardized connected-lowland screening across Northwest Europe</em></p>
+<p><strong>审查定位：</strong> code-data-table-figure-manuscript 穿透式内部一致性审计，不冒充独立同行评议</p>
+<p><strong>自动约束状态：</strong> 全部通过</p>
+<h2 id="1">1. 审查结论</h2>
+<p>本轮首先修复会改变空间推断的实现问题，而不是先润色结论。旧 <code>coastal_sector()</code> 以经纬度阈值给站点分区，曾把 Fishguard、Holyhead、Cuxhaven 和 Tregde 等站放入不合理海区；它已从统计路径移除。现在 74 个候选站通过 <code>config/coastal_spatial_blocks_v2.csv</code> 显式连接到 coastal basin 以及 100、150、250 km 三套版本化空间块。块内 restricted permutation 的双侧概率也改为经验双尾，不再假定受限零分布以 0 为中心。</p>
+<p>当前可确认的是：68 站主表、2,960 条地形稳健性记录、三套空间统计、图件和文稿由同一 source-table 体系生成；面积、拓扑和指标分解契约通过。当前证据支持的是 limited rank concordance 和 decision-level disagreement。它不支持“显著负相关定律”“错配异常大于空间随机”“connected terrain 是真实洪水排序”或“二指标组合已经提高预测能力”。</p>
+<h2 id="2-p0">2. P0 问题及处理证据</h2>
+<p>1. <strong>空间错分：已修复并重算。</strong> 经纬度 <code>if</code> 规则不再参与推断。地图、块内置换、分块调整关联、块重采样、leave-one-block-out 和 Top-k null 统一读取版本化配置；已知错误映射由自动测试固定。</p>
+<p>2. <strong>受限置换双侧概率：已修复并重算。</strong> 当前概率是 <code>2 * min(P(null &lt;= observed), P(null &gt;= observed))</code> 的加一校正经验双尾值，允许空间受限零分布偏离 0。</p>
+<p>3. <strong>复现入口：已分层。</strong> <code>python scripts/reproduce.py --mode derived</code> 从带 SHA-256 的紧凑派生输入重建论文包；<code>--mode full</code> 从本地上游原始产品开始。README 不再把 derived rebuild 描述成 raw-to-paper。</p>
+<p>4. <strong>审稿包依赖闭包：已重构并设独立门禁。</strong> <code>src/</code>、全部 Python 脚本、测试、配置及 figure-source tables 由目录规则纳入，不再依赖易漏项的脚本白名单；最终 ZIP 在包外以临时目录、全新虚拟环境和九个确定性输出哈希独立验收。</p>
+<p>5. <strong>运行环境：已补齐。</strong> <code>pyproject.toml</code> 声明 xarray、netCDF4、rasterio、pyproj、SciencePlots 与 pytest 等实际依赖；<code>environment-lock.yml</code> 记录本轮平台版本。系统全局 pytest 插件可能冲突，因此正式门禁固定 <code>PYTEST_DISABLE_PLUGIN_AUTOLOAD=1</code>。</p>
+<h2 id="3-mask">3. 数据产品与 mask 审计</h2>
+<div class="scroll-table"><table><thead><tr><th>product</th><th>release</th><th>tile_tag</th><th>vertical_reference</th><th>release_cap_m</th><th>paper_v1_0_cap_m</th><th>mask_outside_support_fill</th><th>official_255_cells_in_primary_analysis_windows</th><th>outside_support_cells_in_primary_analysis_windows</th><th>note</th></tr></thead><tbody><tr><td>DeltaDTM</td><td>v1.1.1</td><td>DeltaDTM v1.1.1 / DeltaDTM.jl v1.1.1</td><td>EGM2008</td><td>30</td><td>10</td><td>254</td><td>0</td><td>3320</td><td>The 2024 paper documents v1.0; the downloaded v1.1 README documents the 30 m EGM2008 cap. Outside-support fill is kept distinct from class 255 and excluded from all land denominators.</td></tr></tbody></table></div>
+<p>主流程只允许官方 class 0 land 进入 represented-land denominator；class 1 ocean 是基础 marine seed，class 3 river 仅在与 ocean component 连通时参与水体种子，class 2 lake、class 255 和窗口外 class 254 均排除。这里的 <code>connected</code> 是 raster component 分类，不是水动力连通、洪水历时或防洪工程失效判断。</p>
+<h2 id="4">4. 自动科学约束</h2>
+<div class="scroll-table"><table><thead><tr><th>Check</th><th>Pass</th><th>Observed</th><th>Criterion or meaning</th></tr></thead><tbody><tr><td>Robustness-grid rows</td><td>True</td><td>2960</td><td>74 stations x 40 configurations</td></tr><tr><td>Primary stations</td><td>True</td><td>68</td><td>68 unique matched stations</td></tr><tr><td>Explicit spatial-block coverage</td><td>True</td><td>74</td><td>74 configured candidates, no missing block</td></tr><tr><td>Known coastline corrections</td><td>True</td><td>True</td><td>Fishguard/Holyhead/Cuxhaven/Tregde reviewed mappings</td></tr><tr><td>Connected area &lt;= below-threshold area</td><td>True</td><td>0</td><td>violations</td></tr><tr><td>Four-neighbour &lt;= eight-neighbour</td><td>True</td><td>0</td><td>violations under identical configuration</td></tr><tr><td>Metric decomposition identity</td><td>True</td><td>1.13687e-12</td><td>maximum absolute percentage-point error</td></tr><tr><td>Official class 255 in primary windows</td><td>True</td><td>0</td><td>cells</td></tr><tr><td>Outside-support sentinel distinct</td><td>True</td><td>3320</td><td>class-254 cells, excluded</td></tr><tr><td>Threshold grid complete</td><td>True</td><td>884</td><td>68 stations x 13 thresholds from 0 to 3 m</td></tr><tr><td>Water/land topology grid complete</td><td>True</td><td>272</td><td>68 stations x four explicit topology combinations</td></tr><tr><td>Coastline-window sensitivity complete</td><td>True</td><td>68</td><td>stations</td></tr><tr><td>Decision audit complete</td><td>True</td><td>68</td><td>stations</td></tr><tr><td>Coordinate match review complete</td><td>True</td><td>68</td><td>68 included coordinate-plausible pairs; six distance-excluded candidates are not counted</td></tr></tbody></table></div>
+<p>这些检查能证明代码输出满足自身声明的集合、面积与拓扑关系，也能阻止已知回归。它们不能证明输入 DEM 没有系统误差，不能替代共同垂向基准，更不等同于独立洪水观测验证。</p>
+<h2 id="5">5. 空间统计证据边界</h2>
+<div class="scroll-table"><table><thead><tr><th>terrain_metric_label</th><th>block_scale_km</th><th>n_spatial_blocks</th><th>spearman</th><th>kendall</th><th>sector_adjusted_rank_association</th><th>sector_stratified_permutation_two_sided_p</th><th>top20_n</th><th>top20_observed_overlap</th><th>sector_stratified_top20_null_q025</th><th>sector_stratified_top20_null_q975</th><th>sector_stratified_top20_lower_tail_p</th><th>spearman_sector_bootstrap_p025</th><th>spearman_sector_bootstrap_p975</th></tr></thead><tbody><tr><td>lowland_prevalence</td><td>100</td><td>42</td><td>-0.309272</td><td>-0.187884</td><td>-0.395706</td><td>0.181582</td><td>14</td><td>1</td><td>1</td><td>1</td><td>1</td><td>-0.549305</td><td>0.0332786</td></tr><tr><td>lowland_prevalence</td><td>150</td><td>34</td><td>-0.309272</td><td>-0.187884</td><td>-0.477079</td><td>0.0219978</td><td>14</td><td>1</td><td>1</td><td>2</td><td>0.332667</td><td>-0.548781</td><td>-0.00724409</td></tr><tr><td>lowland_prevalence</td><td>250</td><td>25</td><td>-0.309272</td><td>-0.187884</td><td>-0.41672</td><td>0.020198</td><td>14</td><td>1</td><td>1</td><td>2</td><td>0.331967</td><td>-0.582751</td><td>0.0704137</td></tr><tr><td>conditional_connectivity</td><td>100</td><td>42</td><td>0.104533</td><td>0.06924</td><td>0.230842</td><td>0.490151</td><td>14</td><td>5</td><td>4</td><td>5</td><td>1</td><td>-0.161064</td><td>0.330231</td></tr><tr><td>conditional_connectivity</td><td>150</td><td>34</td><td>0.104533</td><td>0.06924</td><td>0.138767</td><td>0.584742</td><td>14</td><td>5</td><td>3</td><td>6</td><td>0.917308</td><td>-0.161052</td><td>0.315844</td></tr><tr><td>conditional_connectivity</td><td>250</td><td>25</td><td>0.104533</td><td>0.06924</td><td>0.147126</td><td>0.464154</td><td>14</td><td>5</td><td>2</td><td>6</td><td>0.971203</td><td>-0.150571</td><td>0.326691</td></tr><tr><td>connected_lowland_share</td><td>100</td><td>42</td><td>-0.333168</td><td>-0.210711</td><td>-0.349591</td><td>0.135186</td><td>14</td><td>1</td><td>1</td><td>1</td><td>1</td><td>-0.550994</td><td>-0.0272113</td></tr><tr><td>connected_lowland_share</td><td>150</td><td>34</td><td>-0.333168</td><td>-0.210711</td><td>-0.455223</td><td>0.0251975</td><td>14</td><td>1</td><td>1</td><td>2</td><td>0.332467</td><td>-0.567171</td><td>-0.0273174</td></tr><tr><td>connected_lowland_share</td><td>250</td><td>25</td><td>-0.333168</td><td>-0.210711</td><td>-0.411791</td><td>0.0119988</td><td>14</td><td>1</td><td>1</td><td>4</td><td>0.0985901</td><td>-0.578765</td><td>0.0163185</td></tr><tr><td>connected_area</td><td>100</td><td>42</td><td>-0.340955</td><td>-0.208077</td><td>-0.401135</td><td>0.121988</td><td>14</td><td>1</td><td>1</td><td>1</td><td>1</td><td>-0.565968</td><td>-0.0190467</td></tr><tr><td>connected_area</td><td>150</td><td>34</td><td>-0.340955</td><td>-0.208077</td><td>-0.481675</td><td>0.0319968</td><td>14</td><td>1</td><td>1</td><td>2</td><td>0.331567</td><td>-0.558951</td><td>-0.0456077</td></tr><tr><td>connected_area</td><td>250</td><td>25</td><td>-0.340955</td><td>-0.208077</td><td>-0.433954</td><td>0.0129987</td><td>14</td><td>1</td><td>1</td><td>4</td><td>0.0977902</td><td>-0.576907</td><td>0.0158461</td></tr></tbody></table></div>
+<p>100、150 和 250 km 方案分别包含 42、34 和 25 个近似沿岸连续块。RP10 与 connected-land share 的原始 Spearman rho 为 -0.333；块内经验双侧 p 随分块尺度为 0.135、0.025 和 0.012，而保持地理组成的块重采样范围为 [-0.551,-0.027]、[-0.567,-0.027] 和 [-0.579,0.016]。两类结果不矛盾：前者问同一组空间块内随机重排后是否常见，后者问换一组被抽到的地理块时估计是否稳定。250 km 范围触及 0，因此稿件不建立空间稳定的负相关定律。</p>
+<h3 id="top-k">Top-k 空间零模型</h3>
+<div class="scroll-table"><table><thead><tr><th>block_scale_km</th><th>n_spatial_blocks</th><th>top_n</th><th>observed_overlap</th><th>sector_stratified_null_q025</th><th>sector_stratified_null_q975</th><th>sector_stratified_lower_tail_p</th></tr></thead><tbody><tr><td>100</td><td>42</td><td>14</td><td>1</td><td>1</td><td>1</td><td>1</td></tr><tr><td>150</td><td>34</td><td>14</td><td>1</td><td>1</td><td>2</td><td>0.326667</td></tr><tr><td>250</td><td>25</td><td>14</td><td>1</td><td>1</td><td>4</td><td>0.0982902</td></tr></tbody></table></div>
+<p>Top-20% 两表各 14 站，实际只重合 1 站，但该值在三套空间零模型包络内。1/14 是筛查决策的描述性恢复度，不是“低于随机”的显著性证据。</p>
+<h2 id="6">6. 指标构念与决策稳定性</h2>
+<p>connected-land share 被显式拆为 lowland prevalence 乘以 conditional connectivity。主结果中前者与 storm tide 的 rho 为 -0.309，后者为 +0.105；所以低 composite 值不能一概解释为“海洋连通差”。</p>
+<div class="scroll-table"><table><thead><tr><th>Decision diagnostic</th><th>Observed</th></tr></thead><tbody><tr><td>Median absolute rank displacement</td><td>26</td></tr><tr><td>Maximum absolute rank displacement</td><td>64</td></tr><tr><td>Always terrain Top-20% across eligible configurations</td><td>6</td></tr><tr><td>Never terrain Top-20% across eligible configurations</td><td>40</td></tr><tr><td>Pareto-nondominated sites</td><td>5</td></tr></tbody></table></div>
+<p>绝对排名位移中位数为 26。地形 Top-20% 选择频率来自 40 个预设配置中的可用子集，它度量方法选择下的清单稳定性，不是洪水概率。四象限和 Pareto 结果用于说明 costly second-stage modelling 的候选清单如何变化，不把 terrain ranking 当作真值。</p>
+<h3 id="">水体/陆地邻域、阈值与窗口</h3>
+<div class="scroll-table"><table><thead><tr><th>water_neighbours</th><th>land_neighbours</th><th>terrain_metric</th><th>n_sites</th><th>water_vs_terrain_spearman</th><th>terrain_rank_spearman_vs_primary_8water_4land</th><th>top20_n</th><th>top20_overlap_with_primary</th><th>top20_membership_changes</th></tr></thead><tbody><tr><td>4</td><td>4</td><td>connected_reference_land_pct</td><td>68</td><td>-0.427492</td><td>0.862007</td><td>14</td><td>12</td><td>4</td></tr><tr><td>4</td><td>4</td><td>connected_area_km2</td><td>68</td><td>-0.430927</td><td>0.862122</td><td>14</td><td>12</td><td>4</td></tr><tr><td>4</td><td>4</td><td>conditional_connectivity_pct</td><td>68</td><td>0.0888363</td><td>0.957201</td><td>14</td><td>14</td><td>0</td></tr><tr><td>4</td><td>8</td><td>connected_reference_land_pct</td><td>68</td><td>-0.365958</td><td>0.88785</td><td>14</td><td>11</td><td>6</td></tr><tr><td>4</td><td>8</td><td>connected_area_km2</td><td>68</td><td>-0.371493</td><td>0.896362</td><td>14</td><td>11</td><td>6</td></tr><tr><td>4</td><td>8</td><td>conditional_connectivity_pct</td><td>68</td><td>0.012005</td><td>0.867483</td><td>14</td><td>13</td><td>2</td></tr><tr><td>8</td><td>4</td><td>connected_reference_land_pct</td><td>68</td><td>-0.333168</td><td>1</td><td>14</td><td>14</td><td>0</td></tr><tr><td>8</td><td>4</td><td>connected_area_km2</td><td>68</td><td>-0.340955</td><td>1</td><td>14</td><td>14</td><td>0</td></tr><tr><td>8</td><td>4</td><td>conditional_connectivity_pct</td><td>68</td><td>0.104533</td><td>1</td><td>14</td><td>14</td><td>0</td></tr><tr><td>8</td><td>8</td><td>connected_reference_land_pct</td><td>68</td><td>-0.319846</td><td>0.961102</td><td>14</td><td>11</td><td>6</td></tr><tr><td>8</td><td>8</td><td>connected_area_km2</td><td>68</td><td>-0.329427</td><td>0.966828</td><td>14</td><td>11</td><td>6</td></tr><tr><td>8</td><td>8</td><td>conditional_connectivity_pct</td><td>68</td><td>-0.00615544</td><td>0.900571</td><td>14</td><td>13</td><td>2</td></tr></tbody></table></div>
+<div class="scroll-table"><table><thead><tr><th>terrain_metric</th><th>n_sites</th><th>spearman</th><th>kendall</th><th>interpretation</th></tr></thead><tbody><tr><td>connected_share_auc_0_3m_pct</td><td>68</td><td>-0.298202</td><td>-0.187006</td><td>threshold-integrated standardized EGM2008 terrain screen; not a flood probability</td></tr><tr><td>connected_area_auc_0_3m_km2</td><td>68</td><td>-0.31328</td><td>-0.186128</td><td>threshold-integrated standardized EGM2008 terrain screen; not a flood probability</td></tr><tr><td>below_share_auc_0_3m_pct</td><td>68</td><td>-0.289232</td><td>-0.175593</td><td>threshold-integrated standardized EGM2008 terrain screen; not a flood probability</td></tr></tbody></table></div>
+<div class="scroll-table"><table><thead><tr><th>terrain_metric</th><th>n_sites</th><th>terrain_rank_spearman_oriented_vs_square</th><th>water_vs_oriented_spearman</th><th>water_vs_square_spearman</th><th>top20_n</th><th>top20_overlap_oriented_vs_square</th><th>top20_membership_changes</th><th>interpretation</th></tr></thead><tbody><tr><td>connected_reference_land_pct</td><td>68</td><td>0.803794</td><td>-0.247662</td><td>-0.333168</td><td>14</td><td>11</td><td>6</td><td>mask-derived window-geometry sensitivity, not an alternative flood model</td></tr><tr><td>connected_area_km2</td><td>68</td><td>0.741535</td><td>-0.254151</td><td>-0.340955</td><td>14</td><td>11</td><td>6</td><td>mask-derived window-geometry sensitivity, not an alternative flood model</td></tr><tr><td>below_reference_land_pct</td><td>68</td><td>0.892812</td><td>-0.201779</td><td>-0.309272</td><td>14</td><td>14</td><td>0</td><td>mask-derived window-geometry sensitivity, not an alternative flood model</td></tr></tbody></table></div>
+<p>主流程是 water-8 / land-4。严格 water-4 / land-4 与主流程地形排名 rho 为 0.86、Top-20% 改变 4 个成员。0-3 m 阈值积分和近似沿岸窗口仍给出有限一致性，但沿岸窗口与方窗仅重合 11/14 个 terrain Top-20% 成员。这些结果支持区域结论的方向，也明确暴露单站优先级的方法依赖性。</p>
+<h2 id="7-coast-rp">7. COAST-RP 匹配审计</h2>
+<p>68 个纳入站点最大 great-circle 匹配距离为 2.811 km；以下 6 站因超过 6 km 预设规则被排除：</p>
+<div class="scroll-table"><table><thead><tr><th>station</th><th>recomputed_match_dist_km</th><th>coast_rp_source_lon</th><th>coast_rp_source_lat</th><th>match_exclusion_reason</th></tr></thead><tbody><tr><td>Cordemais France</td><td>22.6474</td><td>-2.19</td><td>47.278</td><td>excluded_nearest_coast_rp_point_gt6km</td></tr><tr><td>Le Pellerin France</td><td>28.388</td><td>-2.014</td><td>47.014</td><td>excluded_nearest_coast_rp_point_gt6km</td></tr><tr><td>Nantes Usine Brulee</td><td>39.423</td><td>-2.014</td><td>47.014</td><td>excluded_nearest_coast_rp_point_gt6km</td></tr><tr><td>Donges France</td><td>8.27799</td><td>-2.19</td><td>47.278</td><td>excluded_nearest_coast_rp_point_gt6km</td></tr><tr><td>Montoir De Bretagne</td><td>6.89698</td><td>-2.19</td><td>47.278</td><td>excluded_nearest_coast_rp_point_gt6km</td></tr><tr><td>Paimboeuf France</td><td>14.3371</td><td>-2.19</td><td>47.278</td><td>excluded_nearest_coast_rp_point_gt6km</td></tr></tbody></table></div>
+<p>坐标级审阅对 74 个纳入匹配全部给出“地理位置可接受”，其中 11 个标记为河口或半封闭海湾。该审阅没有 coastline component 或沿岸路径距离，字段明确写为 <code>opposite_bank_flag = not_determined_from_coordinate_review</code>，不能升级为 hydrodynamic equivalence。</p>
+<h2 id="8-national-local-dtm-product-and-datum-cross-check">8. national/local DTM product-and-datum cross-check</h2>
+<div class="scroll-table"><table><thead><tr><th>station</th><th>delta_connected_2m_reference_land_pct</th><th>local_connected_2m_reference_land_pct</th><th>delta_connected_2m_area_km2</th><th>local_connected_2m_area_km2</th><th>connected_pixel_iou_after_reprojection</th><th>local_dtm_vertical_datum_note</th></tr></thead><tbody><tr><td>Sheerness</td><td>42.7002</td><td>9.62959</td><td>20.3643</td><td>4.61207</td><td>0.214623</td><td>Ordnance Datum Newlyn / EA product native datum</td></tr><tr><td>Newlyn</td><td>0.44611</td><td>0.416648</td><td>0.276293</td><td>0.259144</td><td>0.527548</td><td>Ordnance Datum Newlyn / EA product native datum</td></tr><tr><td>Lowestoft P024 Uk</td><td>1.41616</td><td>6.16525</td><td>0.669507</td><td>2.92848</td><td>0.110977</td><td>Ordnance Datum Newlyn / EA product native datum</td></tr><tr><td>Immingham P026 Uk</td><td>0.405551</td><td>0.078999</td><td>0.24946</td><td>0.0487939</td><td>0.0417246</td><td>Ordnance Datum Newlyn / EA product native datum</td></tr><tr><td>Denhelder Hel Nl</td><td>71.7296</td><td>4.36493</td><td>20.8545</td><td>1.27433</td><td>0.0554507</td><td>Normaal Amsterdams Peil / AHN product native datum</td></tr><tr><td>Delfzijl Del Nl</td><td>96.7041</td><td>89.7843</td><td>61.3031</td><td>57.1869</td><td>0.925796</td><td>Normaal Amsterdams Peil / AHN product native datum</td></tr><tr><td>Hoek van Holland</td><td>2.63966</td><td>1.43861</td><td>1.41098</td><td>0.771845</td><td>0.217064</td><td>Normaal Amsterdams Peil / AHN product native datum</td></tr></tbody></table></div>
+<p>七站对照记录共同 target grid、transform、mask resampling 和文件 SHA-256，但 DeltaDTM、Ordnance Datum Newlyn 与 Normaal Amsterdams Peil 未统一。因此差异同时包含高程产品、垂向基准、水平分辨率和 provider WCS 重采样；本文只称 diagnostic product-and-datum sensitivity，不称 validation，也不把七站变化比例外推到 68 站。</p>
+<h2 id="9">9. 图件来源与视觉检查</h2>
+<div class="scroll-table"><table><thead><tr><th>Figure</th><th>Pixels</th><th>Embedded DPI</th><th>Source data</th><th>Visual/data QA</th></tr></thead><tbody><tr><td>Fig1_process_terrain_design.png</td><td>3542 x 2404</td><td>500</td><td>Primary_station_spatial_blocks.csv; Primary_sample_flow.csv; coastal_spatial_blocks_v2.csv</td><td>original-resolution inspection required after each final rebuild; no cell enlargement</td></tr><tr><td>Fig2_regional_screening_agreement.png</td><td>3719 x 3362</td><td>500</td><td>Primary_terrain_components_68stations.csv; Return_period_sensitivity.csv; Spatial_block_bootstrap_intervals.csv; Topk_spatial_null_curves.csv; Decision_instability_station_metrics.csv</td><td>original-resolution inspection required after each final rebuild; no cell enlargement</td></tr><tr><td>Fig3_connected_terrain_contrasts.png</td><td>3687 x 3934</td><td>500</td><td>Fig3_predefined_site_selection.csv; Fig3_threshold_response_source.csv; frozen DeltaDTM windows</td><td>original-resolution inspection required after each final rebuild; no cell enlargement</td></tr><tr><td>Fig4_metric_decomposition_robustness.png</td><td>3816 x 3320</td><td>500</td><td>Primary_terrain_components_68stations.csv; Denominator_adjusted_associations.csv; Water_land_topology_summary.csv; Rank_robustness_one_at_a_time.csv; Threshold_integrated_associations.csv; Coastline_window_sensitivity_summary.csv</td><td>original-resolution inspection required after each final rebuild; no cell enlargement</td></tr><tr><td>FigS1_water_level_definition.png</td><td>3444 x 1458</td><td>500</td><td>Fig2_water_level_divergence_with_uncertainty.csv; source-verified tidal metadata</td><td>original-resolution inspection required after each final rebuild; no cell enlargement</td></tr><tr><td>FigS2_process_coherence.png</td><td>5122 x 2354</td><td>500</td><td>Fig3_driver_correlations.csv; event-composite source tables</td><td>original-resolution inspection required after each final rebuild; no cell enlargement</td></tr><tr><td>FigS3_connectivity_gallery.png</td><td>3462 x 3415</td><td>500</td><td>Primary_terrain_components_68stations.csv; frozen DeltaDTM windows</td><td>original-resolution inspection required after each final rebuild; no cell enlargement</td></tr><tr><td>FigS4_elevation_product_datum_sensitivity.png</td><td>3591 x 2975</td><td>500</td><td>TableS_local_dtm_product_datum_crosscheck.csv</td><td>original-resolution inspection required after each final rebuild; no cell enlargement</td></tr><tr><td>FigS5_coastrp_match_audit.png</td><td>3466 x 1591</td><td>500</td><td>Match_distance_audit_74stations.csv; COAST_RP_same_coast_match_audit.csv</td><td>original-resolution inspection required after each final rebuild; no cell enlargement</td></tr></tbody></table></div>
+<p>Figure 3 的三站由机器可读规则选出。低值站 inset 只放大原像元位置，不增加 connected 面积；9 子图分别展示分类、指标分解和实算阈值曲线。每次最终重建后仍须以原始分辨率检查标签遮挡、图例、字体和颜色，并把像素层面的视觉判断与 source-table 数值核对分开记录。</p>
+<h2 id="10-sha-256">10. 关键文件 SHA-256</h2>
+<div class="scroll-table"><table><thead><tr><th>File</th><th>Bytes</th><th>SHA-256</th></tr></thead><tbody><tr><td>data/raw/coast_rp/COAST-RP.zip</td><td>6798999</td><td>13242fe8b682230420357dbac202b10590f41dc0c9e378b9c2c69f91962704c9</td></tr><tr><td>data/raw/gssr/metadata/eraint.geojson</td><td>307194</td><td>aab77394a0bf87b3ae611131e26b489a7abe9dd67add071aeee0da4b3bab46e6</td></tr><tr><td>data/raw/deltadtm/index/README.md</td><td>2326</td><td>9da10b0576ff4368a756bd5646b091fab6b7c7c7d217a6f758fbe0803f826e00</td></tr><tr><td>data/raw/deltadtm/zips/mask_tiles.zip</td><td>428178062</td><td>3f8c6999f90346359e60cc6c757786d43fd1cb65e4ab13125faaa80606487775</td></tr><tr><td>config/coastal_spatial_blocks_v2.csv</td><td>6730</td><td>05df4af816e3287c6fbf9d7fe9c8ee8ad1b66f3ef2d9533f626e2d008d4e8791</td></tr><tr><td>data/upstream_raw_manifest.csv</td><td>77446</td><td>c3567da4627f59e3bb00f40f6957db0770dac691e4c2a01acb8b2ef73f57c620</td></tr><tr><td>data/derived_input_manifest.json</td><td>3004</td><td>9dfa418329cfabec84fe0e2f5abbbeca17bdf05ff8b542a86369da9b6d639154</td></tr><tr><td>data/figure_source/Primary_terrain_components_68stations.csv</td><td>35122</td><td>f1e5eef717a36ee71ec82bbef8da9f487a1ae843c9e1cc6e9e3e791bf28c58f2</td></tr><tr><td>data/figure_source/Terrain_robustness_grid_74stations.csv</td><td>1481287</td><td>6142194e3fe7354c8c5cdf48d12c5d95a2d40364b4d97138947d43666b115661</td></tr><tr><td>data/figure_source/Return_period_sensitivity.csv</td><td>25437</td><td>1b5517fc32b1a73413764b647c1449e830d6e7639dd34bba6ff9387d4049f11a</td></tr><tr><td>data/figure_source/Spatial_block_bootstrap_intervals.csv</td><td>6972</td><td>6883bc444e5e34edc53325889fd1e57ebc93e0fbee67a06f723d9b99b034b814</td></tr><tr><td>data/figure_source/Topk_spatial_null_curves.csv</td><td>19132</td><td>24ca73f5eca3e5f25318afd65cda2bca53702801e32806d0c5f07ddee16dd8f9</td></tr><tr><td>data/figure_source/Water_land_topology_sensitivity_68stations.csv</td><td>72596</td><td>a763ad91307e56be4ca11cb538724bc1d78b7b5d022685922cfd879a0e8a53c8</td></tr><tr><td>data/figure_source/Threshold_response_0_3m_68stations.csv</td><td>225103</td><td>274719124c9f803ae29315d4adba1d7eda94c39aeda88d306b8a9a15b6c47abf</td></tr><tr><td>data/figure_source/Coastline_oriented_window_68stations.csv</td><td>27461</td><td>57330dabb4f6bbea9af86c2c484dee117f9bce5d3abea5fa9f7346e3af42ff8c</td></tr><tr><td>data/figure_source/Decision_instability_station_metrics.csv</td><td>40312</td><td>427dfdb53466e679b0a89be80bd12dea34d7fead7927ca8efe61e031693e6a41</td></tr><tr><td>data/figure_source/COAST_RP_same_coast_match_audit.csv</td><td>66453</td><td>ce2ee8fe792f566cdb1f5203aff73b4ddf1131879096ab3578da6f5260794970</td></tr><tr><td>data/figure_source/TableS_local_dtm_product_datum_crosscheck.csv</td><td>9735</td><td>20a1346c2a15016de6d8f6cc983c296e8728a2a452acb24750df6da7ebb6b597</td></tr><tr><td>scripts/reproduce.py</td><td>8137</td><td>ac6df5d8b9aeaf2c314407581e0a3aa83cced98cb8b3da797b7593fb1100ae96</td></tr><tr><td>scripts/rebuild_frozen_primary_analysis.py</td><td>25305</td><td>9c306499e07e25a99cc5b1f75221300ebed755f4ad5a477d9063d517323736c1</td></tr><tr><td>scripts/add_external_review_diagnostics.py</td><td>31815</td><td>22e869b23a08ca1432e940d036133b7d2422f025db764a6a684f06adb97b57c6</td></tr><tr><td>scripts/make_major_revision_figures.py</td><td>46635</td><td>71e9f9484a04d29b7f1544270f67aa73a5ec2e7371771ac3c851d84574ca04f6</td></tr><tr><td>tests/test_scientific_contracts.py</td><td>14920</td><td>7161d27bf4c9710186ac789fc4abecb707e209c20ea5e80c07e6153dd91294c1</td></tr><tr><td>src/coastal_screening/__init__.py</td><td>332</td><td>4ed9dcca6879041b6fb6252d7760c66b7d89ee23e33242eb4bb113b36e8f3500</td></tr><tr><td>src/coastal_screening/connectivity.py</td><td>1330</td><td>9a1eedcdd0aefa3659a25f3df7f0eb6404d2c24ed45855ac71246f4478962199</td></tr><tr><td>src/coastal_screening/spatial_blocks.py</td><td>3973</td><td>bc0c1f953c05f6f7b4ce74bb498a9ecc4964946804a1dbc33a5c3a91876ade91</td></tr><tr><td>src/coastal_screening/statistics.py</td><td>3122</td><td>035d10af40bcf808836d47fba87ab401e0c6691adfa94c84b486f2e61977a2b3</td></tr><tr><td>data/raw/local_dtm/delfzijl-del-nl_local_dtm_10m.tif</td><td>2204083</td><td>a8b3589a24ca9dbcb00d18e24c916e193d37a9b73034c185bf29fcf80a9cbb35</td></tr><tr><td>data/raw/local_dtm/denhelder-hel-nl_local_dtm_10m.tif</td><td>1310648</td><td>b950e177da667509c85bb8a4dc77c4dcbac5b56d85507ea706e968568af15e79</td></tr><tr><td>data/raw/local_dtm/hoekvanholla-hvh-nl_local_dtm_10m.tif</td><td>1848802</td><td>e960ac322ae8e703055a75739d6dee6a65c2ee367e9dc0dd8af1c7f6ff600563</td></tr><tr><td>data/raw/local_dtm/immingham-p026-uk_local_dtm_10m.tif</td><td>9437675</td><td>8567cb377b27480b51f3dbee6ff5501784f3eed237e0ec7e8058ff09789ed6e7</td></tr><tr><td>data/raw/local_dtm/lowestoft-p024-uk_local_dtm_10m.tif</td><td>6291923</td><td>d95f97c91d4df295e6113b98fccbdab4d3bedac1a35c3751464e0b8e61ab2819</td></tr><tr><td>data/raw/local_dtm/newlyn-p001-uk_local_dtm_10m.tif</td><td>9437675</td><td>fef345c91868dd64e5a2e11180ad066b7a1f8ce92305cf26990d70fd0c9e51c2</td></tr><tr><td>data/raw/local_dtm/sheerness-p015-uk_local_dtm_10m.tif</td><td>9437675</td><td>40c81f2a969e0044184d5fb40ebc11728dca5376d2707386e29c90def027cadd</td></tr></tbody></table></div>
+<p>大体积上游数据不能凭文件名认定相同。full 模式在计算前核验 <code>data/upstream_raw_manifest.csv</code>；derived 模式核验 <code>data/derived_input_manifest.json</code>。本表用于确认论文、报告和发布包是否来自同一输入与代码基线。</p>
+<h2 id="11">11. 尚未消除的风险</h2>
+<div class="scroll-table"><table><thead><tr><th>Risk</th><th>Status</th><th>Evidence boundary</th></tr></thead><tbody><tr><td>垂向基准统一</td><td>未完成</td><td>DeltaDTM/ODN/NAP 尚未转换到共同 local-MSL reference；S4 只能解释为产品、基准、分辨率和服务重采样的联合敏感性。</td></tr><tr><td>独立真实洪水基准</td><td>未完成</td><td>检索到的 2026 European total-water-level storms 数据仍是水位过程，不是站点级动态淹没真值；没有用它伪装外部验证。</td></tr><tr><td>空间块定义</td><td>部分完成</td><td>74 站已由版本化表显式审阅并修正已知错分；100/150/250 km 标签是近似沿岸连续分组，不是精确测得的 shoreline distance。</td></tr><tr><td>COAST-RP 同岸环境</td><td>部分完成</td><td>坐标和地图审阅通过 68 对匹配并标记 11 个河口/复杂岸线点；这不证明同一沿岸水动力环境，仍需 coastline component/alongshore-distance 数据。</td></tr><tr><td>独立站点框架</td><td>受限</td><td>68 站来自 GSSR metadata inventory，且英国与爱尔兰占 45 站，不能外推为均匀欧洲海岸样本。</td></tr><tr><td>公开复现</td><td>计算链已通过</td><td>full 模式已核验 278 个上游文件并完成 raw-to-paper 重建；最终审稿 ZIP 的 clean-room 结果由包外 reviewer_archive_validation_receipt.json 独立记录。</td></tr><tr><td>作者元数据与 DOI</td><td>待补充</td><td>authors、affiliations、funding、contributions 及正式归档 DOI 尚不能由代码推断。</td></tr></tbody></table></div>
+<h2 id="12">12. 可验收的后续目标</h2>
+<p>1. <strong>共同垂向基准：</strong> 至少 3 个英国和 3 个荷兰 case 转换到明确共同 coastal-MSL reference，记录 offset 来源、公式、不确定性和重算结果；否则 S4 永久保持 sensitivity 定位。</p>
+<p>2. <strong>独立 outcome：</strong> 只在存在站点可匹配的 observed 或 dynamic flood-hazard outcome 后，预先定义并比较 water-only、terrain-only、combined screen；完成前不使用 predictive complementarity。</p>
+<p>3. <strong>独立海岸样本：</strong> 用不依赖 GSSR inventory 的 station/shoreline inventory 重算，公开全部候选、排除原因和沿岸采样覆盖。</p>
+<p>4. <strong>同岸匹配：</strong> 计算 coastline component 与 alongshore distance，逐站固定 opposite-bank/estuary 判定；当前坐标审阅不得替代这一工作。</p>
+<p>5. <strong>发布复现：</strong> 在全新临时目录解压 reviewer ZIP，安装项目、运行 derived reproduction、测试并比较确定性科学输出哈希；记录 release tag、commit 与 ZIP SHA-256。</p>
+<p>6. <strong>投稿元数据：</strong> 补齐 authors、affiliations、funding、contributions 和正式归档 DOI；HTML、Markdown、PDF 中不留“待补充”。</p>
+<h2 id="13">13. 复现入口</h2>
+<p class="bullet">• 审稿人快速复现：<code>python scripts/reproduce.py --mode derived</code></p>
+<p class="bullet">• 上游文件预检：<code>python scripts/reproduce.py --mode full --verify-only</code></p>
+<p class="bullet">• 完整 raw-to-paper：<code>python scripts/reproduce.py --mode full</code></p>
+<p class="bullet">• 科学合同：<code>PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 python -m pytest tests -q</code></p>
+<p class="bullet">• 发布门禁：<code>python scripts/run_major_revision_rebuild.py</code></p>
+</main>
+</body>
+</html>

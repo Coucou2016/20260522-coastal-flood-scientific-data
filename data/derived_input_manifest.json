@@ -1,0 +1,77 @@
+{
+  "schema": "coastal-screening-derived-inputs-v1",
+  "generated_utc": "2026-10-17T16:33:36.052744+00:00",
+  "scope": "Checksummed derived station inputs; not an upstream raw-data manifest.",
+  "files": [
+    {
+      "path": "config/coastal_spatial_blocks_v2.csv",
+      "bytes": 6730,
+      "sha256": "05df4af816e3287c6fbf9d7fe9c8ee8ad1b66f3ef2d9533f626e2d008d4e8791"
+    },
+    {
+      "path": "data/figure_source/Fig5_station_candidate_audit.csv",
+      "bytes": 21941,
+      "sha256": "a9fb889aa575dab01b7507bccba5e30c8da0014ddca78c42a5a3a985f99810c6"
+    },
+    {
+      "path": "data/figure_source/Fig6_mask_aware_terrain_area_metrics.csv",
+      "bytes": 155702,
+      "sha256": "c21e1bccceec7221ace0818543fd4f8cf14d8fd7524f10efc1ae793db381840f"
+    },
+    {
+      "path": "data/figure_source/Terrain_robustness_grid_74stations.csv",
+      "bytes": 1481287,
+      "sha256": "6142194e3fe7354c8c5cdf48d12c5d95a2d40364b4d97138947d43666b115661"
+    },
+    {
+      "path": "data/figure_source/TableS_coastrp_multi_return_period_68stations.csv",
+      "bytes": 22372,
+      "sha256": "47a7f8b7f6ecf9aa5bc40ea53c13a38a1a9d8c64713f058432776f5e8334c663"
+    },
+    {
+      "path": "data/figure_source/TableS_tidal_regime_metadata_source_tracked.csv",
+      "bytes": 8753,
+      "sha256": "1a4640c59e8b1f6748abf0f6e8e9713ddb5ef26aba7d4d123d5b599eb6eb6cf5"
+    },
+    {
+      "path": "data/figure_source/TableS_local_dtm_product_datum_crosscheck.csv",
+      "bytes": 9735,
+      "sha256": "20a1346c2a15016de6d8f6cc983c296e8728a2a452acb24750df6da7ebb6b597"
+    },
+    {
+      "path": "data/figure_source/Threshold_response_0_3m_68stations.csv",
+      "bytes": 225103,
+      "sha256": "274719124c9f803ae29315d4adba1d7eda94c39aeda88d306b8a9a15b6c47abf"
+    },
+    {
+      "path": "data/figure_source/Threshold_integrated_terrain_metrics_68stations.csv",
+      "bytes": 9542,
+      "sha256": "60a27fa4199c39905e4b88f8f76f16cdd6c7bfd286e9b1e202848d07318d835b"
+    },
+    {
+      "path": "data/figure_source/Threshold_integrated_associations.csv",
+      "bytes": 519,
+      "sha256": "532f4ab77be8ce320e3c3cd96687b716613bf85203405df0ddbc4e6e4737ec05"
+    },
+    {
+      "path": "data/figure_source/Water_land_topology_sensitivity_68stations.csv",
+      "bytes": 72596,
+      "sha256": "a763ad91307e56be4ca11cb538724bc1d78b7b5d022685922cfd879a0e8a53c8"
+    },
+    {
+      "path": "data/figure_source/Water_land_topology_summary.csv",
+      "bytes": 1137,
+      "sha256": "95bdc5b58d9fe2a83fbff8d8e71e3c95398432c3070b9ba43562ced17a9e72c8"
+    },
+    {
+      "path": "data/figure_source/Coastline_oriented_window_68stations.csv",
+      "bytes": 27461,
+      "sha256": "57330dabb4f6bbea9af86c2c484dee117f9bce5d3abea5fa9f7346e3af42ff8c"
+    },
+    {
+      "path": "data/figure_source/Coastline_window_sensitivity_summary.csv",
+      "bytes": 712,
+      "sha256": "f18decee93aec37ab261228bd85a2c8070f3c337ace6f3f9cb4e476971c85b49"
+    }
+  ]
+}

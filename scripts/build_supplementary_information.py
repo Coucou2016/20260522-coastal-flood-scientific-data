@@ -11,7 +11,10 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-from build_standalone_paper import build_html, chrome_executable, data_uri_for_image
+try:
+    from build_standalone_paper import build_html, chrome_executable, data_uri_for_image
+except ModuleNotFoundError:  # Import path used by the test suite.
+    from scripts.build_standalone_paper import build_html, chrome_executable, data_uri_for_image
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -48,35 +51,109 @@ def image(number: str, title: str, filename: str) -> str:
     return f"![Supplementary Figure {number}. {title}]({data_uri_for_image(filename)})"
 
 
+def load_focal_water_table_source(source: Path = SOURCE) -> pd.DataFrame:
+    """Assemble the focal water-level audit table from authoritative sources."""
+    core = pd.read_csv(source / "Fig2_water_level_divergence_with_uncertainty.csv")
+    bootstrap = pd.read_csv(source / "Fig2_gssr_rp10_bootstrap.csv")
+    spatial = pd.read_csv(source / "Fig2_coastrp_spatial_sensitivity.csv")
+    tidal = pd.read_csv(source / "Fig2_tidal_regime_metadata.csv")
+
+    water = core.merge(
+        bootstrap[
+            [
+                "station_id",
+                "gssr_rp10_bootstrap_p025_m",
+                "gssr_rp10_bootstrap_p975_m",
+            ]
+        ],
+        on="station_id",
+        how="left",
+        validate="one_to_one",
+    ).merge(
+        spatial[
+            [
+                "station_id",
+                "within5km_min_rp10_m",
+                "within5km_max_rp10_m",
+            ]
+        ],
+        on="station_id",
+        how="left",
+        validate="one_to_one",
+    ).merge(
+        tidal[
+            [
+                "station_id",
+                "spring_tidal_range_m",
+                "source_status",
+            ]
+        ],
+        on="station_id",
+        how="left",
+        validate="one_to_one",
+    )
+
+    required = [
+        "station",
+        "gssr_rp10_m",
+        "gssr_rp10_bootstrap_p025_m",
+        "gssr_rp10_bootstrap_p975_m",
+        "gssr_predint_rp10_lower_m",
+        "gssr_predint_rp10_upper_m",
+        "coast_rp_rp10_m",
+        "within5km_min_rp10_m",
+        "within5km_max_rp10_m",
+        "D10_m",
+        "spring_tidal_range_m",
+        "source_status",
+    ]
+    missing = [column for column in required if column not in water.columns]
+    if missing:
+        raise ValueError(f"Focal water-level table is missing columns: {missing}")
+    if len(water) != 8 or water["station_id"].nunique() != 8:
+        raise ValueError("Focal water-level table must contain eight unique stations")
+    if water[required].isna().any().any():
+        null_columns = water[required].columns[water[required].isna().any()].tolist()
+        raise ValueError(f"Focal water-level table contains missing values: {null_columns}")
+
+    water["full_label"] = water["station"].replace({"Hoek v.H.": "Hoek van Holland"})
+    return water
+
+
 def build_markdown() -> str:
     primary = pd.read_csv(SOURCE / "Primary_terrain_components_68stations.csv")
     rank = pd.read_csv(SOURCE / "Rank_robustness_one_at_a_time.csv")
-    block = pd.read_csv(SOURCE / "Spatial_sector_bootstrap_intervals.csv")
+    block = pd.read_csv(SOURCE / "Spatial_block_bootstrap_intervals.csv")
     topk = pd.read_csv(SOURCE / "Topk_spatial_null_curves.csv")
     return_period = pd.read_csv(SOURCE / "Return_period_sensitivity.csv")
     moran = pd.read_csv(SOURCE / "Spatial_autocorrelation_moran.csv")
     denominator = pd.read_csv(SOURCE / "Denominator_geometry_68stations.csv")
     denominator_stats = pd.read_csv(SOURCE / "Denominator_adjusted_associations.csv")
-    topology = pd.read_csv(SOURCE / "Topology_membership_changes.csv")
-    topology_summary = pd.read_csv(SOURCE / "Topology_sensitivity_summary.csv")
+    topology = pd.read_csv(SOURCE / "Water_land_topology_sensitivity_68stations.csv")
+    topology_summary = pd.read_csv(SOURCE / "Water_land_topology_summary.csv")
     influence = pd.read_csv(SOURCE / "Station_influence_jackknife.csv")
-    sector_specific = pd.read_csv(SOURCE / "Sector_specific_associations.csv")
+    sector_specific = pd.read_csv(SOURCE / "Basin_specific_associations.csv")
     match_audit = pd.read_csv(SOURCE / "Match_distance_audit_74stations.csv")
     gssr_audit = pd.read_csv(SOURCE / "GSSR_metadata_field_audit.csv")
     tidal_plotted = pd.read_csv(SOURCE / "FigS1_tidal_source_audit.csv")
-    leave = pd.read_csv(SOURCE / "Leave_one_coastal_sector_out.csv")
+    leave = pd.read_csv(SOURCE / "Leave_one_spatial_block_out.csv")
     local = pd.read_csv(SOURCE / "TableS_local_dtm_product_datum_crosscheck.csv")
     selection = pd.read_csv(SOURCE / "Fig3_predefined_site_selection.csv")
     product = pd.read_csv(SOURCE / "DeltaDTM_v1_1_product_version_audit.csv")
     flow = pd.read_csv(SOURCE / "Primary_sample_flow.csv")
-    water = pd.read_csv(SOURCE / "Fig2_water_level_divergence_with_uncertainty.csv")
+    water = load_focal_water_table_source()
     tidal = pd.read_csv(SOURCE / "TableS_tidal_regime_metadata_source_tracked.csv")
+    threshold_integrated = pd.read_csv(SOURCE / "Threshold_integrated_associations.csv")
+    coastline = pd.read_csv(SOURCE / "Coastline_window_sensitivity_summary.csv")
+    decision = pd.read_csv(SOURCE / "Decision_instability_station_metrics.csv")
+    match_review = pd.read_csv(SOURCE / "COAST_RP_same_coast_match_audit.csv")
 
     primary_table = primary[
         [
             "station_id",
             "station",
-            "coastal_sector",
+            "coastal_basin",
+            "spatial_block_150km",
             "lat",
             "lon",
             "coast_rp_rp10_m",
@@ -90,7 +167,8 @@ def build_markdown() -> str:
     primary_table.columns = [
         "Station ID",
         "Station",
-        "Coastal sector",
+        "Coastal basin",
+        "150 km spatial block",
         "Latitude",
         "Longitude",
         "COAST-RP RP10 (m)",
@@ -102,49 +180,56 @@ def build_markdown() -> str:
     ]
 
     base_setting = "primary:10km,2m,4n,adaptive,match<=6km"
-    primary_stats = rank[rank["setting"].eq(base_setting)][
+    primary_stats = return_period[
+        return_period["return_period_years"].eq(10)
+        & return_period["terrain_metric_label"].isin(
+            ["lowland_prevalence", "conditional_connectivity", "connected_lowland_share", "connected_area"]
+        )
+    ][
         [
             "terrain_metric",
+            "terrain_metric_label",
             "n_sites",
+            "block_scale_km",
+            "n_spatial_blocks",
             "spearman",
             "kendall",
-            "permutation_two_sided_p",
-            "top_n",
-            "top_overlap",
-            "top_overlap_expected_independent",
+            "sector_adjusted_rank_association",
+            "sector_stratified_permutation_two_sided_p",
+            "top20_n",
+            "top20_observed_overlap",
+            "sector_stratified_top20_null_q025",
+            "sector_stratified_top20_null_q975",
+            "sector_stratified_top20_lower_tail_p",
         ]
     ].merge(
         block[
             [
                 "terrain_metric",
+                "block_scale_km",
                 "spearman_sector_bootstrap_p025",
                 "spearman_sector_bootstrap_p975",
             ]
         ],
-        on="terrain_metric",
-    ).merge(
-        return_period[return_period["return_period_years"].eq(10)][
-            [
-                "terrain_metric",
-                "sector_adjusted_rank_association",
-                "sector_stratified_permutation_two_sided_p",
-            ]
-        ],
-        on="terrain_metric",
-    )
+        on=["terrain_metric", "block_scale_km"],
+        how="left",
+    ).drop(columns="terrain_metric")
     primary_stats.columns = [
         "Terrain metric",
         "n",
+        "Block scale (km)",
+        "Number of blocks",
         "Spearman rho",
         "Kendall tau",
-        "Two-sided label-permutation p",
+        "Block-adjusted rank association",
+        "Within-block empirical two-sided p",
         "Top-set n",
         "Observed overlap",
-        "Expected independent overlap",
-        "Sector bootstrap 2.5%",
-        "Sector bootstrap 97.5%",
-        "Sector-adjusted rank association",
-        "Within-sector permutation p",
+        "Within-block null 2.5%",
+        "Within-block null 97.5%",
+        "Within-block lower-tail p",
+        "Block-resampling 2.5%",
+        "Block-resampling 97.5%",
     ]
 
     robustness = rank[
@@ -173,11 +258,27 @@ def build_markdown() -> str:
     ]
 
     topk_table = topk[topk["top_share_pct"].isin([10, 15, 20, 25, 30, 35, 40])].drop(columns=["note"]).copy()
+    topk_table.columns = [
+        "Top-set share (%)",
+        "n",
+        "Top-set size",
+        "Block scale (km)",
+        "Spatial-block field",
+        "Number of blocks",
+        "Observed overlap",
+        "Within-block null median",
+        "Within-block null 2.5%",
+        "Within-block null 97.5%",
+        "Within-block lower-tail p",
+        "Nonspatial hypergeometric mean",
+        "Nonspatial hypergeometric 2.5%",
+        "Nonspatial hypergeometric 97.5%",
+    ]
 
     leave_table = leave[
-        ["terrain_metric", "omitted_sector", "omitted_n", "n_sites", "spearman", "kendall", "permutation_two_sided_p", "top_n", "top_overlap"]
+        ["terrain_metric", "block_scale_km", "omitted_block", "omitted_n", "n_sites", "spearman", "kendall", "top_n", "top_overlap"]
     ]
-    leave_table.columns = ["Terrain metric", "Omitted sector", "Omitted n", "Remaining n", "Spearman rho", "Kendall tau", "Two-sided p", "Top n", "Overlap"]
+    leave_table.columns = ["Terrain metric", "Block scale (km)", "Omitted block", "Omitted n", "Remaining n", "Spearman rho", "Kendall tau", "Top n", "Overlap"]
 
     local_table = local[
         [
@@ -276,6 +377,7 @@ def build_markdown() -> str:
             "return_period_years",
             "terrain_metric_label",
             "n_sites",
+            "block_scale_km",
             "spearman",
             "kendall",
             "sector_adjusted_rank_association",
@@ -284,7 +386,7 @@ def build_markdown() -> str:
             "sector_stratified_top20_lower_tail_p",
         ]
     ].copy()
-    rp_table.columns = ["Return period (years)", "Terrain metric", "n", "Spearman rho", "Kendall tau", "Sector-adjusted rank association", "Within-sector p", "Top-20% overlap", "Spatial-null lower-tail p"]
+    rp_table.columns = ["Return period (years)", "Terrain metric", "n", "Block scale (km)", "Spearman rho", "Kendall tau", "Block-adjusted rank association", "Within-block p", "Top-20% overlap", "Spatial-null lower-tail p"]
 
     denominator_table = denominator[
         [
@@ -302,12 +404,12 @@ def build_markdown() -> str:
     influence_table = influence.loc[
         influence.groupby("terrain_metric")["delta_spearman"].apply(lambda values: values.abs().idxmax())
     ][["terrain_metric_label", "omitted_station", "omitted_sector", "full_spearman", "leave_one_out_spearman", "delta_spearman"]]
-    influence_table.columns = ["Terrain metric", "Most influential omitted station", "Sector", "Full rho", "Leave-one-out rho", "Change in rho"]
+    influence_table.columns = ["Terrain metric", "Most influential omitted station", "Coastal grouping", "Full rho", "Leave-one-out rho", "Change in rho"]
 
-    topology_change_table = topology[topology["membership_change"].ne("unchanged")][
-        ["station", "terrain_metric", "four_neighbour_value", "eight_neighbour_value", "membership_change"]
-    ]
-    topology_change_table.columns = ["Station", "Terrain metric", "4-neighbour value", "8-neighbour value", "Membership change"]
+    decision_table = decision[
+        ["station", "water_rank", "terrain_rank", "absolute_rank_displacement", "priority_class", "eligible_configurations", "selected_configurations", "terrain_top20_selection_frequency"]
+    ].sort_values(["absolute_rank_displacement", "station"], ascending=[False, True])
+    decision_table.columns = ["Station", "Water rank", "Terrain rank", "Absolute rank displacement", "Primary priority class", "Eligible configurations", "Selected configurations", "Terrain top-20% selection frequency"]
 
     excluded_match_table = match_audit[~match_audit["included_in_primary_match_sample"]][
         ["station", "lat", "lon", "coast_rp_source_station_id", "recomputed_match_dist_km", "match_exclusion_reason"]
@@ -322,7 +424,7 @@ def build_markdown() -> str:
     parts = [
         "# Supplementary Information",
         "",
-        "## Storm-tide magnitude and standardized connected terrain yield non-interchangeable coastal screening priorities in a Northwest European station network",
+        "## Limited concordance between storm-tide magnitude and standardized connected-lowland screening across Northwest Europe",
         "",
         "**Authors and affiliations:** 待补充",
         "",
@@ -330,7 +432,7 @@ def build_markdown() -> str:
         "",
         "## Supplementary Methods",
         "",
-        "The complete terrain grid contains 74 stations and 40 configurations per station (2,960 rows). The primary configuration is a 10 km window, standardized 2 m EGM2008 terrain threshold, four-neighbour graph, adaptive official-mask marine seed and COAST-RP match within 6 km. Only finite official-mask class-0 terrain enters the reference-land denominator. Internal outside-support value 254 and official classes 1, 2, 3 and 255 are excluded. Sector resampling, within-sector permutation and sector adjustment use the same six geographic identifiers shown in Fig. 1.",
+        "The complete terrain grid contains 74 stations and 40 configurations per station (2,960 rows). The primary configuration is a 10 km window, standardized 2 m EGM2008 terrain threshold, eight-neighbour ocean-river seed, four-neighbour land graph, adaptive official-mask marine seed and COAST-RP match within 6 km. Only finite official-mask class-0 terrain enters the reference-land denominator. Internal outside-support value 254 and official classes 1, 2, 3 and 255 are excluded. Restricted permutation, block resampling and leave-one-block calculations use the versioned 100, 150 and 250 km identifiers in `config/coastal_spatial_blocks_v2.csv`.",
         "",
         "The local terrain comparison retains each source product's native vertical datum. Continuous elevation was downscaled by the provider WCS; the service interpolation kernel was not controlled by the study code. Categorical masks and the connected mask used for intersection-over-union were reprojected by nearest neighbour to the local WCS grid.",
         "",
@@ -394,13 +496,13 @@ def build_markdown() -> str:
         "",
         table(topk_table),
         "",
-        "The table reports five-percentage-point intervals for readability. The machine-readable source file retains every integer top-set share from 10% to 40%. Hypergeometric values are descriptive nonspatial comparators; inference uses within-sector permutations.",
+        "The table reports five-percentage-point intervals for readability. The machine-readable source file retains every integer top-set share from 10% to 40%. Hypergeometric values are descriptive nonspatial comparators; inference uses within-block permutations at each target scale.",
         "",
-        "**Supplementary Table S10. Leave-one-coastal-sector-out calculations.**",
+        "**Supplementary Table S10. Leave-one-spatial-block-out calculations at three scales.**",
         "",
         table(leave_table),
         "",
-        "**Supplementary Table S11. Sector-specific associations.**",
+        "**Supplementary Table S11. Coastal-basin-specific descriptive associations.**",
         "",
         table(sector_specific),
         "",
@@ -412,13 +514,13 @@ def build_markdown() -> str:
         "",
         table(influence_table),
         "",
-        "**Supplementary Table S14. Four- versus eight-neighbour summary.**",
+        "**Supplementary Table S14. Explicit water-seed and land-graph topology summary.**",
         "",
         table(topology_summary),
         "",
-        "**Supplementary Table S15. Stations whose top-20% membership changes between four and eight neighbours.**",
+        "**Supplementary Table S15. Decision-level rank displacement and terrain-selection frequency.**",
         "",
-        table(topology_change_table),
+        table(decision_table),
         "",
         "**Supplementary Table S16. Recorded Figure 3 case-selection rules and values.**",
         "",
@@ -447,6 +549,18 @@ def build_markdown() -> str:
         "**Supplementary Table S22. GSSR metadata-field and filter audit.**",
         "",
         table(gssr_audit),
+        "",
+        "**Supplementary Table S23. Threshold-integrated terrain associations (0-3 m EGM2008).**",
+        "",
+        table(threshold_integrated),
+        "",
+        "**Supplementary Table S24. Coastline-oriented versus square-window sensitivity.**",
+        "",
+        table(coastline),
+        "",
+        "**Supplementary Table S25. COAST-RP coordinate-connector review.**",
+        "",
+        table(match_review),
         "",
         "## Supplementary Data provenance",
         "",

@@ -39,6 +39,9 @@ ROOT = Path(__file__).resolve().parents[1]
 SCRIPTS = ROOT / "scripts"
 if str(SCRIPTS) not in sys.path:
     sys.path.insert(0, str(SCRIPTS))
+SRC = ROOT / "src"
+if str(SRC) not in sys.path:
+    sys.path.insert(0, str(SRC))
 
 from add_advanced_terrain_rank_diagnostics import (  # noqa: E402
     LEVELS_M,
@@ -55,6 +58,8 @@ from add_advanced_terrain_rank_diagnostics import (  # noqa: E402
 )
 from combo1_utils import RAW  # noqa: E402
 from inundation_sensitivity import valid_mask  # noqa: E402
+from coastal_screening.connectivity import connected_component, ocean_connected_water  # noqa: E402
+from coastal_screening.spatial_blocks import attach_spatial_blocks  # noqa: E402
 
 FIG_SOURCE = ROOT / "data" / "figure_source"
 MASK_ZIP = RAW / "deltadtm" / "zips" / "mask_tiles.zip"
@@ -223,19 +228,21 @@ def resolve_marine_seed(
     dem_shape: tuple[int, int],
     dem_transform: rasterio.Affine,
     dem_crs: object,
+    water_neighbours: int = 8,
 ) -> tuple[np.ndarray, np.ndarray, dict[str, object]]:
     """Resolve ocean-connected water using an adaptive context around the analysis crop."""
     raw, raw_transform, raw_crs, source = read_mask_window(bbox)
     mask = align_mask_to_dem(raw, raw_transform, raw_crs, dem_shape, dem_transform, dem_crs)
     local_water = (mask == 1) | (mask == 3)
     if np.any(mask == 1):
-        tidal = ndi.binary_propagation(mask == 1, structure=STRUCTURE_8, mask=local_water)
+        tidal = ocean_connected_water(mask == 1, mask == 3, water_neighbours)
         return mask, tidal, {
             "marine_seed_status": "resolved_local_ocean",
             "marine_context_width_km": 10.0,
             "marine_context_source": source,
             "marine_context_ocean_cells": int((mask == 1).sum()),
             "marine_context_river_cells": int((mask == 3).sum()),
+            "water_neighbours": water_neighbours,
         }
 
     if np.any(mask == 3):
@@ -246,11 +253,7 @@ def resolve_marine_seed(
             context_river = context == 3
             if not np.any(context_ocean):
                 continue
-            context_tidal = ndi.binary_propagation(
-                context_ocean,
-                structure=STRUCTURE_8,
-                mask=context_ocean | context_river,
-            )
+            context_tidal = ocean_connected_water(context_ocean, context_river, water_neighbours)
             tidal = align_binary_to_dem(
                 context_tidal,
                 context_transform,
@@ -266,6 +269,7 @@ def resolve_marine_seed(
                     "marine_context_source": context_source,
                     "marine_context_ocean_cells": int(context_ocean.sum()),
                     "marine_context_river_cells": int(context_river.sum()),
+                    "water_neighbours": water_neighbours,
                 }
 
     return mask, np.zeros(dem_shape, dtype=bool), {
@@ -283,6 +287,8 @@ def mask_aware_layers(
     mask: np.ndarray,
     eta: float,
     tidal_water: np.ndarray | None = None,
+    water_neighbours: int = 8,
+    land_neighbours: int = 8,
 ) -> dict[str, np.ndarray]:
     """Return low and connected layers using official mask water classes."""
     ocean = mask == 1
@@ -295,13 +301,12 @@ def mask_aware_layers(
     # River is treated as tidal seed only if it connects to ocean through the
     # ocean/river water network. Lakes are deliberately excluded.
     if tidal_water is None:
-        water_network = ocean | river
-        tidal_water = ndi.binary_propagation(ocean, structure=STRUCTURE_8, mask=water_network)
+        tidal_water = ocean_connected_water(ocean, river, water_neighbours)
 
     usable_valid = valid & land
     low = usable_valid & np.isfinite(elev) & (elev <= eta)
     passable = low | tidal_water
-    reachable = ndi.binary_propagation(tidal_water, structure=STRUCTURE_8, mask=passable)
+    reachable = connected_component(tidal_water, passable, land_neighbours)
     connected = reachable & low
     return {
         "low": low,
@@ -487,20 +492,16 @@ def add_proxy_comparison(mask_df: pd.DataFrame, proxy_df: pd.DataFrame) -> pd.Da
 
 
 def coastal_sector(row: pd.Series) -> str:
-    """Coarse geographic blocks used only for spatial block resampling."""
-    lon = float(row["lon"])
-    lat = float(row["lat"])
-    if lon < -5.0:
-        return "Atlantic-Celtic"
-    if lon < -1.0 and lat < 52.0:
-        return "western-English-Channel"
-    if lon < 2.5 and lat >= 52.0:
-        return "British-North-Sea"
-    if lon < 3.5:
-        return "eastern-Channel-southern-North-Sea"
-    if lon < 8.0:
-        return "Dutch-German-Bight"
-    return "Denmark-Norway"
+    """Return the reviewed basin label for legacy callers.
+
+    Coordinate-threshold classification was removed from all scientific paths.
+    """
+    station = pd.DataFrame([{"station_id": row["station_id"]}])
+    mapped = attach_spatial_blocks(
+        station,
+        ROOT / "config" / "coastal_spatial_blocks_v2.csv",
+    )
+    return str(mapped.iloc[0]["coastal_basin"])
 
 
 def sector_block_bootstrap_assoc(
@@ -512,9 +513,9 @@ def sector_block_bootstrap_assoc(
     seed: int = 20260815,
 ) -> dict[str, object]:
     """Resample coastal sectors, preserving within-sector station clustering."""
-    work = frame.dropna(subset=[water_col, terrain_col, "lon", "lat"]).copy()
-    work["coastal_sector"] = work.apply(coastal_sector, axis=1)
-    sectors = sorted(work["coastal_sector"].unique())
+    work = frame.dropna(subset=[water_col, terrain_col, "station_id"]).copy()
+    work = attach_spatial_blocks(work, ROOT / "config" / "coastal_spatial_blocks_v2.csv")
+    sectors = sorted(work["spatial_block_150km"].unique())
     observed_s = float(work[water_col].corr(work[terrain_col], method="spearman"))
     observed_k = float(work[water_col].corr(work[terrain_col], method="kendall"))
     rng = np.random.default_rng(seed)
@@ -522,8 +523,8 @@ def sector_block_bootstrap_assoc(
     k_boot = np.full(n_boot, np.nan, dtype=float)
     groups = {
         sector: (
-            work.loc[work["coastal_sector"].eq(sector), water_col].to_numpy(dtype=float),
-            work.loc[work["coastal_sector"].eq(sector), terrain_col].to_numpy(dtype=float),
+            work.loc[work["spatial_block_150km"].eq(sector), water_col].to_numpy(dtype=float),
+            work.loc[work["spatial_block_150km"].eq(sector), terrain_col].to_numpy(dtype=float),
         )
         for sector in sectors
     }

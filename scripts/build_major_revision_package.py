@@ -22,8 +22,13 @@ ROOT_FILES = [
     "CHANGELOG.md",
     "DATA_AVAILABILITY.md",
     "LICENSE",
+    "pyproject.toml",
     "requirements-publication.txt",
-    "major_revision_manifest.json",
+    "requirements-lock.txt",
+    "environment.yml",
+    "environment-lock.yml",
+    "reproduction_receipt.json",
+    "data/derived_input_manifest.json",
     "config/submission_links.json",
     "data/upstream_raw_manifest.csv",
     "data/upstream_raw_manifest.json",
@@ -49,7 +54,11 @@ MANUSCRIPT_FILES = [
     "manuscript/scientific_integrity_review.html",
     "manuscript/scientific_integrity_review.md",
     "manuscript/scientific_integrity_review.pdf",
+    "manuscript/internal_scientific_consistency_audit.html",
+    "manuscript/internal_scientific_consistency_audit.md",
+    "manuscript/internal_scientific_consistency_audit.pdf",
     "manuscript/external_review_resolution.md",
+    "manuscript/reproduction_environment_followup_20260926.md",
 ]
 
 FIGURE_FILES = [
@@ -70,17 +79,17 @@ FIGURE_FILES = [
 
 SOURCE_TABLES = [
     "data/figure_source/Primary_sample_flow.csv",
-    "data/figure_source/Primary_station_coastal_sectors.csv",
+    "data/figure_source/Primary_station_spatial_blocks.csv",
     "data/figure_source/Primary_terrain_components_68stations.csv",
     "data/figure_source/DeltaDTM_v1_1_product_version_audit.csv",
     "data/figure_source/Terrain_robustness_grid_74stations.csv",
     "data/figure_source/Rank_robustness_one_at_a_time.csv",
-    "data/figure_source/Spatial_sector_bootstrap_intervals.csv",
+    "data/figure_source/Spatial_block_bootstrap_intervals.csv",
     "data/figure_source/Leave_one_coastal_sector_out.csv",
     "data/figure_source/Topk_spatial_null_curves.csv",
     "data/figure_source/Return_period_sensitivity.csv",
     "data/figure_source/Station_influence_jackknife.csv",
-    "data/figure_source/Sector_specific_associations.csv",
+    "data/figure_source/Basin_specific_associations.csv",
     "data/figure_source/Spatial_autocorrelation_moran.csv",
     "data/figure_source/Denominator_geometry_68stations.csv",
     "data/figure_source/Denominator_adjusted_associations.csv",
@@ -100,23 +109,22 @@ SOURCE_TABLES = [
     "data/figure_source/Fig3_driver_correlations.csv",
 ]
 
-SCRIPT_FILES = [
-    "scripts/add_mask_aware_terrain_diagnostics.py",
-    "scripts/rebuild_frozen_primary_analysis.py",
-    "scripts/add_external_review_diagnostics.py",
-    "scripts/add_local_dtm_validation.py",
-    "scripts/make_major_revision_figures.py",
-    "scripts/build_standalone_paper.py",
-    "scripts/build_supplementary_information.py",
-    "scripts/build_research_report_v2.py",
-    "scripts/build_scientific_integrity_review_v2.py",
-    "scripts/validate_standalone_html.py",
-    "scripts/run_major_revision_rebuild.py",
-    "scripts/run_major_revision_rebuild.cmd",
-    "scripts/build_major_revision_package.py",
-    "scripts/build_public_data_manifest.py",
-    "tests/test_scientific_contracts.py",
-]
+CODE_SUFFIXES = {".py", ".cmd", ".ps1"}
+
+
+def repository_code_files() -> list[str]:
+    files: list[str] = []
+    for directory in ("src", "scripts", "tests"):
+        for path in sorted((ROOT / directory).rglob("*")):
+            if path.is_file() and path.suffix.lower() in CODE_SUFFIXES:
+                files.append(path.relative_to(ROOT).as_posix())
+    files.extend(
+        [
+            "config/coastal_spatial_blocks_v2.csv",
+            "config/combo1_stations.yaml",
+        ]
+    )
+    return files
 
 PATTERNS = {
     "OpenAI-style key": re.compile(rb"sk-[A-Za-z0-9]{20,}"),
@@ -150,7 +158,21 @@ def current_git_commit() -> str:
 
 
 def main() -> None:
-    relative_paths = ROOT_FILES + MANUSCRIPT_FILES + FIGURE_FILES + SOURCE_TABLES + SCRIPT_FILES
+    all_source_tables = [
+        path.relative_to(ROOT).as_posix()
+        for path in sorted((ROOT / "data" / "figure_source").glob("*"))
+        if path.is_file()
+    ]
+    relative_paths = list(
+        dict.fromkeys(
+            ROOT_FILES
+            + MANUSCRIPT_FILES
+            + FIGURE_FILES
+            + SOURCE_TABLES
+            + all_source_tables
+            + repository_code_files()
+        )
+    )
     if any(Path(path).name.startswith(".env") for path in relative_paths):
         raise SystemExit("Refusing to package an environment file")
 
@@ -173,7 +195,7 @@ def main() -> None:
     manifest = {
         "schema": "coastal-flood-major-revision-package-content-v1",
         "generated_utc": datetime.now(timezone.utc).isoformat(),
-        "baseline": f"Git commit {current_git_commit()}; computational outputs are additionally pinned by major_revision_manifest.json",
+        "baseline": f"Git commit {current_git_commit()}; archived derived reproduction is pinned by reproduction_receipt.json and per-file SHA-256",
         "security_scan": "PASS: no configured credential pattern detected in allowlisted files",
         "exclusions": [
             ".git and VCS metadata",

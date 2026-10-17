@@ -11,6 +11,8 @@ Open-Meteo is handled by scripts/download_open_meteo.py
 from __future__ import annotations
 
 import argparse
+import csv
+import hashlib
 import json
 import shutil
 import subprocess
@@ -23,6 +25,7 @@ import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
 CONFIG = ROOT / "config" / "combo1_stations.yaml"
+UPSTREAM_MANIFEST = ROOT / "data" / "upstream_raw_manifest.csv"
 
 SOURCES = {
     "coast_rp_zip": (
@@ -54,21 +57,55 @@ def load_config(path: Path) -> dict:
         return yaml.safe_load(f)
 
 
+def sha256(path: Path) -> str:
+    digest = hashlib.sha256()
+    with path.open("rb") as handle:
+        for chunk in iter(lambda: handle.read(8 * 1024 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
+
+
+def expected_sha256(dest: Path) -> str | None:
+    if not UPSTREAM_MANIFEST.is_file():
+        return None
+    relative = dest.resolve().relative_to(ROOT.resolve()).as_posix()
+    with UPSTREAM_MANIFEST.open(encoding="utf-8", newline="") as handle:
+        for row in csv.DictReader(handle):
+            if row["relative_path"].replace("\\", "/") == relative:
+                return row["sha256"].lower()
+    return None
+
+
+def verify_sha256(path: Path, expected: str) -> None:
+    actual = sha256(path)
+    if actual.lower() != expected.lower():
+        raise ValueError(f"SHA-256 mismatch for {path}: expected {expected}, found {actual}")
+
+
 def download_url(url: str, dest: Path, chunk_mb: int = 8) -> None:
     dest.parent.mkdir(parents=True, exist_ok=True)
+    expected = expected_sha256(dest)
     if dest.exists() and dest.stat().st_size > 0:
-        print(f"skip (exists): {dest}")
+        if expected is None:
+            raise ValueError(f"Refusing to reuse unverified existing file absent from manifest: {dest}")
+        verify_sha256(dest, expected)
+        print(f"skip (verified SHA-256): {dest}")
         return
     print(f"download: {url}\n  -> {dest}")
     req = Request(url, headers={"User-Agent": "coastal-flood-combo1/1.0"})
-    with urlopen(req, timeout=300) as resp, dest.open("wb") as out:
+    temporary = dest.with_suffix(dest.suffix + ".part")
+    with urlopen(req, timeout=300) as resp, temporary.open("wb") as out:
         chunk = chunk_mb * 1024 * 1024
         while True:
             block = resp.read(chunk)
             if not block:
                 break
             out.write(block)
-    print(f"saved {dest.stat().st_size:,} bytes")
+    if expected is not None:
+        verify_sha256(temporary, expected)
+    temporary.replace(dest)
+    status = "verified" if expected is not None else "downloaded (no manifest hash available)"
+    print(f"saved {dest.stat().st_size:,} bytes; {status}")
 
 
 def extract_zip(zip_path: Path, out_dir: Path) -> None:

@@ -1,0 +1,207 @@
+{
+  "schema": "coastal-screening-reproduction-receipt-v1",
+  "generated_utc": "2026-10-17T10:52:34.425484+00:00",
+  "mode": "full",
+  "verified_input_files": 278,
+  "input_scope": "upstream raw files",
+  "runtime": {
+    "python": "3.11.15 | packaged by conda-forge | (main, Mar  5 2026, 16:36:00) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.17763-SP0",
+    "packages": {
+      "numpy": "1.26.4",
+      "pandas": "2.2.3",
+      "scipy": "1.14.1",
+      "xarray": "2024.11.0",
+      "netCDF4": "1.7.2",
+      "rasterio": "1.4.4",
+      "pyproj": "3.7.2",
+      "matplotlib": "3.11.2"
+    }
+  },
+  "status": "PASS",
+  "steps": [
+    {
+      "name": "COAST-RP focal station matching",
+      "command": [
+        "E:\\Projects\\20260522-coastal-flood-scientific-data\\.venv-publication-check\\Scripts\\python.exe",
+        "scripts/match_stations_to_coastrp.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "GSSR and COAST-RP station integration",
+      "command": [
+        "E:\\Projects\\20260522-coastal-flood-scientific-data\\.venv-publication-check\\Scripts\\python.exe",
+        "scripts/merge_gssr_coastrp.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "focal return-level source table",
+      "command": [
+        "E:\\Projects\\20260522-coastal-flood-scientific-data\\.venv-publication-check\\Scripts\\python.exe",
+        "-c",
+        "import sys; sys.path.insert(0, 'scripts'); from make_cee_main_figures import load_rp; load_rp()"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "regional candidate construction",
+      "command": [
+        "E:\\Projects\\20260522-coastal-flood-scientific-data\\.venv-publication-check\\Scripts\\python.exe",
+        "scripts/build_nw_europe_extended_diagnostics.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "return-level uncertainty diagnostics",
+      "command": [
+        "E:\\Projects\\20260522-coastal-flood-scientific-data\\.venv-publication-check\\Scripts\\python.exe",
+        "scripts/add_uncertainty_diagnostics.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "regional terrain candidates",
+      "command": [
+        "E:\\Projects\\20260522-coastal-flood-scientific-data\\.venv-publication-check\\Scripts\\python.exe",
+        "scripts/add_advanced_terrain_rank_diagnostics.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "official-mask terrain diagnostics",
+      "command": [
+        "E:\\Projects\\20260522-coastal-flood-scientific-data\\.venv-publication-check\\Scripts\\python.exe",
+        "scripts/add_mask_aware_terrain_diagnostics.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "frozen primary analysis",
+      "command": [
+        "E:\\Projects\\20260522-coastal-flood-scientific-data\\.venv-publication-check\\Scripts\\python.exe",
+        "scripts/rebuild_frozen_primary_analysis.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "threshold-integrated terrain diagnostics",
+      "command": [
+        "E:\\Projects\\20260522-coastal-flood-scientific-data\\.venv-publication-check\\Scripts\\python.exe",
+        "scripts/add_threshold_integrated_terrain_metric.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "water/land topology diagnostics",
+      "command": [
+        "E:\\Projects\\20260522-coastal-flood-scientific-data\\.venv-publication-check\\Scripts\\python.exe",
+        "scripts/add_water_land_topology_sensitivity.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "coastline-oriented-window diagnostics",
+      "command": [
+        "E:\\Projects\\20260522-coastal-flood-scientific-data\\.venv-publication-check\\Scripts\\python.exe",
+        "scripts/add_coastline_window_sensitivity.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "spatial diagnostics",
+      "command": [
+        "E:\\Projects\\20260522-coastal-flood-scientific-data\\.venv-publication-check\\Scripts\\python.exe",
+        "scripts/add_external_review_diagnostics.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "decision-stability diagnostics",
+      "command": [
+        "E:\\Projects\\20260522-coastal-flood-scientific-data\\.venv-publication-check\\Scripts\\python.exe",
+        "scripts/add_decision_instability_diagnostics.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "COAST-RP coordinate-match review",
+      "command": [
+        "E:\\Projects\\20260522-coastal-flood-scientific-data\\.venv-publication-check\\Scripts\\python.exe",
+        "scripts/add_coastrp_same_coast_audit.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "local-DTM product/datum cross-check",
+      "command": [
+        "E:\\Projects\\20260522-coastal-flood-scientific-data\\.venv-publication-check\\Scripts\\python.exe",
+        "scripts/add_local_dtm_validation.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "all figures",
+      "command": [
+        "E:\\Projects\\20260522-coastal-flood-scientific-data\\.venv-publication-check\\Scripts\\python.exe",
+        "scripts/make_major_revision_figures.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "standalone manuscript",
+      "command": [
+        "E:\\Projects\\20260522-coastal-flood-scientific-data\\.venv-publication-check\\Scripts\\python.exe",
+        "scripts/build_standalone_paper.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "supplementary information",
+      "command": [
+        "E:\\Projects\\20260522-coastal-flood-scientific-data\\.venv-publication-check\\Scripts\\python.exe",
+        "scripts/build_supplementary_information.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "research report",
+      "command": [
+        "E:\\Projects\\20260522-coastal-flood-scientific-data\\.venv-publication-check\\Scripts\\python.exe",
+        "scripts/build_research_report_v2.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "internal consistency audit",
+      "command": [
+        "E:\\Projects\\20260522-coastal-flood-scientific-data\\.venv-publication-check\\Scripts\\python.exe",
+        "scripts/build_scientific_integrity_review_v2.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "standalone HTML validation",
+      "command": [
+        "E:\\Projects\\20260522-coastal-flood-scientific-data\\.venv-publication-check\\Scripts\\python.exe",
+        "scripts/validate_standalone_html.py",
+        "paper.html",
+        "supplementary_information.html",
+        "report.html",
+        "manuscript/internal_scientific_consistency_audit.html"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "scientific contracts",
+      "command": [
+        "E:\\Projects\\20260522-coastal-flood-scientific-data\\.venv-publication-check\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "tests"
+      ],
+      "exit_code": 0
+    }
+  ]
+}

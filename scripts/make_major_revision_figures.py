@@ -9,6 +9,7 @@ machine-readable source table alongside the figure.
 
 from __future__ import annotations
 
+import argparse
 import math
 import re
 import sys
@@ -27,6 +28,9 @@ ROOT = Path(__file__).resolve().parents[1]
 SCRIPTS = ROOT / "scripts"
 if str(SCRIPTS) not in sys.path:
     sys.path.insert(0, str(SCRIPTS))
+SRC = ROOT / "src"
+if str(SRC) not in sys.path:
+    sys.path.insert(0, str(SRC))
 
 from add_advanced_terrain_rank_diagnostics import (  # noqa: E402
     cell_area_km2,
@@ -39,6 +43,7 @@ from inundation_sensitivity import valid_mask  # noqa: E402
 from make_cee_main_figures import draw_tile_basemap, lonlat_to_mercator  # noqa: E402
 from publication_style import apply_publication_style  # noqa: E402
 from rebuild_frozen_primary_analysis import classify  # noqa: E402
+from coastal_screening.statistics import deterministic_top_k  # noqa: E402
 
 
 FIG_SOURCE = ROOT / "data" / "figure_source"
@@ -48,13 +53,15 @@ PRIMARY = FIG_SOURCE / "Primary_terrain_components_68stations.csv"
 ROBUSTNESS = FIG_SOURCE / "Terrain_robustness_grid_74stations.csv"
 LOCAL_CROSSCHECK = FIG_SOURCE / "TableS_local_dtm_product_datum_crosscheck.csv"
 
-SECTOR_COLORS = {
-    "Atlantic-Celtic": "#2A6FBB",
-    "western-English-Channel": "#00A087",
-    "eastern-Channel-southern-North-Sea": "#E07A1F",
-    "British-North-Sea": "#7A5195",
-    "Dutch-German-Bight": "#C44536",
-    "Denmark-Norway": "#5B6770",
+REGION_COLORS = {
+    "Southwest-British-Coasts": "#E69F00",
+    "Irish-Sea-and-Scottish-Atlantic": "#4D7C57",
+    "English-Channel-UK": "#56B4E9",
+    "British-North-Sea": "#2A6FBB",
+    "French-Atlantic-and-Brittany": "#66A61E",
+    "French-English-Channel": "#CC79A7",
+    "Southern-North-Sea-Continental": "#D55E00",
+    "Skagerrak": "#5B6770",
 }
 
 CLASS_COLORS = {
@@ -162,26 +169,35 @@ def figure1() -> None:
     flow = pd.read_csv(FIG_SOURCE / "Primary_sample_flow.csv")
     metric = "connected_reference_land_pct"
     k = math.ceil(0.2 * len(primary))
-    water_top = set(primary.nlargest(k, "coast_rp_rp10_m")["station_id"])
-    terrain_top = set(primary.nlargest(k, metric)["station_id"])
+    station_ids = primary["station_id"].to_numpy(str)
+    water_top = set(
+        station_ids[
+            deterministic_top_k(primary["coast_rp_rp10_m"].to_numpy(float), station_ids, k)
+        ]
+    )
+    terrain_top = set(
+        station_ids[
+            deterministic_top_k(primary[metric].to_numpy(float), station_ids, k)
+        ]
+    )
     primary["water_top20"] = primary["station_id"].isin(water_top)
     primary["terrain_top20"] = primary["station_id"].isin(terrain_top)
     primary.to_csv(FIG_SOURCE / "Fig1_primary_station_map_source.csv", index=False)
 
-    fig = plt.figure(figsize=(7.2, 4.6))
+    fig = plt.figure(figsize=(7.2, 4.8))
     gs = fig.add_gridspec(1, 2, width_ratios=[1.55, 0.72], wspace=0.16)
     ax = fig.add_subplot(gs[0, 0])
     draw_tile_basemap(ax, (-10.0, 10.0, 46.5, 61.5), zoom=5)
-    for sector, group in primary.groupby("coastal_sector"):
+    for region, group in primary.groupby("coastal_region"):
         xy = np.array([lonlat_to_mercator(float(x), float(y)) for x, y in zip(group["lon"], group["lat"])])
         ax.scatter(
             xy[:, 0],
             xy[:, 1],
             s=31,
-            c=SECTOR_COLORS[sector],
+            c=REGION_COLORS[region],
             edgecolors="white",
             linewidths=0.6,
-            label=f"{sector.replace('-', ' ')} (n={len(group)})",
+            label=f"{region.replace('-', ' ')} (n={len(group)})",
             zorder=6,
         )
     for _, row in primary[primary["water_top20"] | primary["terrain_top20"]].iterrows():
@@ -189,10 +205,23 @@ def figure1() -> None:
         marker = "*" if row["water_top20"] and row["terrain_top20"] else ("^" if row["water_top20"] else "s")
         ax.plot(x, y, marker=marker, ms=7.2, mfc="none", mec="#111111", mew=1.0, ls="None", zorder=8)
     format_mercator_axes(ax, [-8, -4, 0, 4, 8], [48, 52, 56, 60])
-    ax.set_title("Northwest European station inventory and coastal sectors", loc="left", fontweight="bold")
+    ax.set_title("Northwest European station inventory and reviewed coastal groupings", loc="left", fontweight="bold")
     panel(ax, "a")
-    sector_legend = ax.legend(loc="lower left", frameon=True, framealpha=0.95, fontsize=6.4, ncol=1)
-    ax.add_artist(sector_legend)
+    sector_handles, sector_labels = ax.get_legend_handles_labels()
+    fig.legend(
+        handles=sector_handles,
+        labels=sector_labels,
+        loc="lower left",
+        bbox_to_anchor=(0.075, 0.006, 0.90, 0.07),
+        mode="expand",
+        frameon=False,
+        fontsize=5.0,
+        ncol=4,
+        handlelength=0.9,
+        handletextpad=0.35,
+        columnspacing=0.65,
+        borderaxespad=0.0,
+    )
     ax.legend(
         handles=[
             Line2D([], [], marker="^", mfc="none", mec="#111111", ls="None", label="Storm-tide top 20%"),
@@ -204,17 +233,6 @@ def figure1() -> None:
         framealpha=0.95,
         fontsize=6.5,
     )
-    ax.text(
-        0.01,
-        0.01,
-        "Basemap: CARTO/© OpenStreetMap contributors",
-        transform=ax.transAxes,
-        fontsize=5.8,
-        color="#4B5563",
-        ha="left",
-        va="bottom",
-    )
-
     axf = fig.add_subplot(gs[0, 1])
     axf.set_axis_off()
     axf.set_title("Analytical sample flow", loc="left", fontweight="bold")
@@ -246,7 +264,7 @@ def figure1() -> None:
         color="#4B5563",
         wrap=True,
     )
-    fig.subplots_adjust(left=0.075, right=0.985, top=0.93, bottom=0.10)
+    fig.subplots_adjust(left=0.075, right=0.985, top=0.93, bottom=0.15)
     save(fig, "Fig1_process_terrain_design")
 
 
@@ -254,9 +272,10 @@ def figure2() -> None:
     style()
     primary = pd.read_csv(PRIMARY)
     rank = pd.read_csv(FIG_SOURCE / "Rank_robustness_one_at_a_time.csv")
-    block = pd.read_csv(FIG_SOURCE / "Spatial_sector_bootstrap_intervals.csv")
+    block = pd.read_csv(FIG_SOURCE / "Spatial_block_bootstrap_intervals.csv")
     topk = pd.read_csv(FIG_SOURCE / "Topk_spatial_null_curves.csv")
     return_period = pd.read_csv(FIG_SOURCE / "Return_period_sensitivity.csv")
+    decision = pd.read_csv(FIG_SOURCE / "Decision_instability_station_metrics.csv")
     primary_setting = "primary:10km,2m,4n,adaptive,match<=6km"
     base = rank[rank["setting"].eq(primary_setting)].copy()
     base.to_csv(FIG_SOURCE / "Fig2_primary_association_source.csv", index=False)
@@ -265,16 +284,16 @@ def figure2() -> None:
     gs = fig.add_gridspec(2, 2, hspace=0.36, wspace=0.48)
 
     ax = fig.add_subplot(gs[0, 0])
-    for sector, group in primary.groupby("coastal_sector"):
+    for region, group in primary.groupby("coastal_region"):
         ax.scatter(
             group["coast_rp_rp10_m"],
             group["connected_reference_land_pct"],
             s=28,
-            color=SECTOR_COLORS[sector],
+            color=REGION_COLORS[region],
             alpha=0.78,
             edgecolor="white",
             linewidth=0.45,
-            label=sector.replace("-", " "),
+            label=region.replace("-", " "),
         )
     for sid in ["newport-p057-uk", "lowestoft-p024-uk", "delfzijl-del-nl"]:
         row = primary[primary["station_id"].eq(sid)].iloc[0]
@@ -288,19 +307,30 @@ def figure2() -> None:
     panel(ax, "a")
 
     ax = fig.add_subplot(gs[0, 1])
-    spatial = return_period[return_period["return_period_years"].eq(10)][
-        ["terrain_metric", "sector_stratified_permutation_two_sided_p"]
-    ]
+    spatial = return_period[return_period["return_period_years"].eq(10)].copy()
     plot = base.merge(block, on=["setting", "terrain_metric"], suffixes=("", "_block")).merge(
-        spatial, on="terrain_metric", how="left"
+        spatial[["terrain_metric", "block_scale_km", "sector_stratified_permutation_two_sided_p"]],
+        on=["terrain_metric", "block_scale_km"],
+        how="left",
     )
-    y = np.arange(len(plot))[::-1]
-    for yi, (_, row) in zip(y, plot.iterrows()):
-        ax.hlines(yi, row["spearman_sector_bootstrap_p025"], row["spearman_sector_bootstrap_p975"], color="#9CA3AF", lw=4.0)
-        ax.plot(row["spearman"], yi, "o", color="#1F4E79", mec="white", mew=0.6, ms=6.5)
-        p_value = float(row["sector_stratified_permutation_two_sided_p"])
-        p_text = "sector p<0.001" if p_value < 0.001 else f"sector p={p_value:.3f}"
-        ax.text(0.29, yi, p_text, ha="right", va="center", fontsize=6.1)
+    metric_order = base["terrain_metric"].tolist()
+    y_lookup = {metric: value for metric, value in zip(metric_order, np.arange(len(metric_order))[::-1])}
+    scale_style = {
+        100: ("#56B4E9", -0.16),
+        150: ("#0072B2", 0.0),
+        250: ("#7A5195", 0.16),
+    }
+    for _, row in plot.iterrows():
+        color, offset = scale_style[int(row["block_scale_km"])]
+        yi = y_lookup[row["terrain_metric"]] + offset
+        ax.hlines(
+            yi,
+            row["spearman_sector_bootstrap_p025"],
+            row["spearman_sector_bootstrap_p975"],
+            color=color,
+            lw=2.0,
+        )
+        ax.plot(row["spearman_observed"], yi, "o", color=color, mec="white", mew=0.35, ms=4.2)
     ax.axvline(0, color="#111111", lw=0.8, ls="--")
     compact_metric_labels = {
         "connected_reference_land_pct": "Connected land share",
@@ -308,55 +338,105 @@ def figure2() -> None:
         "conditional_connectivity_pct": "Conditional connection",
         "connected_area_km2": "Connected area",
     }
-    ax.set_yticks(y, [""] * len(y))
-    for yi, metric in zip(y, plot["terrain_metric"]):
-        ax.text(-0.72, yi + 0.13, compact_metric_labels[metric], ha="left", va="bottom", fontsize=6.6)
+    y = np.arange(len(metric_order))[::-1]
+    ax.set_yticks(y, [compact_metric_labels[metric] for metric in metric_order])
     ax.set_xlim(-0.75, 0.32)
     ax.set_xlabel("Spearman correlation")
-    ax.set_title("Sensitivity to coastal-sector resampling", loc="left", fontweight="bold")
+    ax.set_title("Spatial-block resampling at three target scales", loc="left", fontweight="bold")
+    ax.legend(
+        handles=[
+            Line2D([], [], color=color, marker="o", label=f"{scale} km blocks")
+            for scale, (color, _) in scale_style.items()
+        ],
+        frameon=False,
+        fontsize=5.8,
+        loc="upper right",
+    )
     panel(ax, "b")
 
     ax = fig.add_subplot(gs[1, 0])
-    curve = topk.copy()
-    x = curve["top_share_pct"]
-    ax.fill_between(x, curve["sector_stratified_null_q025"], curve["sector_stratified_null_q975"], color="#D1D5DB", alpha=0.75, label="Within-sector null 95% envelope")
-    ax.plot(x, curve["sector_stratified_null_median"], color="#6B7280", ls="--", lw=1.3, label="Within-sector null median")
-    ax.plot(x, curve["observed_overlap"], color="#0072B2", marker="o", lw=1.8, label="Observed")
+    for scale_km, (color, _) in scale_style.items():
+        curve = topk[topk["block_scale_km"].eq(scale_km)].copy()
+        x = curve["top_share_pct"].to_numpy(float)
+        ax.fill_between(
+            x,
+            curve["sector_stratified_null_q025"].to_numpy(float),
+            curve["sector_stratified_null_q975"].to_numpy(float),
+            color=color,
+            alpha=0.08,
+        )
+        ax.plot(
+            x,
+            curve["sector_stratified_null_median"],
+            color=color,
+            ls="--",
+            lw=0.9,
+            label=f"{scale_km} km null",
+        )
+    observed_curve = topk[topk["block_scale_km"].eq(150)]
+    ax.plot(
+        observed_curve["top_share_pct"],
+        observed_curve["observed_overlap"],
+        color="#111111",
+        marker="o",
+        lw=1.8,
+        label="Observed",
+    )
     ax.set_xlabel("Top-set size (% of stations)")
     ax.set_ylabel("Number of shared stations")
-    ax.set_title("Top-set overlap remains inside the spatial null envelope", loc="left", fontweight="bold")
+    ax.set_title("Observed top-set overlap remains within spatial null envelopes", loc="left", fontweight="bold")
     ax.grid(True, color="#D1D5DB", lw=0.45)
     ax.legend(frameon=False, loc="upper left", fontsize=6.5)
     panel(ax, "c")
 
     ax = fig.add_subplot(gs[1, 1])
-    rp_colors = {
-        "lowland_prevalence": "#E69F00",
-        "conditional_connectivity": "#009E73",
-        "connected_lowland_share": "#0072B2",
-        "connected_area": "#7A5195",
+    class_colors = {
+        "dual-priority": "#009E73",
+        "water-priority-only": "#D55E00",
+        "terrain-priority-only": "#0072B2",
+        "neither-top20": "#9CA3AF",
     }
-    for label, group in return_period[
-        return_period["terrain_metric_label"].isin(rp_colors)
-    ].groupby("terrain_metric_label", sort=False):
-        ax.plot(
-            group["return_period_years"],
-            group["spearman"],
-            marker="o",
-            ms=4.2,
-            lw=1.5,
-            color=rp_colors[label],
-            label=label.replace("_", " "),
+    for label, group in decision.groupby("priority_class", sort=False):
+        ax.scatter(
+            group["water_rank"],
+            group["terrain_top20_selection_frequency"],
+            s=30 if label != "neither-top20" else 20,
+            color=class_colors[label],
+            edgecolor="white",
+            linewidth=0.35,
+            alpha=0.88,
+            label=label.replace("-", " "),
         )
-    ax.axhline(0, color="#111111", lw=0.8, ls="--")
-    ax.set_xscale("log")
-    ax.set_xticks(list((2, 5, 10, 25, 50, 100)), ["2", "5", "10", "25", "50", "100"])
-    ax.set_ylim(-0.48, 0.22)
-    ax.set_xlabel("COAST-RP return period (years)")
-    ax.set_ylabel("Spearman correlation")
-    ax.set_title("Association persists from RP2 to RP100", loc="left", fontweight="bold")
+    label_offsets = {
+        "sheerness-p015-uk": (3, -13),
+        "delfzijl-del-nl": (3, -13),
+        "hoekvanholla-hvh-nl": (-74, 4),
+        "avonmouth-p060-uk": (4, 6),
+    }
+    for station_id, offset in label_offsets.items():
+        row = decision[decision["station_id"].eq(station_id)].iloc[0]
+        ax.annotate(
+            short_name(row["station"]),
+            (row["water_rank"], row["terrain_top20_selection_frequency"]),
+            xytext=offset,
+            textcoords="offset points",
+            fontsize=5.7,
+        )
+    ax.axvline(math.ceil(0.2 * len(decision)), color="#4B5563", lw=0.8, ls="--")
+    ax.set_xlim(0, len(decision) + 1)
+    ax.set_ylim(-0.04, 1.04)
+    ax.set_xlabel("Storm-tide priority rank (1 = highest)")
+    ax.set_ylabel("Terrain top-20% selection frequency")
+    ax.set_title("Terrain priority changes across prespecified configurations", loc="left", fontweight="bold")
     ax.grid(True, color="#D1D5DB", lw=0.45)
-    ax.legend(frameon=False, loc="lower right", fontsize=6.1)
+    ax.legend(
+        frameon=True,
+        framealpha=0.86,
+        edgecolor="none",
+        loc="center right",
+        fontsize=5.5,
+        ncol=1,
+    )
     panel(ax, "d")
 
     fig.subplots_adjust(left=0.105, right=0.965, top=0.95, bottom=0.08)
@@ -569,9 +649,11 @@ def figure4() -> None:
     style()
     primary = pd.read_csv(PRIMARY)
     denominator = pd.read_csv(FIG_SOURCE / "Denominator_geometry_68stations.csv")
-    topology = pd.read_csv(FIG_SOURCE / "Topology_membership_changes.csv")
-    topology_summary = pd.read_csv(FIG_SOURCE / "Topology_sensitivity_summary.csv")
+    topology = pd.read_csv(FIG_SOURCE / "Water_land_topology_sensitivity_68stations.csv")
+    topology_summary = pd.read_csv(FIG_SOURCE / "Water_land_topology_summary.csv")
     rank = pd.read_csv(FIG_SOURCE / "Rank_robustness_one_at_a_time.csv")
+    threshold_integrated = pd.read_csv(FIG_SOURCE / "Threshold_integrated_associations.csv")
+    coastline = pd.read_csv(FIG_SOURCE / "Coastline_window_sensitivity_summary.csv")
 
     fig = plt.figure(figsize=(7.35, 7.0))
     gs = fig.add_gridspec(2, 3, height_ratios=[0.83, 1.35], hspace=0.42, wspace=0.40)
@@ -593,12 +675,12 @@ def figure4() -> None:
     panel(ax, "a")
 
     ax = fig.add_subplot(gs[0, 1])
-    for sector, group in denominator.groupby("coastal_sector"):
+    for region, group in denominator.groupby("coastal_region"):
         ax.scatter(
             group["represented_land_window_pct"],
             group["connected_reference_land_pct"],
             s=25,
-            color=SECTOR_COLORS[sector],
+            color=REGION_COLORS[region],
             edgecolor="white",
             linewidth=0.4,
             alpha=0.82,
@@ -613,21 +695,31 @@ def figure4() -> None:
     panel(ax, "b")
 
     ax = fig.add_subplot(gs[0, 2])
-    topo = topology[topology["terrain_metric"].eq("connected_reference_land_pct")].copy()
-    changed = topo["membership_change"].ne("unchanged")
-    ax.scatter(topo.loc[~changed, "four_neighbour_value"], topo.loc[~changed, "eight_neighbour_value"], s=24, color="#7A9E9F", edgecolor="white", linewidth=0.4, label="Top-set status unchanged")
-    ax.scatter(topo.loc[changed, "four_neighbour_value"], topo.loc[changed, "eight_neighbour_value"], s=38, color="#D55E00", edgecolor="white", linewidth=0.5, label="Top-set membership changed")
-    limits = [0.08, 120]
+    primary_topo = topology[topology["water_neighbours"].eq(8) & topology["land_neighbours"].eq(4)].set_index("station_id")
+    strict_topo = topology[topology["water_neighbours"].eq(4) & topology["land_neighbours"].eq(4)].set_index("station_id").loc[primary_topo.index]
+    metric = "connected_reference_land_pct"
+    k = math.ceil(0.2 * len(primary_topo))
+    ids = primary_topo.index.to_numpy(str)
+    primary_ids = set(ids[deterministic_top_k(primary_topo[metric].to_numpy(float), ids, k)])
+    strict_ids = set(ids[deterministic_top_k(strict_topo[metric].to_numpy(float), ids, k)])
+    changed = np.array([(station_id in primary_ids) != (station_id in strict_ids) for station_id in ids])
+    ax.scatter(primary_topo.loc[~changed, metric], strict_topo.loc[~changed, metric], s=24, color="#7A9E9F", edgecolor="white", linewidth=0.4, label="Top-set status unchanged")
+    ax.scatter(primary_topo.loc[changed, metric], strict_topo.loc[changed, metric], s=38, color="#D55E00", edgecolor="white", linewidth=0.5, label="Top-set membership changed")
+    limits = [0, 105]
     ax.plot(limits, limits, color="#111111", ls="--", lw=0.8)
-    ax.set_xscale("log")
-    ax.set_yscale("log")
+    ax.set_xscale("symlog", linthresh=0.1, linscale=0.8)
+    ax.set_yscale("symlog", linthresh=0.1, linscale=0.8)
     ax.set_xlim(limits)
     ax.set_ylim(limits)
-    ax.set_xlabel("4-neighbour primary share (%)")
-    ax.set_ylabel("8-neighbour sensitivity share (%)")
-    summary = topology_summary[topology_summary["terrain_metric"].eq("connected_reference_land_pct")].iloc[0]
-    ax.set_title("4- versus 8-neighbour connectivity", loc="left", fontweight="bold", fontsize=8.0)
-    ax.text(0.04, 0.96, f"rank ρ={summary['rank_spearman_4n_vs_8n']:.2f}\n{int(summary['membership_changes'])} membership changes", transform=ax.transAxes, ha="left", va="top", fontsize=6.5)
+    ax.set_xlabel("Primary share: water 8n, land 4n (%)")
+    ax.set_ylabel("Strict topology: water 4n, land 4n (%)")
+    summary = topology_summary[
+        topology_summary["terrain_metric"].eq(metric)
+        & topology_summary["water_neighbours"].eq(4)
+        & topology_summary["land_neighbours"].eq(4)
+    ].iloc[0]
+    ax.set_title("Marine-seed and land-graph topology", loc="left", fontweight="bold", fontsize=8.0)
+    ax.text(0.04, 0.96, f"rank ρ={summary['terrain_rank_spearman_vs_primary_8water_4land']:.2f}\n{int(summary['top20_membership_changes'])} membership changes", transform=ax.transAxes, ha="left", va="top", fontsize=6.5)
     ax.legend(frameon=False, loc="lower right", fontsize=5.8)
     ax.grid(True, color="#D1D5DB", lw=0.45)
     panel(ax, "c")
@@ -665,17 +757,51 @@ def figure4() -> None:
         "COAST match <=1 km",
         "COAST match <=2 km",
         "COAST match unrestricted",
+        "Strict topology: water 4n, land 4n",
+        "Coastline-oriented 10 x 5 km",
+        "Threshold-integrated 0-3 m",
     ]
     columns = ["connected_reference_land_pct", "below_reference_land_pct", "conditional_connectivity_pct", "connected_area_km2"]
     heat = rank[rank["setting"].isin(settings)].pivot(index="setting", columns="terrain_metric", values="spearman").reindex(settings)
     values = heat[columns].to_numpy(float)
+    strict = topology_summary[
+        topology_summary["water_neighbours"].eq(4)
+        & topology_summary["land_neighbours"].eq(4)
+    ].set_index("terrain_metric")["water_vs_terrain_spearman"]
+    coast = coastline.set_index("terrain_metric")["water_vs_oriented_spearman"]
+    auc = threshold_integrated.set_index("terrain_metric")["spearman"]
+    extra = np.array(
+        [
+            [
+                strict["connected_reference_land_pct"],
+                float(stats.spearmanr(primary["coast_rp_rp10_m"], primary["below_reference_land_pct"]).statistic),
+                strict["conditional_connectivity_pct"],
+                strict["connected_area_km2"],
+            ],
+            [
+                coast["connected_reference_land_pct"],
+                coast["below_reference_land_pct"],
+                np.nan,
+                coast["connected_area_km2"],
+            ],
+            [
+                auc["connected_share_auc_0_3m_pct"],
+                auc["below_share_auc_0_3m_pct"],
+                np.nan,
+                auc["connected_area_auc_0_3m_km2"],
+            ],
+        ],
+        dtype=float,
+    )
+    values = np.vstack([values, extra])
     image = ax.imshow(values, cmap="RdBu_r", vmin=-0.6, vmax=0.6, aspect="auto")
     for i in range(values.shape[0]):
         for j in range(values.shape[1]):
-            ax.text(j, i, f"{values[i, j]:.2f}", ha="center", va="center", fontsize=6.0)
+            label = "NA" if not np.isfinite(values[i, j]) else f"{values[i, j]:.2f}"
+            ax.text(j, i, label, ha="center", va="center", fontsize=6.0)
     ax.set_yticks(np.arange(len(labels)), labels, fontsize=6.4)
     ax.set_xticks(np.arange(4), ["Connected land share", "Below-2 m land share", "Conditional connection", "Connected area"])
-    ax.set_title("One-at-a-time analysis sensitivity", loc="left", fontweight="bold")
+    ax.set_title("Analysis sensitivity across prespecified alternatives", loc="left", fontweight="bold")
     cbar = fig.colorbar(image, ax=ax, fraction=0.025, pad=0.02)
     cbar.set_label("Spearman correlation", fontsize=7.0)
     panel(ax, "d")
@@ -875,15 +1001,23 @@ def supplementary_match_audit() -> None:
 
 
 def main() -> int:
-    figure1()
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--derived-only",
+        action="store_true",
+        help="Rebuild figures that depend only on archived tabular inputs.",
+    )
+    args = parser.parse_args()
     figure2()
-    figure3()
     figure4()
-    supplementary_local_dtm()
     supplementary_tidal_audit()
-    supplementary_gallery()
-    supplementary_match_audit()
-    print("Wrote Figures 1-4 and supplementary diagnostic figures from frozen major-revision sources")
+    if not args.derived_only:
+        figure1()
+        figure3()
+        supplementary_local_dtm()
+        supplementary_gallery()
+        supplementary_match_audit()
+    print("Wrote derived figures" if args.derived_only else "Wrote all major-revision figures")
     return 0
 
 

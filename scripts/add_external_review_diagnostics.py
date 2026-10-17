@@ -1,7 +1,9 @@
 from __future__ import annotations
 
+import argparse
 import json
 import math
+import sys
 from pathlib import Path
 
 import numpy as np
@@ -11,6 +13,9 @@ from scipy import stats
 
 
 ROOT = Path(__file__).resolve().parents[1]
+SRC = ROOT / "src"
+if str(SRC) not in sys.path:
+    sys.path.insert(0, str(SRC))
 SOURCE = ROOT / "data" / "figure_source"
 COAST_RP = ROOT / "data" / "raw" / "coast_rp" / "extracted" / "COAST-RP.nc"
 GSSR_METADATA = ROOT / "data" / "raw" / "gssr" / "metadata" / "eraint.geojson"
@@ -32,6 +37,16 @@ METRIC_LABELS = {
 }
 SEED = 20260829
 N_PERMUTATIONS = 10_000
+PRIMARY_BLOCK_SCALE_KM = 150
+BLOCK_SCALES_KM = (100, 150, 250)
+
+from coastal_screening.spatial_blocks import attach_spatial_blocks, block_column  # noqa: E402
+from coastal_screening.statistics import (  # noqa: E402
+    deterministic_top_k,
+    deterministic_top_k_rows,
+    empirical_two_sided_p,
+    symmetric_distance_weights,
+)
 
 
 def haversine_matrix(lat_a: np.ndarray, lon_a: np.ndarray, lat_b: np.ndarray, lon_b: np.ndarray) -> np.ndarray:
@@ -61,28 +76,30 @@ def sector_design(sectors: pd.Series) -> np.ndarray:
 
 def sector_permutations(values: np.ndarray, sectors: np.ndarray, n_perm: int, rng: np.random.Generator) -> np.ndarray:
     values = np.asarray(values, dtype=float)
-    result = np.empty((n_perm, len(values)), dtype=float)
+    result = np.broadcast_to(values, (n_perm, len(values))).copy()
     groups = [np.flatnonzero(sectors == sector) for sector in np.unique(sectors)]
-    for i in range(n_perm):
-        row = values.copy()
-        for idx in groups:
-            row[idx] = values[idx][rng.permutation(len(idx))]
-        result[i] = row
+    for idx in groups:
+        if len(idx) < 2:
+            continue
+        order = np.argsort(rng.random((n_perm, len(idx))), axis=1)
+        result[:, idx] = values[idx][order]
     return result
 
 
 def rank_correlations_against_fixed(x: np.ndarray, permuted_y: np.ndarray) -> np.ndarray:
     rx = stats.rankdata(x).astype(float)
     rx -= rx.mean()
-    ry = np.apply_along_axis(stats.rankdata, 1, permuted_y).astype(float)
+    ry = stats.rankdata(permuted_y, axis=1).astype(float)
     ry -= ry.mean(axis=1, keepdims=True)
     numerator = ry @ rx
     denominator = np.sqrt(np.sum(ry * ry, axis=1) * np.sum(rx * rx))
     return np.divide(numerator, denominator, out=np.full_like(numerator, np.nan), where=denominator > 0)
 
 
-def two_sided_p(null: np.ndarray, observed: float, centre: float = 0.0) -> float:
-    return float((1 + np.sum(np.abs(null - centre) >= abs(observed - centre))) / (len(null) + 1))
+def two_sided_p(null: np.ndarray, observed: float, centre: float | None = None) -> float:
+    """Compatibility wrapper for the empirical two-tail permutation p-value."""
+    del centre
+    return empirical_two_sided_p(null, observed)
 
 
 def extract_return_periods(primary: pd.DataFrame) -> pd.DataFrame:
@@ -92,7 +109,20 @@ def extract_return_periods(primary: pd.DataFrame) -> pd.DataFrame:
         coast_ids = ds["station_id"].values.astype(str)
         distances = haversine_matrix(primary["lat"].to_numpy(), primary["lon"].to_numpy(), coast_lat, coast_lon)
         nearest = distances.argmin(axis=1)
-        rows = primary[["station_id", "station", "lat", "lon", "coastal_sector", "match_dist_km"]].copy()
+        rows = primary[
+            [
+                "station_id",
+                "station",
+                "lat",
+                "lon",
+                "coastal_basin",
+                "spatial_block_100km",
+                "spatial_block_150km",
+                "spatial_block_250km",
+                "coastal_sector",
+                "match_dist_km",
+            ]
+        ].copy()
         rows["coast_rp_source_station_id"] = coast_ids[nearest]
         rows["coast_rp_source_lat"] = coast_lat[nearest]
         rows["coast_rp_source_lon"] = coast_lon[nearest]
@@ -109,11 +139,21 @@ def extract_return_periods(primary: pd.DataFrame) -> pd.DataFrame:
 
 def return_period_diagnostics(primary: pd.DataFrame, rp: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame]:
     merged = primary.drop(columns=["coast_rp_rp10_m"]).merge(
-        rp.drop(columns=["station", "lat", "lon", "coastal_sector", "match_dist_km"]),
+        rp.drop(
+            columns=[
+                "station",
+                "lat",
+                "lon",
+                "coastal_basin",
+                "spatial_block_100km",
+                "spatial_block_150km",
+                "spatial_block_250km",
+                "coastal_sector",
+                "match_dist_km",
+            ]
+        ),
         on="station_id",
     )
-    sectors = merged["coastal_sector"].astype(str).to_numpy()
-    sector_x = sector_design(merged["coastal_sector"])
     rows: list[dict[str, object]] = []
     top_rows: list[dict[str, object]] = []
     for rp_value in RETURN_PERIODS:
@@ -123,31 +163,39 @@ def return_period_diagnostics(primary: pd.DataFrame, rp: pd.DataFrame) -> tuple[
             valid = np.isfinite(water) & np.isfinite(terrain)
             x = water[valid]
             y = terrain[valid]
-            sec = sectors[valid]
-            design = sector_x[valid]
             observed_s = float(stats.spearmanr(x, y).statistic)
             observed_k = float(stats.kendalltau(x, y).statistic)
-            rng = np.random.default_rng(SEED + rp_value * 100 + metric_index)
-            permuted = sector_permutations(y, sec, N_PERMUTATIONS, rng)
-            null_s = rank_correlations_against_fixed(x, permuted)
-            rx = stats.rankdata(x)
-            ry = stats.rankdata(y)
-            adjusted = float(stats.pearsonr(residualize(rx, design), residualize(ry, design)).statistic)
             k = int(math.ceil(0.20 * len(x)))
-            water_top = np.argpartition(x, -k)[-k:]
-            terrain_top = np.argpartition(y, -k)[-k:]
+            ids = merged.loc[valid, "station_id"].to_numpy(str)
+            water_top = deterministic_top_k(x, ids, k)
+            terrain_top = deterministic_top_k(y, ids, k)
             observed_overlap = int(len(np.intersect1d(water_top, terrain_top)))
-            null_overlap = np.sum(np.isin(np.argsort(permuted, axis=1)[:, -k:], water_top), axis=1)
-            rows.append(
-                {
+            for scale_km in BLOCK_SCALES_KM:
+                block_col = block_column(scale_km)
+                blocks = merged.loc[valid, block_col].astype(str).to_numpy()
+                design = sector_design(merged.loc[valid, block_col])
+                rng = np.random.default_rng(SEED + rp_value * 100 + metric_index + scale_km * 10_000)
+                permuted = sector_permutations(y, blocks, N_PERMUTATIONS, rng)
+                null_s = rank_correlations_against_fixed(x, permuted)
+                rx = stats.rankdata(x)
+                ry = stats.rankdata(y)
+                adjusted = float(
+                    stats.pearsonr(residualize(rx, design), residualize(ry, design)).statistic
+                )
+                null_top = deterministic_top_k_rows(permuted, ids, k)
+                null_overlap = np.sum(np.isin(null_top, water_top), axis=1)
+                rows.append({
                     "return_period_years": rp_value,
                     "terrain_metric": metric,
                     "terrain_metric_label": METRIC_LABELS[metric],
                     "n_sites": len(x),
+                    "block_scale_km": scale_km,
+                    "spatial_block_column": block_col,
+                    "n_spatial_blocks": int(np.unique(blocks).size),
                     "spearman": observed_s,
                     "kendall": observed_k,
                     "sector_adjusted_rank_association": adjusted,
-                    "sector_stratified_permutation_two_sided_p": two_sided_p(null_s, observed_s),
+                    "sector_stratified_permutation_two_sided_p": empirical_two_sided_p(null_s, observed_s),
                     "sector_stratified_null_spearman_q025": float(np.quantile(null_s, 0.025)),
                     "sector_stratified_null_spearman_median": float(np.quantile(null_s, 0.5)),
                     "sector_stratified_null_spearman_q975": float(np.quantile(null_s, 0.975)),
@@ -159,21 +207,37 @@ def return_period_diagnostics(primary: pd.DataFrame, rp: pd.DataFrame) -> tuple[
                     "sector_stratified_top20_null_q975": float(np.quantile(null_overlap, 0.975)),
                     "sector_stratified_top20_lower_tail_p": float((1 + np.sum(null_overlap <= observed_overlap)) / (N_PERMUTATIONS + 1)),
                     "n_permutations": N_PERMUTATIONS,
-                }
-            )
+                })
             if rp_value == 10 and metric == "connected_reference_land_pct":
+                max_top_n = int(math.ceil(0.40 * len(x)))
+                null_orders: dict[int, tuple[str, np.ndarray, int]] = {}
+                for scale_km in BLOCK_SCALES_KM:
+                    block_col = block_column(scale_km)
+                    blocks = merged.loc[valid, block_col].astype(str).to_numpy()
+                    rng = np.random.default_rng(SEED + 900_000 + scale_km * 100)
+                    permuted = sector_permutations(y, blocks, N_PERMUTATIONS, rng)
+                    null_orders[scale_km] = (
+                        block_col,
+                        deterministic_top_k_rows(permuted, ids, max_top_n),
+                        int(np.unique(blocks).size),
+                    )
                 for pct in range(10, 41):
                     top_n = int(math.ceil(pct / 100.0 * len(x)))
-                    wtop = np.argpartition(x, -top_n)[-top_n:]
-                    ttop = np.argpartition(y, -top_n)[-top_n:]
+                    wtop = deterministic_top_k(x, ids, top_n)
+                    ttop = deterministic_top_k(y, ids, top_n)
                     observed = int(len(np.intersect1d(wtop, ttop)))
-                    null = np.sum(np.isin(np.argsort(permuted, axis=1)[:, -top_n:], wtop), axis=1)
                     hyper = stats.hypergeom(len(x), top_n, top_n)
-                    top_rows.append(
-                        {
+                    for scale_km in BLOCK_SCALES_KM:
+                        block_col, null_order, n_blocks = null_orders[scale_km]
+                        null_top = null_order[:, :top_n]
+                        null = np.sum(np.isin(null_top, wtop), axis=1)
+                        top_rows.append({
                             "top_share_pct": pct,
                             "n_sites": len(x),
                             "top_n": top_n,
+                            "block_scale_km": scale_km,
+                            "spatial_block_column": block_col,
+                            "n_spatial_blocks": n_blocks,
                             "observed_overlap": observed,
                             "sector_stratified_null_median": float(np.median(null)),
                             "sector_stratified_null_q025": float(np.quantile(null, 0.025)),
@@ -183,8 +247,7 @@ def return_period_diagnostics(primary: pd.DataFrame, rp: pd.DataFrame) -> tuple[
                             "nonspatial_hypergeometric_q025": float(hyper.ppf(0.025)),
                             "nonspatial_hypergeometric_q975": float(hyper.ppf(0.975)),
                             "note": "The hypergeometric values are descriptive nonspatial comparators; inference uses within-sector permutations.",
-                        }
-                    )
+                        })
     output = pd.DataFrame(rows)
     top_output = pd.DataFrame(top_rows)
     output.to_csv(SOURCE / "Return_period_sensitivity.csv", index=False)
@@ -239,7 +302,8 @@ def jackknife_and_sectors(primary: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataF
     influence_frame = pd.DataFrame(influence)
     sector_frame = pd.DataFrame(sector_rows)
     influence_frame.to_csv(SOURCE / "Station_influence_jackknife.csv", index=False)
-    sector_frame.to_csv(SOURCE / "Sector_specific_associations.csv", index=False)
+    sector_frame.to_csv(SOURCE / "Basin_specific_associations.csv", index=False)
+    sector_frame.to_csv(SOURCE / "Sector_specific_associations.csv", index=False)  # compatibility
     return influence_frame, sector_frame
 
 
@@ -255,11 +319,12 @@ def spatial_autocorrelation(primary: pd.DataFrame) -> pd.DataFrame:
     variables = {"coast_rp_rp10_m": primary["coast_rp_rp10_m"].to_numpy(float)}
     variables.update({metric: primary[metric].to_numpy(float) for metric in METRICS})
     for threshold in (150.0, 250.0):
-        binary = ((distance > 0) & (distance <= threshold)).astype(float)
-        zero_rows = binary.sum(axis=1) == 0
-        if np.any(zero_rows):
-            nearest = np.where(distance > 0, distance, np.inf).argmin(axis=1)
-            binary[np.flatnonzero(zero_rows), nearest[zero_rows]] = 1.0
+        binary = symmetric_distance_weights(
+            primary["lat"].to_numpy(float),
+            primary["lon"].to_numpy(float),
+            distance,
+            threshold,
+        )
         weights = binary / binary.sum(axis=1, keepdims=True)
         for j, (name, values) in enumerate(variables.items()):
             observed = moran_i(values, weights)
@@ -272,10 +337,10 @@ def spatial_autocorrelation(primary: pd.DataFrame) -> pd.DataFrame:
                     "distance_threshold_km": threshold,
                     "moran_i": observed,
                     "expected_i_under_randomization": expected,
-                    "permutation_two_sided_p": two_sided_p(null, observed, centre=expected),
+                    "permutation_two_sided_p": empirical_two_sided_p(null, observed),
                     "null_q025": float(np.quantile(null, 0.025)),
                     "null_q975": float(np.quantile(null, 0.975)),
-                    "weight_definition": "row-standardized binary great-circle distance; isolated stations linked to nearest neighbour",
+                    "weight_definition": "row-standardized symmetric binary great-circle distance; isolates linked symmetrically to nearest neighbour",
                     "n_permutations": 4_999,
                 }
             )
@@ -427,7 +492,11 @@ def match_audit() -> pd.DataFrame:
     return audit
 
 
-def tidal_and_gssr_audits(primary: pd.DataFrame, rp: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame]:
+def tidal_and_gssr_audits(
+    primary: pd.DataFrame,
+    rp: pd.DataFrame,
+    reuse_derived: bool = False,
+) -> tuple[pd.DataFrame, pd.DataFrame]:
     tidal = pd.read_csv(SOURCE / "TableS_tidal_regime_metadata_source_tracked.csv")
     verified = tidal[tidal["source_status"].eq("source_verified")].copy()
     plotted = verified.merge(primary, on=["station_id", "station"], how="inner", validate="one_to_one")
@@ -477,6 +546,12 @@ def tidal_and_gssr_audits(primary: pd.DataFrame, rp: pd.DataFrame) -> tuple[pd.D
     diagnostic_frame = pd.DataFrame(diagnostics)
     diagnostic_frame.to_csv(SOURCE / "Tidal_covariation_diagnostics.csv", index=False)
 
+    if reuse_derived and not GSSR_METADATA.is_file():
+        existing = SOURCE / "GSSR_metadata_field_audit.csv"
+        if not existing.is_file():
+            raise FileNotFoundError("Derived mode requires GSSR_metadata_field_audit.csv")
+        return plotted, pd.read_csv(existing)
+
     metadata = json.loads(GSSR_METADATA.read_text(encoding="utf-8"))
     fields = sorted({key for feature in metadata["features"] for key in feature.get("properties", {})})
     candidate = pd.read_csv(SOURCE / "Fig5_station_candidate_audit.csv")
@@ -510,7 +585,7 @@ def method_audit(primary: pd.DataFrame, rp_results: pd.DataFrame, match: pd.Data
         "primary_terrain_threshold_m_egm2008": 2,
         "primary_vertical_interpretation": "standardized EGM2008 terrain-elevation threshold; not an event-specific storm-tide water surface",
         "coast_return_periods_years": list(RETURN_PERIODS),
-        "spatial_null": "10000 within-coastal-sector permutations",
+        "spatial_null": "10000 within-reviewed-coastline-block permutations at 100, 150 and 250 km target scales",
         "moran_distance_thresholds_km": [150, 250],
         "included_match_distance_max_km": float(primary["match_dist_km"].max()),
         "excluded_match_count_gt6km": int((~match["included_in_primary_match_sample"]).sum()),
@@ -522,8 +597,22 @@ def method_audit(primary: pd.DataFrame, rp_results: pd.DataFrame, match: pd.Data
 
 
 def main() -> int:
-    primary = pd.read_csv(SOURCE / "Primary_terrain_components_68stations.csv")
-    detail = pd.read_csv(SOURCE / "Terrain_robustness_grid_74stations.csv")
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--reuse-derived",
+        action="store_true",
+        help="Reuse archived COAST-RP extraction and matching tables; no upstream NetCDF is required.",
+    )
+    args = parser.parse_args()
+    block_config = ROOT / "config" / "coastal_spatial_blocks_v2.csv"
+    primary = attach_spatial_blocks(
+        pd.read_csv(SOURCE / "Primary_terrain_components_68stations.csv"),
+        block_config,
+    )
+    detail = attach_spatial_blocks(
+        pd.read_csv(SOURCE / "Terrain_robustness_grid_74stations.csv"),
+        block_config,
+    )
     required = {
         "window_area_km2",
         "reference_land_window_pct",
@@ -542,19 +631,29 @@ def main() -> int:
     if identity_error > 1e-7:
         raise AssertionError(f"Terrain metric decomposition failed: {identity_error}")
 
-    rp = extract_return_periods(primary)
+    if args.reuse_derived:
+        rp = pd.read_csv(SOURCE / "TableS_coastrp_multi_return_period_68stations.csv")
+        rp = attach_spatial_blocks(rp, block_config)
+    else:
+        rp = extract_return_periods(primary)
     rp_results, _ = return_period_diagnostics(primary, rp)
     jackknife_and_sectors(primary)
     spatial_autocorrelation(primary)
     denominator_diagnostics(primary)
     topology_diagnostics(primary, detail)
-    match = match_audit()
-    tidal_and_gssr_audits(primary, rp)
+    if args.reuse_derived:
+        match = pd.read_csv(SOURCE / "Match_distance_audit_74stations.csv")
+    else:
+        match = match_audit()
+    tidal_and_gssr_audits(primary, rp, reuse_derived=args.reuse_derived)
     method_audit(primary, rp_results, match)
 
     print("External-review diagnostics written.")
     print(
-        rp_results[rp_results["return_period_years"].eq(10)][
+        rp_results[
+            rp_results["return_period_years"].eq(10)
+            & rp_results["block_scale_km"].eq(PRIMARY_BLOCK_SCALE_KM)
+        ][
             ["terrain_metric_label", "spearman", "sector_adjusted_rank_association", "sector_stratified_permutation_two_sided_p"]
         ].to_string(index=False)
     )

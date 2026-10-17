@@ -1,0 +1,4 @@
+terrain_metric,n_sites,terrain_rank_spearman_oriented_vs_square,water_vs_oriented_spearman,water_vs_square_spearman,top20_n,top20_overlap_oriented_vs_square,top20_membership_changes,interpretation
+connected_reference_land_pct,68,0.8037943275947627,-0.2476619460243539,-0.33316791999083856,14,11,6,"mask-derived window-geometry sensitivity, not an alternative flood model"
+connected_area_km2,68,0.741535290300416,-0.2541512386914532,-0.34095507119135776,14,11,6,"mask-derived window-geometry sensitivity, not an alternative flood model"
+below_reference_land_pct,68,0.8928121540634422,-0.20177882963698132,-0.30927205405199065,14,14,0,"mask-derived window-geometry sensitivity, not an alternative flood model"

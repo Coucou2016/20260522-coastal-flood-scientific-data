@@ -1,0 +1,6 @@
+water_priority_quartile,Q1-high,Q2,Q3,Q4-low,All
+Q1-high,2,1,6,8,17
+Q2,7,3,2,5,17
+Q3,4,3,6,4,17
+Q4-low,4,10,3,0,17
+All,17,17,17,17,68

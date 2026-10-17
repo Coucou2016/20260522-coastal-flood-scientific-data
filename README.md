@@ -1,75 +1,113 @@
-# Process-Terrain Coastal Flood Screening
+# Northwest European Coastal Screening
 
-This repository contains the local analysis workflow, manuscript package, figures and audit material for a process-terrain coastal flood screening study.
+This repository contains the analysis, source tables, figures, manuscript and audit evidence for a Northwest European coastal-screening study.
 
 **Public repository:** <https://github.com/Coucou2016/20260522-coastal-flood-scientific-data>
 
-For independent review, begin with the manuscript, the scientific-integrity
-review, and the external-review resolution matrix:
+## What this paper does
 
-- `paper.html` or `paper.pdf`
-- `manuscript/scientific_integrity_review.md`
-- `manuscript/external_review_resolution.md`
-- `major_revision_manifest.json`
-- `DATA_AVAILABILITY.md`
+The study asks whether coastal sites prioritized by COAST-RP storm-tide magnitude are also prioritized by a standardized static connected-lowland screen derived from DeltaDTM. The primary sample contains 68 matched stations. Terrain results are decomposed into lowland prevalence, conditional raster connectivity, connected represented-land share and connected area.
 
-## Study Scope
+The evidence supports **limited rank concordance and decision-level disagreement** in this sampled network. It does not establish a stable negative physical law, statistically unusual Top-20% disagreement, predictive complementarity or a true flood-risk ranking. The terrain maps are raster classifications, not hydrodynamic flood forecasts.
 
-The project compares physically distinct coastal-flood diagnostics across a frozen Northwest European station inventory:
+## Start here
 
-- GSSR reconstructed daily surge residuals
-- COAST-RP storm-tide return levels
-- Open-Meteo ERA5-derived meteorological drivers
-- DeltaDTM coastal terrain windows
+- Paper: `paper.html`, `paper.md`, `paper.pdf`
+- Supplementary Information: `supplementary_information.html`, `.md`, `.pdf`
+- Detailed research report: `report.html`, `.md`, `.pdf`
+- Internal evidence audit: `manuscript/internal_scientific_consistency_audit.md`
+- External-review resolution record: `manuscript/external_review_resolution.md`
+- Data and redistribution boundary: `DATA_AVAILABILITY.md`
 
-The manuscript tests whether storm-tide magnitude recovers rankings produced by static connected-lowland response. The supported conclusion is weak concordance and non-interchangeability, not predictive complementarity. DeltaDTM outputs are interpreted as static terrain classifications, not hydrodynamic flood forecasts.
+## Install
 
-## Frozen Major-Revision Rebuild
+Python 3.11-3.13 is the declared compatibility range, not a claim that every version/platform combination has been tested. The canonical project metadata are in `pyproject.toml`.
 
-Run the current manuscript, source-table, figure and document workflow with:
+```powershell
+python -m pip install -r requirements-publication.txt
+```
+
+`requirements-publication.txt` installs the exact tested packages in `requirements-lock.txt` plus the editable project. For development without a locked solve, install from project metadata:
+
+```powershell
+python -m pip install -e ".[test,full]"
+```
+
+`environment-lock.yml` records a Windows environment snapshot; it is not proof of a clean dependency solve. Raster/GIS results may depend on GDAL, PROJ and GEOS builds, so a successful run must also satisfy the scientific contract tests. NumPy binary-compatibility warnings fail the test gate. Use an isolated environment rather than mixing incompatible Conda and pip binaries.
+
+## Reproduce
+
+### Compact reviewer mode
+
+```powershell
+python scripts/reproduce.py --mode derived
+```
+
+This mode verifies archived inputs in `data/derived_input_manifest.json` by byte size and SHA-256, then rebuilds the 68-station statistics, decision diagnostics, Figures 2 and 4 and Supplementary Figure S1, manuscript, Supplementary Information, report and internal audit. Other figures are retained as archived assets because their generation requires rasters or map context. It is a **derived-input-to-paper** reproduction, not a raw-data reconstruction.
+
+### Full upstream mode
+
+After acquiring the provider files listed in `data/upstream_raw_manifest.csv`, verify them before calculation:
+
+```powershell
+python scripts/reproduce.py --mode full --verify-only
+```
+
+Then run the full local raw-to-paper chain:
+
+```powershell
+python scripts/reproduce.py --mode full
+```
+
+This mode rebuilds station integration, return-level diagnostics, official-mask terrain metrics, the 74 x 40 robustness grid, the frozen 68-station analysis, spatial statistics, local-DTM product/datum checks, all figures and all documents. Large third-party inputs are intentionally not copied into Git.
+
+## Release gate
+
+The publication gate runs the full workflow, updates checksummed manifests, builds the credential-scanned reviewer ZIP and executes that ZIP in a temporary isolated directory:
 
 ```powershell
 python scripts/run_major_revision_rebuild.py
 ```
 
-The command rebuilds the mask-aware terrain diagnostics, frozen 68-station analysis, national/local DTM product-and-datum cross-check, SciencePlots figures, manuscript, Supplementary Information, research report and scientific-integrity review. It then validates all standalone HTML files, runs the scientific contract tests and writes `major_revision_manifest.json` with output sizes and SHA-256 hashes.
-
-This is the authoritative entry point for the current major revision. The older publication/finalization scripts are retained as historical workflow records and must not be used to regenerate the current manuscript package.
-
-Build the credential-scanned reviewer archive after a successful rebuild with:
+To build and validate the archive separately:
 
 ```powershell
 python scripts/build_major_revision_package.py
+python scripts/validate_reviewer_archive.py
 ```
 
-The archive receipt is written to `major_revision_package_receipt.json`.
+Receipts record package byte size, SHA-256 and Git baseline. A PASS proves that the archived derived workflow executes in the tested environment; it does not validate upstream scientific products or substitute for an independent flood-outcome benchmark.
 
-## Historical Entry Points
+## Methods encoded in the repository
 
-- Historical local handoff gate: `scripts/run_final_submission_handoff.cmd`
-- Historical publication gate: `scripts/run_publication_gate.cmd`
-- Historical package finalization: `scripts/run_finalization.cmd`
-- Publication requirements installer: `scripts/install_publication_requirements.cmd`
+- `config/coastal_spatial_blocks_v2.csv` provides reviewed station-to-basin mappings and 100/150/250 km approximate coastline-contiguous blocks. Coordinate-threshold sectors are not used for inference.
+- The primary terrain topology uses an 8-neighbour official water graph and a 4-neighbour land graph. All four water/land 4/8 combinations are reported as sensitivity analyses.
+- Restricted-permutation two-sided probabilities use empirical lower and upper tails of the constrained null distribution; they are not centered on zero.
+- Top-k selection is deterministic at ties using station identifiers.
+- Source tables for every figure and reported diagnostic are under `data/figure_source/`.
+- Scientific contracts are under `tests/` and can be run with:
 
-The final package is written to `publication_package/` and `publication_package.zip`. Archive metadata are recorded in `final_archive_manifest.json`.
+```powershell
+$env:PYTEST_DISABLE_PLUGIN_AUTOLOAD='1'
+python -m pytest tests
+```
 
-## Manuscript and Figures
+## Repository structure
 
-- Main manuscript Markdown: `manuscript/process_terrain_coastal_flood_CEE_manuscript.md`
-- Standalone review HTML: `manuscript/process_terrain_coastal_flood_CEE_manuscript_review.html`
-- Main figures: `figures/main/`
-- Figure and table source data: `data/figure_source/`
+```text
+src/coastal_screening/   reusable scientific logic
+scripts/                 command-line workflows and document builders
+tests/                   scientific and reproducibility contracts
+config/                  frozen, reviewed analysis configuration
+data/figure_source/      project-generated source tables
+figures/main/            SciencePlots figures in PNG and PDF
+manuscript/              manuscript, supplement and audit documents
+audit/                   review and release evidence
+docs/                    project documentation
+```
 
-## Environment
+## Data and citation
 
-Use `requirements-publication.txt` for the publication gate environment. The workflow expects Python plus the scientific/geospatial stack listed there, including NumPy, Pandas, Matplotlib, Pillow and Rasterio.
+The repository includes project-authored code and derived data. COAST-RP, GSSR, DeltaDTM, national LiDAR/AHN data, basemap data and third-party papers remain governed by their providers. Their authoritative sources, local SHA-256 records and redistribution status are documented in `DATA_AVAILABILITY.md` and `data/upstream_raw_manifest.csv`.
 
-## Deposit Notes
-
-The compact publication package is intended for repository deposit with the manuscript source tables, figures, audit reports and key scripts. Large upstream raw products should be cited through their original repositories and DOIs unless repository policy and upstream licenses support redistribution.
-
-The public repository therefore includes all project-authored code, derived
-data, source tables, figures, documents, logs and review evidence. Upstream raw
-products and third-party reference PDFs are represented by source citations and
-SHA-256 manifests rather than copied into Git. Credential-scanned archive
-bundles are distributed through GitHub Releases. See `DATA_AVAILABILITY.md`.
+Author metadata, funding statements and a formal archival DOI remain to be supplied before journal submission; they are not inferred by the workflow.

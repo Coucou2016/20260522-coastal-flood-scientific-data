@@ -1,0 +1,13 @@
+water_neighbours,land_neighbours,terrain_metric,n_sites,water_vs_terrain_spearman,terrain_rank_spearman_vs_primary_8water_4land,top20_n,top20_overlap_with_primary,top20_membership_changes
+4,4,connected_reference_land_pct,68,-0.42749169752261706,0.8620071000496239,14,12,4
+4,4,connected_area_km2,68,-0.43092720540519897,0.8621216169790432,14,12,4
+4,4,conditional_connectivity_pct,68,0.0888362805065939,0.9572012686766783,14,14,0
+4,8,connected_reference_land_pct,68,-0.36595793411459326,0.8878497537886016,14,11,6
+4,8,connected_area_km2,68,-0.3714929190365309,0.8963621788754437,14,11,6
+4,8,conditional_connectivity_pct,68,0.012005023388497106,0.8674825641177627,14,13,2
+8,4,connected_reference_land_pct,68,-0.33316791999083856,1.0,14,14,0
+8,4,connected_area_km2,68,-0.34095507119135776,1.0,14,14,0
+8,4,conditional_connectivity_pct,68,0.10453349086266013,0.9999999999999998,14,14,0
+8,8,connected_reference_land_pct,68,-0.31984578386838186,0.9611024163072106,14,11,6
+8,8,connected_area_km2,68,-0.32942703362980497,0.9668282627781806,14,11,6
+8,8,conditional_connectivity_pct,68,-0.0061554419284969245,0.9005714150917177,14,13,2

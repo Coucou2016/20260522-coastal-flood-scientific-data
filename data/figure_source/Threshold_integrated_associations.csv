@@ -1,0 +1,4 @@
+terrain_metric,n_sites,spearman,kendall,interpretation
+connected_share_auc_0_3m_pct,68,-0.2982020842081154,-0.1870061457418788,threshold-integrated standardized EGM2008 terrain screen; not a flood probability
+connected_area_auc_0_3m_km2,68,-0.31328014658166964,-0.1861281826163301,threshold-integrated standardized EGM2008 terrain screen; not a flood probability
+below_share_auc_0_3m_pct,68,-0.28923159140359583,-0.17559262510974535,threshold-integrated standardized EGM2008 terrain screen; not a flood probability

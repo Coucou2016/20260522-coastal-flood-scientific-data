@@ -9,12 +9,32 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 import xarray as xr
-from scipy.spatial import cKDTree
 
-from combo1_utils import CONFIG, PROCESSED, RP_VARS, ensure_dirs, haversine_km, load_config, save_json
+if __package__:
+    from .combo1_utils import CONFIG, PROCESSED, RP_VARS, ensure_dirs, haversine_km, load_config, save_json
+else:
+    from combo1_utils import CONFIG, PROCESSED, RP_VARS, ensure_dirs, haversine_km, load_config, save_json
 
 ROOT = Path(__file__).resolve().parents[1]
 COAST_NC = ROOT / "data" / "raw" / "coast_rp" / "extracted" / "COAST-RP.nc"
+
+
+def nearest_great_circle_index(
+    station_lon: float,
+    station_lat: float,
+    source_lon: np.ndarray,
+    source_lat: np.ndarray,
+) -> tuple[int, float]:
+    """Return nearest finite source coordinate and its haversine distance."""
+    distances = np.array([
+        haversine_km(station_lon, station_lat, float(x), float(y))
+        if np.isfinite(x) and np.isfinite(y) else np.inf
+        for x, y in zip(source_lon, source_lat)
+    ])
+    if not np.isfinite(distances).any():
+        raise ValueError("COAST-RP has no finite station coordinates")
+    idx = int(np.argmin(distances))
+    return idx, float(distances[idx])
 
 
 def match_stations(config_path: Path = CONFIG, coast_nc: Path = COAST_NC) -> pd.DataFrame:
@@ -22,13 +42,12 @@ def match_stations(config_path: Path = CONFIG, coast_nc: Path = COAST_NC) -> pd.
     ds = xr.open_dataset(coast_nc)
     lon = ds["station_x_coordinate"].values
     lat = ds["station_y_coordinate"].values
-    tree = cKDTree(np.column_stack([lon, lat]))
 
     rows = []
     for st in cfg["stations"]:
-        dist_deg, idx = tree.query([[st["lon"], st["lat"]]], k=1)
-        idx = int(idx[0])
-        dist_km = haversine_km(st["lon"], st["lat"], float(lon[idx]), float(lat[idx]))
+        # A degree-space nearest neighbour is not a great-circle nearest
+        # neighbour at these latitudes. Use the distance reported in the audit.
+        idx, dist_km = nearest_great_circle_index(st["lon"], st["lat"], lon, lat)
         match_flag = "long" if dist_km > 25.0 else "ok"
         row = {
             "station_id": st["id"],

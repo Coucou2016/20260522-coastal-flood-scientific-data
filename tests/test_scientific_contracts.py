@@ -21,6 +21,9 @@ from scripts.merge_gssr_coastrp import gssr_empirical_rp
 from scripts.make_cee_refined_figures import gssr_empirical_rp_from_annual
 from scripts.rebuild_frozen_primary_analysis import classify
 from scripts.validate_standalone_html import check_file
+from coastal_screening.connectivity import ocean_connected_water
+from coastal_screening.spatial_blocks import attach_spatial_blocks
+from coastal_screening.statistics import deterministic_top_k, empirical_two_sided_p
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -142,14 +145,16 @@ def test_return_period_and_spatial_null_outputs_are_complete() -> None:
         "connected_area",
     }
     assert rp.groupby("return_period_years")["terrain_metric"].nunique().eq(5).all()
+    assert set(rp["block_scale_km"]) == {100, 150, 250}
     assert rp["n_permutations"].eq(10_000).all()
 
     topk = pd.read_csv(SOURCE / "Topk_spatial_null_curves.csv")
     assert set(topk["top_share_pct"]) == set(range(10, 41))
-    top20 = topk[topk["top_share_pct"].eq(20)].iloc[0]
-    assert int(top20["top_n"]) == 14
-    assert int(top20["observed_overlap"]) == 1
-    assert float(top20["sector_stratified_null_q025"]) <= 1 <= float(top20["sector_stratified_null_q975"])
+    assert set(topk["block_scale_km"]) == {100, 150, 250}
+    for _, top20 in topk[topk["top_share_pct"].eq(20)].iterrows():
+        assert int(top20["top_n"]) == 14
+        assert int(top20["observed_overlap"]) == 1
+        assert float(top20["sector_stratified_null_q025"]) <= 1 <= float(top20["sector_stratified_null_q975"])
 
 
 def test_match_distance_and_tidal_provenance_contracts() -> None:
@@ -214,9 +219,20 @@ def test_random_seeds_are_stable_and_shared() -> None:
 def test_sector_block_bootstrap_reports_ordered_intervals() -> None:
     frame = pd.DataFrame(
         {
-            "station_id": [f"s{i}" for i in range(12)],
-            "lon": [-6.0, -5.5, -4.0, -3.0, -0.5, 0.5, 1.0, 2.0, 4.0, 6.0, 9.0, 10.0],
-            "lat": [50.0, 51.0, 49.0, 50.0, 53.0, 54.0, 50.0, 51.0, 52.0, 53.0, 55.0, 56.0],
+            "station_id": [
+                "newlyn-p001-uk",
+                "devonport-p002-uk",
+                "fishguard-p055-uk",
+                "holyhead-p054-uk",
+                "sheerness-p015-uk",
+                "lowestoft-p024-uk",
+                "le-conquet",
+                "le-havre",
+                "hoekvanholla-hvh-nl",
+                "delfzijl-del-nl",
+                "cuxhaven-germany",
+                "tregde-006-norway",
+            ],
             "coast_rp_rp10_m": np.arange(12.0, 0.0, -1.0),
             "terrain": np.arange(1.0, 13.0),
         }
@@ -225,6 +241,89 @@ def test_sector_block_bootstrap_reports_ordered_intervals() -> None:
     assert result["n_coastal_sectors"] >= 4
     assert result["spearman_block_p025"] <= result["spearman_block_p500"]
     assert result["spearman_block_p500"] <= result["spearman_block_p975"]
+
+
+def test_reviewed_spatial_blocks_cover_candidates_and_correct_known_misclassifications() -> None:
+    candidates = pd.read_csv(SOURCE / "Fig5_station_candidate_audit.csv")
+    mapped = attach_spatial_blocks(candidates, ROOT / "config" / "coastal_spatial_blocks_v2.csv")
+    assert len(mapped) == 74
+    assert mapped[["spatial_block_100km", "spatial_block_150km", "spatial_block_250km"]].notna().all().all()
+    expected = {
+        "fishguard-p055-uk": "Celtic-Irish-Sea",
+        "holyhead-p054-uk": "Irish-Sea",
+        "heysham-p050-uk": "Irish-Sea",
+        "barmouth-p923-uk": "Irish-Sea",
+        "millport-p049-uk": "North-Channel-Clyde",
+        "tregde-006-norway": "Skagerrak",
+        "cuxhaven-germany": "German-Bight",
+    }
+    observed = mapped.set_index("station_id")["coastal_basin"].to_dict()
+    for station_id, basin in expected.items():
+        assert observed[station_id] == basin
+
+
+def test_restricted_permutation_p_uses_empirical_tails() -> None:
+    null = np.array([1.0, 2.0, 3.0, 4.0])
+    assert empirical_two_sided_p(null, 1.0) == pytest.approx(0.8)
+
+
+def test_topk_ties_are_deterministic() -> None:
+    values = np.array([5.0, 5.0, 4.0])
+    ids = np.array(["b", "a", "c"])
+    selected = deterministic_top_k(values, ids, 1)
+    assert ids[selected].tolist() == ["a"]
+
+
+def test_water_seed_topology_is_explicit() -> None:
+    ocean = np.array([[True, False], [False, False]])
+    river = np.array([[False, False], [False, True]])
+    assert not ocean_connected_water(ocean, river, 4)[1, 1]
+    assert ocean_connected_water(ocean, river, 8)[1, 1]
+
+
+def test_threshold_integrated_outputs_are_complete() -> None:
+    curves = pd.read_csv(SOURCE / "Threshold_response_0_3m_68stations.csv")
+    assert len(curves) == 68 * 13
+    assert curves["station_id"].nunique() == 68
+    assert set(np.round(curves["eta_m_egm2008"], 2)) == set(np.round(np.arange(0, 3.01, 0.25), 2))
+    summary = pd.read_csv(SOURCE / "Threshold_integrated_terrain_metrics_68stations.csv")
+    assert len(summary) == 68
+    assert summary[["connected_share_auc_0_3m_pct", "connected_area_auc_0_3m_km2"]].notna().all().all()
+
+
+def test_water_and_land_topology_grid_is_complete() -> None:
+    detail = pd.read_csv(SOURCE / "Water_land_topology_sensitivity_68stations.csv")
+    assert len(detail) == 68 * 4
+    assert set(zip(detail["water_neighbours"], detail["land_neighbours"])) == {(4, 4), (4, 8), (8, 4), (8, 8)}
+    primary = pd.read_csv(SOURCE / "Primary_terrain_components_68stations.csv").set_index("station_id")
+    baseline = detail[detail["water_neighbours"].eq(8) & detail["land_neighbours"].eq(4)].set_index("station_id")
+    np.testing.assert_allclose(
+        primary.loc[baseline.index, "connected_reference_land_pct"],
+        baseline["connected_reference_land_pct"],
+        rtol=0,
+        atol=1e-10,
+    )
+
+
+def test_coastline_window_and_decision_outputs_are_complete() -> None:
+    oriented = pd.read_csv(SOURCE / "Coastline_oriented_window_68stations.csv")
+    assert len(oriented) == 68
+    assert oriented["station_id"].nunique() == 68
+    assert oriented["reference_land_area_km2"].gt(0).all()
+    decision = pd.read_csv(SOURCE / "Decision_instability_station_metrics.csv")
+    assert len(decision) == 68
+    assert decision["terrain_top20_selection_frequency"].between(0, 1).all()
+    assert decision["priority_class"].value_counts().sum() == 68
+    selections = pd.read_csv(SOURCE / "Terrain_configuration_top20_selections.csv")
+    assert selections["configuration"].nunique() == 40
+
+
+def test_coast_rp_coordinate_review_does_not_claim_hydrodynamic_equivalence() -> None:
+    audit = pd.read_csv(SOURCE / "COAST_RP_same_coast_match_audit.csv")
+    included = audit[audit["included_in_primary_match_sample"].astype(bool)]
+    assert len(included) == 68
+    assert included["coordinate_connector_review_pass"].all()
+    assert included["review_status"].str.contains("not_hydrodynamic_equivalence").all()
 
 
 def test_standalone_html_validator_checks_active_and_css_resources(tmp_path) -> None:

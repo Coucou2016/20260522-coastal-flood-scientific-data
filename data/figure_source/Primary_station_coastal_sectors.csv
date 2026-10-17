@@ -1,69 +1,69 @@
-station_id,station,lat,lon,coastal_sector
-esbjerg-130121-denmark,Esbjerg 130121 Denmark,55.467,8.4333,Denmark-Norway
-denhelder-hel-nl,Denhelder Hel Nl,52.965,4.7464,Dutch-German-Bight
-lerwick-p041-uk,Lerwick P041 Uk,60.15,-1.1333,British-North-Sea
-cuxhaven-germany,Cuxhaven Germany,53.867,8.7167,Denmark-Norway
-delfzijl-del-nl,Delfzijl Del Nl,53.326,6.9331,Dutch-German-Bight
-portpatrick-p063-uk,Portpatrick P063 Uk,54.843,-5.12,Atlantic-Celtic
-newlyn-p001-uk,Newlyn,50.102,-5.5417,Atlantic-Celtic
-fishguard-p055-uk,Fishguard P055 Uk,52.014,-4.9833,British-North-Sea
-hoekvanholla-hvh-nl,Hoek van Holland,51.977,4.12,Dutch-German-Bight
-milfordhaven-p056-uk,Milfordhaven P056 Uk,51.702,-5.0143,Atlantic-Celtic
-tregde-006-norway,Tregde 006 Norway,58.0,7.5666,Dutch-German-Bight
-lowestoft-p024-uk,Lowestoft P024 Uk,52.473,1.7508,British-North-Sea
-wick-p035-uk,Wick P035 Uk,58.441,-3.0863,British-North-Sea
-stornoway-p042-uk,Stornoway P042 Uk,58.208,-6.3882,Atlantic-Celtic
-le-conquet,Le Conquet France,48.359,-4.7807,western-English-Channel
-brest,Brest,48.383,-4.5,western-English-Channel
-port-tudy,Port Tudy France,47.644,-3.4459,western-English-Channel
-cherbourg,Cherbourg France,49.651,-1.6355,western-English-Channel
-saint-nazaire,Saint Nazaire France,47.267,-2.2016,western-English-Channel
-saint-gildas,Saint Gildas France,47.14,-2.2464,western-English-Channel
-le-havre,Le Havre France,49.482,0.106,eastern-Channel-southern-North-Sea
-dunkerque,Dunkerque France,51.048,2.3667,eastern-Channel-southern-North-Sea
-roscoff,Roscoff France,48.718,-3.9657,western-English-Channel
-boulogne-sur-mer,Boulogne Sur Mer,50.727,1.5777,eastern-Channel-southern-North-Sea
-dieppe,Dieppe France,49.929,1.0845,eastern-Channel-southern-North-Sea
-immingham-p026-uk,Immingham P026 Uk,53.631,-0.18603,British-North-Sea
-aberdeen-p038-uk,Aberdeen,57.143,-2.0745,British-North-Sea
-millport-p049-uk,Millport P049 Uk,55.75,-4.9058,British-North-Sea
-holyhead-p054-uk,Holyhead P054 Uk,53.308,-4.6312,British-North-Sea
-sheerness-p015-uk,Sheerness,51.442,0.74306,eastern-Channel-southern-North-Sea
-heysham-p050-uk,Heysham P050 Uk,54.032,-2.9204,British-North-Sea
-northshields-p032-uk,Northshields P032 Uk,55.007,-1.4398,British-North-Sea
-whitby-p174-uk,Whitby P174 Uk,54.49,-0.61417,British-North-Sea
-dover-p012-uk,Dover P012 Uk,51.117,1.3181,eastern-Channel-southern-North-Sea
-ullapool-p043-uk,Ullapool P043 Uk,57.895,-5.1579,Atlantic-Celtic
-newhaven-p011-uk,Newhaven P011 Uk,50.782,0.05703,eastern-Channel-southern-North-Sea
-calais,Calais France,50.969,1.8677,eastern-Channel-southern-North-Sea
-ilfracombe-p061-uk,Ilfracombe P061 Uk,51.21100000000001,-4.1109,western-English-Channel
-felixstowe-p204-uk,Felixstowe P204 Uk,51.957,1.3484,eastern-Channel-southern-North-Sea
-leith-p034-uk,Leith P034 Uk,55.99,-3.1817,British-North-Sea
-tobermory-p223-uk,Tobermory P223 Uk,56.62300000000001,-6.0642,Atlantic-Celtic
-cromer-p183-uk,Cromer P183 Uk,52.934,1.3016,British-North-Sea
-avonmouth-p060-uk,Avonmouth P060 Uk,51.511,-2.715,western-English-Channel
-hinkleypoint-p003-uk,Hinkleypoint P003 Uk,51.215,-3.1343,western-English-Channel
-mumbles-p932-uk,Mumbles P932 Uk,51.57,-3.9754,western-English-Channel
-devonport-p002-uk,Devonport P002 Uk,50.368,-4.1852,western-English-Channel
-weymouth-p991-uk,Weymouth P991 Uk,50.608,-2.4479,western-English-Channel
-barmouth-p923-uk,Barmouth P923 Uk,52.719,-4.0452,British-North-Sea
-portsmouth-p008-uk,Portsmouth P008 Uk,50.803,-1.1118,western-English-Channel
-malin-head-834a-ireland,Malin Head 834a,55.367,-7.3333,Atlantic-Celtic
-kinlochbervi-p918-uk,Kinlochbervi P918 Uk,58.457,-5.0504,Atlantic-Celtic
-porterin-p919-uk,Porterin P919 Uk,54.085,-4.7681,British-North-Sea
-workington-p217-uk,Workington P217 Uk,54.651,-3.5676,British-North-Sea
-sthelier-p074-uk,Sthelier P074 Uk,49.183,-2.1167,western-English-Channel
-gladstone-p234-uk,Gladstone P234 Uk,53.45,-3.018,British-North-Sea
-llandudno-p007-uk,Llandudno P007 Uk,53.332,-3.8252,British-North-Sea
-portellen-p202-uk,Portellen P202 Uk,55.627,-6.1901,Atlantic-Celtic
-saint-malo,Saint Malo France,48.64100000000001,-2.0281,western-English-Channel
-newport-p057-uk,Newport P057 Uk,51.55,-2.9874,western-English-Channel
-portrush-p935-uk,Portrush P935 Uk,55.207,-6.6568,Atlantic-Celtic
-bangor-p662-uk,Bangor P662 Uk,54.665,-5.6695,Atlantic-Celtic
-stmarys-p231-uk,Stmarys P231 Uk,49.918,-6.3164,Atlantic-Celtic
-bournemouth-p988-uk,Bournemouth P988 Uk,50.714,-1.8749,western-English-Channel
-concarneau,Concarneau France,47.874,-3.9072,western-English-Channel
-le-crouesty,Le Crouesty France,47.543,-2.8952,western-English-Channel
-morayfirth-p207-uk,Morayfirth P207 Uk,57.599,-4.0022,British-North-Sea
-harwich-p022-uk,Harwich P022 Uk,51.947,1.2845,eastern-Channel-southern-North-Sea
-portbury-p341-uk,Portbury P341 Uk,51.5,-2.7285,western-English-Channel
+station_id,station,lat,lon,coastal_basin,coastal_region,spatial_block_100km,spatial_block_150km,spatial_block_250km,block_definition,coastal_sector
+esbjerg-130121-denmark,Esbjerg 130121 Denmark,55.467,8.4333,Danish-Wadden-Coast,Southern-North-Sea-Continental,B100_DK01,B150_DK01,B250_DK01,reviewed-coastline-v2,Danish-Wadden-Coast
+denhelder-hel-nl,Denhelder Hel Nl,52.965,4.7464,Dutch-Wadden-Coast,Southern-North-Sea-Continental,B100_NL02,B150_NL02,B250_NL01,reviewed-coastline-v2,Dutch-Wadden-Coast
+lerwick-p041-uk,Lerwick P041 Uk,60.15,-1.1333,Northern-North-Sea,British-North-Sea,B100_UKNE07,B150_UKNE06,B250_UKNE04,reviewed-coastline-v2,Northern-North-Sea
+cuxhaven-germany,Cuxhaven Germany,53.867,8.7167,German-Bight,Southern-North-Sea-Continental,B100_DE01,B150_DE01,B250_DE01,reviewed-coastline-v2,German-Bight
+delfzijl-del-nl,Delfzijl Del Nl,53.326,6.9331,Dutch-German-Bight,Southern-North-Sea-Continental,B100_NL03,B150_DE01,B250_DE01,reviewed-coastline-v2,Dutch-German-Bight
+portpatrick-p063-uk,Portpatrick P063 Uk,54.843,-5.12,North-Channel-Clyde,Irish-Sea-and-Scottish-Atlantic,B100_UKI05,B150_UKI04,B250_UKI03,reviewed-coastline-v2,North-Channel-Clyde
+newlyn-p001-uk,Newlyn,50.102,-5.5417,Southwest-Atlantic,Southwest-British-Coasts,B100_UKSW01,B150_UKSW01,B250_UKSW01,reviewed-coastline-v2,Southwest-Atlantic
+fishguard-p055-uk,Fishguard P055 Uk,52.014,-4.9833,Celtic-Irish-Sea,Southwest-British-Coasts,B100_UKI01,B150_UKI01,B250_UKI01,reviewed-coastline-v2,Celtic-Irish-Sea
+hoekvanholla-hvh-nl,Hoek van Holland,51.977,4.12,Rhine-Meuse-Coast,Southern-North-Sea-Continental,B100_NL01,B150_NL01,B250_NL01,reviewed-coastline-v2,Rhine-Meuse-Coast
+milfordhaven-p056-uk,Milfordhaven P056 Uk,51.702,-5.0143,Celtic-Irish-Sea,Southwest-British-Coasts,B100_UKI01,B150_UKI01,B250_UKI01,reviewed-coastline-v2,Celtic-Irish-Sea
+tregde-006-norway,Tregde 006 Norway,58.0,7.5666,Skagerrak,Skagerrak,B100_NO01,B150_NO01,B250_NO01,reviewed-coastline-v2,Skagerrak
+lowestoft-p024-uk,Lowestoft P024 Uk,52.473,1.7508,Southern-North-Sea-UK,British-North-Sea,B100_UKNE01,B150_UKNE01,B250_UKNE01,reviewed-coastline-v2,Southern-North-Sea-UK
+wick-p035-uk,Wick P035 Uk,58.441,-3.0863,Northern-North-Sea,British-North-Sea,B100_UKNE06,B150_UKNE05,B250_UKNE04,reviewed-coastline-v2,Northern-North-Sea
+stornoway-p042-uk,Stornoway P042 Uk,58.208,-6.3882,Scottish-Atlantic,Irish-Sea-and-Scottish-Atlantic,B100_UKWA04,B150_UKWA03,B250_UKWA02,reviewed-coastline-v2,Scottish-Atlantic
+le-conquet,Le Conquet France,48.359,-4.7807,Brittany-Atlantic,French-Atlantic-and-Brittany,B100_FRB03,B150_FRB02,B250_FRB02,reviewed-coastline-v2,Brittany-Atlantic
+brest,Brest,48.383,-4.5,Brittany-Atlantic,French-Atlantic-and-Brittany,B100_FRB03,B150_FRB02,B250_FRB02,reviewed-coastline-v2,Brittany-Atlantic
+port-tudy,Port Tudy France,47.644,-3.4459,Brittany-Atlantic,French-Atlantic-and-Brittany,B100_FRB02,B150_FRB01,B250_FRB01,reviewed-coastline-v2,Brittany-Atlantic
+cherbourg,Cherbourg France,49.651,-1.6355,French-English-Channel,French-English-Channel,B100_FRC02,B150_FRC02,B250_FRC01,reviewed-coastline-v2,French-English-Channel
+saint-nazaire,Saint Nazaire France,47.267,-2.2016,Loire-Bay-of-Biscay,French-Atlantic-and-Brittany,B100_FRL01,B150_FRL01,B250_FRL01,reviewed-coastline-v2,Loire-Bay-of-Biscay
+saint-gildas,Saint Gildas France,47.14,-2.2464,Loire-Bay-of-Biscay,French-Atlantic-and-Brittany,B100_FRL01,B150_FRL01,B250_FRL01,reviewed-coastline-v2,Loire-Bay-of-Biscay
+le-havre,Le Havre France,49.482,0.106,French-English-Channel,French-English-Channel,B100_FRC03,B150_FRC03,B250_FRC02,reviewed-coastline-v2,French-English-Channel
+dunkerque,Dunkerque France,51.048,2.3667,French-English-Channel,French-English-Channel,B100_FRC05,B150_FRC04,B250_FRC03,reviewed-coastline-v2,French-English-Channel
+roscoff,Roscoff France,48.718,-3.9657,French-English-Channel,French-English-Channel,B100_FRC01,B150_FRC01,B250_FRB02,reviewed-coastline-v2,French-English-Channel
+boulogne-sur-mer,Boulogne Sur Mer,50.727,1.5777,French-English-Channel,French-English-Channel,B100_FRC04,B150_FRC04,B250_FRC03,reviewed-coastline-v2,French-English-Channel
+dieppe,Dieppe France,49.929,1.0845,French-English-Channel,French-English-Channel,B100_FRC03,B150_FRC03,B250_FRC02,reviewed-coastline-v2,French-English-Channel
+immingham-p026-uk,Immingham P026 Uk,53.631,-0.18603,Southern-North-Sea-UK,British-North-Sea,B100_UKNE02,B150_UKNE02,B250_UKNE02,reviewed-coastline-v2,Southern-North-Sea-UK
+aberdeen-p038-uk,Aberdeen,57.143,-2.0745,Northern-North-Sea,British-North-Sea,B100_UKNE05,B150_UKNE05,B250_UKNE04,reviewed-coastline-v2,Northern-North-Sea
+millport-p049-uk,Millport P049 Uk,55.75,-4.9058,North-Channel-Clyde,Irish-Sea-and-Scottish-Atlantic,B100_UKI05,B150_UKI04,B250_UKI03,reviewed-coastline-v2,North-Channel-Clyde
+holyhead-p054-uk,Holyhead P054 Uk,53.308,-4.6312,Irish-Sea,Irish-Sea-and-Scottish-Atlantic,B100_UKI02,B150_UKI02,B250_UKI02,reviewed-coastline-v2,Irish-Sea
+sheerness-p015-uk,Sheerness,51.442,0.74306,Thames-Estuary,English-Channel-UK,B100_UKSE01,B150_UKSE01,B250_UKSE01,reviewed-coastline-v2,Thames-Estuary
+heysham-p050-uk,Heysham P050 Uk,54.032,-2.9204,Irish-Sea,Irish-Sea-and-Scottish-Atlantic,B100_UKI03,B150_UKI03,B250_UKI02,reviewed-coastline-v2,Irish-Sea
+northshields-p032-uk,Northshields P032 Uk,55.007,-1.4398,Northern-North-Sea,British-North-Sea,B100_UKNE04,B150_UKNE04,B250_UKNE03,reviewed-coastline-v2,Northern-North-Sea
+whitby-p174-uk,Whitby P174 Uk,54.49,-0.61417,Northern-North-Sea,British-North-Sea,B100_UKNE03,B150_UKNE03,B250_UKNE03,reviewed-coastline-v2,Northern-North-Sea
+dover-p012-uk,Dover P012 Uk,51.117,1.3181,English-Channel-UK,English-Channel-UK,B100_UKC04,B150_UKC03,B250_UKC02,reviewed-coastline-v2,English-Channel-UK
+ullapool-p043-uk,Ullapool P043 Uk,57.895,-5.1579,Scottish-Atlantic,Irish-Sea-and-Scottish-Atlantic,B100_UKWA03,B150_UKWA03,B250_UKWA02,reviewed-coastline-v2,Scottish-Atlantic
+newhaven-p011-uk,Newhaven P011 Uk,50.782,0.05703,English-Channel-UK,English-Channel-UK,B100_UKC03,B150_UKC03,B250_UKC02,reviewed-coastline-v2,English-Channel-UK
+calais,Calais France,50.969,1.8677,French-English-Channel,French-English-Channel,B100_FRC05,B150_FRC04,B250_FRC03,reviewed-coastline-v2,French-English-Channel
+ilfracombe-p061-uk,Ilfracombe P061 Uk,51.211,-4.1109,Bristol-Channel,Southwest-British-Coasts,B100_UKBC01,B150_UKBC01,B250_UKBC01,reviewed-coastline-v2,Bristol-Channel
+felixstowe-p204-uk,Felixstowe P204 Uk,51.957,1.3484,Southern-North-Sea-UK,British-North-Sea,B100_UKSE02,B150_UKSE02,B250_UKSE01,reviewed-coastline-v2,Southern-North-Sea-UK
+leith-p034-uk,Leith P034 Uk,55.99,-3.1817,Northern-North-Sea,British-North-Sea,B100_UKNE04,B150_UKNE04,B250_UKNE03,reviewed-coastline-v2,Northern-North-Sea
+tobermory-p223-uk,Tobermory P223 Uk,56.623,-6.0642,Scottish-Atlantic,Irish-Sea-and-Scottish-Atlantic,B100_UKWA02,B150_UKWA02,B250_UKWA01,reviewed-coastline-v2,Scottish-Atlantic
+cromer-p183-uk,Cromer P183 Uk,52.934,1.3016,Southern-North-Sea-UK,British-North-Sea,B100_UKNE01,B150_UKNE01,B250_UKNE01,reviewed-coastline-v2,Southern-North-Sea-UK
+avonmouth-p060-uk,Avonmouth P060 Uk,51.511,-2.715,Bristol-Channel,Southwest-British-Coasts,B100_UKBC02,B150_UKBC02,B250_UKBC01,reviewed-coastline-v2,Bristol-Channel
+hinkleypoint-p003-uk,Hinkleypoint P003 Uk,51.215,-3.1343,Bristol-Channel,Southwest-British-Coasts,B100_UKBC02,B150_UKBC02,B250_UKBC01,reviewed-coastline-v2,Bristol-Channel
+mumbles-p932-uk,Mumbles P932 Uk,51.57,-3.9754,Bristol-Channel,Southwest-British-Coasts,B100_UKBC03,B150_UKBC03,B250_UKBC02,reviewed-coastline-v2,Bristol-Channel
+devonport-p002-uk,Devonport P002 Uk,50.368,-4.1852,Southwest-Atlantic,Southwest-British-Coasts,B100_UKSW02,B150_UKSW01,B250_UKSW01,reviewed-coastline-v2,Southwest-Atlantic
+weymouth-p991-uk,Weymouth P991 Uk,50.608,-2.4479,English-Channel-UK,English-Channel-UK,B100_UKC01,B150_UKC01,B250_UKC01,reviewed-coastline-v2,English-Channel-UK
+barmouth-p923-uk,Barmouth P923 Uk,52.719,-4.0452,Irish-Sea,Irish-Sea-and-Scottish-Atlantic,B100_UKI02,B150_UKI02,B250_UKI02,reviewed-coastline-v2,Irish-Sea
+portsmouth-p008-uk,Portsmouth P008 Uk,50.803,-1.1118,English-Channel-UK,English-Channel-UK,B100_UKC02,B150_UKC02,B250_UKC01,reviewed-coastline-v2,English-Channel-UK
+malin-head-834a-ireland,Malin Head 834a,55.367,-7.3333,Scottish-Atlantic,Irish-Sea-and-Scottish-Atlantic,B100_UKWA01,B150_UKWA01,B250_UKWA01,reviewed-coastline-v2,Scottish-Atlantic
+kinlochbervi-p918-uk,Kinlochbervi P918 Uk,58.457,-5.0504,Scottish-Atlantic,Irish-Sea-and-Scottish-Atlantic,B100_UKWA03,B150_UKWA03,B250_UKWA02,reviewed-coastline-v2,Scottish-Atlantic
+porterin-p919-uk,Porterin P919 Uk,54.085,-4.7681,Irish-Sea,Irish-Sea-and-Scottish-Atlantic,B100_UKI04,B150_UKI03,B250_UKI02,reviewed-coastline-v2,Irish-Sea
+workington-p217-uk,Workington P217 Uk,54.651,-3.5676,Irish-Sea,Irish-Sea-and-Scottish-Atlantic,B100_UKI03,B150_UKI03,B250_UKI02,reviewed-coastline-v2,Irish-Sea
+sthelier-p074-uk,Sthelier P074 Uk,49.183,-2.1167,French-English-Channel,French-English-Channel,B100_FRC02,B150_FRC02,B250_FRC01,reviewed-coastline-v2,French-English-Channel
+gladstone-p234-uk,Gladstone P234 Uk,53.45,-3.018,Irish-Sea,Irish-Sea-and-Scottish-Atlantic,B100_UKI03,B150_UKI03,B250_UKI02,reviewed-coastline-v2,Irish-Sea
+llandudno-p007-uk,Llandudno P007 Uk,53.332,-3.8252,Irish-Sea,Irish-Sea-and-Scottish-Atlantic,B100_UKI02,B150_UKI02,B250_UKI02,reviewed-coastline-v2,Irish-Sea
+portellen-p202-uk,Portellen P202 Uk,55.627,-6.1901,Scottish-Atlantic,Irish-Sea-and-Scottish-Atlantic,B100_UKWA01,B150_UKWA01,B250_UKWA01,reviewed-coastline-v2,Scottish-Atlantic
+saint-malo,Saint Malo France,48.641,-2.0281,French-English-Channel,French-English-Channel,B100_FRC01,B150_FRC01,B250_FRC01,reviewed-coastline-v2,French-English-Channel
+newport-p057-uk,Newport P057 Uk,51.55,-2.9874,Bristol-Channel,Southwest-British-Coasts,B100_UKBC02,B150_UKBC02,B250_UKBC01,reviewed-coastline-v2,Bristol-Channel
+portrush-p935-uk,Portrush P935 Uk,55.207,-6.6568,Scottish-Atlantic,Irish-Sea-and-Scottish-Atlantic,B100_UKWA01,B150_UKWA01,B250_UKWA01,reviewed-coastline-v2,Scottish-Atlantic
+bangor-p662-uk,Bangor P662 Uk,54.665,-5.6695,North-Channel-Clyde,Irish-Sea-and-Scottish-Atlantic,B100_UKI04,B150_UKI04,B250_UKI03,reviewed-coastline-v2,North-Channel-Clyde
+stmarys-p231-uk,Stmarys P231 Uk,49.918,-6.3164,Southwest-Atlantic,Southwest-British-Coasts,B100_UKSW01,B150_UKSW01,B250_UKSW01,reviewed-coastline-v2,Southwest-Atlantic
+bournemouth-p988-uk,Bournemouth P988 Uk,50.714,-1.8749,English-Channel-UK,English-Channel-UK,B100_UKC01,B150_UKC01,B250_UKC01,reviewed-coastline-v2,English-Channel-UK
+concarneau,Concarneau France,47.874,-3.9072,Brittany-Atlantic,French-Atlantic-and-Brittany,B100_FRB02,B150_FRB01,B250_FRB01,reviewed-coastline-v2,Brittany-Atlantic
+le-crouesty,Le Crouesty France,47.543,-2.8952,Loire-Bay-of-Biscay,French-Atlantic-and-Brittany,B100_FRB01,B150_FRB01,B250_FRB01,reviewed-coastline-v2,Loire-Bay-of-Biscay
+morayfirth-p207-uk,Morayfirth P207 Uk,57.599,-4.0022,Northern-North-Sea,British-North-Sea,B100_UKNE05,B150_UKNE05,B250_UKNE04,reviewed-coastline-v2,Northern-North-Sea
+harwich-p022-uk,Harwich P022 Uk,51.947,1.2845,Southern-North-Sea-UK,British-North-Sea,B100_UKSE02,B150_UKSE02,B250_UKSE01,reviewed-coastline-v2,Southern-North-Sea-UK
+portbury-p341-uk,Portbury P341 Uk,51.5,-2.7285,Bristol-Channel,Southwest-British-Coasts,B100_UKBC02,B150_UKBC02,B250_UKBC01,reviewed-coastline-v2,Bristol-Channel

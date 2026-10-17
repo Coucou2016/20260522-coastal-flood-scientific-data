@@ -6,8 +6,10 @@ tmp/
 .pytest_cache/
 **/__pycache__/
 *.py[cod]
+*.egg-info/
 .venv/
 venv/
+.venv-*/
 .codex/
 
 # Credentials and machine-local configuration.
@@ -36,4 +38,3 @@ Thumbs.db
 desktop.ini
 *.tmp
 *.bak
-

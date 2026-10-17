@@ -13,7 +13,7 @@ denominator is retained only in legacy tables. Primary outputs separate:
 
 The script also evaluates window, threshold, neighbourhood, marine-seed,
 vertical-offset and COAST-RP matching sensitivities for the full regional
-sample, then applies one consistent six-sector spatial inference scheme.
+sample, then applies reviewed coastline-blocking schemes at three spatial scales.
 """
 
 from __future__ import annotations
@@ -25,7 +25,6 @@ from pathlib import Path
 
 import numpy as np
 import pandas as pd
-from scipy import ndimage as ndi
 from scipy import stats
 
 
@@ -33,6 +32,9 @@ ROOT = Path(__file__).resolve().parents[1]
 SCRIPTS = ROOT / "scripts"
 if str(SCRIPTS) not in sys.path:
     sys.path.insert(0, str(SCRIPTS))
+SRC = ROOT / "src"
+if str(SRC) not in sys.path:
+    sys.path.insert(0, str(SRC))
 
 from add_advanced_terrain_rank_diagnostics import (  # noqa: E402
     cell_area_km2,
@@ -42,15 +44,22 @@ from add_advanced_terrain_rank_diagnostics import (  # noqa: E402
 )
 from add_mask_aware_terrain_diagnostics import (  # noqa: E402
     MASK_OUTSIDE_SUPPORT,
-    coastal_sector,
     resolve_marine_seed,
 )
 from inundation_sensitivity import valid_mask  # noqa: E402
+from coastal_screening.connectivity import connected_component  # noqa: E402
+from coastal_screening.spatial_blocks import (  # noqa: E402
+    BLOCK_SCALES_KM,
+    attach_spatial_blocks,
+    block_column,
+)
+from coastal_screening.statistics import deterministic_top_k  # noqa: E402
 
 
 FIG_SOURCE = ROOT / "data" / "figure_source"
 INPUT_METRICS = FIG_SOURCE / "Fig6_mask_aware_terrain_area_metrics.csv"
 CANDIDATE_AUDIT = FIG_SOURCE / "Fig5_station_candidate_audit.csv"
+SPATIAL_BLOCKS = ROOT / "config" / "coastal_spatial_blocks_v2.csv"
 
 WIDTHS_KM = (5.0, 10.0, 20.0)
 LEVELS_M = (1.0, 2.0, 3.0)
@@ -61,11 +70,36 @@ PRIMARY_MAX_MATCH_KM = 6.0
 PERMUTATIONS = 10_000
 BLOCK_BOOTSTRAPS = 2_000
 
-STRUCTURES = {
-    4: ndi.generate_binary_structure(2, 1),
-    8: np.ones((3, 3), dtype=bool),
-}
+DETAIL_LEADING_COLUMNS = [
+    "station_id",
+    "station",
+    "lat",
+    "lon",
+    "coast_rp_rp10_m",
+    "match_dist_km",
+    "window_width_km",
+    "terrain_source",
+    "terrain_tiles",
+    "mask_outside_support_cells",
+    "official_clipped_255_cells",
+    "coastal_basin",
+    "coastal_region",
+    "coastal_sector",
+    "spatial_block_100km",
+    "spatial_block_150km",
+    "spatial_block_250km",
+    "block_definition",
+]
 
+
+def canonicalize_detail(frame: pd.DataFrame) -> pd.DataFrame:
+    """Fix column order and float precision before any rank calculation."""
+    result = frame.copy()
+    float_columns = result.select_dtypes(include=["floating"]).columns
+    result[float_columns] = result[float_columns].round(12)
+    leading = [column for column in DETAIL_LEADING_COLUMNS if column in result.columns]
+    trailing = [column for column in result.columns if column not in leading]
+    return result[leading + trailing]
 
 def classify(
     elev: np.ndarray,
@@ -86,11 +120,7 @@ def classify(
     effective_elev = elev + elevation_offset_m
     below = valid & land & np.isfinite(effective_elev) & (effective_elev <= eta_m)
     passable = below | tidal_water
-    connected = ndi.binary_propagation(
-        tidal_water,
-        structure=STRUCTURES[neighbours],
-        mask=passable,
-    ) & below
+    connected = connected_component(tidal_water, passable, neighbours) & below
 
     reference_land_area = sum_area(area, reference_land)
     window_area = sum_area(area, np.isfinite(area))
@@ -169,7 +199,13 @@ def station_configurations(row: pd.Series) -> list[dict[str, object]]:
             "terrain_tiles": ";".join(dem_tiles),
             "mask_outside_support_cells": int((mask == MASK_OUTSIDE_SUPPORT).sum()),
             "official_clipped_255_cells": int((mask == 255).sum()),
-            "coastal_sector": coastal_sector(row),
+            "coastal_basin": row["coastal_basin"],
+            "coastal_region": row["coastal_region"],
+            "coastal_sector": row["coastal_basin"],
+            "spatial_block_100km": row["spatial_block_100km"],
+            "spatial_block_150km": row["spatial_block_150km"],
+            "spatial_block_250km": row["spatial_block_250km"],
+            "block_definition": row["block_definition"],
         }
         for eta_m in LEVELS_M:
             for neighbours in NEIGHBOURS:
@@ -180,6 +216,7 @@ def station_configurations(row: pd.Series) -> list[dict[str, object]]:
                         "eta_m": eta_m,
                         "neighbours": neighbours,
                         "seed_rule": seed_rule,
+                        "water_neighbours": 8,
                         "seed_resolved": seed_resolved,
                         "seed_status": seed_status,
                         "elevation_offset_m": 0.0,
@@ -205,6 +242,7 @@ def station_configurations(row: pd.Series) -> list[dict[str, object]]:
                     "eta_m": 2.0,
                     "neighbours": 4,
                     "seed_rule": "official_adaptive",
+                    "water_neighbours": 8,
                     "seed_resolved": seeds["official_adaptive"][1],
                     "seed_status": seeds["official_adaptive"][2],
                     "elevation_offset_m": offset_m,
@@ -231,6 +269,7 @@ def rank_summary(
     metric: str,
     setting: str,
     seed: int,
+    run_permutation: bool = True,
 ) -> dict[str, object]:
     work = frame.dropna(subset=["coast_rp_rp10_m", metric]).copy()
     n = len(work)
@@ -240,25 +279,28 @@ def rank_summary(
     terrain = work[metric].to_numpy(float)
     observed_s = float(stats.spearmanr(water, terrain).statistic)
     observed_k = float(stats.kendalltau(water, terrain).statistic)
-    # Spearman correlation is Pearson correlation of ranks. Generate the
-    # station-label null in vectorized batches so the 10,000-permutation audit
-    # remains practical across the full sensitivity grid.
-    water_rank = stats.rankdata(water).astype(float)
-    terrain_rank = stats.rankdata(terrain).astype(float)
-    water_rank -= water_rank.mean()
-    terrain_rank -= terrain_rank.mean()
-    denominator = float(np.linalg.norm(water_rank) * np.linalg.norm(terrain_rank))
-    rng = np.random.default_rng(seed)
-    null_s = np.empty(PERMUTATIONS, dtype=float)
-    batch_size = 1_000
-    for start in range(0, PERMUTATIONS, batch_size):
-        stop = min(start + batch_size, PERMUTATIONS)
-        permuted = np.stack([rng.permutation(terrain_rank) for _ in range(stop - start)])
-        null_s[start:stop] = permuted @ water_rank / denominator
-    p_two = float((np.sum(np.abs(null_s) >= abs(observed_s)) + 1) / (PERMUTATIONS + 1))
+    p_two = np.nan
+    if run_permutation:
+        # Spearman correlation is Pearson correlation of ranks. Generate the
+        # station-label null in vectorized batches for the prespecified primary
+        # and one-at-a-time analyses, not for every leave-one-block diagnostic.
+        water_rank = stats.rankdata(water).astype(float)
+        terrain_rank = stats.rankdata(terrain).astype(float)
+        water_rank -= water_rank.mean()
+        terrain_rank -= terrain_rank.mean()
+        denominator = float(np.linalg.norm(water_rank) * np.linalg.norm(terrain_rank))
+        rng = np.random.default_rng(seed)
+        null_s = np.empty(PERMUTATIONS, dtype=float)
+        batch_size = 1_000
+        for start in range(0, PERMUTATIONS, batch_size):
+            stop = min(start + batch_size, PERMUTATIONS)
+            permuted = np.stack([rng.permutation(terrain_rank) for _ in range(stop - start)])
+            null_s[start:stop] = permuted @ water_rank / denominator
+        p_two = float((np.sum(np.abs(null_s) >= abs(observed_s)) + 1) / (PERMUTATIONS + 1))
     k = max(1, math.ceil(0.2 * n))
-    top_water = set(work.nlargest(k, "coast_rp_rp10_m")["station_id"])
-    top_terrain = set(work.nlargest(k, metric)["station_id"])
+    station_ids = work["station_id"].to_numpy(str)
+    top_water = set(station_ids[deterministic_top_k(water, station_ids, k)])
+    top_terrain = set(station_ids[deterministic_top_k(terrain, station_ids, k)])
     overlap = len(top_water & top_terrain)
     return {
         "setting": setting,
@@ -281,23 +323,27 @@ def sector_block_interval(
     metric: str,
     setting: str,
     seed: int,
+    block_scale_km: int,
 ) -> dict[str, object]:
-    work = frame.dropna(subset=["coast_rp_rp10_m", metric, "coastal_sector"]).copy()
-    sectors = sorted(work["coastal_sector"].unique())
-    groups = {s: work[work["coastal_sector"].eq(s)].copy() for s in sectors}
+    block_col = block_column(block_scale_km)
+    work = frame.dropna(subset=["coast_rp_rp10_m", metric, block_col]).copy()
+    blocks = sorted(work[block_col].unique())
+    groups = {block: work[work[block_col].eq(block)].copy() for block in blocks}
     rng = np.random.default_rng(seed)
     values = np.full(BLOCK_BOOTSTRAPS, np.nan, dtype=float)
     for i in range(BLOCK_BOOTSTRAPS):
-        sampled = rng.choice(sectors, size=len(sectors), replace=True)
-        boot = pd.concat([groups[s] for s in sampled], ignore_index=True)
+        sampled = rng.choice(blocks, size=len(blocks), replace=True)
+        boot = pd.concat([groups[block] for block in sampled], ignore_index=True)
         if boot[metric].nunique() > 1 and boot["coast_rp_rp10_m"].nunique() > 1:
             values[i] = float(boot["coast_rp_rp10_m"].corr(boot[metric], method="spearman"))
     return {
         "setting": setting,
         "terrain_metric": metric,
         "n_sites": len(work),
-        "n_sectors": len(sectors),
-        "sectors": ";".join(sectors),
+        "block_scale_km": block_scale_km,
+        "spatial_block_column": block_col,
+        "n_blocks": len(blocks),
+        "blocks": ";".join(blocks),
         "spearman_observed": float(work["coast_rp_rp10_m"].corr(work[metric], method="spearman")),
         "spearman_sector_bootstrap_p025": float(np.nanpercentile(values, 2.5)),
         "spearman_sector_bootstrap_p500": float(np.nanpercentile(values, 50.0)),
@@ -412,16 +458,25 @@ def topk_null_curve(frame: pd.DataFrame, metric: str, seed: int) -> pd.DataFrame
     return pd.DataFrame(rows)
 
 
-def leave_one_sector(frame: pd.DataFrame, metrics: list[str]) -> pd.DataFrame:
+def leave_one_spatial_block(frame: pd.DataFrame, metrics: list[str]) -> pd.DataFrame:
     rows = []
-    sectors = sorted(frame["coastal_sector"].unique())
-    for metric in metrics:
-        for omitted in sectors:
-            work = frame[~frame["coastal_sector"].eq(omitted)].copy()
-            row = rank_summary(work, metric, f"omit-sector:{omitted}", 20260850 + len(rows))
-            row["omitted_sector"] = omitted
-            row["omitted_n"] = int(frame["coastal_sector"].eq(omitted).sum())
-            rows.append(row)
+    for scale_km in BLOCK_SCALES_KM:
+        block_col = block_column(scale_km)
+        blocks = sorted(frame[block_col].unique())
+        for metric in metrics:
+            for omitted in blocks:
+                work = frame[~frame[block_col].eq(omitted)].copy()
+                row = rank_summary(
+                    work,
+                    metric,
+                    f"omit-block:{scale_km}km:{omitted}",
+                    20260850 + len(rows),
+                    run_permutation=False,
+                )
+                row["block_scale_km"] = scale_km
+                row["omitted_block"] = omitted
+                row["omitted_n"] = int(frame[block_col].eq(omitted).sum())
+                rows.append(row)
     return pd.DataFrame(rows)
 
 
@@ -447,18 +502,22 @@ def main() -> int:
         help="Reuse Terrain_robustness_grid_74stations.csv and rebuild only summaries.",
     )
     args = parser.parse_args()
-    source = pd.read_csv(INPUT_METRICS)
+    source = attach_spatial_blocks(pd.read_csv(INPUT_METRICS), SPATIAL_BLOCKS)
     detail_path = FIG_SOURCE / "Terrain_robustness_grid_74stations.csv"
     if args.reuse_detail:
         if not detail_path.exists():
             raise FileNotFoundError(f"Cannot reuse missing detail table: {detail_path}")
-        detail = pd.read_csv(detail_path)
+        detail = attach_spatial_blocks(pd.read_csv(detail_path), SPATIAL_BLOCKS)
+        if "water_neighbours" not in detail.columns:
+            detail["water_neighbours"] = 8
     else:
         rows: list[dict[str, object]] = []
         for i, (_, station) in enumerate(source.iterrows(), start=1):
             print(f"[{i}/{len(source)}] frozen terrain grid {station['station_id']}", flush=True)
             rows.extend(station_configurations(station))
         detail = pd.DataFrame(rows)
+    detail = canonicalize_detail(attach_spatial_blocks(detail, SPATIAL_BLOCKS))
+    if not args.reuse_detail:
         detail.to_csv(detail_path, index=False)
 
     primary = choose_configuration(detail)
@@ -480,16 +539,46 @@ def main() -> int:
             summary.update(rank_stability(baseline, frame, metric))
             rank_rows.append(summary)
             if setting.startswith("primary:"):
-                block_rows.append(sector_block_interval(frame, metric, setting, seed + 50_000))
+                for scale_km in BLOCK_SCALES_KM:
+                    block_rows.append(
+                        sector_block_interval(
+                            frame,
+                            metric,
+                            setting,
+                            seed + 50_000 + scale_km,
+                            scale_km,
+                        )
+                    )
     pd.DataFrame(rank_rows).to_csv(FIG_SOURCE / "Rank_robustness_one_at_a_time.csv", index=False)
-    pd.DataFrame(block_rows).to_csv(FIG_SOURCE / "Spatial_sector_bootstrap_intervals.csv", index=False)
+    block_frame = pd.DataFrame(block_rows)
+    block_frame.to_csv(FIG_SOURCE / "Spatial_block_bootstrap_intervals.csv", index=False)
+    block_frame.to_csv(FIG_SOURCE / "Spatial_sector_bootstrap_intervals.csv", index=False)  # compatibility
 
     curves = [topk_null_curve(primary, metric, 20260924 + i) for i, metric in enumerate(metrics)]
     pd.concat(curves, ignore_index=True).to_csv(FIG_SOURCE / "Topk_overlap_null_curves.csv", index=False)
-    leave_one_sector(primary, metrics).to_csv(FIG_SOURCE / "Leave_one_coastal_sector_out.csv", index=False)
+    leave = leave_one_spatial_block(primary, metrics)
+    leave.to_csv(FIG_SOURCE / "Leave_one_spatial_block_out.csv", index=False)
+    # Compatibility export for older document builders. Contents now identify
+    # explicit blocks and scales rather than coordinate-derived sectors.
+    leave.to_csv(FIG_SOURCE / "Leave_one_coastal_sector_out.csv", index=False)
 
-    sectors = primary[["station_id", "station", "lat", "lon", "coastal_sector"]].copy()
-    sectors.to_csv(FIG_SOURCE / "Primary_station_coastal_sectors.csv", index=False)
+    sectors = primary[
+        [
+            "station_id",
+            "station",
+            "lat",
+            "lon",
+            "coastal_basin",
+            "coastal_region",
+            "spatial_block_100km",
+            "spatial_block_150km",
+            "spatial_block_250km",
+            "block_definition",
+            "coastal_sector",
+        ]
+    ].copy()
+    sectors.to_csv(FIG_SOURCE / "Primary_station_spatial_blocks.csv", index=False)
+    sectors.to_csv(FIG_SOURCE / "Primary_station_coastal_sectors.csv", index=False)  # compatibility
     sample_flow(source, detail).to_csv(FIG_SOURCE / "Primary_sample_flow.csv", index=False)
 
     product_audit = pd.DataFrame(
